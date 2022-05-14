@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WarasApp</string>
+    <string name="validate_email">Please enter a valid email address</string>
+    <string name="validate_password">Password must be 6 characters or more</string>
+
+    <!--    Login   -->
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User?</string>
+    <string name="register_now">Register Now</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="login_now">Login Now</string>
+    <string name="logo">Logo</string>
+    <string name="do_you_have_an_account">Do you have an account?</string>
+    <string name="login_success">Login Success</string>
+    <string name="next">Next</string>
+    <string name="login_error">Login Error</string>
+    <string name="repeat">Repeat</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_new_account">Register New Account</string>
+    <string name="enter_email">Enter an email address</string>
+    <string name="enter_password">Password must be filled out</string>
+    <string name="success">Success</string>
+    <string name="your_account_created">Your account successfully created</string>
+    <string name="sorry">Oops</string>
+    <string name="create_account_failed">We have an error while creating your account %1$s</string>
+    <string name="enter_name">Name must be filled out</string>
+
+
+</resources>
