@@ -1,0 +1,1898 @@
+age,sex,country_new,chronic_disease,date_onset_symptoms,date_confirmation,date_death_or_discharge,outcome,Fever,Cough,Fatigue,Sore throat,Runny nose,Shortness of breath,Vomiting,full_symptoms
+60,male,Japan,,03.02.2020,18.02.2020,,,1,0,0,0,0,0,0,"fever, severe pneumonia"
+45,male,Japan,,08.02.2020,10.02.2020,,,1,0,0,0,0,0,0,fever
+25,male,Japan,,07.02.2020,08.02.2020,,,1,1,0,1,0,0,0,"cough, fever, sore throat"
+45,male,Japan,,02.02.2020,15.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+85,male,Japan,,09.02.2020,18.02.2020,,,1,0,0,0,0,1,0,"dyspnea, fever"
+55,male,Japan,,05.02.2020,18.02.2020,,,1,1,0,0,0,1,0,"cough, difficulty breathing, fever"
+25,male,Japan,,07.02.2020,18.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,04.04.2020,15.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+55,female,Japan,,07.02.2020,15.02.2020,,,0,1,0,0,0,0,0,"37.1 ° C, mild coughing"
+65,male,Japan,,,15.02.2020,,,0,1,0,0,0,0,0,cough
+69,female,China,,28.01.2020,10.02.2020,,,0,1,0,0,0,0,0,cough
+16,female,China,,,10.02.2020,,,0,0,0,0,0,0,0,"abdominal pain, pulmonary inflammation"
+43,male,China,,21.01.2020,10.02.2020,,,0,0,0,1,0,0,0,Sore throat
+34,female,China,,,13.02.2020,,,0,1,0,0,0,0,0,cough
+55,male,Japan,,25.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+31,male,Malaysia,,03.02.2020,09.02.2020,,,1,1,0,0,0,0,0,"feeling ill, coughing"
+39,female,Malaysia,,12.02.2020,13.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,male,Japan,,02.02.2020,13.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+55,male,Japan,,31.01.2020,13.02.2020,,,1,0,0,0,0,0,0,"abdominal pain, diarrhea, fever, general malaise"
+75,male,Japan,,29.01.2020,13.02.2020,,,1,0,0,0,0,0,0,fever
+60,female,Japan,,12.02.2020,14.02.2020,,,0,0,0,0,0,0,0,poor physical condition
+35,female,Thailand,,,15.02.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+35,male,,,28.01.2020,17.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+43,male,China,,22.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+48,female,China,,19.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+54,female,China,,18.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+25,female,Japan,,18.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+45,female,Lebanon,,,21.02.2020,,,0,0,0,0,0,0,0,yes
+47,male,China,,22.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,16.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 38.3
+ 3,male,Japan,,08.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever (39.5 ℃)
+ 5,male,Japan,,15.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.7℃
+ 5,male,Japan,,18.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.7℃
+45,female,Japan,,16.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.5℃
+55,male,China,,18.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+85,male,Japan,,27.01.2020,21.02.2020,,,0,0,0,0,0,0,0,anorexia
+47,female,China,,22.01.2020,26.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+46,female,China,,19.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,12.02.2020,22.02.2020,,,1,1,0,0,0,0,1,"nausea, cough, pneumonia, fever"
+45,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,10.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever 38.2 ℃, cough"
+16,female,Japan,,06.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+75,female,Japan,,06.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever 37 C
+55,female,Japan,,15.02.2020,22.02.2020,,,0,0,0,0,0,0,0,"malaise, headache"
+55,male,Japan,,17.02.2020,22.02.2020,,,1,0,0,0,0,1,0,"fever (37 ℃), breathing difficulty"
+75,male,Japan,,16.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever (37.5 ℃, then 38 ℃), cough, malaise"
+55,female,Japan,,13.02.2020,22.02.2020,,,1,1,0,1,0,0,0,"sore throat, Cough, fever (37 ℃)"
+55,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,16.02.2020,22.02.2020,,,1,0,0,0,0,1,0,"fever, shortness of breath, pneumonia"
+65,male,Japan,,12.02.2020,22.02.2020,,,0,0,0,0,0,1,0,severe dyspnea
+65,male,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+45,female,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+96,female,China,,13.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+65,female,Japan,,12.02.2020,22.02.2020,,,0,0,0,0,0,0,1,nausea
+10,male,China,,07.02.2020,09.02.2020,,,1,0,0,0,0,0,0,fever
+62,male,China,,25.01.2020,03.02.2020,,,1,0,1,0,0,0,0,fever; fatigue
+52,female,China,,16.01.2020,03.02.2020,,,0,0,1,0,0,0,0,chest tightness; fatigue
+44,female,China,,22.01.2020,28.01.2020,,,1,1,0,0,0,0,0,cough; fever
+55,female,China,,22.01.2020,28.01.2020,,,1,1,0,1,1,0,0,fever; nasal congestion; runny nose; sore throat; cough
+25,male,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 39.3
+75,male,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 38
+35,female,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 38
+20,female,,,28.01.2020,21.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+40,female,,,,21.02.2020,,,0,0,0,0,1,0,0,"no respiratory symptoms, esophageal reflux"
+28,female,China,,18.02.2020,18.02.2020,,,1,0,0,0,0,0,0,fever
+1.75,female,China,,28.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+57,male,China,,07.02.2020,16.02.2020,,,1,1,0,0,0,0,0,cough; sputum; fever
+52,female,China,,25.01.2020,30.01.2020,,,0,1,0,0,0,0,0,dry cough
+41,male,China,,16.01.2020,30.01.2020,,,1,1,1,0,0,0,0,cough; sore body; cold
+62,male,Spain,,,26.02.2020,,,1,0,0,0,0,0,0,fever
+36,female,Spain,,,25.02.2020,,,0,0,0,0,1,0,0,flu-like symptoms
+,female,,,06.02.2020,24.02.2020,,,0,0,0,1,0,0,0,acute pharyngitis
+55,male,,,31.01.2020,23.02.2020,,,0,0,0,1,0,0,0,sore throat
+41,male,Germany,,20.02.2020,26.02.2020,,,1,1,0,1,0,0,0,"fever, sore throat, mild cough"
+47,female,China,,23.01.2020,26.01.2020,,,1,1,1,0,0,0,0,fever; fatigue; dry cough
+21,female,China,,12.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever
+16,male,China,,17.02.2020,27.02.2020,,,0,1,0,0,0,0,0,cough
+80,male,China,,25.02.2020,25.02.2020,,,1,0,0,0,0,0,0,fever
+,female,China,,16.02.2020,24.02.2020,,,1,0,0,0,0,0,0,fever
+33,male,China,,20.02.2020,24.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,female,China,,17.02.2020,24.02.2020,,,0,1,0,0,0,0,0,cough
+60,female,China,,12.02.2020,24.02.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,22.02.2020,26.02.2020,,,1,0,0,0,0,0,0,low fever 37.0 ℃
+55,male,Japan,,22.02.2020,26.02.2020,,,1,0,0,0,0,0,0,low fever (37.4 ℃)
+75,male,Japan,,23.02.2020,26.02.2020,,,1,1,0,0,0,0,0,low fever (37.2 ° C); cough
+25,male,Japan,,17.02.2020,26.02.2020,,,1,0,0,0,0,0,0,"fever (39.5 ℃), malaise"
+25,female,Japan,,19.02.2020,26.02.2020,,,1,0,0,1,1,0,0,"sore throat; fever, nasal discharge"
+75,male,Japan,,,26.02.2020,,,1,0,0,0,0,0,0,"fever (37.4 ° C), pneumonia"
+,,Japan,,16.02.2020,26.02.2020,,,0,1,0,0,0,0,0,cough
+75,female,Japan,,16.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever (37.8 ℃), cough"
+75,female,Japan,,17.02.2020,26.02.2020,,,1,0,0,0,0,0,0,"fever (38-39 ° C), malaise"
+45,male,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,male,Japan,,26.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 38.1 ℃ Cough, malaise, anorexia"
+45,female,Japan,,01.02.2020,26.02.2020,,,0,1,0,1,0,0,0,"Discharge, cough, sore throat, chest pain"
+85,male,Japan,,22.02.2020,26.02.2020,,,1,1,0,0,0,1,0,"fever, cough, phlegm, dyspnea"
+75,male,Japan,,13.02.2020,26.02.2020,,,1,1,0,0,0,1,0,"fever, cough, phlegm, dyspnea"
+75,male,Japan,,14.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+55,male,Japan,,24.02.2020,26.02.2020,,,1,0,0,1,0,0,0,"fever 37.8 ℃ , sore throat"
+65,male,Japan,,25.02.2020,26.02.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"rever, cough"
+75,male,Japan,,23.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 37.1 ℃ , couh"
+75,female,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 38.3 ℃ , cough"
+55,male,Japan,,14.02.2020,27.02.2020,,,1,0,0,0,0,0,0,"malaise, fever (37 ℃); headache, toothache, pneumonia"
+55,female,Japan,,23.02.2020,27.02.2020,,,1,0,0,1,0,0,0,"Sore throat, chills"
+55,male,Japan,,16.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever 38
+65,female,Japan,,10.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+45,male,Japan,,20.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Fever, cough, headache"
+55,male,Japan,,25.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever 37.2
+55,male,Japan,,25.02.2020,27.02.2020,,,0,1,0,0,0,0,0,"cough, malaise"
+35,male,Japan,,17.02.2020,27.02.2020,,,1,0,0,1,0,0,0,"sore throat, fever (38-39 ℃)"
+75,male,Japan,,16.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fatigue, fever (38 ℃)"
+65,male,Japan,,18.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever (38.3 ℃)
+45,male,Japan,,15.02.2020,27.02.2020,,,1,1,0,1,0,0,1,"vomiting, cough, fever (38.2 ℃), sore throat"
+45,male,Japan,,22.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fever (39 ° C), joint pain"
+ 5,male,Japan,,21.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (37.4 ℃), cough"
+35,male,Japan,,24.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fever (40.3 ℃), Headache, malaise, joint pain"
+ 5,male,Japan,,21.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (39.9 ℃), cough"
+85,male,Japan,,24.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (39.3 ℃), cough"
+35,male,Japan,,20.02.2020,27.02.2020,,,1,1,1,0,0,0,0,"cough, fever (38.3 ℃), joint pain"
+85,male,Japan,,22.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Cough, fever (38 ℃)"
+65,male,Japan,,22.02.2020,27.02.2020,,,1,0,0,0,0,0,0,"Fever (37.4 ° C), malaise, sore throa"
+ 5,female,Japan,,24.02.2020,27.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+65,female,Japan,,26.02.2020,27.02.2020,,,1,0,0,0,0,0,0,Fever (38 ° C)
+65,male,Japan,,26.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Fever (38.1 ° C), cough, headache."
+70,female,China,,23.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+52,female,China,,,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+44,male,China,,18.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+,,Nigeria,,,27.02.2020,,,0,0,0,0,0,0,0,no serious symptoms
+,female,China,,08.01.2020,21.01.2020,24.01.2020,discharged,1,0,1,0,0,0,0,"fatigue, fever, headache"
+44,female,China,,15.01.2020,21.01.2020,29.01.2020,discharged,1,0,1,0,0,0,0,"fatigue, fever"
+58,female,China,,,26.01.2020,,,1,0,0,0,0,0,0,fever
+39,female,China,,22.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+21,female,China,,25.01.2020,26.01.2020,,,0,0,1,0,0,0,0,"dizziness, sore limbs"
+39,female,China,,18.01.2020,24.01.2020,03.02.2020,discharged,1,0,1,0,1,0,0,"systemic weakness, runny nose, fever"
+55,female,,,22.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonia
+46,male,China,,04.01.2020,21.01.2020,,discharged,1,0,0,0,0,0,0,fever
+,female,Sweden,,,27.02.2020,,,0,0,0,0,0,0,0,similar to a respiratory infection
+39,female,Lithuania,,,28.02.2020,,,0,0,0,0,0,0,0,mild
+45,female,Japan,,18.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"chills, headache, fatigue"
+25,male,Japan,,23.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,20.02.2020,27.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+85,female,Japan,,21.02.2020,28.02.2020,,,1,1,0,0,0,0,0,"cough, phlegm, fever 37 degrees"
+ 5,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever 39.0 ℃
+85,male,Japan,,25.02.2020,28.02.2020,,,1,0,1,0,0,0,0,"fever (38.0 ℃), Fatigue, difficulty walking"
+65,female,Japan,,19.02.2020,28.02.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,21.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38.0 ℃)
+65,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,"chills,  fever (38 ℃), malaise"
+65,female,Japan,,19.02.2020,28.02.2020,,,1,1,0,0,0,1,0,"Sputum, cough symptoms, fever (37 ℃), cough, breathing difficulty"
+45,male,Japan,,12.02.2020,28.02.2020,,,1,0,0,0,0,0,0,"fever (37.0 ℃), fever (38.7 ℃)"
+75,male,Japan,,20.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (37.5 ℃ ～ 38.0 ℃)
+65,female,Japan,,20.02.2020,28.02.2020,,,1,1,0,0,0,0,0,fever and cough
+65,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,27.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+45,female,Japan,,19.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+,female,Netherlands,,,28.02.2020,,,0,0,0,0,0,0,0,mild
+,female,Ecuador,,,29.02.2020,,,1,0,0,0,0,0,0,fever
+27,female,,,,26.02.2020,,,0,0,0,1,0,0,0,sore throat
+68,female,China,,21.01.2020,26.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+64,male,China,,24.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+60,male,Cambodia,,26.01.2020,27.01.2020,,,1,0,0,0,1,0,0,"fever, runny nose"
+40,male,Japan,,14.01.2020,24.01.2020,,discharged,1,0,0,1,0,0,0,"fever, pneumonia, sore throat"
+49,female,Netherlands,,,01.03.2020,,,0,0,0,0,0,0,0,respiratory complaints
+,,Sweden,,,01.03.2020,,,0,0,0,0,0,0,0,mild
+65,male,Iceland,,29.02.2020,01.03.2020,,,0,0,0,0,0,0,0,mild
+65,male,Canada,,,01.03.2020,,,0,1,0,0,0,0,0,cough
+29,male,Russia,,,02.03.2020,,,0,0,0,0,0,0,0,acute respiratory viral infection (ARVI)
+39,female,United States,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+30,male,Japan,,03.01.2020,15.01.2020,15.01.2020,discharged,1,1,0,1,0,0,0,"cough, fever, sore throat"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+,,Belgium,,,02.03.2020,,,1,1,0,0,0,0,0,"fever, sneezing, coughing"
+20,male,Andorra,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+55,female,Czech Republic,,,02.03.2020,,,1,1,1,0,0,0,0,"fever, chills, muscle, joint pain and cough"
+60,female,Iceland,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+60,female,Iceland,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+60,male,Iceland,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+,,United States,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+32,male,Nepal,,09.01.2020,24.01.2020,17.01.2020,discharged,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+66,male,Singapore,,21.01.2020,23.01.2020,19.02.2020,discharged,1,1,0,0,0,0,0,"cough, fever"
+40,male,Malaysia,,,25.01.2020,08.02.2020,discharged,1,1,0,0,0,0,0,"cough, fever"
+51,male,Thailand,,20.01.2020,,05.02.2020,discharged,1,1,1,0,0,0,0,"cough, fever, myalgia"
+33,male,Germany,,24.01.2020,27.01.2020,27.01.2020,discharged,1,0,1,1,0,0,0,"chills, fever, myalgias, sore throat"
+35,,Germany,,,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+,female,China,,23.01.2020,27.01.2020,07.02.2020,discharged,1,0,0,1,0,0,0,"fever, sore throat"
+37,female,China,,28.01.2020,31.01.2020,,,0,1,0,0,0,0,0,cough
+75,male,China,,22.01.2020,31.01.2020,,,0,1,0,0,0,1,0,"cough, dyspnea"
+,,Germany,,,25.02.2020,,,0,0,0,0,1,0,0,flu-like symptoms
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+,,Iceland,,,04.03.2020,,,1,1,1,0,0,0,0,"cough, fever, bone pain"
+33,female,Germany,,,04.03.2020,,,0,1,0,0,0,0,0,cough
+64,male,Germany,,,03.03.2020,,,0,1,0,0,0,0,0,cough
+50,male,Germany,,,03.03.2020,,,1,1,0,0,0,0,0,cough fever
+38,male,South Africa,,03.03.2020,05.03.2020,,,1,1,0,1,0,0,0,"fever, headache, malaise, sore throat, cough"
+76,male,Bhutan,,04.03.2020,05.02.2020,,,1,1,0,1,0,1,0,"fever, sore throat, cough, shortness of breath"
+44,female,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+39,male,China,NA,23.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonia
+41,female,China,,22.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonia
+27,male,China,NA,22.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+1,female,China,,30.01.2020,08.02.2020,17.02.2020,discharged,0,0,0,0,0,0,0,diarrhea
+0.25,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+52,female,,diabetes,25.01.2020,27.01.2020,,,1,1,1,1,1,0,0,"cough, fever, myalgia, rhinorrhea, sore throat"
+55,male,South Korea,,21.01.2020,27.01.2020,,,1,0,1,0,0,0,0,"aching muscles, fever, pneumonia"
+28,male,China,,22.01.2020,26.01.2020,,,0,1,0,0,0,0,0,dry cough
+30,female,France,,23.01.2020,24.01.2020,12.02.2020,Discharged,1,1,1,0,0,0,0,"chills, cough, fatigue, fever"
+31,male,France,,19.01.2020,24.01.2020,12.02.2020,Discharged,1,1,0,0,0,0,0,"chills, conjunctivitis, cough, fever"
+25,female,Canada,,,23.02.2020,,,0,1,0,0,0,0,0,cough
+65,female,Canada,,,26.02.2020,,,1,1,1,1,0,0,0,"cough, sore throat, body aches, fever"
+35,female,Canada,,,29.02.2020,,,0,1,0,0,1,1,0,"dry cough, runny nose, shortness of breath, headache"
+55,female,Canada,,,29.02.2020,,,1,1,1,0,0,0,0,"cough, body aches, chills"
+65,male,Canada,,,29.02.2020,,,0,1,0,0,0,0,0,cough
+37,female,Brazil,,22.02.2020,05.03.2020,,,1,0,1,0,1,0,0,"fever, runny nose, body pain, diarrhea"
+52,female,,"diabetes, hypertension",,11.03.2020,11.03.2020,death,0,0,0,0,0,0,0,"severe, kidney failure and hypertension"
+59,female,Philippines,,,07.03.2020,,,0,1,0,0,0,0,0,cough
+42,female,Brazil,,05.03.2020,07.03.2020,,,1,1,0,0,1,0,0,"fever, cough, nasal congestion"
+49,male,Romania,,,07.03.2020,,,1,0,0,0,0,0,0,fever
+59,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+38,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+37,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+49,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+43,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+,,Ecuador,,,08.03.2020,,,0,0,0,0,0,0,0,mild symptoms
+39,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+41,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+67,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+52,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+31,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+34,female,China,,23.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+24,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+47,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+16,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+32,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+32,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+25,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+52,female,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+51,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+43,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+65,,United States,,,08.03.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+55,,United States,,,09.03.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+55,male,Australia,,07.03.2020,10.03.2020,,,0,1,1,0,0,0,0,lethargy; dry cough
+,,Mongolia,,,10.03.2020,,,1,0,0,0,0,0,0,fever
+73,female,Romania,,,09.03.2020,,,1,0,0,0,0,0,1,"fever, nausea, digestive discomfort"
+60,male,Romania,,,09.03.2020,,,0,0,0,0,0,0,0,aggressive pulmonary symptomatology
+47,male,China,,,03.02.2020,,stable,0,0,0,0,0,0,0,lesions on chest radiographs
+65,male,Japan,,14.01.2020,28.01.2020,,,1,1,1,0,0,0,0,"chills, cough, joint pain"
+45,female,Japan,,26.01.2020,28.01.2020,,,1,1,0,0,0,0,0,"cough, fever, pneumonia"
+76,male,China,,23.01.2020,07.03.2020,,,0,0,0,0,0,0,0,diarrhea
+41,male,China,,06.03.2020,08.03.2020,,,0,0,1,1,1,0,0,"Sore throat, headache, runny nose and tiredness"
+44,male,China,,07.03.2020,09.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+85,male,Japan,,03.02.2020,22.02.2020,27.02.2020,dead,0,0,0,0,0,1,0,difficulty breathing
+28,male,South Korea,,20.02.2020,25.02.2020,,,1,0,0,0,0,0,0,fever; headache; phlegm
+55,female,South Korea,,22.02.2020,08.03.2020,,,1,0,1,0,0,0,0,fever; muscle aches; chills
+45,female,South Korea,,01.03.2020,08.03.2020,,,0,1,0,0,0,0,0,dry cough
+45,female,South Korea,,22.02.2020,08.03.2020,,,0,0,0,1,0,0,0,sore throat; headache
+55,male,South Korea,,06.03.2020,10.03.2020,,,1,0,0,0,0,0,0,chills; abdominal pain
+16,female,South Korea,,05.03.2020,10.03.2020,,,1,0,0,1,0,0,0,"sore throat, fever"
+45,female,South Korea,,09.03.2020,10.03.2020,,,1,1,0,1,0,0,0,fever; cough; sore throat
+55,male,South Korea,,07.03.2020,10.03.2020,,,0,1,1,1,0,0,0,cough; sore throat; body aches
+2,,Canada,,,12.03.2020,,,0,0,0,0,0,0,0,mild
+36,male,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+41,female,China,,24.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+25,male,China,,21.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+46,female,China,,18.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+50,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+36,female,China,,20.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+36,male,China,,20.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+,,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+,,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+32,female,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+64,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+70,male,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+65,,United States,,,14.03.2020,,,1,1,0,0,0,1,0,"fever, cough, shortness of breath"
+25,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+27,male,China,,05.02.2020,08.02.2020,,stable,1,1,0,0,0,0,0,"cough, fever, sputum"
+35,female,,,13.02.2020,29.02.2020,,,0,0,0,1,0,0,0,sore throat
+65,male,,,25.02.2020,29.02.2020,,,1,1,0,0,0,0,0,"fever, dcough"
+75,male,,,28.02.2020,29.02.2020,,,1,0,0,1,0,0,0,"fever, sore throat"
+95,female,Japan,,20.02.2020,29.02.2020,,,1,1,0,0,1,0,0,"cough, nasal discharge, fever (37.2 ° C)"
+65,female,Japan,,21.02.2020,29.02.2020,,,0,1,1,0,0,0,0,"cough, general malaise, joint muscle pain"
+35,female,Japan,,19.02.2020,29.02.2020,,,1,0,0,0,1,0,0,"fever, headache, and malaise, influenza"
+75,female,Japan,,23.02.2020,29.02.2020,,,1,1,0,0,0,0,1,"Fever, cough, vomiting."
+65,male,,kidney dz; on dialysis,19.02.2020,01.03.2020,,,1,1,0,0,0,0,0,"Cough, fever (38.0 ° C)"
+75,female,Japan,,25.02.2020,27.02.2020,,,1,0,0,0,0,1,0,fever 37.8 ° C Dyspnea with pneumonia
+55,female,Japan,,14.02.2020,28.02.2020,,,0,0,0,0,0,0,0,headache
+25,male,,,22.02.2020,01.03.2020,,,1,1,0,0,0,1,1,"fever 37.5 ℃, diarrhea, nausea, dsypnea, cough, inappetance"
+25,female,Japan,,24.02.2020,01.03.2020,,,1,1,0,0,0,0,0,"fever (38.0 ° C), cough, malaise"
+45,male,Japan,,20.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.6 ℃)
+55,female,Japan,,12.02.2020,01.03.2020,,,0,1,0,0,0,0,0,cough
+75,male,Japan,,26.02.2020,01.03.2020,,,1,0,0,0,0,1,0,"fever, difficuty breathing"
+55,male,,,19.02.2020,01.03.2020,,,1,0,1,0,0,0,0,"malaise, fever, joint pain"
+55,female,,,19.02.2020,01.03.2020,,,1,0,1,0,0,0,0,"malaise, fever, joint pain, phlegm"
+65,female,Japan,,25.02.2020,01.03.2020,,,0,1,0,0,0,0,0,"cough, malaise"
+85,female,Japan,,24.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.9℃)
+55,female,Japan,,26.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.2℃)
+65,female,Japan,,27.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever
+45,male,,,23.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever 38
+35,female,,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,"38.7 degrees fever, headache, malaise"
+45,male,,,27.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+45,female,,,27.02.2020,03.03.2020,,,1,0,0,0,0,0,0,Fever (37.5 ° C)
+35,female,Japan,,29.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, headache, cough"
+65,female,Japan,,27.02.2020,03.03.2020,,,0,0,0,0,0,1,0,breathing difficulty
+65,female,,,22.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,female,,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever 38-39 C
+45,male,,,24.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever 37-39 C
+55,female,,,21.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever (37.6 - 38.3 degrees)
+55,female,Japan,,23.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,male,Japan,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+45,female,Japan,,26.02.2020,03.03.2020,,,0,0,1,0,0,0,0,backache
+75,female,,,24.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+85,male,,,28.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+25,female,,,28.02.2020,03.03.2020,,,1,1,0,1,0,0,0,"fever (38.5 degrees), cough, sore throat"
+75,male,,,26.02.2020,03.03.2020,,,1,1,0,0,1,0,0,"Fever, cough, runny nose"
+45,female,,,03.03.2020,04.03.2020,,,0,1,0,0,0,0,0,"mild cough, phlegm"
+65,male,,,25.02.2020,04.03.2020,,,1,0,0,0,1,0,0,"sneezing, runny nose and slight fever"
+65,female,,,25.02.2020,04.03.2020,,,1,0,0,0,1,0,0,"sneezing, runny nose and slight fever"
+ 5,male,,,24.02.2020,04.03.2020,,,0,0,0,0,1,0,0,runny nose
+35,female,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,0,"fever  (37.0-5 ℃), malaise"
+75,male,Japan,,01.03.2020,04.03.2020,,,1,0,0,0,0,0,0,fever  (37.2 ℃)
+55,male,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,1,"chills, fever (38.5 ℃), mausea, diarrhea"
+65,male,Japan,,22.02.2020,04.03.2020,,,0,0,0,1,0,0,0,sore throat
+65,male,Japan,,28.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+85,female,Japan,,02.03.2020,04.03.2020,,,0,0,1,0,0,0,0,fatigue
+35,female,Japan,,25.02.2020,04.03.2020,,,0,0,1,0,0,0,0,fatigue
+55,male,Japan,,25.02.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+45,female,Japan,,28.02.2020,04.03.2020,,,1,0,1,0,0,0,0,"fever, joint pain"
+85,female,Japan,,16.02.2020,04.03.2020,,,0,1,0,1,1,0,0,"runny nose, sore throat, mile cough"
+65,female,Japan,,01.03.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+75,female,Japan,,03.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+85,male,Japan,,03.03.2020,04.03.2020,,,1,0,0,0,0,0,0,"fever, phlegm"
+85,male,Japan,,01.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+85,male,Japan,,03.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,female,,,18.02.2020,04.03.2020,,,1,0,0,0,0,0,0,Fever (37 ℃)
+55,male,,,28.02.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever (38 ° C), cough"
+35,female,Japan,,23.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+35,male,Japan,,20.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,04.03.2020,04.03.2020,,,0,0,0,0,0,0,0,sneezing
+55,male,Japan,,23.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+35,female,Japan,,28.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,17.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+35,male,,,28.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"fever (38), cough"
+55,female,Japan,,22.02.2020,05.03.2020,,,0,0,1,1,0,0,0,"minor fatigue, sore throat"
+45,female,Japan,,23.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever 37.5
+65,male,Japan,,22.02.2020,05.03.2020,,,0,1,0,0,0,0,0,"Cough, headache, general malaise"
+55,male,,,29.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,28.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,23.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+ 5,female,Japan,,25.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+ 5,male,Japan,,25.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+35,female,Japan,,27.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+25,female,Japan,,28.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+75,female,Japan,,28.02.2020,05.03.2020,,,0,0,1,0,0,0,0,fatigue
+95,male,Japan,,02.03.2020,05.03.2020,,,1,1,0,0,0,0,0,"Fever, cough, malaise"
+75,male,Japan,,10.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"Fever, cough"
+85,male,Japan,,01.03.2020,05.03.2020,,,1,1,0,0,0,1,0,"Fever, cough Difficulty breathing"
+25,female,Japan,,25.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever 37.2
+35,male,,,01.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever (38.0)
+55,male,,,28.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"fever (37.4-8), cough"
+45,female,Japan,,26.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,22.02.2020,05.03.2020,,,1,0,0,0,0,0,0,"fever, pneumonia, malaise"
+65,female,Japan,,04.03.2020,05.03.2020,,,1,1,1,0,0,0,0,"fever, cough, general pain"
+45,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+85,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+85,male,Japan,,03.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+35,female,,,25.02.2020,05.03.2020,,,1,0,0,1,0,0,0,"Fever (37.4 degrees), sore throat"
+85,male,Japan,,28.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"Fever, cough"
+25,female,Japan,,01.03.2020,06.03.2020,,,0,1,0,1,0,0,0,"Cough, headache, general malaise, sore throat"
+35,male,Japan,,26.02.2020,06.03.2020,,,1,0,0,1,0,0,0,"Fever, sore throat"
+,female,Japan,,28.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever (37.8 ℃)
+65,male,Japan,,28.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever (38 ℃)
+35,male,Japan,,04.03.2020,06.03.2020,,,0,0,0,0,0,0,0,"phlegm, malaise"
+75,male,Japan,,23.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+35,female,Japan,,20.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+45,male,Japan,,25.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+95,male,Japan,,26.02.2020,06.03.2020,,,1,1,0,0,0,1,0,"fever, cough, shortness of breath"
+55,female,Japan,,23.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,male,Japan,,24.02.2020,06.03.2020,,,1,1,1,0,0,0,0,"fever 38.0, cough, fatigue"
+55,male,Japan,,24.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever 40.0
+65,male,,,01.03.2020,06.03.2020,,,1,0,0,0,0,0,0,"fever (39), inapatence"
+85,male,Japan,,04.03.2020,06.03.2020,,,0,1,0,0,0,1,0,"malaise, dyspnea, cough"
+55,female,Japan,,23.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever 38
+67,female,China,,31.01.2020,13.02.2020,,stable,1,1,0,0,0,0,0,"chills, cough, fever"
+37,male,China,,08.02.2020,13.02.2020,,stable,1,0,0,0,0,0,0,fever
+39,male,China,,21.01.2020,22.01.2020,,died,1,1,0,0,0,0,0,"cough, fever"
+50,male,,,25.01.2020,28.01.2020,,,0,0,1,0,1,0,0,"myalgia, rhinorrhea"
+44,male,Philippines,"thought to have had other pre-existing conditions",,01.02.2020,01.02.2020,died,0,1,0,1,0,0,0,"cough, sore throat"
+48,male,France,,23.01.2020,24.01.2020,,,0,0,0,0,1,0,0,flu-like symptoms
+39,male,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+39,male,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+33,female,Saint Vincent and the Grenadines,,,11.03.2020,,,1,1,0,0,0,0,0,"mild, cough and fever"
+80,male,Reunion,,,11.03.2020,,,0,0,0,0,0,0,0,mild
+71,male,,,,14.03.2020,,,1,1,0,0,0,1,0,"cough, fever, difficulty breathing"
+,female,United States,,,15.03.2020,,,0,0,0,0,0,0,0,mild
+55,male,Japan,,31.01.2020,14.02.2020,,treated in an intensive care unit (14.02.2020),1,1,0,0,0,0,0,"cough, fever, malaise"
+NA,NA,China,,,24.01.2020,,,0,0,0,0,0,0,0,pneumonia
+42,female,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+59,female,China,,19.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+NA,NA,China,,,23.01.2020,,,0,0,0,0,0,0,0,pneumonia
+38,female,China,,22.01.2020,23.01.2020,,,0,1,0,0,0,0,0,cough
+45,male,China,,21.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+33,female,China,,,22.01.2020,,,1,0,0,0,0,0,0,fever
+45,male,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+45,male,China,,19.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+42,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+33,female,China,,,22.01.2020,,,1,0,0,0,0,0,0,fever
+33,male,South Korea,asthma,26.01.2020,30.01.2020,,,0,1,0,0,0,0,0,cough
+72,male,China,,25.01.2020,28.01.2020,,,1,0,0,0,0,0,0,fever
+73,female,China,,25.01.2020,28.01.2020,,,1,0,0,0,0,0,0,fever
+,,Russia,,,31.01.2020,,,1,0,0,0,0,0,0,"acute respiratory viral infection, fever"
+,,Russia,,,31.01.2020,,,1,0,0,0,0,0,0,"acute respiratory viral infection, fever"
+43,male,China,,18.01.2020,23.01.2020,,,1,0,0,0,0,0,0,"discomfort, fever"
+40,male,China,,10.01.2020,22.01.2020,,,0,1,1,0,0,0,0,"cough, dizziness"
+33,male,China,,,31.01.2020,,,1,0,0,0,0,0,0,fever
+66,male,China,,04.01.2020,19.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever, weakness"
+65,female,China,,03.01.2020,21.01.2020,,,1,1,1,0,0,0,0,"cough, fever, weakness"
+36,male,China,,01.01.2020,21.01.2020,,,1,1,0,0,1,0,0,"cough, diarrhea, fever, rhinorrhoea, sneezing"
+63,female,China,,08.01.2020,21.01.2020,,,1,1,1,0,0,1,0,"anhelation, cough, fever, pleural effusion, weakness"
+37,female,China,,02.01.2020,21.01.2020,,,1,0,0,1,1,0,0,"diarrhea, fever, nasal congestion, pleuritic chest pain, sore throat"
+66,female,China,,13.01.2020,21.01.2020,,,0,1,0,0,0,0,0,cough
+73,female,China,,28.01.2020,02.02.2020,09.02.2020,death,1,0,0,0,0,0,0,fever
+45,male,Canada,,,19.03.2020,,,0,0,0,0,0,0,0,mild
+63,male,China,,14.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+62,female,China,,09.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+29,male,China,,23.01.2020,24.01.2020,28.01.2020,discharge,0,0,0,0,0,0,0,discomfort
+49,male,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+61,male,Brazil,,24.02.2020,26.02.2020,,discharged,1,1,0,0,1,0,0,"fever, cough, running nose"
+32,male,Brazil,,27.02.2020,28.02.2020,,discharged,1,1,1,1,0,0,0,"fever, cough, sore throat, mialgia, headache"
+37,female,Brazil,,,05.03.2020,,,0,0,0,0,0,0,0,Contact of hCoV-19/Brazil/SPBR-01/2020
+69,female,Brazil,,,05.03.2020,,,0,0,0,0,0,0,0,Contact of hCoV-19/Brazil/SPBR-01/2020
+27,female,Brazil,,,05.03.2020,,,1,1,0,0,1,0,0,"fever, cough, nasal congestion, conjuntivitis"
+42,female,Brazil,,05.03.2020,07.03.2020,,,1,1,0,0,1,0,0,"fever, cough, nasal congestion"
+47,female,,,05.03.2020,08.03.2020,,,0,0,0,0,1,0,0,"Rhinorrhea, pain and unwellness"
+42,male,,,,08.03.2020,,,1,1,0,0,1,0,0,"Rhinorrhea, cough and fever"
+27,male,,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+42,male,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+70,male,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+56,female,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+61,female,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+60,male,,,29.02.2020,10.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+66,female,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever, respiratory problems"
+72,male,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever, respiratory problems"
+,,Brazil,,,12.03.2020,,,1,0,1,0,0,0,0,"myalgia, headache, fever"
+54,female,,,07.03.2020,11.03.2020,,,1,1,1,0,0,0,0,"fever, cough, body ache, mialgia"
+19,female,,,29.02.2020,12.03.2020,,,1,1,1,1,1,0,0,"fever, cough, coriza, sore throath, headache, general weakness"
+33,female,,,09.03.2020,12.03.2020,,,1,0,0,0,0,0,0,"fever, respiratory problems (lungs)"
+38,female,,,29.02.2020,12.03.2020,,,1,1,0,1,0,0,0,"fever, cough and sore throath"
+28,female,,,,13.03.2020,,,0,0,0,0,0,0,0,oligosymptomatic
+46,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+57,male,,,08.03.2020,13.03.2020,,,1,0,1,1,0,0,0,"fever, body ache, sore throat, headache"
+44,male,,,12.03.2020,17.03.2020,,,1,0,1,0,0,0,0,"fever, myalgia, headache"
+69,male,,,,13.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+,male,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+34,male,China,,19.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+69,male,,"diabetes, hypertension",,18.03.2020,17.03.2020,,1,1,1,0,0,0,0,"fever, cough, myalgia"
+41,male,China,,20.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+72,female,China,,19.01.2020,24.01.2020,,,1,0,1,0,0,0,0,"fever, weak"
+20,female,China,,22.01.2020,24.01.2020,,,1,1,1,0,0,0,0,"cough, fever, muscular soreness"
+54,male,China,,22.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+33,female,China,,19.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+49,female,China,,21.01.2020,24.01.2020,,,0,1,1,0,0,0,0,"chest distress, cough, expectoration, muscular soreness"
+23,male,Switzerland,,,28.02.2020,,,0,0,0,0,0,0,0,mild
+48,female,Switzerland,,,29.02.2020,,,0,0,0,0,0,0,0,mild
+55,male,South Korea,,10.01.2020,24.01.2020,05.02.2020,discharge,1,0,0,0,0,0,0,fever
+21,female,,,25.02.2020,28.02.2020,,,0,1,0,1,0,0,0,"dry cough, sore throat"
+,male,,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+22,male,,,25.02.2020,03.03.2020,,,0,1,0,0,0,0,0,cough
+35,male,,,,01.03.2020,,,0,0,0,0,0,0,0,mild
+,male,,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,04.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,04.03.2020,,,0,0,0,0,0,0,0,severe
+,female,,,,05.03.2020,,,0,0,0,0,0,0,0,mild
+,female,,,,04.03.2020,,,0,0,0,0,1,0,0,"mild, runny nose"
+47,female,,,,05.03.2020,,,0,0,0,0,0,0,0,mild
+33,male,China,,19.01.2020,24.01.2020,,,0,1,0,0,0,0,0,"cough, headache"
+2,female,China,,22.01.2020,24.01.2020,,,1,0,0,0,0,0,0,"fever, sneeze"
+62,male,China,,15.01.2020,24.01.2020,,,0,1,1,0,0,0,0,"cough, muscular stiffness, weak"
+,male,,,,03.03.2020,,,0,0,0,0,0,0,0,mild
+,female,,,,05.03.2020,,,0,0,0,0,0,0,0,mild
+,male,,,,05.03.2020,,,0,0,0,0,0,0,0,mild
+39,male,China,,19.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+,,Switzerland,,,14.03.2020 - 16.03.2020,,,0,0,0,0,0,0,0,mild
+61,male,China,,21.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+20,male,China,,18.01.2020,22.01.2020,,,0,0,0,0,0,0,0,discomfort
+51,male,China,,14.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+28,female,China,,28.01.2020,31.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+37,male,China,,20.01.2020,31.01.2020,,,1,0,0,0,0,0,0,"fever, pharyngeal discomfort"
+50,female,China,,14.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+51,female,China,,24.01.2020,31.01.2020,,,1,0,0,0,0,0,0,"chills, headache, fever"
+45,female,China,,25.01.2020,31.01.2020,,,1,0,0,1,0,0,0,"fever, sore throat, sputum"
+27,female,China,,28.01.2020,31.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+32,male,China,,24.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+35,male,China,,30.01.2020,31.01.2020,,,0,0,0,0,0,0,0,physical discomfort
+72,male,China,,19.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+49,male,China,,22.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, expectoration, fever"
+69,male,China,,,23.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever, sputum"
+66,male,China,,29.12.2019,21.01.2020,,,1,0,0,0,0,1,0,"chest tightness, dyspnea, fever"
+31,male,China,,19.01.2020,01.02.2020,,,0,0,0,0,0,0,0,discomfort
+66,female,China,,24.01.2020,01.02.2020,,,0,0,1,0,0,0,0,weakness
+32,male,China,,24.01.2020,01.02.2020,,,1,0,0,0,0,0,0,fever
+60,male,China,,28.01.2020,01.02.2020,,,1,1,0,0,0,0,0,fever; cough
+56,male,China,,18.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+62,female,China,,,25.01.2020,,,1,0,0,0,0,0,0,fever
+57,female,China,,,21.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+40,male,China,,29.01.2020,01.02.2020,,,1,0,0,0,0,0,1,"chest tightness, fever, nausea"
+37,male,China,,10.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+56,male,China,,,21.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+27,male,China,,21.01.2020,24.01.2020,,,1,0,1,0,0,0,0,"fever, weak"
+40,female,China,,22.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+28,male,South Korea,,26.01.2020,30.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+62,female,South Korea,,21.01.2020,31.01.2020,,,1,1,1,0,0,0,0,"cough, fever, muscle ache"
+85,female,Japan,,22.01.2020,13.02.2020,13.02.2020,death,0,0,1,0,0,0,0,"anorexia, fatigue"
+25,female,Japan,,20.01.2020,31.01.2020,,,0,1,0,0,1,0,0,"cough, runny nose"
+45,male,Japan,,,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+45,male,Japan,,26.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,male,United States,,28.01.2020,01.02.2020,,,0,0,0,0,1,0,0,runny nose
+47,female,Singapore,,30.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+80,male,China,,19.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+42,female,China,,19.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+33,male,China,,11.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+50,female,China,,16.01.2020,23.01.2020,,,0,0,0,0,0,0,0,pharynx
+42,male,China,,19.01.2020,23.01.2020,,,0,0,1,0,0,0,0,muscular soreness
+52,female,China,,12.01.2020,21.01.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+28,male,China,,21.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+38,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+62,female,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+65,male,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+26,male,China,,26.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+44,male,China,,23.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever, sputum"
+36,male,China,,24.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+38,female,China,,27.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+64,female,China,,23.01.2020,02.02.2020,,,0,1,0,0,0,0,0,"cough, sputum"
+59,male,China,,24.01.2020,02.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat, sputum"
+39,female,China,,30.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+46,female,China,,28.01.2020,02.02.2020,,,1,0,1,0,0,0,0,"chills, fatigue"
+72,female,China,,01.02.2020,02.02.2020,,,0,1,0,0,0,0,0,cough
+47,male,China,,26.01.2020,02.02.2020,,,1,1,1,0,0,0,0,fever; dry cough; fatigue
+56,female,China,,,20.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever, weakness"
+,male,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,"fever, headache"
+28,female,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+31,male,China,,11.01.2020,21.01.2020,,,1,0,0,0,0,0,0,fever
+50,male,China,,18.01.2020,23.01.2020,,,1,1,0,0,0,1,0,"cough, dyspnea, fever"
+48,male,China,,18.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+36,male,China,,18.01.2020,23.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever"
+37,male,China,,,22.01.2020,,,1,0,1,0,0,0,0,"chills, fever, muscle aches, other symptoms"
+19,male,China,,,22.01.2020,,,0,0,1,1,0,0,0,"fatigue, muscle aches, sore throat"
+29,female,China,,24.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+52,male,China,,19.01.2020,23.01.2020,,,1,0,1,0,0,0,0,"fever, sore muscle, weakness"
+51,male,China,,,21.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever"
+53,male,China,,16.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+42,female,China,,31.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+66,female,China,,02.02.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+36,female,China,,27.01.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+37,female,China,,30.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+46,female,China,,31.01.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+43,male,China,,27.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+73,male,Vietnam,prostate hypertrophy,26.01.2020,02.02.2020,21.02.2020,discharge,0,0,0,0,0,0,0,respiratory symptoms
+46,male,China,,04.01.2020,21.01.2020,,,1,0,0,0,0,0,0,fever
+33,female,China,,,02.02.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,,02.02.2020,,,0,0,0,0,0,0,0,chest tightness
+65,male,,"hepatitis B, diabetes",27.01.2020,15.02.2020,15.02.2020,death,0,1,0,0,0,1,0,"cough, shortness of breath"
+25,female,Vietnam,,18.01.2020,31.01.2020,,discharge,1,1,0,0,0,0,0,"cough, fever"
+41,male,Malaysia,,,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+59,male,China,,26.01.2020,04.02.2020,,,1,1,0,0,1,0,0,"cough, fever, runny nose"
+29,female,China,,25.01.2020,04.02.2020,,,1,1,0,0,1,0,0,"cough, fever, runny nose"
+64,female,China,,,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+54,male,Belgium,,,04.02.2020,,,0,0,0,0,0,0,0,no symptoms
+29,male,China,,01.02.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+69,female,China,,26.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+9,male,China,,02.02.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+61,male,China,,25.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+33,male,China,,27.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+25,male,China,,28.01.2020,04.02.2020,,,0,1,0,0,1,0,0,"cough, diarrhoea, runny nose"
+66,female,China,type 2 diabetes for 30+ years; hypertension for 9 years; coronary bypass surgery for 2 years;,02.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever, eventually showed acute left heart failure and acute coronary syndrome"
+51,female,China,,02.02.2020,07.02.2020,,,1,1,1,0,0,0,0,"cough, high fever, myalgia"
+65,male,China,,04.02.2020,07.02.2020,,,1,0,1,0,0,0,0,"fever, myalgia"
+64,female,China,,23.01.2020,04.02.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+42,female,South Korea,,25.01.2020,04.02.2020,20.02.2020,discharge,1,1,0,0,1,0,0,"cough, fever, runny nose"
+69,male,China,,28.01.2020,04.02.2020,,,0,0,1,0,0,0,0,fatigue
+54,female,China,,30.01.2020,04.02.2020,,,1,0,1,1,0,0,0,fever;sore throat; fatigue; diarrhea
+62,male,China,,29.01.2020,04.02.2020,,,1,0,1,0,0,0,0,fever; fatigue
+60,female,China,,02.02.2020,05.02.2020,,,1,0,1,1,0,0,1,fever; sore throat;fatigue;vomiting
+45,female,China,,30.01.2020,05.02.2020,,,0,1,0,0,0,0,0,cough
+28,female,Singapore,,29.01.2020,03.02.2020,22.02.2020,discharge,1,0,0,1,0,0,0,"fever, sore throat"
+52,female,China,,,02.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,China,,03.02.2020,05.02.2020,,,1,0,0,0,0,0,0,"chest tightness, fever"
+48,female,China,,30.01.2020,05.02.2020,,,1,0,1,0,0,0,0,"fever, joint pain, muscle soreness"
+43,female,China,,03.02.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+35,male,China,,29.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+29,male,China,,01.02.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+51,male,China,,02.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,male,China,,24.01.2020,05.02.2020,,,1,0,0,0,0,0,0,"chills, fever"
+28,female,China,,29.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+78,female,China,,22.01.2020,05.02.2020,,,0,0,0,0,1,0,0,"chest pain, nasal congestion"
+38,female,China,,30.01.2020,05.02.2020,,,0,1,1,0,0,0,0,"cough, muscle soreness, sweating"
+36,male,China,,26.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+,,China,,,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+,,United States,,,05.02.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+41,male,Singapore,,28.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+49,female,Vietnam,,03.02.2020,06.02.2020,20.02.2020,discharge,0,1,0,0,0,0,0,cough
+22,female,China,,26.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+16,female,Vietnam,,,06.02.2020,20.02.2020,discharge,1,1,0,0,0,0,0,"cough, fever"
+25,female,China,,22.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+43,male,China,,23.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+22,male,China,,21.01.2020,25.01.2020,,,1,0,0,1,0,0,0,"fever, sore throat"
+51,male,China,,18.01.2020,25.01.2020,,,1,0,1,0,0,0,0,"fever, muscular soreness, rigor"
+38,male,China,,20.01.2020,25.01.2020,,,1,0,1,0,0,1,0,"chills, diarrhea, dyspnea, headache, lack of energy, muscle pain"
+59,male,China,,19.01.2020,25.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+60,male,China,,18.01.2020,25.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+35,male,China,,19.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+25,female,China,,21.01.2020,25.01.2020,,,1,0,0,0,0,0,0,"fever, pharyngalgia"
+,,China,,,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+53,female,China,,01.02.2020,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+60,male,China,,22.01.2020,04.02.2020,,,1,0,1,0,0,1,0,"fever, myalgia, shortness of breath"
+64,female,China,,27.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,female,China,,21.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+75,male,China,,30.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+61,female,China,,25.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,31.01.2020,04.02.2020,,,1,1,0,0,0,0,0,"cough, fever, pneumonia, respiratory distress"
+35,female,Japan,,30.01.2020,04.02.2020,,,1,0,0,0,1,0,0,"fever, runny nose"
+45,male,Japan,,24.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,male,Japan,,24.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,,,28.01.2020,06.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,,,26.01.2020,06.02.2020,,,1,0,0,0,0,0,0,fever
+45,female,,,,06.02.2020,,,1,0,0,1,1,0,0,"chills, fever, runny nose, sore throat, wheezing"
+25,female,,,,05.02.2020,,,0,1,0,0,0,0,0,"cough, respiratory problems"
+29,male,Italy,,,06.02.2020,22.02.2020,discharge,1,0,0,0,0,0,0,"eye irritation, fever"
+55,female,Vietnam,,04.02.2020,09.02.2020,18.02.2020,discharge,1,0,0,0,1,0,0,"fever, headache, runny nose"
+0.25,female,Vietnam,,06.02.2020,11.02.2020,20.02.2020,discharge,0,1,0,0,1,0,0,"cough, runny nose"
+68,male,China,,31.01.2020,07.02.2020,,,0,0,0,0,0,0,1,"nausea, vomiting"
+60,female,Japan,,13.02.2020,15.02.2020,,,1,0,0,0,0,0,0,"fever, headache"
+65,male,Japan,,15.02.2020,16.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,,17.02.2020,,,1,0,0,0,0,0,0,"fever, full body slump"
+65,male,Japan,,17.02.2020,18.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+50,male,Vietnam,,11.02.2020,13.02.2020,26.02.2020,discharge,0,0,1,0,0,0,0,transient fatigue
+64,female,China,,10.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+28,male,China,NA,21.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonia
+41,male,China,NA,14.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonia
+55,male,Japan,,07.02.2020,10.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+49,male,China,,21.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,28.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+26,female,China,,01.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+37,male,China,,24.01.2020,05.02.2020,,,1,0,0,1,0,0,0,"fever, dry throat, sore throat"
+24,male,China,,01.02.2020,05.02.2020,,,1,0,0,0,1,0,0,fever; runny nose
+54,female,China,,21.01.2020,07.02.2020,,,0,0,1,1,0,0,0,dry throat; sore throat; fatigue
+29,female,China,,24.01.2020,07.02.2020,,,0,0,0,0,0,0,0,headache; dry mouth
+38,female,China,,21.01.2020,07.02.2020,,,1,0,0,0,0,0,0,fever; dry mouth; throat discomfort
+29,male,China,,30.01.2020,07.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,China,,29.01.2020,08.02.2020,,,0,0,0,0,0,0,0,pharyngeal discomfort
+27,female,China,,01.02.2020,08.02.2020,,,1,0,0,0,0,0,0,fever
+46,female,China,,05.02.2020,08.02.2020,,,0,1,0,0,0,0,0,cough; throat discomfort
+65,female,China,,16.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, discomfort, fever, other symptoms"
+33,female,China,,29.01.2020,09.02.2020,,,0,0,0,0,0,0,0,Pharyngeal dryness
+23,male,China,,06.02.2020,09.02.2020,,,1,1,0,0,0,0,0,cough; sputum; fever
+27,female,China,,03.02.2020,09.02.2020,,,1,0,0,0,0,0,0,fever
+53,female,China,,04.02.2020,12.02.2020,,,0,1,0,0,0,0,0,dry throat; dry cough
+34,female,China,,10.02.2020,13.02.2020,,,0,1,0,0,0,0,0,"chest pain, cough"
+58,female,China,,,13.02.2020,,,0,1,0,0,0,0,0,"cough, chest tightness, dry mouth"
+57,male,China,,07.02.2020,16.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,female,Japan,,14.01.2020,25.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+60,male,China,,28.01.2020,07.02.2020,,,1,1,1,0,0,0,1,fever; cough; fatigue; nausea
+65,male,China,,13.01.2020,30.01.2020,,,1,1,0,0,0,0,0,fever; cough
+38,female,China,,28.01.2020,30.01.2020,,,1,0,1,0,0,0,0,fever; fatigue
+26,male,China,,30.01.2020,08.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+53,female,Singapore,,21.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+68,,China,,01.31.2020,07.02.2020,,,0,0,0,0,0,0,1,"nausea, vomiting"
+33,male,China,,29.01.2020,07.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+73,female,South Korea,,,09.02.2020,,,1,1,0,1,0,0,0,"cough, fever, sore throat"
+35,female,South Korea,,18.01.2020,20.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+55,female,,,11.01.2020,21.01.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness breath"
+61,female,Thailand,,05.01.2020,12.01.2020,,,1,0,0,1,0,0,0,"chills, fever, headache, sore throat"
+33,female,Thailand,,21.01.2020,24.01.2020,,,1,1,1,0,0,0,0,"coughing, fever, muscle aches"
+35,male,United States,hypertriglyceridemia,16.01.2020,20.01.2020,,,1,1,0,0,0,0,1,"cough, fever, nausea"
+73,female,Thailand,,,25.01.2020,,,1,0,0,0,0,0,0,fever
+54,male,South Korea,,22.01.2020,26.01.2020,,,1,0,0,0,0,0,0,"chills, fever"
+40,male,Japan,,23.01.2020,26.01.2020,,,1,0,1,0,0,0,0,"fever, joint pain, pneumonia"
+51,male,China,,03.02.2020,12.02.2020,,,1,0,0,0,0,0,0,fever
+43,male,China,,29.01.2020,13.02.2020,,,0,1,0,0,0,0,1,"cough, diarrheoa, vomiting"
+61,male,Singapore,,07.02.2020,14.02.2020,26.02.2020,discharge,1,0,0,0,0,0,0,fever
+50,male,China,,,08.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+61,female,China,,,08.02.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+70,male,China,,15.01.2020,,23.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+76,female,China,"hypertension, diabetes",18.01.2020,,24.01.2020,died,1,0,0,0,0,0,0,fever
+72,male,China,chronic bronchitis,11.01.2020,,23.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+79,male,China,"hypertension, diabetes",11.01.2020,,24.01.2020,died,1,1,0,0,0,1,0,"cough, fever, gasp"
+55,male,China,,08.01.2020,,24.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+87,male,China,diabetes,12.01.2020,,23.01.2020,died,1,0,0,0,0,0,0,"diarrhea, fever"
+66,female,China,hypertension,09.01.2020,,21.01.2020,died,1,0,0,0,0,0,0,"chest distress, fever"
+58,male,China,hypertension,03.01.2020,,24.01.2020,died,1,1,0,0,0,1,0,"chest distress, cough, fever, gasp"
+66,male,China,,11.01.2020,,21.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+78,male,China,coronary heart disease,13.01.2020,,24.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+65,male,China,"diabetes, coronary heart disease",12.01.2020,,23.01.2020,died,1,1,0,0,0,0,0,"cough, fever, sensation of chill"
+67,male,China,chronic bronchitis,10.01.2020,,24.01.2020,died,1,0,1,0,0,0,0,"dizziness, fever"
+58,male,China,,22.12.2019,,23.01.2020,died,1,1,0,0,0,0,0,"cough, expectoration, fever"
+67,female,China,"hypertension, diabetes",05.01.2020,,23.01.2020,died,1,0,0,0,0,0,0,fever
+82,female,China,hypertension,10.01.2020,,23.01.2020,died,1,0,1,0,0,1,0,"chest distress, chest pain, fever, weak, dyspnea"
+69,female,China,,,20.01.2020,22.01.2020,died,1,1,1,0,0,0,0,"cough, fever, muscular soreness"
+36,male,China,,06.01.2020,,23.01.2020,died,1,0,1,0,0,0,0,"fatigue, fever"
+73,male,China,,29.12.2019,,22.01.2020,died,1,1,0,0,0,1,0,"cough, fever, dyspnea"
+70,female,China,,18.01.2020,,23.01.2020,died,1,0,0,0,0,0,0,fever
+81,male,China,"hypertension, coronary heart disease, diabetes, Tuberculosis",10.01.2020,,21.01.2020,died,1,0,0,0,0,0,0,fever
+49,female,China,,23.12.2019,,16.01.2020,discharged,1,1,0,0,0,0,0,"chest discomfort, cough, fever"
+65,female,China,,,23.01.2020,23.01.2020,died,0,0,0,0,0,0,0,primary myelofibrosis
+52,female,China,,10.12.2019,,,died,0,0,0,0,0,1,0,"dyspnea, respiratory stress"
+66,male,China,"hypertension, chronic obstructive pulmonary disease, diabetes, chronic renal insufficiency",10.01.2020,,20.01.2020,died,1,1,1,0,0,0,0,"cough, fatigue, fever, headache"
+48,female,China,"diabetes, cerebral infarction",10.12.2019,,20.01.2020,died,1,1,1,0,0,0,0,"cough, fatigure, fever, little sputum, muscular soreness"
+89,male,China,"hypertension, diabetes, coronary heart disease, frequent ventricular premature beat (FVPB), coronary artery stenting",13.01.2020,18.01.2020,19.01.2020,died,0,0,0,0,0,1,0,dyspnea
+69,male,China,,30.12.2019,,15.01.2020,died,1,1,0,0,0,0,0,"cough, fever"
+89,male,China,"hypertension, cerebral infarction, encephalomalacia",05.01.2020,,18.01.2020,died,0,0,1,0,0,0,0,"obnubilation, somnolence"
+75,male,China,"hypertension, hip replacement",06.01.2020,,20.01.2020,died,1,1,0,0,0,0,1,"cough, expectoration, emesis, fever"
+82,male,China,,09.01.2020,,21.01.2020,died,1,0,1,0,0,0,0,"cold chills, muscular soreness"
+66,male,China,,22.12.2019,,21.01.2020,died,0,1,0,0,0,0,0,dry cough
+81,male,China,,15.01.2020,,22.01.2020,died,1,0,0,0,0,0,0,fever
+82,female,China,"Parkinson's disease for five years, taking medicine of Madopar",03.01.2020,,22.01.2020,died,1,1,1,0,0,0,0,"chest distress, cough, fatigue, fever"
+65,male,China,,05.01.2020,,21.01.2020,died,0,0,1,0,0,1,0,"fatigue, shortness of breath"
+80,female,China,"hypertension for more than 20 years, diabetes for more than 20 years, Parkinson's disease",11.01.2020,20.01.2020,22.01.2020,died,1,1,0,0,0,1,0,"cough, fever, grasp, dyspnea"
+86,male,China,"hypertension, diabetes, colon cancer surgery four years ago",02.01.2020,,21.01.2020,died,0,0,1,0,0,0,0,fatigue
+70,female,China,,,,21.01.2020,died,1,0,0,0,0,0,0,fever
+84,male,China,"chronic bronchitis, stenocardia, hypertension, coronary stenting, hemorrhage of digestive tract",06.01.2020,,22.01.2020,died,1,1,0,0,0,1,0,"cough, fever, grasp"
+38,male,South Africa,,03.03.2020,05.03.2020,,,1,1,0,1,0,0,0,fever:headache:malaise:sore throat:cough
+80,male,Reunion,,,11.03.2020,,,0,0,0,0,0,0,0,mild
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,26.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,27.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,28.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,29.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,30.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,31.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,01.04.2020,,,0,0,0,0,0,0,0,Mild:moderate
+70,male,,Diabetes,17.03.2020,16.03.2020,20.03.2020,Deceased,0,0,0,0,0,0,0,Severe
+35,male,,,11.03.2020,13.03.2020,,,1,1,0,0,0,0,0,cough:fever
+24,female,,,11.03.2020,13.03.2020,,,1,1,0,0,0,0,0,cough:fever
+61,male,,,15.03.2020,20.03.2020,,,1,1,0,0,0,0,0,cough:fever
+30,female,Nigeria,,,17.03.2020,,,1,1,0,0,0,0,0,fever:cold:cough
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,21.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,22.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,22.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+67,male,,Diabetes:Myeloma,,22.03.2020,,,0,0,0,0,0,0,0,Severe
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,23.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+45,female,Lebanon,,,21.02.2020,,,0,0,0,0,0,0,0,yes
+,,,,,24.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,24.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,24.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,24.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+,,,,,25.03.2020,,,0,0,0,0,0,0,0,Mild:moderate
+19,male,,,19.03.2020,13.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+44,male,Namibia,,,20.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+21,male,Namibia,,,24.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,Nigeria,,,27.02.2020,,,0,0,0,0,0,0,0,no serious symptoms
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,01.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,02.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,03.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,04.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,04.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,04.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,04.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,04.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,05.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,06.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+19,male,,,19.03.2020,13.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+44,male,Namibia,,,20.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+21,male,Namibia,,,24.03.2020,,,0,0,0,0,0,0,0,COVID-19 related symptoms
+41,male,Benin,,,22.03.2020,,,0,1,1,0,1,0,0,cough:rhinorrhea:sneezing:muscle pain
+56,male,Benin,,,22.03.2020,,,1,1,0,0,0,0,0,cough:cold:fever:aches:headache
+18,male,Benin,,,22.03.2020,,,0,1,0,0,0,0,0,cough:tired:chest pain
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,07.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,08.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,09.04.2020,,Deceased,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,10.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,11.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,12.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,12.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,12.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,12.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,12.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,13.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,14.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+,,,,,15.04.2020,,Receiving Treatment,0,0,0,0,0,0,0,Mild to moderate
+43,male,China,,22.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+48,female,China,,19.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+54,female,China,,18.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+47,male,China,,22.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+55,male,China,,18.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+47,female,China,,22.01.2020,26.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+46,female,China,,19.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+60,male,Japan,,03.02.2020,18.02.2020,,,1,0,0,0,0,0,0,"fever, severe pneumonia"
+45,male,Japan,,08.02.2020,10.02.2020,,,1,0,0,0,0,0,0,fever
+,,China,,,23.01.2020,,,0,0,0,0,0,0,0,pneumonia
+25,male,Japan,,07.02.2020,08.02.2020,,,1,1,0,1,0,0,0,"cough, fever, sore throat"
+45,male,Japan,,02.02.2020,15.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+85,male,Japan,,09.02.2020,18.02.2020,,,1,0,0,0,0,1,0,"dyspnea, fever"
+55,male,Japan,,05.02.2020,18.02.2020,,,1,1,0,0,0,1,0,"cough, difficulty breathing, fever"
+25,male,Japan,,07.02.2020,18.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,Vietnam,,04.02.2020,09.02.2020,18.02.2020,discharge,1,0,0,0,1,0,0,"fever, headache, runny nose"
+0.25,female,Vietnam,,06.02.2020,11.02.2020,20.02.2020,discharge,0,1,0,0,1,0,0,"cough, runny nose"
+50,male,Vietnam,,11.02.2020,13.02.2020,26.02.2020,discharge,0,0,1,0,0,0,0,transient fatigue
+55,male,Japan,,04.04.2020,15.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+55,female,Japan,,07.02.2020,15.02.2020,,,0,1,0,0,0,0,0,"37.1 ° C, mild coughing"
+65,male,Japan,,,15.02.2020,,,0,1,0,0,0,0,0,cough
+69,female,China,,28.01.2020,10.02.2020,,,0,1,0,0,0,0,0,cough
+16,female,China,,,10.02.2020,,,0,0,0,0,0,0,0,"abdominal pain, pulmonary inflammation"
+43,male,China,,21.01.2020,10.02.2020,,,0,0,0,1,0,0,0,Sore throat
+34,female,China,,,13.02.2020,,,0,1,0,0,0,0,0,cough
+47,female,China,,23.01.2020,26.01.2020,,,1,1,1,0,0,0,0,fever; fatigue; dry cough
+55,male,Japan,,25.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+31,male,Malaysia,,03.02.2020,09.02.2020,,,1,1,0,0,0,0,0,"feeling ill, coughing"
+39,female,Malaysia,,12.02.2020,13.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,male,Japan,,02.02.2020,13.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+85,female,Japan,,22.01.2020,13.02.2020,13.02.2020,death,0,0,1,0,0,0,0,"anorexia, fatigue"
+55,male,Japan,,31.01.2020,13.02.2020,,,1,0,0,0,0,0,0,"abdominal pain, diarrhea, fever, general malaise"
+75,male,Japan,,29.01.2020,13.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,31.01.2020,14.02.2020,,treated in an intensive care unit (14.02.2020),1,1,0,0,0,0,0,"cough, fever, malaise"
+61,male,Singapore,,07.02.2020,14.02.2020,26.02.2020,discharge,1,0,0,0,0,0,0,fever
+60,female,Japan,,12.02.2020,14.02.2020,,,0,0,0,0,0,0,0,poor physical condition
+35,female,Thailand,,,15.02.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+65,male,,"hepatitis B, diabetes",27.01.2020,15.02.2020,15.02.2020,death,0,1,0,0,0,1,0,"cough, shortness of breath"
+35,male,,,28.01.2020,17.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+43,male,China,,18.01.2020,23.01.2020,,,1,0,0,0,0,0,0,"discomfort, fever"
+25,female,Japan,,18.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,16.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 38.3
+ 3,male,Japan,,08.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever (39.5 ℃)
+ 5,male,Japan,,15.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.7℃
+ 5,male,Japan,,18.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.7℃
+45,female,Japan,,16.02.2020,21.02.2020,,,1,0,0,0,0,0,0,fever 37.5℃
+85,male,Japan,,27.01.2020,21.02.2020,,,0,0,0,0,0,0,0,anorexia
+40,male,China,,10.01.2020,22.01.2020,,,0,1,1,0,0,0,0,"cough, dizziness"
+65,female,Japan,,12.02.2020,22.02.2020,,,1,1,0,0,0,0,1,"nausea, cough, pneumonia, fever"
+45,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+70,female,China,,23.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+52,female,China,,,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+65,male,Japan,,10.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever 38.2 ℃, cough"
+16,female,Japan,,06.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+75,female,Japan,,06.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever 37 C
+55,female,Japan,,15.02.2020,22.02.2020,,,0,0,0,0,0,0,0,"malaise, headache"
+55,male,Japan,,17.02.2020,22.02.2020,,,1,0,0,0,0,1,0,"fever (37 ℃), breathing difficulty"
+75,male,Japan,,16.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever (37.5 ℃, then 38 ℃), cough, malaise"
+55,female,Japan,,13.02.2020,22.02.2020,,,1,1,0,1,0,0,0,"sore throat, Cough, fever (37 ℃)"
+85,male,Japan,,03.02.2020,22.02.2020,27.02.2020,dead,0,0,0,0,0,1,0,difficulty breathing
+55,male,Japan,,,22.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,16.02.2020,22.02.2020,,,1,0,0,0,0,1,0,"fever, shortness of breath, pneumonia"
+65,male,Japan,,12.02.2020,22.02.2020,,,0,0,0,0,0,1,0,severe dyspnea
+65,male,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+45,female,Japan,,19.02.2020,22.02.2020,,,1,0,0,0,0,0,0,fever
+96,female,China,,13.02.2020,22.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+65,female,Japan,,12.02.2020,22.02.2020,,,0,0,0,0,0,0,1,nausea
+44,male,China,,18.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+10,male,China,,07.02.2020,09.02.2020,,,1,0,0,0,0,0,0,fever
+62,male,China,,25.01.2020,03.02.2020,,,1,0,1,0,0,0,0,fever; fatigue
+52,female,China,,16.01.2020,03.02.2020,,,0,0,1,0,0,0,0,chest tightness; fatigue
+44,female,China,,22.01.2020,28.01.2020,,,1,1,0,0,0,0,0,cough; fever
+55,female,China,,22.01.2020,28.01.2020,,,1,1,0,1,1,0,0,fever; nasal congestion; runny nose; sore throat; cough
+25,male,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 39.3
+75,male,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 38
+35,female,Japan,,18.02.2020,23.02.2020,,,1,0,0,0,0,0,0,fever 38
+20,female,,,28.01.2020,21.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+40,female,,,,21.02.2020,,,0,0,0,0,1,0,0,"no respiratory symptoms, esophageal reflux"
+28,female,China,,18.02.2020,18.02.2020,,,1,0,0,0,0,0,0,fever
+1.75,female,China,,28.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+57,male,China,,07.02.2020,16.02.2020,,,1,1,0,0,0,0,0,cough; sputum; fever
+52,female,China,,25.01.2020,30.01.2020,,,0,1,0,0,0,0,0,dry cough
+41,male,China,,16.01.2020,30.01.2020,,,1,1,1,0,0,0,0,cough; sore body; cold
+,female,,,06.02.2020,24.02.2020,,,0,0,0,1,0,0,0,acute pharyngitis
+55,male,,,31.01.2020,23.02.2020,,,0,0,0,1,0,0,0,sore throat
+21,female,China,,12.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever
+16,male,China,,17.02.2020,27.02.2020,,,0,1,0,0,0,0,0,cough
+80,male,China,,25.02.2020,25.02.2020,,,1,0,0,0,0,0,0,fever
+,female,China,,16.02.2020,24.02.2020,,,1,0,0,0,0,0,0,fever
+33,male,China,,20.02.2020,24.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,female,China,,17.02.2020,24.02.2020,,,0,1,0,0,0,0,0,cough
+60,female,China,,12.02.2020,24.02.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,22.02.2020,26.02.2020,,,1,0,0,0,0,0,0,low fever 37.0 ℃
+55,male,Japan,,22.02.2020,26.02.2020,,,1,0,0,0,0,0,0,low fever (37.4 ℃)
+75,male,Japan,,23.02.2020,26.02.2020,,,1,1,0,0,0,0,0,low fever (37.2 ° C); cough
+66,male,China,,04.01.2020,19.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever, weakness"
+25,male,Japan,,17.02.2020,26.02.2020,,,1,0,0,0,0,0,0,"fever (39.5 ℃), malaise"
+25,female,Japan,,19.02.2020,26.02.2020,,,1,0,0,1,1,0,0,"sore throat; fever, nasal discharge"
+75,male,Japan,,,26.02.2020,,,1,0,0,0,0,0,0,"fever (37.4 ° C), pneumonia"
+75,female,Japan,,16.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever (37.8 ℃), cough"
+75,female,Japan,,17.02.2020,26.02.2020,,,1,0,0,0,0,0,0,"fever (38-39 ° C), malaise"
+45,male,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,male,Japan,,26.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 38.1 ℃ Cough, malaise, anorexia"
+45,female,Japan,,01.02.2020,26.02.2020,,,0,1,0,1,0,0,0,"Discharge, cough, sore throat, chest pain"
+85,male,Japan,,22.02.2020,26.02.2020,,,1,1,0,0,0,1,0,"fever, cough, phlegm, dyspnea"
+58,female,China,,,26.01.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,13.02.2020,26.02.2020,,,1,1,0,0,0,1,0,"fever, cough, phlegm, dyspnea"
+75,male,Japan,,14.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+55,male,Japan,,24.02.2020,26.02.2020,,,1,0,0,1,0,0,0,"fever 37.8 ℃ , sore throat"
+65,male,Japan,,25.02.2020,26.02.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"rever, cough"
+75,male,Japan,,23.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 37.1 ℃ , couh"
+75,female,Japan,,24.02.2020,26.02.2020,,,1,1,0,0,0,0,0,"fever 38.3 ℃ , cough"
+55,male,Japan,,14.02.2020,27.02.2020,,,1,0,0,0,0,0,0,"malaise, fever (37 ℃); headache, toothache, pneumonia"
+55,female,Japan,,23.02.2020,27.02.2020,,,1,0,0,1,0,0,0,"Sore throat, chills"
+39,female,China,,22.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,16.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever 38
+65,female,Japan,,10.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+45,male,Japan,,20.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Fever, cough, headache"
+55,male,Japan,,25.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever 37.2
+55,male,Japan,,25.02.2020,27.02.2020,,,0,1,0,0,0,0,0,"cough, malaise"
+35,male,Japan,,17.02.2020,27.02.2020,,,1,0,0,1,0,0,0,"sore throat, fever (38-39 ℃)"
+75,male,Japan,,16.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fatigue, fever (38 ℃)"
+65,male,Japan,,18.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever (38.3 ℃)
+45,male,Japan,,15.02.2020,27.02.2020,,,1,1,0,1,0,0,1,"vomiting, cough, fever (38.2 ℃), sore throat"
+21,female,China,,25.01.2020,26.01.2020,,,0,0,1,0,0,0,0,"dizziness, sore limbs"
+45,male,Japan,,22.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fever (39 ° C), joint pain"
+ 5,male,Japan,,21.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (37.4 ℃), cough"
+35,male,Japan,,24.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"fever (40.3 ℃), Headache, malaise, joint pain"
+ 5,male,Japan,,21.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (39.9 ℃), cough"
+85,male,Japan,,24.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"fever (39.3 ℃), cough"
+35,male,Japan,,20.02.2020,27.02.2020,,,1,1,1,0,0,0,0,"cough, fever (38.3 ℃), joint pain"
+85,male,Japan,,22.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Cough, fever (38 ℃)"
+65,male,Japan,,22.02.2020,27.02.2020,,,1,0,0,0,0,0,0,"Fever (37.4 ° C), malaise, sore throa"
+ 5,female,Japan,,24.02.2020,27.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+65,female,Japan,,26.02.2020,27.02.2020,,,1,0,0,0,0,0,0,Fever (38 ° C)
+65,male,Japan,,26.02.2020,27.02.2020,,,1,1,0,0,0,0,0,"Fever (38.1 ° C), cough, headache."
+55,female,,,22.01.2020,26.01.2020,,,0,0,0,0,0,0,0,pneumonia
+65,female,China,,03.01.2020,21.01.2020,,,1,1,1,0,0,0,0,"cough, fever, weakness"
+36,male,China,,01.01.2020,21.01.2020,,,1,1,0,0,1,0,0,"cough, diarrhea, fever, rhinorrhoea, sneezing"
+68,female,China,,21.01.2020,26.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+64,male,China,,24.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+60,male,Cambodia,,26.01.2020,27.01.2020,,,1,0,0,0,1,0,0,"fever, runny nose"
+45,female,Japan,,18.02.2020,27.02.2020,,,1,0,1,0,0,0,0,"chills, headache, fatigue"
+25,male,Japan,,23.02.2020,27.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,20.02.2020,27.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+85,female,Japan,,21.02.2020,28.02.2020,,,1,1,0,0,0,0,0,"cough, phlegm, fever 37 degrees"
+ 5,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever 39.0 ℃
+85,male,Japan,,25.02.2020,28.02.2020,,,1,0,1,0,0,0,0,"fever (38.0 ℃), Fatigue, difficulty walking"
+65,female,Japan,,19.02.2020,28.02.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,21.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38.0 ℃)
+65,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,"chills,  fever (38 ℃), malaise"
+65,female,Japan,,19.02.2020,28.02.2020,,,1,1,0,0,0,1,0,"Sputum, cough symptoms, fever (37 ℃), cough, breathing difficulty"
+45,male,Japan,,12.02.2020,28.02.2020,,,1,0,0,0,0,0,0,"fever (37.0 ℃), fever (38.7 ℃)"
+75,male,Japan,,20.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (37.5 ℃ ～ 38.0 ℃)
+65,female,Japan,,20.02.2020,28.02.2020,,,1,1,0,0,0,0,0,fever and cough
+65,male,Japan,,18.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,27.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+45,female,Japan,,19.02.2020,28.02.2020,,,1,0,0,0,0,0,0,fever (38 ° C)
+27,female,,,,26.02.2020,,,0,0,0,1,0,0,0,sore throat
+63,female,China,,08.01.2020,21.01.2020,,,1,1,1,0,0,1,0,"anhelation, cough, fever, pleural effusion, weakness"
+37,female,China,,02.01.2020,21.01.2020,,,1,0,0,1,1,0,0,"diarrhea, fever, nasal congestion, pleuritic chest pain, sore throat"
+38,female,China,,22.01.2020,23.01.2020,,,0,1,0,0,0,0,0,cough
+76,male,Bhutan,,04.03.2020,05.02.2020,,,1,1,0,1,0,1,0,"fever, sore throat, cough, shortness of breath"
+66,female,China,,13.01.2020,21.01.2020,,,0,1,0,0,0,0,0,cough
+44,female,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+45,male,China,,21.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+39,male,China,,23.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonia
+41,female,China,,22.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonia
+27,male,China,,22.01.2020,27.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+0.25,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+52,female,,diabetes,25.01.2020,27.01.2020,,,1,1,1,1,1,0,0,"cough, fever, myalgia, rhinorrhea, sore throat"
+55,male,South Korea,,21.01.2020,27.01.2020,,,1,0,1,0,0,0,0,"aching muscles, fever, pneumonia"
+59,female,Philippines,,,07.03.2020,,,0,1,0,0,0,0,0,cough
+55,male,Australia,,07.03.2020,10.03.2020,,,0,1,1,0,0,0,0,lethargy; dry cough
+,,Mongolia,,,10.03.2020,,,1,0,0,0,0,0,0,fever
+28,male,China,,22.01.2020,26.01.2020,,,0,1,0,0,0,0,0,dry cough
+35,female,,,13.02.2020,29.02.2020,,,0,0,0,1,0,0,0,sore throat
+65,male,,,25.02.2020,29.02.2020,,,1,1,0,0,0,0,0,"fever, dcough"
+75,male,,,28.02.2020,29.02.2020,,,1,0,0,1,0,0,0,"fever, sore throat"
+95,female,Japan,,20.02.2020,29.02.2020,,,1,1,0,0,1,0,0,"cough, nasal discharge, fever (37.2 ° C)"
+65,female,Japan,,21.02.2020,29.02.2020,,,0,1,1,0,0,0,0,"cough, general malaise, joint muscle pain"
+35,female,Japan,,19.02.2020,29.02.2020,,,1,0,0,0,1,0,0,"fever, headache, and malaise, influenza"
+75,female,Japan,,23.02.2020,29.02.2020,,,1,1,0,0,0,0,1,"Fever, cough, vomiting."
+63,male,China,,14.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+65,male,,kidney dz; on dialysis,19.02.2020,01.03.2020,,,1,1,0,0,0,0,0,"Cough, fever (38.0 ° C)"
+75,female,Japan,,25.02.2020,27.02.2020,,,1,0,0,0,0,1,0,fever 37.8 ° C Dyspnea with pneumonia
+55,female,Japan,,14.02.2020,28.02.2020,,,0,0,0,0,0,0,0,headache
+25,male,,,22.02.2020,01.03.2020,,,1,1,0,0,0,1,1,"fever 37.5 ℃, diarrhea, nausea, dsypnea, cough, inappetance"
+25,female,Japan,,24.02.2020,01.03.2020,,,1,1,0,0,0,0,0,"fever (38.0 ° C), cough, malaise"
+62,female,China,,09.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+45,male,Japan,,20.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.6 ℃)
+55,female,Japan,,12.02.2020,01.03.2020,,,0,1,0,0,0,0,0,cough
+75,male,Japan,,26.02.2020,01.03.2020,,,1,0,0,0,0,1,0,"fever, difficuty breathing"
+55,male,,,19.02.2020,01.03.2020,,,1,0,1,0,0,0,0,"malaise, fever, joint pain"
+55,female,,,19.02.2020,01.03.2020,,,1,0,1,0,0,0,0,"malaise, fever, joint pain, phlegm"
+49,male,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,25.02.2020,01.03.2020,,,0,1,0,0,0,0,0,"cough, malaise"
+85,female,Japan,,24.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.9℃)
+55,female,Japan,,26.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever (38.2℃)
+65,female,Japan,,27.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever
+45,male,,,23.02.2020,01.03.2020,,,1,0,0,0,0,0,0,fever 38
+46,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+34,male,China,,19.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,female,,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,"38.7 degrees fever, headache, malaise"
+41,male,China,,20.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+45,male,,,27.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+45,female,,,27.02.2020,03.03.2020,,,1,0,0,0,0,0,0,Fever (37.5 ° C)
+35,female,Japan,,29.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, headache, cough"
+65,female,Japan,,27.02.2020,03.03.2020,,,0,0,0,0,0,1,0,breathing difficulty
+65,female,,,22.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+72,female,China,,19.01.2020,24.01.2020,,,1,0,1,0,0,0,0,"fever, weak"
+55,female,,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever 38-39 C
+45,male,,,24.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever 37-39 C
+55,female,,,21.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever (37.6 - 38.3 degrees)
+55,female,Japan,,23.02.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,male,Japan,,23.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+45,female,Japan,,26.02.2020,03.03.2020,,,0,0,1,0,0,0,0,backache
+20,female,China,,22.01.2020,24.01.2020,,,1,1,1,0,0,0,0,"cough, fever, muscular soreness"
+75,female,,,24.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+85,male,,,28.02.2020,03.03.2020,,,1,0,0,0,0,0,0,fever
+25,female,,,28.02.2020,03.03.2020,,,1,1,0,1,0,0,0,"fever (38.5 degrees), cough, sore throat"
+75,male,,,26.02.2020,03.03.2020,,,1,1,0,0,1,0,0,"Fever, cough, runny nose"
+33,female,China,,,22.01.2020,,,1,0,0,0,0,0,0,fever
+54,male,China,,22.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+45,female,,,03.03.2020,04.03.2020,,,0,1,0,0,0,0,0,"mild cough, phlegm"
+65,male,,,25.02.2020,04.03.2020,,,1,0,0,0,1,0,0,"sneezing, runny nose and slight fever"
+65,female,,,25.02.2020,04.03.2020,,,1,0,0,0,1,0,0,"sneezing, runny nose and slight fever"
+ 5,male,,,24.02.2020,04.03.2020,,,0,0,0,0,1,0,0,runny nose
+35,female,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,0,"fever  (37.0-5 ℃), malaise"
+33,female,China,,19.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,01.03.2020,04.03.2020,,,1,0,0,0,0,0,0,fever  (37.2 ℃)
+55,male,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,1,"chills, fever (38.5 ℃), mausea, diarrhea"
+65,male,Japan,,22.02.2020,04.03.2020,,,0,0,0,1,0,0,0,sore throat
+65,male,Japan,,28.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+85,female,Japan,,02.03.2020,04.03.2020,,,0,0,1,0,0,0,0,fatigue
+49,female,China,,21.01.2020,24.01.2020,,,0,1,1,0,0,0,0,"chest distress, cough, expectoration, muscular soreness"
+35,female,Japan,,25.02.2020,04.03.2020,,,0,0,1,0,0,0,0,fatigue
+55,male,Japan,,25.02.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough, phlegm"
+45,female,Japan,,28.02.2020,04.03.2020,,,1,0,1,0,0,0,0,"fever, joint pain"
+85,female,Japan,,16.02.2020,04.03.2020,,,0,1,0,1,1,0,0,"runny nose, sore throat, mile cough"
+65,female,Japan,,01.03.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+75,female,Japan,,03.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+85,male,Japan,,03.03.2020,04.03.2020,,,1,0,0,0,0,0,0,"fever, phlegm"
+85,male,Japan,,01.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+85,male,Japan,,03.03.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+55,female,Japan,,18.02.2020,04.03.2020,,,1,0,0,0,0,0,0,Fever (37 ℃)
+55,male,Japan,,28.02.2020,04.03.2020,,,1,1,0,0,0,0,0,"fever (38 ° C), cough"
+35,female,Japan,,23.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+35,male,Japan,,20.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+65,female,Japan,,25.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,04.03.2020,04.03.2020,,,0,0,0,0,0,0,0,sneezing
+55,male,Japan,,23.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+35,female,Japan,,28.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+75,male,Japan,,17.02.2020,04.03.2020,,,1,0,0,0,0,0,0,fever
+33,male,China,,19.01.2020,24.01.2020,,,0,1,0,0,0,0,0,"cough, headache"
+35,male,Japan,,28.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"fever (38), cough"
+55,female,Japan,,22.02.2020,05.03.2020,,,0,0,1,1,0,0,0,"minor fatigue, sore throat"
+2,female,China,,22.01.2020,24.01.2020,,,1,0,0,0,0,0,0,"fever, sneeze"
+45,female,Japan,,23.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever 37.5
+65,male,Japan,,22.02.2020,05.03.2020,,,0,1,0,0,0,0,0,"Cough, headache, general malaise"
+29,male,China,,23.01.2020,24.01.2020,28.01.2020,discharge,0,0,0,0,0,0,0,discomfort
+55,male,,,29.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,28.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+55,male,Japan,,23.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+ 5,female,Japan,,25.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+ 5,male,Japan,,25.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+35,female,Japan,,27.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+62,male,China,,15.01.2020,24.01.2020,,,0,1,1,0,0,0,0,"cough, muscular stiffness, weak"
+25,female,Japan,,28.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+75,female,Japan,,28.02.2020,05.03.2020,,,0,0,1,0,0,0,0,fatigue
+95,male,Japan,,02.03.2020,05.03.2020,,,1,1,0,0,0,0,0,"Fever, cough, malaise"
+75,male,Japan,,10.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"Fever, cough"
+85,male,Japan,,01.03.2020,05.03.2020,,,1,1,0,0,0,1,0,"Fever, cough Difficulty breathing"
+,female,China,,08.01.2020,21.01.2020,24.01.2020,discharged,1,0,1,0,0,0,0,"fatigue, fever, headache"
+61,male,China,,21.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+25,female,Japan,,25.02.2020,05.03.2020,,,1,0,0,0,0,0,0,fever 37.2
+35,male,,,01.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever (38.0)
+55,male,,,28.02.2020,05.03.2020,,,1,1,0,0,0,0,0,"fever (37.4-8), cough"
+20,male,China,,18.01.2020,22.01.2020,,,0,0,0,0,0,0,0,discomfort
+45,female,Japan,,26.02.2020,05.03.2020,,,0,1,0,0,0,0,0,cough
+65,male,Japan,,22.02.2020,05.03.2020,,,1,0,0,0,0,0,0,"fever, pneumonia, malaise"
+65,female,Japan,,04.03.2020,05.03.2020,,,1,1,1,0,0,0,0,"fever, cough, general pain"
+45,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+85,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+51,male,China,,14.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+85,male,Japan,,03.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,04.03.2020,05.03.2020,,,1,0,0,0,0,0,0,fever
+35,female,,,25.02.2020,05.03.2020,,,1,0,0,1,0,0,0,"Fever (37.4 degrees), sore throat"
+85,male,Japan,,28.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"Fever, cough"
+25,female,Japan,,01.03.2020,06.03.2020,,,0,1,0,1,0,0,0,"Cough, headache, general malaise, sore throat"
+,,Japan,,16.02.2020,26.02.2020,,,0,1,0,0,0,0,0,cough
+62,male,,hypertension:diabetes,25.02.2020,07.03.2020,12.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:severe pneumonia
+59,female,,diabetes,27.02.2020,07.03.2020,12.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:severe pneumonia
+86,male,,chronic kidney disease:hypertension:diabetes,01.03.2020,08.03.2020,14.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+72,male,,,07.03.2020,09.03.2020,27.03.2020,recovered,0,1,0,0,0,0,0,cough
+56,male,,asthma,29.02.2020,09.03.2020,15.03.2020,died,1,1,0,0,0,0,0,fever:cough:acute respiratory distress syndrome
+50,female,China,,14.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+34,male,,,28.02.2020,09.03.2020,15.03.2020,recovered,1,0,0,0,0,0,0,fever
+46,male,,,25.02.2020,09.03.2020,15.03.2020,recovered,1,1,0,0,0,0,0,fever:cough
+70,male,,hypertension,29.02.2020,09.03.2020,19.03.2020,recovered,1,1,0,1,0,0,0,cough:sore throat:colds
+41,male,,,26.02.2020,09.03.2020,24.03.2020,recovered,1,0,0,0,0,0,0,fever:headache:body malaise
+46,female,,,07.03.2020,09.03.2020,26.03.2020,recovered,0,0,0,0,0,0,0,none
+38,male,,,29.02.2020,09.03.2020,,recovered,0,1,0,0,0,0,0,cough:body malaise
+58,female,,,04.03.2020,09.03.2020,,,1,1,0,0,0,1,0,fever:cough:shortness of breath
+51,female,,hypertension,04.03.2020,09.03.2020,18.03.2020,recovered,1,1,0,0,0,0,0,cough:colds:dysphagia
+35,male,Japan,,26.02.2020,06.03.2020,,,1,0,0,1,0,0,0,"Fever, sore throat"
+30,female,,,03.03.2020,09.03.2020,24.03.2020,recovered,0,1,0,1,0,0,0,cough:sore throat:headache
+31,male,,,,09.03.2020,17.03.2020,recovered,0,0,0,0,0,0,0,none
+34,male,,,,10.03.2020,17.03.2020,recovered,0,0,0,0,0,0,0,none
+82,female,,hypertension:diabetes:valvular heart disease,09.03.2020,10.03.2020,23.03.2020,died,0,0,0,0,0,0,0,septic shock:cardiogenic shock:acute respiratory distress syndrome:acute renal failure
+60,male,,,03.03.2020,10.03.2020,,,1,1,1,0,0,0,0,fever:cough:dizziness
+67,female,,hypertension:diabetes,29.02.2020,11.03.2020,11.03.2020,died,0,0,0,0,0,0,0,severe pneumonia
+88,female,,hypertension,28.02.2020,11.03.2020,12.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure
+54,male,,,24.02.2020,11.03.2020,13.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:severe pneumonia
+79,female,,hypertensive,01.03.2020,11.03.2020,20.03.2020,died,0,0,0,0,0,0,0,multiple organ failure:pneumonia
+,female,Japan,,28.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever (37.8 ℃)
+39,male,,,,14.03.2020,15.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+65,male,,hypertension:diabetes,,13.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+65,male,Japan,,28.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever (38 ℃)
+68,male,,Hypertension,,13.03.2020,13.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+67,male,,diabetes:hypertension:chronic kidney disease,,13.03.2020,11.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+35,male,Japan,,04.03.2020,06.03.2020,,,0,0,0,0,0,0,0,"phlegm, malaise"
+75,male,Japan,,23.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+65,male,,diabetes:hypertenstion:upper git bleeding,,15.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+76,male,,diabetes:hypertension,,15.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+67,male,,hypertension,,15.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+35,female,Japan,,20.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+61,female,,hypertension,,17.03.2020,27.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+86,female,,Chronic kidney disease:hypertension,,16.03.2020,17.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+45,male,Japan,,25.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+95,male,Japan,,26.02.2020,06.03.2020,,,1,1,0,0,0,1,0,"fever, cough, shortness of breath"
+74,male,,hypertension,,16.03.2020,19.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+55,female,Japan,,23.02.2020,06.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+34,male,,diabetes,,18.03.2020,21.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome
+58,male,,diabetes,,18.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome
+81,male,,diabetes:hypertension,,19.03.2020,18.03.2020,died,0,0,0,0,0,0,0,cardiac arrhythmia:septic shock:pneumonia
+71,male,,hypertension:diabetes,,19.03.2020,24.03.2020,died,0,0,0,0,0,0,0,pneumonia
+76,male,,diabetes,,21.03.2020,14.03.2020,died,0,0,0,0,0,0,0,pneumonia:acute respiratory failure:heart failure
+55,male,Japan,,24.02.2020,06.03.2020,,,1,1,1,0,0,0,0,"fever 38.0, cough, fatigue"
+55,male,Japan,,24.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever 40.0
+71,male,,Pre-renal azotemia:cardiomyopathy:hypertension:diabetes,,21.03.2020,20.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+72,female,,hypertension:diabetes:asthma,,21.03.2020,19.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia:septic shock
+72,female,,hypertension:colon cancer,,21.03.2020,25.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+73,male,,chronic kidney disease:hypertension:diabetes:ischemic heart disease,,21.03.2020,16.03.2020,died,0,0,0,0,0,0,0,pneumonia
+57,male,,pre-renal azotemia:diabetes:hypertension,,21.03.2020,19.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+65,male,,,01.03.2020,06.03.2020,,,1,0,0,0,0,0,0,"fever (39), inapatence"
+85,male,Japan,,04.03.2020,06.03.2020,,,0,1,0,0,0,1,0,"malaise, dyspnea, cough"
+46,male,,,,13.03.2020,,,0,0,0,0,0,0,0,no clinical symptoms
+36,female,,,,13.03.2020,,,0,0,0,0,0,0,0,no clinical symptoms
+55,female,Japan,,23.02.2020,06.03.2020,,,1,0,0,0,0,0,0,fever 38
+72,male,China,,19.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+89,male,,benign prostatic hyperplasia,,21.03.2020,20.03.2020,died,0,0,0,0,0,0,0,myocardial infarction:pneumonia:multiple electrolyte imbalance
+67,female,,hypertension:bronchial asthma:impaired fasting glucose,,21.03.2020,26.03.2020,died,0,0,0,0,0,0,0,acute respiratory disease
+60,female,,,,21.03.2020,21.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress:pneumonia
+49,male,China,,22.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, expectoration, fever"
+56,male,,hypertension:diabetes,,21.03.2020,22.03.2020,died,0,0,0,0,0,0,0,pneumonia
+46,male,,hypertension,,21.03.2020,23.03.2020,died,0,0,0,0,0,0,0,pneumonia
+57,male,,hypertension:diabetes:dislipidemia,,21.03.2020,16.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress:pneumonia
+46,male,,hypertension:renal disease,,21.03.2020,15.03.2020,died,0,0,0,0,0,0,0,acute myocardial infarction
+74,male,,hypertension:chronic kidney disease,,21.03.2020,13.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+65,male,,hypertension:chronic kidney disease,,21.03.2020,21.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+56,male,,diabetes:hypertension,,21.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+56,male,,,,20.03.2020,19.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+80,female,,,,20.03.2020,13.03.2020,died,0,0,0,0,0,0,0,acute coronary syndrome:congestive heart failure:severe acute respiratory infection
+63,male,,asthma:hypertension:atherosclerosis:coronary artery disease,,21.03.2020,23.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia:sepsis
+78,male,,chronic obstructive pulmonary disease,,21.03.2020,22.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:septic shock:pneumonia
+63,female,,hypertension:diabetes:chronic kidney disease,,22.03.2020,18.03.2020,died,0,0,0,0,0,0,0,pneumonia
+71,female,,hypertension:diabetes,,22.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:sepsis:pneumonia
+80,female,,atrial fibrillation:hypertension:atherosclerosis:cerebrovascular infarct,,22.03.2020,19.03.2020,died,0,0,0,0,0,0,0,pneumonia
+74,female,,hypertension:cardiac disease,,22.03.2020,21.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+62,male,,hypertension:coronary artery disease:diabetes,,23.03.2020,03.22.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+69,male,China,,,23.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever, sputum"
+78,female,,hypertension:hypothyroidism,,22.03.2020,28.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+57,male,,hypertension,,22.03.2020,18.03.2020,died,0,0,0,0,0,0,0,cardiogenic shock:acute coronary syndrome:heart failure:pneumonia
+83,female,,chronic kidney disease,,22.03.2020,17.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia:myocardial infarction
+59,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+38,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+61,female,,chronic kidney disease,,23.03.2020,26.03.2020,died,0,0,0,0,0,0,0,acute kidney injury:septic shock:acute respiratory distress syndrome
+37,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+50,male,,diabetes,,24.03.2020,20.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+49,male,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+72,female,,hypertension:cardiovascular disease:diabetes,,23.03.2020,,,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia:septic shock
+43,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+79,female,,,,24.03.2020,21.03.2020,died,0,0,0,0,0,0,0,arrhythmia:acute respiratory distress syndrome:pneumonia
+79,male,,,,24.03.2020,29.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure
+39,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+87,male,,chronic obstructive pulmonary disease,,24.03.2020,14.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+60,male,,hypertension:diabetes:dyslipidemia,,24.03.2020,26.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+41,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+77,male,,prostate cancer:chronic obstructive pulmonary disease,,24.03.2020,29.03.2020,died,0,0,0,0,0,0,0,sepsis:pneumonia
+80,female,,hypertension:hypothyroidism:renal disease,,24.03.2020,22.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress:pneumonia
+56,male,,hypertension,,25.03.2020,24.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia:acute respiratory failure
+75,male,,hypertension:diabetes:tongue cancer:cardiovascular disease:benign prostatic hypertrophy,,25.03.2020,19.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:acute kidney injury
+67,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+43,male,,,,25.03.2020,27.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:myocardial dysfunction
+71,male,,diabetes:cardiac dysrhythmia,,25.03.2020,25.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:septic shock:pneumonia:gastritis:acute kidney injury
+52,female,China,,26.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+64,male,,hypertension:diabetes:chronic kidney disease,,25.03.2020,24.03.2020,died,0,0,0,0,0,0,0,heart failure:pneumonia
+60,male,,,,25.03.2020,23.03.2020,died,0,0,0,0,0,0,0,heart failure:pneumonia
+31,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+34,female,China,,23.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+80,male,,hypertension,,25.03.2020,,,0,0,0,0,0,0,0,pneumonia
+66,male,China,,29.12.2019,21.01.2020,,,1,0,0,0,0,1,0,"chest tightness, dyspnea, fever"
+78,male,,hypertension:chronic kidney disease,,25.03.2020,26.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome
+24,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+67,male,,hypertension:diabetes,,25.03.2020,19.03.2020,died,0,0,0,0,0,0,0,pneumonia:congestive heart failure
+86,male,,hypertension,,25.03.2020,25.03.2020,died,0,0,0,0,0,0,0,cardiac arrhythmia:pneumonia
+82,male,,hypertension:diabetes,,25.03.2020,20.03.2020,died,0,0,0,0,0,0,0,myocardial infarction:acute respiratory distress syndrome:pneumonia
+47,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+16,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+32,male,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+32,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+74,male,,hypertension:diabetes:cardiac disease,,26.03.2020,29.03.2020,died,0,0,0,0,0,0,0,pneumonia
+25,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+52,female,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,25.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+70,male,,hypertension; diabetes; asthma,,26.03.2020,23.03.2020,died,0,0,0,0,0,0,0,cardiopulmonary arrest; acute respiratory failure; pneumonia
+51,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+78,male,,hypertension,,26.03.2020,25.03.2020,died,0,0,0,0,0,0,0,acute respiratory failure:pneumonia
+43,male,China,,24.01.2020,27.01.2020,,,1,0,0,0,0,0,0,fever
+71,male,,hypertension:cardiac disease,,27.03.2020,21.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+83,male,,chronic kidney disease:hypertension:diabetes,,26.03.2020,29.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome
+64,female,,hypertension:diabetes,,26.03.2020,27.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+65,female,,diabetes:cardiac disease,,27.03.2020,,,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia
+51,male,,hyperthyroidism,,26.03.2020,28.03.2020,died,0,0,0,0,0,0,0,arrhythmia:septic shock:acute respiratory disease syndrome: acute kidney injury
+73,male,,myocarditis:diabetes:hypertension,,25.03.2020,,,0,0,0,0,0,0,0,acute respiratory failure:severe acute respiratory distress syndrome:pneumonia:septic shock
+89,male,,chronic obstructive pulmonary disease:diabetes:dyslipidemia,,20.03.2020,28.03.2020,died,0,0,0,0,0,0,0,arrhythmia:sepsis:acute respiratory distress syndrome:pneumonia:acute kidney injury
+69,male,,hypertension:cerebrovascular accident infarct,,27.03.2020,30.03.2020,died,0,0,0,0,0,0,0,septic shock:pneumonia
+59,male,,cardiac disease,,23.03.2020,23.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:pneumonia:hypoxia
+45,male,,,,,23.03.2020,died,0,0,0,0,0,0,0,cardiopulmonary arrest: acute respiratory distress syndrome: pneumonia: hypoxia
+60,male,,,,25.03.2020,26.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome:septic shock
+74,male,,diabetes:hypertension,,27.03.2020,21.03.2020,died,0,0,0,0,0,0,0,acute respiratory distress syndrome: pneumonia
+39,male,China,,21.01.2020,22.01.2020,,died,1,1,0,0,0,0,0,"cough, fever"
+56,male,China,,18.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+62,female,China,,,25.01.2020,,,1,0,0,0,0,0,0,fever
+57,female,China,,,21.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+65,male,Japan,,14.01.2020,28.01.2020,,,1,1,1,0,0,0,0,"chills, cough, joint pain"
+45,female,Japan,,26.01.2020,28.01.2020,,,1,1,0,0,0,0,0,"cough, fever, pneumonia"
+,female,China,,23.01.2020,27.01.2020,07.02.2020,discharged,1,0,0,1,0,0,0,"fever, sore throat"
+36,male,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+41,female,China,,24.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+25,male,China,,21.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+46,female,China,,18.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+50,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+36,female,China,,20.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+36,male,China,,20.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+32,female,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+64,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+70,male,China,,25.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+25,male,China,,22.01.2020,28.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+45,male,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+37,male,China,,10.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+50,male,,,25.01.2020,28.01.2020,,,0,0,1,0,1,0,0,"myalgia, rhinorrhea"
+45,male,China,,19.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+56,male,China,,,21.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+27,male,China,,21.01.2020,24.01.2020,,,1,0,1,0,0,0,0,"fever, weak"
+40,female,China,,22.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+42,female,China,,19.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+33,male,China,,11.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+50,female,China,,16.01.2020,23.01.2020,,,0,0,0,0,0,0,0,pharynx
+42,male,China,,19.01.2020,23.01.2020,,,0,0,1,0,0,0,0,muscular soreness
+52,female,China,,12.01.2020,21.01.2020,,,0,1,0,1,0,0,0,"cough, sore throat"
+28,male,China,,21.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+42,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+38,male,China,,20.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+62,female,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+65,male,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+33,female,China,,,22.01.2020,,,1,0,0,0,0,0,0,fever
+56,female,China,,,20.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever, weakness"
+76,male,China,,23.01.2020,07.03.2020,,,0,0,0,0,0,0,0,diarrhea
+41,male,China,,06.03.2020,08.03.2020,,,0,0,1,1,1,0,0,"Sore throat, headache, runny nose and tiredness"
+44,male,China,,07.03.2020,09.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+,male,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,"fever, headache"
+28,female,China,,19.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+33,male,South Korea,asthma,26.01.2020,30.01.2020,,,0,1,0,0,0,0,0,cough
+31,male,China,,11.01.2020,21.01.2020,,,1,0,0,0,0,0,0,fever
+72,male,China,,25.01.2020,28.01.2020,,,1,0,0,0,0,0,0,fever
+73,female,China,,25.01.2020,28.01.2020,,,1,0,0,0,0,0,0,fever
+50,male,China,,18.01.2020,23.01.2020,,,1,1,0,0,0,1,0,"cough, dyspnea, fever"
+48,male,China,,18.01.2020,23.01.2020,,,1,0,0,0,0,0,0,fever
+36,male,China,,18.01.2020,23.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever"
+37,male,China,,,22.01.2020,,,1,0,1,0,0,0,0,"chills, fever, muscle aches, other symptoms"
+19,male,China,,,22.01.2020,,,0,0,1,1,0,0,0,"fatigue, muscle aches, sore throat"
+29,female,China,,24.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+52,male,China,,19.01.2020,23.01.2020,,,1,0,1,0,0,0,0,"fever, sore muscle, weakness"
+51,male,China,,,21.01.2020,,,1,0,1,0,0,0,0,"fatigue, fever"
+53,male,China,,16.01.2020,23.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+39,female,China,,18.01.2020,24.01.2020,03.02.2020,discharged,1,0,1,0,1,0,0,"systemic weakness, runny nose, fever"
+33,male,China,,,31.01.2020,,,1,0,0,0,0,0,0,fever
+46,male,China,,04.01.2020,21.01.2020,,,1,0,0,0,0,0,0,fever
+46,male,China,,04.01.2020,21.01.2020,,discharged,1,0,0,0,0,0,0,fever
+37,female,China,,28.01.2020,31.01.2020,,,0,1,0,0,0,0,0,cough
+75,male,China,,22.01.2020,31.01.2020,,,0,1,0,0,0,1,0,"cough, dyspnea"
+39,male,China,,19.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+28,female,China,,28.01.2020,31.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+37,male,China,,20.01.2020,31.01.2020,,,1,0,0,0,0,0,0,"fever, pharyngeal discomfort"
+51,female,China,,24.01.2020,31.01.2020,,,1,0,0,0,0,0,0,"chills, headache, fever"
+45,female,China,,25.01.2020,31.01.2020,,,1,0,0,1,0,0,0,"fever, sore throat, sputum"
+27,female,China,,28.01.2020,31.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+32,male,China,,24.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+35,male,China,,30.01.2020,31.01.2020,,,0,0,0,0,0,0,0,physical discomfort
+31,male,China,,19.01.2020,01.02.2020,,,0,0,0,0,0,0,0,discomfort
+66,female,China,,24.01.2020,01.02.2020,,,0,0,1,0,0,0,0,weakness
+32,male,China,,24.01.2020,01.02.2020,,,1,0,0,0,0,0,0,fever
+60,male,China,,28.01.2020,01.02.2020,,,1,1,0,0,0,0,0,fever; cough
+40,male,China,,29.01.2020,01.02.2020,,,1,0,0,0,0,0,1,"chest tightness, fever, nausea"
+28,male,South Korea,,20.02.2020,25.02.2020,,,1,0,0,0,0,0,0,fever; headache; phlegm
+73,male,Vietnam,prostate hypertrophy,26.01.2020,02.02.2020,21.02.2020,discharge,0,0,0,0,0,0,0,respiratory symptoms
+25,female,Vietnam,,18.01.2020,31.01.2020,,discharge,1,1,0,0,0,0,0,"cough, fever"
+44,male,Philippines,"thought to have had other pre-existing conditions",,01.02.2020,01.02.2020,died,0,1,0,1,0,0,0,"cough, sore throat"
+28,male,South Korea,,26.01.2020,30.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+62,female,South Korea,,21.01.2020,31.01.2020,,,1,1,1,0,0,0,0,"cough, fever, muscle ache"
+25,female,Japan,,20.01.2020,31.01.2020,,,0,1,0,0,1,0,0,"cough, runny nose"
+45,male,Japan,,,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+45,male,Japan,,26.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+47,female,Singapore,,30.01.2020,31.01.2020,,,1,0,0,0,0,0,0,fever
+80,male,China,,19.01.2020,01.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,female,China,,22.01.2020,24.01.2020,,,1,0,0,0,0,0,0,fever
+43,male,China,,23.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+22,male,China,,21.01.2020,25.01.2020,,,1,0,0,1,0,0,0,"fever, sore throat"
+51,male,China,,18.01.2020,25.01.2020,,,1,0,1,0,0,0,0,"fever, muscular soreness, rigor"
+38,male,China,,20.01.2020,25.01.2020,,,1,0,1,0,0,1,0,"chills, diarrhea, dyspnea, headache, lack of energy, muscle pain"
+59,male,China,,19.01.2020,25.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+26,male,China,,26.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+73,female,China,,28.01.2020,02.02.2020,09.02.2020,death,1,0,0,0,0,0,0,fever
+44,male,China,,23.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever, sputum"
+36,male,China,,24.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+38,female,China,,27.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+64,female,China,,23.01.2020,02.02.2020,,,0,1,0,0,0,0,0,"cough, sputum"
+59,male,China,,24.01.2020,02.02.2020,,,0,1,0,1,0,0,0,"cough, sore throat, sputum"
+39,female,China,,30.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+46,female,China,,28.01.2020,02.02.2020,,,1,0,1,0,0,0,0,"chills, fatigue"
+60,male,China,,18.01.2020,25.01.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+35,male,China,,19.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+72,female,China,,01.02.2020,02.02.2020,,,0,1,0,0,0,0,0,cough
+25,female,China,,21.01.2020,25.01.2020,,,1,0,0,0,0,0,0,"fever, pharyngalgia"
+47,male,China,,26.01.2020,02.02.2020,,,1,1,1,0,0,0,0,fever; dry cough; fatigue
+55,female,South Korea,,22.02.2020,08.03.2020,,,1,0,1,0,0,0,0,fever; muscle aches; chills
+45,female,South Korea,,01.03.2020,08.03.2020,,,0,1,0,0,0,0,0,dry cough
+45,female,South Korea,,22.02.2020,08.03.2020,,,0,0,0,1,0,0,0,sore throat; headache
+55,male,South Korea,,06.03.2020,10.03.2020,,,1,0,0,0,0,0,0,chills; abdominal pain
+16,female,South Korea,,05.03.2020,10.03.2020,,,1,0,0,1,0,0,0,"sore throat, fever"
+45,female,South Korea,,09.03.2020,10.03.2020,,,1,1,0,1,0,0,0,fever; cough; sore throat
+55,male,South Korea,,07.03.2020,10.03.2020,,,0,1,1,1,0,0,0,cough; sore throat; body aches
+,,China,,,24.01.2020,,,0,0,0,0,0,0,0,pneumonia
+47,male,China,,,03.02.2020,,stable,0,0,0,0,0,0,0,lesions on chest radiographs
+42,female,China,,31.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+66,female,China,,02.02.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+36,female,China,,27.01.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+37,female,China,,30.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+46,female,China,,31.01.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+43,male,China,,27.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+33,female,China,,,02.02.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,,02.02.2020,,,0,0,0,0,0,0,0,chest tightness
+41,male,Malaysia,,,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+59,male,China,,26.01.2020,04.02.2020,,,1,1,0,0,1,0,0,"cough, fever, runny nose"
+29,female,China,,25.01.2020,04.02.2020,,,1,1,0,0,1,0,0,"cough, fever, runny nose"
+42,female,South Korea,,25.01.2020,04.02.2020,20.02.2020,discharge,1,1,0,0,1,0,0,"cough, fever, runny nose"
+28,female,Singapore,,29.01.2020,03.02.2020,22.02.2020,discharge,1,0,0,1,0,0,0,"fever, sore throat"
+64,female,China,,,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+29,male,China,,01.02.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+69,female,China,,26.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+9,male,China,,02.02.2020,03.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+61,male,China,,25.01.2020,03.02.2020,,,1,0,0,0,0,0,0,fever
+33,male,China,,27.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+25,male,China,,28.01.2020,04.02.2020,,,0,1,0,0,1,0,0,"cough, diarrhoea, runny nose"
+44,female,China,,15.01.2020,21.01.2020,29.01.2020,discharged,1,0,1,0,0,0,0,"fatigue, fever"
+66,female,China,type 2 diabetes for 30+ years; hypertension for 9 years; coronary bypass surgery for 2 years;,02.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever, eventually showed acute left heart failure and acute coronary syndrome"
+51,female,China,,02.02.2020,07.02.2020,,,1,1,1,0,0,0,0,"cough, high fever, myalgia"
+65,male,China,,04.02.2020,07.02.2020,,,1,0,1,0,0,0,0,"fever, myalgia"
+49,female,Vietnam,,03.02.2020,06.02.2020,20.02.2020,discharge,0,1,0,0,0,0,0,cough
+16,female,Vietnam,,,06.02.2020,20.02.2020,discharge,1,1,0,0,0,0,0,"cough, fever"
+64,female,China,,23.01.2020,04.02.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+69,male,China,,28.01.2020,04.02.2020,,,0,0,1,0,0,0,0,fatigue
+54,female,China,,30.01.2020,04.02.2020,,,1,0,1,1,0,0,0,fever;sore throat; fatigue; diarrhea
+62,male,China,,29.01.2020,04.02.2020,,,1,0,1,0,0,0,0,fever; fatigue
+60,female,China,,02.02.2020,05.02.2020,,,1,0,1,1,0,0,1,fever; sore throat;fatigue;vomiting
+45,female,China,,30.01.2020,05.02.2020,,,0,1,0,0,0,0,0,cough
+52,female,China,,,02.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,China,,03.02.2020,05.02.2020,,,1,0,0,0,0,0,0,"chest tightness, fever"
+48,female,China,,30.01.2020,05.02.2020,,,1,0,1,0,0,0,0,"fever, joint pain, muscle soreness"
+43,female,China,,03.02.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+35,male,China,,29.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+29,male,China,,01.02.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+51,male,China,,02.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,male,China,,24.01.2020,05.02.2020,,,1,0,0,0,0,0,0,"chills, fever"
+28,female,China,,29.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+78,female,China,,22.01.2020,05.02.2020,,,0,0,0,0,1,0,0,"chest pain, nasal congestion"
+38,female,China,,30.01.2020,05.02.2020,,,0,1,1,0,0,0,0,"cough, muscle soreness, sweating"
+36,male,China,,26.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+42,female,China,,21.01.2020,22.01.2020,,,1,0,0,0,0,0,0,fever
+,,China,,,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+41,male,Singapore,,28.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+22,female,China,,26.01.2020,04.02.2020,,,1,0,0,0,0,0,0,fever
+64,female,China,,10.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonitis
+28,male,China,,21.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonia
+41,male,China,,14.01.2020,25.01.2020,,,0,0,0,0,0,0,0,pneumonia
+,,China,,,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+49,male,China,,21.01.2020,25.01.2020,,,1,0,0,0,0,0,0,fever
+53,female,China,,01.02.2020,05.02.2020,,,0,0,0,0,0,0,0,pneumonitis
+60,male,China,,22.01.2020,04.02.2020,,,1,0,1,0,0,1,0,"fever, myalgia, shortness of breath"
+65,female,China,,16.01.2020,22.01.2020,,,1,1,0,0,0,0,0,"cough, discomfort, fever, other symptoms"
+64,female,China,,27.01.2020,02.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,female,China,,21.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+75,male,China,,30.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+61,female,China,,25.01.2020,02.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,Japan,,31.01.2020,04.02.2020,,,1,1,0,0,0,0,0,"cough, fever, pneumonia, respiratory distress"
+35,female,Japan,,30.01.2020,04.02.2020,,,1,0,0,0,1,0,0,"fever, runny nose"
+45,male,Japan,,24.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+25,male,Japan,,24.01.2020,05.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,,,28.01.2020,06.02.2020,,,1,0,0,0,0,0,0,fever
+55,male,,,26.01.2020,06.02.2020,,,1,0,0,0,0,0,0,fever
+45,female,,,,06.02.2020,,,1,0,0,1,1,0,0,"chills, fever, runny nose, sore throat, wheezing"
+25,female,,,,05.02.2020,,,0,1,0,0,0,0,0,"cough, respiratory problems"
+40,male,Japan,,14.01.2020,24.01.2020,,discharged,1,0,0,1,0,0,0,"fever, pneumonia, sore throat"
+30,male,Japan,,03.01.2020,15.01.2020,15.01.2020,discharged,1,1,0,1,0,0,0,"cough, fever, sore throat"
+35,female,Japan,,14.01.2020,25.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+32,male,Nepal,,09.01.2020,24.01.2020,17.01.2020,discharged,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+66,male,Singapore,,21.01.2020,23.01.2020,19.02.2020,discharged,1,1,0,0,0,0,0,"cough, fever"
+53,female,Singapore,,21.01.2020,24.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+35,female,South Korea,,18.01.2020,20.01.2020,,,1,1,0,0,0,0,0,"cough, fever"
+55,male,South Korea,,10.01.2020,24.01.2020,05.02.2020,discharge,1,0,0,0,0,0,0,fever
+55,female,,,11.01.2020,21.01.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness breath"
+61,female,Thailand,,05.01.2020,12.01.2020,,,1,0,0,1,0,0,0,"chills, fever, headache, sore throat"
+33,female,Thailand,,21.01.2020,24.01.2020,,,1,1,1,0,0,0,0,"coughing, fever, muscle aches"
+40,male,Malaysia,,,25.01.2020,08.02.2020,discharged,1,1,0,0,0,0,0,"cough, fever"
+51,male,Thailand,,20.01.2020,,05.02.2020,discharged,1,1,1,0,0,0,0,"cough, fever, myalgia"
+73,female,Thailand,,,25.01.2020,,,1,0,0,0,0,0,0,fever
+54,male,South Korea,,22.01.2020,26.01.2020,,,1,0,0,0,0,0,0,"chills, fever"
+40,male,Japan,,23.01.2020,26.01.2020,,,1,0,1,0,0,0,0,"fever, joint pain, pneumonia"
+68,male,China,,31.01.2020,07.02.2020,,,0,0,0,0,0,0,1,"nausea, vomiting"
+60,female,Japan,,13.02.2020,15.02.2020,,,1,0,0,0,0,0,0,"fever, headache"
+65,male,Japan,,15.02.2020,16.02.2020,,,1,0,0,0,0,0,0,fever
+65,male,Japan,,,17.02.2020,,,1,0,0,0,0,0,0,"fever, full body slump"
+65,male,Japan,,17.02.2020,18.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+55,male,Japan,,07.02.2020,10.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+59,female,China,,19.01.2020,26.01.2020,,,1,0,0,0,0,0,0,fever
+42,female,China,,28.01.2020,05.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+26,female,China,,01.02.2020,05.02.2020,,,1,1,0,0,0,0,0,"fever, cough"
+37,male,China,,24.01.2020,05.02.2020,,,1,0,0,1,0,0,0,"fever, dry throat, sore throat"
+24,male,China,,01.02.2020,05.02.2020,,,1,0,0,0,1,0,0,fever; runny nose
+54,female,China,,21.01.2020,07.02.2020,,,0,0,1,1,0,0,0,dry throat; sore throat; fatigue
+29,female,China,,24.01.2020,07.02.2020,,,0,0,0,0,0,0,0,headache; dry mouth
+38,female,China,,21.01.2020,07.02.2020,,,1,0,0,0,0,0,0,fever; dry mouth; throat discomfort
+29,male,China,,30.01.2020,07.02.2020,,,1,0,0,0,0,0,0,fever
+55,female,China,,29.01.2020,08.02.2020,,,0,0,0,0,0,0,0,pharyngeal discomfort
+27,female,China,,01.02.2020,08.02.2020,,,1,0,0,0,0,0,0,fever
+1,female,China,,30.01.2020,08.02.2020,17.02.2020,discharged,0,0,0,0,0,0,0,diarrhea
+46,female,China,,05.02.2020,08.02.2020,,,0,1,0,0,0,0,0,cough; throat discomfort
+33,female,China,,29.01.2020,09.02.2020,,,0,0,0,0,0,0,0,Pharyngeal dryness
+23,male,China,,06.02.2020,09.02.2020,,,1,1,0,0,0,0,0,cough; sputum; fever
+27,female,China,,03.02.2020,09.02.2020,,,1,0,0,0,0,0,0,fever
+53,female,China,,04.02.2020,12.02.2020,,,0,1,0,0,0,0,0,dry throat; dry cough
+34,female,China,,10.02.2020,13.02.2020,,,0,1,0,0,0,0,0,"chest pain, cough"
+58,female,China,,,13.02.2020,,,0,1,0,0,0,0,0,"cough, chest tightness, dry mouth"
+57,male,China,,07.02.2020,16.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+60,male,China,,28.01.2020,07.02.2020,,,1,1,1,0,0,0,1,fever; cough; fatigue; nausea
+65,male,China,,13.01.2020,30.01.2020,,,1,1,0,0,0,0,0,fever; cough
+38,female,China,,28.01.2020,30.01.2020,,,1,0,1,0,0,0,0,fever; fatigue
+26,male,China,,30.01.2020,08.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+27,male,China,,05.02.2020,08.02.2020,,stable,1,1,0,0,0,0,0,"cough, fever, sputum"
+68,,China,,01.31.2020,07.02.2020,,,0,0,0,0,0,0,1,"nausea, vomiting"
+33,male,China,,29.01.2020,07.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+73,female,South Korea,,,09.02.2020,,,1,1,0,1,0,0,0,"cough, fever, sore throat"
+51,male,China,,03.02.2020,12.02.2020,,,1,0,0,0,0,0,0,fever
+43,male,China,,29.01.2020,13.02.2020,,,0,1,0,0,0,0,1,"cough, diarrheoa, vomiting"
+67,female,China,,31.01.2020,13.02.2020,,stable,1,1,0,0,0,0,0,"chills, cough, fever"
+37,male,China,,08.02.2020,13.02.2020,,stable,1,0,0,0,0,0,0,fever
+50,male,China,,,08.02.2020,,,1,1,0,0,0,0,0,"cough, fever"
+61,female,China,,,08.02.2020,,,1,1,1,0,0,0,0,"cough, fatigue, fever"
+49,male,Romania,,,07.03.2020,,,1,0,0,0,0,0,0,fever
+73,female,Romania,,,09.03.2020,,,1,0,0,0,0,0,1,"fever, nausea, digestive discomfort"
+60,male,Romania,,,09.03.2020,,,0,0,0,0,0,0,0,aggressive pulmonary symptomatology
+71,male,,,,04.03.2020,,,1,0,0,0,0,0,0,"fever, chills"
+44,male,,,05.03.2020,06.03.2020,,discharged,1,0,0,0,0,0,0,fever
+,,,,,08.03.2020,,,0,0,0,0,0,0,0,mild symptoms
+52,female,,"diabetes, hypertension",,11.03.2020,11.03.2020,death,0,0,0,0,0,0,0,"severe, kidney failure and hypertension"
+64,male,Argentina,,,07.03.2020,,,1,1,0,1,0,0,0,"fever, cough, sore throat"
+61,male,Brazil,,24.02.2020,26.02.2020,,discharged,1,1,0,0,1,0,0,"fever, cough, running nose"
+32,male,Brazil,,27.02.2020,28.02.2020,,discharged,1,1,1,1,0,0,0,"fever, cough, sore throat, mialgia, headache"
+37,female,Brazil,,,05.03.2020,,,0,0,0,0,0,0,0,Contact of hCoV-19/Brazil/SPBR-01/2020
+69,female,Brazil,,,05.03.2020,,,0,0,0,0,0,0,0,Contact of hCoV-19/Brazil/SPBR-01/2020
+27,female,Brazil,,,05.03.2020,,,1,1,0,0,1,0,0,"fever, cough, nasal congestion, conjuntivitis"
+42,female,Brazil,,05.03.2020,07.03.2020,,,1,1,0,0,1,0,0,"fever, cough, nasal congestion"
+47,female,,,05.03.2020,08.03.2020,,,0,0,0,0,1,0,0,"Rhinorrhea, pain and unwellness"
+27,male,,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+42,male,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+70,male,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+56,female,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+61,female,Brazil,,,09.03.2020,,,1,1,1,0,0,0,0,"fever, cough and milagia, between others"
+66,female,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever, respiratory problems"
+72,male,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever, respiratory problems"
+,,Brazil,,,12.03.2020,,,1,0,1,0,0,0,0,"myalgia, headache, fever"
+33,female,,,09.03.2020,12.03.2020,,,1,0,0,0,0,0,0,"fever, respiratory problems (lungs)"
+38,female,,,29.02.2020,12.03.2020,,,1,1,0,1,0,0,0,"fever, cough and sore throath"
+28,female,,,,13.03.2020,,,0,0,0,0,0,0,0,oligosymptomatic
+57,male,,,08.03.2020,13.03.2020,,,1,0,1,1,0,0,0,"fever, body ache, sore throat, headache"
+44,male,,,12.03.2020,17.03.2020,,,1,0,1,0,0,0,0,"fever, myalgia, headache"
+,male,,,,12.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+42,male,,,,17.03.2020,,,0,0,0,0,0,0,0,"febre, tosse, e sintomas respirat‚àö‚â•rios moderados"
+60,male,,,29.02.2020,10.03.2020,,,1,1,0,0,0,0,0,"fever, cough"
+69,male,Brazil,"diabetes, hypertension",,17.03.2020,17.03.2020,,1,1,1,0,0,0,0,"fever, cough, myalgia"
+54,female,,,07.03.2020,11.03.2020,,,1,1,1,0,0,0,0,"fever, cough, body ache, mialgia"
+19,female,,,29.02.2020,12.03.2020,,,1,1,1,1,1,0,0,"fever, cough, coriza, sore throath, headache, general weakness"
+69,male,,,,13.03.2020,,,1,1,0,0,0,0,0,"cough, fever"
+64,female,,Hypertension,08.03.2020,10.03.2020,,,1,0,1,0,0,0,0,"fever, general weakness"
+,male,,,,13.03.2020,,,0,0,1,0,1,0,0,"headache, general weakness, runny nose, acute respiratory distress syndrome"
+30,male,,,,20.03.2020,,,0,0,1,0,1,0,0,"headache, general weakness, runny nose, mialgia"
+38,male,,,24.03.2020,27.03.2020,,,1,1,1,0,0,0,0,"fever, general weakness, cough"
+56,female,,,,04.03.2020,,,1,1,0,0,0,0,0,"Fever, cough, headache"
+71,male,,,25.03.2020,27.03.2020,,,1,0,0,0,0,0,0,fever
+56,male,,,,10.04.2020,,,0,0,0,0,0,0,0,Pnuemonia
+88,male,,,,11.04.2020,,,0,0,0,0,0,0,0,kidney failure
+23,male,Argentina,,,05.03.2020,,,1,1,0,0,0,0,0,"fever, cough and general malaise"
+40,male,,,04.03.2020,05.03.2020,,,0,0,0,0,0,0,0,Symptoms associated with a respiratory condition
+58,male,,,05.03.2020,06.03.2020,,,0,0,0,0,0,0,0,Mild respiratory symptoms
+17,male,,,06.03.2020,07.03.2020,,,0,0,0,0,0,0,0,Symptoms associated with a respiratory condition
+20,female,,,05.03.2020,07.03.2020,,,1,0,0,0,0,0,0,"Mild resipiratory symptoms, then on March 4 had feverish symptoms"
+83,female,,,07.03.2020,08.03.2020,,,0,0,0,0,0,0,0,Mild respiratory symptoms
+39,male,,,,08.03.2020,,,0,0,0,0,0,0,0,Mild respiratory symptoms
+14,male,,,07.03.2020,08.03.2020,,,0,0,0,0,0,0,0,Mild respiratory symptoms
+33,male,Chile,,03.03.2020,03.03.2020,,,1,1,0,0,0,0,0,"fever, cough, headache"
+,female,,,,29.02.2020,,,1,0,0,0,0,0,0,fever
+,,United States,,,05.02.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+2,,Canada,,,12.03.2020,,,0,0,0,0,0,0,0,mild
+,,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+,,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+39,male,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+39,male,United States,,,13.03.2020,,,0,0,0,0,0,0,0,mild
+65,,United States,,,14.03.2020,,,1,1,0,0,0,1,0,"fever, cough, shortness of breath"
+25,female,Canada,,,23.02.2020,,,0,1,0,0,0,0,0,cough
+25,male,United States,,28.01.2020,01.02.2020,,,0,0,0,0,1,0,0,runny nose
+71,male,Puerto Rico,,,14.03.2020,,,1,1,0,0,0,1,0,"cough, fever, difficulty breathing"
+,female,United States,,,15.03.2020,,,0,0,0,0,0,0,0,mild
+,,United States,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+65,female,Canada,,,26.02.2020,,,1,1,1,1,0,0,0,"cough, sore throat, body aches, fever"
+65,,United States,,,08.03.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+55,,United States,,,09.03.2020,,,1,1,0,0,0,1,0,"cough, fever, shortness of breath"
+35,female,Canada,,,29.02.2020,,,0,1,0,0,1,1,0,"dry cough, runny nose, shortness of breath, headache"
+55,female,Canada,,,29.02.2020,,,1,1,1,0,0,0,0,"cough, body aches, chills"
+65,male,Canada,,,29.02.2020,,,0,1,0,0,0,0,0,cough
+45,male,Canada,,,19.03.2020,,,0,0,0,0,0,0,0,mild
+35,male,United States,hypertriglyceridemia,16.01.2020,20.01.2020,,,1,1,0,0,0,0,1,"cough, fever, nausea"
+65,male,Canada,,,01.03.2020,,,0,1,0,0,0,0,0,cough
+39,female,United States,,,02.03.2020,,,0,0,0,0,0,0,0,mild
+,,,,,,,Perc,54.2,30.1,11.1, 6.1, 4.2,   4, 1.5,
