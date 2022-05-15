@@ -4,7 +4,7 @@
 
 Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
 
-## Our Wariors
+## Our Warriors
 
 |              Nama              | Bangkit-ID |        Path        | Link |
 | :----------------------------: | :--------: | :----------------: | :--: |
@@ -21,7 +21,7 @@ Soon
 
 ## Datasets
 
-Soon
+Dataset_1 : https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv
 
 ## UI / UX Design
 
