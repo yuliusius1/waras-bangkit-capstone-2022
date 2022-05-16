@@ -29,6 +29,18 @@
     <string name="sorry">Oops</string>
     <string name="create_account_failed">We have an error while creating your account %1$s</string>
     <string name="enter_name">Name must be filled out</string>
+    
+    <string name="masukkan_gambar">Masukkan Gambar</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="save">Save</string>
+    <string name="Telp">Telp Number</string>
+    <string name="rating">Rating Apps</string>
+    <string name="saran">Saran</string>
+    <string name="submit">Submit</string>
 
 
 </resources>
