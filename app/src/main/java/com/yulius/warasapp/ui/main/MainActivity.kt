@@ -69,6 +69,8 @@ class MainActivity : AppCompatActivity() {
                 it.username,
                 it.email,
                 it.password,
+                it.telephone,
+                it.birth,
                 it.isLogin,
             )
             if (!it.isLogin) {

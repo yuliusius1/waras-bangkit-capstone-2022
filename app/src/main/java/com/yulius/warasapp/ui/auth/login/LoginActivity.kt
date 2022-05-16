@@ -111,6 +111,8 @@ class LoginActivity : AppCompatActivity() {
                         "yuliusius",
                         "yiyus49@gmail.com",
                         "1234",
+                        "089501784227",
+                        "06 June 2001",
                         true
                     ))
 

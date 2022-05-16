@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yulius.warasapp">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
+        <activity
+            android:name=".ui.profile.change_password.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.contact_us.ContactUsActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
@@ -25,6 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.profile.feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.editprofile.EditProfileActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -9,5 +9,7 @@ data class User(
     val username: String,
     val email: String,
     val password: String,
+    val telephone: String,
+    val birth: String,
     val isLogin: Boolean,
 ) : Parcelable

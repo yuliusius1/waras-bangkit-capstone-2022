@@ -1,14 +1,428 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ProgressBar
+            android:id="@+id/pb_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginVertical="16dp"
+            android:contentDescription="Avatar Images"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toTopOf="@id/iv_avatar"
+            tools:text="Narendra Wicaksono" />
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="+62 895 0178 4227" />
+
+        <TextView
+            android:id="@+id/tv_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_telephone"
+            tools:text="06 June 2001" />
+
+        <View
+            android:id="@+id/v_hr1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_avatar" />
+
+        <View
+            android:id="@+id/v_hr2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_edit" />
+
+        <View
+            android:id="@+id/v_hr3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_history" />
+
+        <View
+            android:id="@+id/v_hr4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_change_password" />
+
+        <View
+            android:id="@+id/v_hr5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_theme" />
+
+        <View
+            android:id="@+id/v_hr6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_language" />
+
+        <View
+            android:id="@+id/v_hr7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_feedback" />
+
+        <View
+            android:id="@+id/v_hr8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_contact" />
+
+        <View
+            android:id="@+id/v_hr9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_logout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_avatar">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Profile"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Edit Profile Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+                app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                app:layout_constraintTop_toTopOf="@+id/iv_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_edit">
+
+            <ImageView
+                android:id="@+id/iv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_history_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="History Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_history"
+                app:layout_constraintStart_toEndOf="@+id/iv_history"
+                app:layout_constraintTop_toTopOf="@+id/iv_history" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_history">
+
+            <ImageView
+                android:id="@+id/iv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_lock_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Change Password Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_key"
+                app:layout_constraintStart_toEndOf="@+id/iv_key"
+                app:layout_constraintTop_toTopOf="@+id/iv_key" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_change_password">
+
+            <ImageView
+                android:id="@+id/iv_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_palette_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Theme Settings Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_theme"
+                app:layout_constraintStart_toEndOf="@+id/iv_theme"
+                app:layout_constraintTop_toTopOf="@+id/iv_theme" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_theme">
+
+            <ImageView
+                android:id="@+id/iv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_language_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Language Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_language"
+                app:layout_constraintStart_toEndOf="@+id/iv_language"
+                app:layout_constraintTop_toTopOf="@+id/iv_language" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_language">
+
+            <ImageView
+                android:id="@+id/iv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_feedback_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Feedback Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_feedback"
+                app:layout_constraintStart_toEndOf="@+id/iv_feedback"
+                app:layout_constraintTop_toTopOf="@+id/iv_feedback" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_feedback">
+
+            <ImageView
+                android:id="@+id/iv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_support_agent_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Contact Us Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_contact"
+                app:layout_constraintStart_toEndOf="@+id/iv_contact"
+                app:layout_constraintTop_toTopOf="@+id/iv_contact" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_contact">
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="History"
+                android:src="@drawable/ic_baseline_logout_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:letterSpacing="0.1"
+                android:text="Logout Page"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_logout"
+                app:layout_constraintStart_toEndOf="@+id/iv_logout"
+                app:layout_constraintTop_toTopOf="@+id/iv_logout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

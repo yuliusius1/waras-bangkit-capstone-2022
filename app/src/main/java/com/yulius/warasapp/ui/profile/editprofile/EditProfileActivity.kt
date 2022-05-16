@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import com.yulius.warasapp.R
-import com.yulius.warasapp.databinding.ActivityEditProfileBin
+import com.yulius.warasapp.databinding.ActivityEditProfileBinding
 
 class EditProfileActivity : AppCompatActivity() {
 

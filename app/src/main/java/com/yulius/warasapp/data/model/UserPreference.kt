@@ -15,6 +15,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
                 preferences[USERNAME_KEY] ?: "",
                 preferences[EMAIL_KEY] ?: "",
                 preferences[PASSWORD_KEY] ?: "",
+                preferences[TEL_KEY] ?: "",
+                preferences[BIRTH_KEY] ?: "",
                 preferences[LOGIN_STATUS] ?: false
             )
         }
@@ -26,6 +28,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             preferences[USERNAME_KEY] = user.username
             preferences[EMAIL_KEY] = user.email
             preferences[PASSWORD_KEY] = user.password
+            preferences[TEL_KEY] = user.telephone
+            preferences[BIRTH_KEY] = user.birth
             preferences[LOGIN_STATUS] = user.isLogin
         }
     }
@@ -54,6 +58,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             preferences[USERNAME_KEY] = ""
             preferences[EMAIL_KEY] = ""
             preferences[PASSWORD_KEY] = ""
+            preferences[TEL_KEY] = ""
+            preferences[BIRTH_KEY] = ""
             preferences[LOGIN_STATUS] = false
         }
     }
@@ -65,6 +71,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
         private val NAME_KEY = stringPreferencesKey("name")
         private val USERNAME_KEY = stringPreferencesKey("username")
         private val PASSWORD_KEY = stringPreferencesKey("password")
+        private val TEL_KEY = stringPreferencesKey("tel")
+        private val BIRTH_KEY = stringPreferencesKey("birth")
         private val LOGIN_STATUS =
             booleanPreferencesKey("login_status")
         private val EMAIL_KEY = stringPreferencesKey("email")

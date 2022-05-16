@@ -29,7 +29,7 @@
     <string name="sorry">Oops</string>
     <string name="create_account_failed">We have an error while creating your account %1$s</string>
     <string name="enter_name">Name must be filled out</string>
-    
+
     <string name="masukkan_gambar">Masukkan Gambar</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
