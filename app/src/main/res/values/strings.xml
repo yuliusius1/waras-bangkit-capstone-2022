@@ -30,7 +30,7 @@
     <string name="create_account_failed">We have an error while creating your account %1$s</string>
     <string name="enter_name">Name must be filled out</string>
 
-    <string name="masukkan_gambar">Masukkan Gambar</string>
+    <string name="input_image">Input Image</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
     <string name="email">Email</string>
@@ -41,6 +41,9 @@
     <string name="rating">Rating Apps</string>
     <string name="saran">Saran</string>
     <string name="submit">Submit</string>
+    <string name="no_permission">not getting permission</string>
+    <string name="choose">Choose a Picture</string>
+    <string name="date_formate">MM-dd-yyyy</string>
 
 
 </resources>
