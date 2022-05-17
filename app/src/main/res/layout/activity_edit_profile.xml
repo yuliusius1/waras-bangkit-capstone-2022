@@ -18,7 +18,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:contentDescription="@string/masukkan_gambar"
+            android:contentDescription="@string/input_image"
             android:src="@drawable/ic_baseline_account_circle_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -80,7 +80,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
                 app:passwordToggleEnabled="true" />
@@ -114,7 +114,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/usernameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
                 app:passwordToggleEnabled="true"
@@ -149,7 +149,7 @@
             <com.yulius.warasapp.ui.custom_views.EditTextEmail
                 android:id="@+id/emailusernameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
                 app:passwordToggleEnabled="true"
@@ -185,7 +185,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/dateEditText"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
                 app:passwordToggleEnabled="true"
@@ -220,7 +220,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/telpEditText"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
                 app:passwordToggleEnabled="true"
