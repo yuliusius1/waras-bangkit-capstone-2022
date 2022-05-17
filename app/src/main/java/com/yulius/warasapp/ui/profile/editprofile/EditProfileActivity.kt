@@ -1,16 +1,21 @@
 package com.yulius.warasapp.ui.profile.editprofile
 
 import android.Manifest
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.DatePicker
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import com.yulius.warasapp.R
 import com.yulius.warasapp.databinding.ActivityEditProfileBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class EditProfileActivity : AppCompatActivity() {
 
