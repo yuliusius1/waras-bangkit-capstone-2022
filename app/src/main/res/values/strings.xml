@@ -44,6 +44,7 @@
     <string name="no_permission">not getting permission</string>
     <string name="choose">Choose a Picture</string>
     <string name="date_formate">MM-dd-yyyy</string>
+    <string name="theme">Theme</string>
 
 
 </resources>
