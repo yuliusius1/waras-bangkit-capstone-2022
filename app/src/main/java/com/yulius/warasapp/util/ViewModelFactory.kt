@@ -14,6 +14,7 @@ import com.yulius.warasapp.ui.profile.change_password.ChangePasswordViewModel
 import com.yulius.warasapp.ui.profile.contact_us.ContactUsViewModel
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
 import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
+import com.yulius.warasapp.ui.profile.history.HistoryViewModel
 import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
 
 class ViewModelFactory(private val pref: UserPreference) :
@@ -51,6 +52,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(EditProfileViewModel::class.java) -> {
                 EditProfileViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(HistoryViewModel::class.java) -> {
+                HistoryViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ContactUsViewModel::class.java) -> {
