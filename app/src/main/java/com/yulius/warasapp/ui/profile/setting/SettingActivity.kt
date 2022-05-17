@@ -27,11 +27,6 @@ class SettingActivity : AppCompatActivity() {
         setupView()
         setupViewModel()
         setupAction()
-
-
-
-
-
     }
 
     private fun setupView() {

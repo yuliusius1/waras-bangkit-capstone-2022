@@ -1,11 +1,13 @@
-package com.yulius.warasapp.ui.profile.contact_us
+package com.yulius.warasapp.ui.profile.history
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
-import kotlinx.coroutines.launch
 
-class ContactUsViewModel(private val pref: UserPreference) : ViewModel() {
+class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 

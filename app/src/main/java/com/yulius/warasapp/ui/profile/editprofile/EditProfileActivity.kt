@@ -108,27 +108,27 @@ class EditProfileActivity : AppCompatActivity() {
                 var isError = false
                 if (TextUtils.isEmpty(nameEditTextLayout.editText?.text)){
                     isError = true
-                    nameEditTextLayout.editText?.error = "Name must be filled out"
+                    nameEditTextLayout.editText?.error = getString(R.string.enter_name)
                 }
 
                 if (TextUtils.isEmpty(usernameEditTextLayout.editText?.text)){
                     isError = true
-                    usernameEditTextLayout.editText?.error = "Username must be filled out"
+                    usernameEditTextLayout.editText?.error = getString(R.string.enter_username)
                 }
 
                 if (TextUtils.isEmpty(emailEditTextLayout.editText?.text)){
                     isError = true
-                    emailEditTextLayout.editText?.error = "Email must be filled out"
+                    emailEditTextLayout.editText?.error = getString(R.string.enter_email)
                 }
 
                 if (TextUtils.isEmpty(dateEditTextLayout.editText?.text)){
                     isError = true
-                    dateEditTextLayout.editText?.error = "Date must be filled out"
+                    dateEditTextLayout.editText?.error = getString(R.string.enter_date)
                 }
 
                 if (TextUtils.isEmpty(telpEditTextLayout.editText?.text)){
                     isError = true
-                    telpEditTextLayout.editText?.error = "Telp must be filled out"
+                    telpEditTextLayout.editText?.error = getString(R.string.enter_tel)
                 }
 
                 if (!isError){
@@ -180,7 +180,7 @@ class EditProfileActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = "Edit Profile Page"
+        supportActionBar?.title = getString(R.string.title_edit_profile)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         dateSetListener =
@@ -255,10 +255,9 @@ class EditProfileActivity : AppCompatActivity() {
         if (!status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
-                val message = "Edit Profile Success"
+                val message = getString(R.string.edit_profile_success)
                 setMessage(message)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
-//                    finish()
                     startActivity(Intent(this@EditProfileActivity, MainActivity::class.java))
                 }
                 create()

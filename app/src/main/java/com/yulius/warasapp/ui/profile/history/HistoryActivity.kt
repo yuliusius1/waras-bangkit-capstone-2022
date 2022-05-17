@@ -1,4 +1,4 @@
-package com.yulius.warasapp.ui.profile.contact_us
+package com.yulius.warasapp.ui.profile.history
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
-import com.yulius.warasapp.databinding.ActivityContactUsBinding
+import com.yulius.warasapp.databinding.ActivityHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
@@ -18,13 +18,13 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
 )
 
-class ContactUsActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityContactUsBinding
-    private lateinit var viewModel: ContactUsViewModel
+class HistoryActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHistoryBinding
+    private lateinit var viewModel: HistoryViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityContactUsBinding.inflate(layoutInflater)
+        binding = ActivityHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupView()
@@ -33,14 +33,15 @@ class ContactUsActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_contact_us)
+        supportActionBar?.title = getString(R.string.title_history)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(
             this,
             ViewModelFactory(UserPreference.getInstance(dataStore))
-        )[ContactUsViewModel::class.java]
+        )[HistoryViewModel::class.java]
 
         viewModel.getUser().observe(this){
             if (!it.isLogin){

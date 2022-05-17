@@ -20,8 +20,10 @@ import com.yulius.warasapp.databinding.FragmentProfileBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.ui.profile.change_password.ChangePasswordActivity
+import com.yulius.warasapp.ui.profile.contact_us.ContactUsActivity
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileActivity
 import com.yulius.warasapp.ui.profile.feedback.FeedbackActivity
+import com.yulius.warasapp.ui.profile.history.HistoryActivity
 import com.yulius.warasapp.ui.profile.setting.SettingActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
@@ -86,12 +88,11 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnHistory.setOnClickListener {
-
+            startActivity(Intent(activity, HistoryActivity::class.java))
         }
 
         binding.btnChangePassword.setOnClickListener {
             startActivity(Intent(activity, ChangePasswordActivity::class.java))
-
         }
 
         binding.btnTheme.setOnClickListener {
@@ -107,7 +108,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnContact.setOnClickListener {
-
+            startActivity(Intent(activity, ContactUsActivity::class.java))
         }
 
         binding.btnLogout.setOnClickListener {

@@ -63,33 +63,31 @@ class ChangePasswordActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.apply {
             btnSubmit.setOnClickListener {
-                Log.d("TAG", "setupAction: ${etCurrPass.text}, ${etNewPass.text}, ${etRepeatPass.text}")
                 var isError = false
-
                 if(TextUtils.isEmpty(etCurrPass.text)){
                     isError = true
-                    etCurrPass.error = "Current Password must be filled"
+                    etCurrPass.error = getString(R.string.enter_current_pass)
                 }
                 if(TextUtils.isEmpty(etNewPass.text)){
                     isError = true
-                    etCurrPass.error = "New Password must be filled"
+                    etCurrPass.error = getString(R.string.enter_new_pass)
                 }
                 if(TextUtils.isEmpty(etNewPass.text)){
                     isError = true
-                    etCurrPass.error = "Repeat New Password must be filled"
+                    etCurrPass.error = getString(R.string.enter_repeat_pass)
                 }
 
                 if(etCurrPass.text.toString() != user.password){
                     isError = true
-                    etCurrPass.error = "Wrong Password"
+                    etCurrPass.error = getString(R.string.wrong_password)
                 }
 
                 if(etCurrPass.text.toString() == etNewPass.text.toString()){
                     isError = true
-                    etNewPass.error = "New Password Cannot be same as current password"
+                    etNewPass.error = getString(R.string.check_new_password)
                 } else if(etRepeatPass.text.toString() != etNewPass.text.toString()){
                     isError = true
-                    etRepeatPass.error = "Repeat password must be equals to New Password"
+                    etRepeatPass.error = getString(R.string.valid_equal_password)
                 }
 
 
@@ -118,7 +116,7 @@ class ChangePasswordActivity : AppCompatActivity() {
         if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
-                val message = "Change Password Success"
+                val message = getString(R.string.change_password_success)
                 setMessage(message)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
 //                    finish()

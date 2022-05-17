@@ -17,7 +17,6 @@ import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityLoginBinding
-import com.yulius.warasapp.databinding.ActivityMainBinding
 import com.yulius.warasapp.ui.auth.register.RegisterActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory

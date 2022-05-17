@@ -22,13 +22,10 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_new_account">Register New Account</string>
-    <string name="enter_email">Enter an email address</string>
-    <string name="enter_password">Password must be filled out</string>
     <string name="success">Success</string>
     <string name="your_account_created">Your account successfully created</string>
     <string name="sorry">Oops</string>
     <string name="create_account_failed">We have an error while creating your account %1$s</string>
-    <string name="enter_name">Name must be filled out</string>
 
     <string name="input_image">Input Image</string>
     <string name="camera">Camera</string>
@@ -45,6 +42,29 @@
     <string name="choose">Choose a Picture</string>
     <string name="date_formate">MM-dd-yyyy</string>
     <string name="theme">Theme</string>
+
+    <!--  Form Validation  -->
+    <string name="enter_name">Name must be filled out</string>
+    <string name="enter_password">Password must be filled out</string>
+    <string name="enter_email">Enter an email address</string>
+    <string name="enter_username">Username must be filled out</string>
+    <string name="enter_date">Date must be filled out</string>
+    <string name="enter_tel">Telp must be filled out</string>
+    <string name="edit_profile_success">Edit Profile Success</string>
+    <string name="enter_current_pass">Current Password must be filled</string>
+    <string name="enter_new_pass">New Password must be filled</string>
+    <string name="enter_repeat_pass">Repeat New Password must be filled</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="check_new_password">New Password Cannot be same as current password</string>
+    <string name="valid_equal_password">Repeat password must be equals to New Password</string>
+    <string name="change_password_success">Change Password Success</string>
+
+    <!--  Title Page  -->
+    <string name="title_edit_profile">Edit Profile Page</string>
+    <string name="title_contact_us">Contact Us Page</string>
+    <string name="title_feedback">Feedback Page</string>
+    <string name="title_change_password">Change Password Page</string>
+    <string name="title_history">History Page</string>
 
 
 </resources>
