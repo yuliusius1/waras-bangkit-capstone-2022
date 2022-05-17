@@ -12,6 +12,9 @@ import com.yulius.warasapp.ui.main.MainViewModel
 import com.yulius.warasapp.ui.profile.ProfileViewModel
 import com.yulius.warasapp.ui.profile.change_password.ChangePasswordViewModel
 import com.yulius.warasapp.ui.profile.contact_us.ContactUsViewModel
+import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
+import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
+import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
 
 class ViewModelFactory(private val pref: UserPreference) :
     ViewModelProvider.NewInstanceFactory() {
@@ -46,14 +49,25 @@ class ViewModelFactory(private val pref: UserPreference) :
                 ProfileViewModel(pref) as T
             }
 
+            modelClass.isAssignableFrom(EditProfileViewModel::class.java) -> {
+                EditProfileViewModel(pref) as T
+            }
+
             modelClass.isAssignableFrom(ContactUsViewModel::class.java) -> {
                 ContactUsViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(FeedbackViewModel::class.java) -> {
+                FeedbackViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ChangePasswordViewModel::class.java) -> {
                 ChangePasswordViewModel(pref) as T
             }
 
+            modelClass.isAssignableFrom(ThemeViewModel::class.java) -> {
+                ThemeViewModel(pref) as T
+            }
 
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

@@ -40,7 +40,7 @@ class ChangePasswordActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        actionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupViewModel() {
@@ -141,9 +141,9 @@ class ChangePasswordActivity : AppCompatActivity() {
         }
     }
 
-    override fun onNavigateUp(): Boolean {
-        onBackPressed()
-        return super.onNavigateUp()
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     private fun showLoading() {

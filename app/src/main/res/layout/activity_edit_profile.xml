@@ -75,14 +75,16 @@
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameTextView">
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="textPersonName"
                 app:passwordToggleEnabled="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -109,14 +111,16 @@
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/usernameTextView">
+            app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/usernameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="textPersonName"
                 app:passwordToggleEnabled="true"
                 tools:ignore="MissingConstraints" />
 
@@ -144,14 +148,16 @@
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailTextView">
+            app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:endIconMode="clear_text">
 
-            <com.yulius.warasapp.ui.custom_views.EditTextEmail
-                android:id="@+id/emailusernameEditText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="textWebEmailAddress"
                 app:passwordToggleEnabled="true"
                 tools:ignore="MissingConstraints" />
 
@@ -215,7 +221,8 @@
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/telpTextView">
+            app:layout_constraintTop_toBottomOf="@+id/telpTextView"
+            app:startIconDrawable="@drawable/ic_baseline_call_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/telpEditText"
@@ -229,7 +236,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/SaveButton"
+            android:id="@+id/saveButton"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:layout_marginStart="32dp"

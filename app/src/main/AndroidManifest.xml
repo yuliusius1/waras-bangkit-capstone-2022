@@ -45,6 +45,9 @@
             android:name=".ui.profile.editprofile.EditProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.profile.setting.SettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>

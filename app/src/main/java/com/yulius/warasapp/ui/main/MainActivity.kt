@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -18,9 +19,6 @@ import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityMainBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.profile.setting.SettingPreferences
-import com.yulius.warasapp.ui.profile.setting.SettingViewModelFactory
-import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -81,21 +79,15 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }
-    }
-    
-    fun settingTheme() {
-        val pref = SettingPreferences.getInstance(dataStore)
-        val themeViewModel = ViewModelProvider(this, SettingViewModelFactory(pref)).get(
-            ThemeViewModel::class.java
-        )
-        themeViewModel.getThemeSettings().observe(this,
-            { isDarkModeActive: Boolean ->
-                if (isDarkModeActive) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                }
-            })
+
+        mainViewModel.getThemeSettings().observe(this
+        ) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
     }
 
 

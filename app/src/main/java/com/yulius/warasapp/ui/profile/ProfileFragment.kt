@@ -13,7 +13,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
@@ -23,6 +22,7 @@ import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.ui.profile.change_password.ChangePasswordActivity
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileActivity
 import com.yulius.warasapp.ui.profile.feedback.FeedbackActivity
+import com.yulius.warasapp.ui.profile.setting.SettingActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -95,7 +95,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnTheme.setOnClickListener {
-
+            startActivity(Intent(activity, SettingActivity::class.java))
         }
 
         binding.btnLanguage.setOnClickListener {

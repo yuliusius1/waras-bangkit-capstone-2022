@@ -15,4 +15,8 @@ class MainViewModel (private val pref: UserPreference) : ViewModel() {
     fun getUser(): LiveData<User> {
         return pref.getUser().asLiveData()
     }
+
+    fun getThemeSettings(): LiveData<Boolean> {
+        return pref.getThemeSetting().asLiveData()
+    }
 }
