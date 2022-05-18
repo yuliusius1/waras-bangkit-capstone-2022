@@ -65,6 +65,34 @@
     <string name="title_feedback">Feedback Page</string>
     <string name="title_change_password">Change Password Page</string>
     <string name="title_history">History Page</string>
+    
+    <!--  Contact Us  -->
+    <string-array name="data_name">
+        <item>Aprillia Anggera Putri Lestari</item>
+        <item>Alfendio Alif Faudisyah</item>
+        <item>Yulius</item>
+        <item>Kartika Okta Rachmawati</item>
+        <item>Alextonio Winatian</item>
+        <item>Melina Azzahra</item>
+    </string-array>
+
+    <string-array name="data_email">
+        <item>M2007F0763@bangkit.academy</item>
+        <item>M2245F2171@bangkit.academy</item>
+        <item>A7245F2166@bangkit.academy</item>
+        <item>A7007F0761@bangkit.academy</item>
+        <item>C7011F1157@bangkit.academy</item>
+        <item>C2007F0650@bangkit.academy</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/ic_baseline_account_circle_24</item>
+    </integer-array>
 
 
 </resources>
