@@ -34,6 +34,7 @@ class ViewModelFactory(private val pref: UserPreference) :
                 RegisterViewModel(pref) as T
             }
 
+
             modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
                 HomeViewModel(pref) as T
             }

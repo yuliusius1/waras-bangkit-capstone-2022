@@ -13,8 +13,11 @@
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_register.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_setting.xml" value="0.22" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/dialog_logout.xml" value="0.209375" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_articles.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_loading.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_row_article.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
