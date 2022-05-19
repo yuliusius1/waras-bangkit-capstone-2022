@@ -11,11 +11,17 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.loopj.android.http.AsyncHttpClient
+import com.loopj.android.http.AsyncHttpResponseHandler
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.FragmentHomeBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
+import com.yulius.warasapp.ui.diagnose.DiagnoseFragment
 import com.yulius.warasapp.util.ViewModelFactory
+import cz.msebera.android.httpclient.Header
+import org.json.JSONObject
+
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -48,6 +54,36 @@ class HomeFragment : Fragment() {
         setupView()
         setupViewModel()
         setupAction()
+        getRandomQuote()
+    }
+
+    private fun getRandomQuote() {
+        val client = AsyncHttpClient()
+        val url = "https://quote-api.dicoding.dev/random"
+        client.get(url, object : AsyncHttpResponseHandler() {
+            override fun onSuccess(statusCode: Int, headers: Array<Header>, responseBody: ByteArray) {
+                val result = String(responseBody)
+                try {
+                    val responseObject = JSONObject(result)
+                    val quote = responseObject.getString("en")
+                    val author = responseObject.getString("author")
+                    binding.tvQuote.text = quote
+                    binding.tvQuoteAuthor.text = author
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+
+            }
+
+            override fun onFailure(statusCode: Int, headers: Array<Header>, responseBody: ByteArray, error: Throwable) {
+                val errorMessage = when (statusCode) {
+                    401 -> "$statusCode : Bad Request"
+                    403 -> "$statusCode : Forbidden"
+                    404 -> "$statusCode : Not Found"
+                    else -> "$statusCode : ${error.message}"
+                }
+            }
+        })
     }
 
     private fun setupView() {
@@ -77,6 +113,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupAction() {
-
+        binding.btnCheck.setOnClickListener {
+            startActivity(Intent(activity, DiagnoseFragment::class.java))
+        }
     }
 }

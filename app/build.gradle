@@ -79,4 +79,7 @@ dependencies {
     //Paging Data
     implementation "androidx.paging:paging-runtime-ktx:3.1.1"
 
+    //Async
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
 }
