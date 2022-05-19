@@ -95,13 +95,16 @@ class ChangePasswordActivity : AppCompatActivity() {
                     viewModel.getUser().observe(this@ChangePasswordActivity){
                         viewModel.saveUser(
                             User(
-                                it.name,
+                                it.full_name,
                                 it.username,
                                 it.email,
                                 etCurrPass.text.toString(),
                                 it.telephone,
-                                it.birth,
-                                true
+                                it.date_of_birth,
+                                it.isLogin,
+                                it.created_at,
+                                it.updated_at,
+                                it.id
                             )
                         )
                     }

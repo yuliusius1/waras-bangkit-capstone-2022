@@ -112,7 +112,10 @@ class LoginActivity : AppCompatActivity() {
                         "1234",
                         "089501784227",
                         "06 June 2001",
-                        true
+                        true,
+                        "2000-1-1",
+                        "2000-1-1",
+                        1
                     ))
 
                     showDialogs(true)

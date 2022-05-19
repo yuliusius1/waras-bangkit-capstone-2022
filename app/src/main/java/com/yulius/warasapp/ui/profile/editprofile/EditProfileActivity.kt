@@ -143,7 +143,10 @@ class EditProfileActivity : AppCompatActivity() {
                                     user.password,
                                     telpEditTextLayout.editText?.text.toString(),
                                     dateEditTextLayout.editText?.text.toString(),
-                                    true
+                                    true,
+                                    "2000-1-1",
+                                    "2000-1-1",
+                                    1
                                 )
                             )
                         }
@@ -169,10 +172,10 @@ class EditProfileActivity : AppCompatActivity() {
             } else {
                 user = it
                 binding.apply {
-                    nameEditTextLayout.editText?.setText(it.name)
+                    nameEditTextLayout.editText?.setText(it.full_name)
                     usernameEditTextLayout.editText?.setText(it.username)
                     emailEditTextLayout.editText?.setText(it.email)
-                    dateEditTextLayout.editText?.setText(it.birth)
+                    dateEditTextLayout.editText?.setText(it.date_of_birth)
                     telpEditTextLayout.editText?.setText(it.telephone)
                 }
             }

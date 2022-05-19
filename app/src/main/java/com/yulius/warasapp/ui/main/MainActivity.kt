@@ -66,13 +66,16 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.getUser().observe(this) {
             user = User(
-                it.name,
+                it.full_name,
                 it.username,
                 it.email,
                 it.password,
                 it.telephone,
-                it.birth,
+                it.date_of_birth,
                 it.isLogin,
+                it.created_at,
+                it.updated_at,
+                it.id
             )
             if (!it.isLogin) {
                 startActivity(Intent(this, LoginActivity::class.java))

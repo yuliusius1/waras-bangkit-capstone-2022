@@ -78,4 +78,5 @@ dependencies {
 
     //Paging Data
     implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
 }
