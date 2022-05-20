@@ -45,6 +45,9 @@
             android:name=".ui.profile.contact_us.ContactUsActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.profile.contact_us.EmailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
         <activity

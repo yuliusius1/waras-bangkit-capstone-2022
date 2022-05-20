@@ -67,11 +67,11 @@ class ContactUsActivity : AppCompatActivity() {
     private val listContacts: ArrayList<Contact>
         get() {
             val dataName = resources.getStringArray(R.array.data_name)
-            val dataDescription = resources.getStringArray(R.array.data_email)
+            val dataEmail = resources.getStringArray(R.array.data_email)
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listContact = ArrayList<Contact>()
             for (i in dataName.indices) {
-                val contact = Contact(dataName[i],dataDescription[i], dataPhoto.getResourceId(i, -1))
+                val contact = Contact(dataName[i],dataEmail[i], dataPhoto.getResourceId(i, -1))
                 listContact.add(contact)
             }
             return listContact
@@ -85,6 +85,14 @@ class ContactUsActivity : AppCompatActivity() {
         }
         val listContactAdapter = ListContactAdapter(list)
         rvContact.adapter = listContactAdapter
+        
+        listContactAdapter.setOnItemClickCallback(object : ListContactAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Contact) {
+                val intentToEmail = Intent(this@ContactUsActivity, EmailActivity::class.java)
+                intentToEmail.putExtra("DATA", data)
+                startActivity(intentToEmail)
+            }
+        })
 
     }
 

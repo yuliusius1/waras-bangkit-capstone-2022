@@ -70,6 +70,7 @@
     <string name="title_profile">Profile Page</string>
 
     <!--  Contact Us  -->
+    <string name="email_to">Email to </string>
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
         <item>Alfendio Alif Faudisyah</item>
