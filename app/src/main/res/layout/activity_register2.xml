@@ -50,6 +50,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title"/>
 
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"
+        app:layout_constraintTop_toBottomOf="@id/et_tel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
     <DatePicker
         android:id="@+id/date_picker"
         android:layout_width="match_parent"
@@ -57,9 +70,10 @@
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
         android:spinnersShown="true"
+        android:background="@drawable/bg_edittext"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@id/et_tel"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
         app:layout_constraintStart_toStartOf="parent"/>
     
     <Button

@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.yulius.warasapp.data.model.User
+import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
 
 class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
@@ -13,6 +14,10 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
 
     fun getUser(): LiveData<User> {
         return pref.getUser().asLiveData()
+    }
+
+    fun saveUser(userLogin: UserLogin) {
+
     }
 
 

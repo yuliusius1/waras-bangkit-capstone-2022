@@ -39,9 +39,6 @@
             android:name=".ui.profile.change_password.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.profile.contact_us.EmailActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.profile.contact_us.ContactUsActivity"
             android:exported="false" />
         <activity

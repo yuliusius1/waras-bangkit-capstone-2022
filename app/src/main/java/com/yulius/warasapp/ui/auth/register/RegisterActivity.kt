@@ -2,15 +2,12 @@ package com.yulius.warasapp.ui.auth.register
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.app.Activity
-import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityOptionsCompat
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -23,8 +20,9 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
+import com.yulius.warasapp.data.model.User
+import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
-
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -33,11 +31,14 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var viewModel: RegisterViewModel
+    private lateinit var userLogin: UserLogin
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        userLogin = UserLogin("","","","","","")
 
         setupView()
         setupViewModel()
@@ -84,7 +85,7 @@ class RegisterActivity : AppCompatActivity() {
             val username = binding.etUsername.text.toString()
             val checkSpaces = "\\A\\w{1,20}\\z"
             when {
-                username.matches(checkSpaces.toRegex()) ->{
+                !username.matches(checkSpaces.toRegex()) ->{
                     binding.etUsername.error = "No Whitespaces are allowed"
                 }
 
@@ -104,6 +105,8 @@ class RegisterActivity : AppCompatActivity() {
                 else -> {
                     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                         val intent = Intent(this,RegisterActivity2::class.java)
+                        userLogin = UserLogin(name,username,email,password,"","")
+                        intent.putExtra("userLogin",userLogin)
                         val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
                             this@RegisterActivity,
                             Pair(binding.ivLogo, "logo"),
@@ -120,33 +123,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun showDialogs(msg:String, status:Boolean) {
-        if(status){
-            AlertDialog.Builder(this).apply {
-                setTitle(getString(R.string.success))
-                setMessage(getString(R.string.your_account_created))
-                setPositiveButton(getString(R.string.next)) { _, _ ->
-                    val intent = Intent(context, LoginActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                    startActivity(intent)
-                    finish()
-                }
-                create()
-                show()
-            }
-        } else {
-            AlertDialog.Builder(this).apply {
-                setTitle(getString(R.string.sorry))
-                val message = getString(R.string.create_account_failed,msg)
-                setMessage(message)
-                setPositiveButton(getString(R.string.repeat)) { _, _ ->
-                    finish()
-                }
-                create()
-                show()
-            }
-        }
-    }
+
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(
