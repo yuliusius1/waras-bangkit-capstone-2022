@@ -1,11 +1,13 @@
-package com.yulius.warasapp.ui.home
+package com.yulius.warasapp.ui.auth.register2
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
-import kotlinx.coroutines.launch
 
-class HomeViewModel(private val pref: UserPreference) : ViewModel()  {
+class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
@@ -13,9 +15,5 @@ class HomeViewModel(private val pref: UserPreference) : ViewModel()  {
         return pref.getUser().asLiveData()
     }
 
-    fun logout() {
-        viewModelScope.launch {
-            pref.logout()
-        }
-    }
+
 }

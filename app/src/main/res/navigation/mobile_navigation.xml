@@ -9,24 +9,89 @@
         android:id="@+id/navigation_home"
         android:name="com.yulius.warasapp.ui.home.HomeFragment"
         android:label="Home Fragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_diagnose"
+            app:destination="@id/navigation_diagnose"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_article"
+            app:destination="@id/navigation_article"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_diagnose"
         android:name="com.yulius.warasapp.ui.diagnose.DiagnoseFragment"
         android:label="Diagnose Fragment"
-        tools:layout="@layout/fragment_diagnose" />
+        tools:layout="@layout/fragment_diagnose" >
+        <action
+            android:id="@+id/action_navigation_diagnose_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_diagnose_to_navigation_article"
+            app:destination="@id/navigation_article"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_diagnose_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_article"
         android:name="com.yulius.warasapp.ui.articles.ArticlesFragment"
         android:label="Articles Fragment"
-        tools:layout="@layout/fragment_articles" />
+        tools:layout="@layout/fragment_articles" >
+        <action
+            android:id="@+id/action_navigation_article_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_article_to_navigation_diagnose"
+            app:destination="@id/navigation_diagnose"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_article_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.yulius.warasapp.ui.profile.ProfileFragment"
         android:label="Profile Fragment"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_diagnose"
+            app:destination="@id/navigation_diagnose"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_article"
+            app:destination="@id/navigation_article"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+    </fragment>
 
 </navigation>

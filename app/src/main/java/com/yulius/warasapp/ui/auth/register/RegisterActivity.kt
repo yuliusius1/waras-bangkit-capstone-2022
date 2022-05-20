@@ -2,12 +2,16 @@ package com.yulius.warasapp.ui.auth.register
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.app.Activity
+import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityOptionsCompat
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -18,6 +22,9 @@ import com.yulius.warasapp.databinding.ActivityRegisterBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
+import androidx.core.util.Pair
+import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
+
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -47,6 +54,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(500)
         val nameEditTextLayout = ObjectAnimator.ofFloat(binding.etName, View.ALPHA,1f).setDuration(500)
+        val usernameEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(500)
         val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etEmail, View.ALPHA,1f).setDuration(500)
         val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(500)
         val registBtn = ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA,1f).setDuration(500)
@@ -58,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         AnimatorSet().apply {
-            playSequentially(titleTextView,nameEditTextLayout,emailEditTextLayout,passwordEditTextLayout,registBtn,together)
+            playSequentially(titleTextView,nameEditTextLayout,usernameEditTextLayout,emailEditTextLayout,passwordEditTextLayout,registBtn,together)
             start()
         }
     }
@@ -73,7 +81,17 @@ class RegisterActivity : AppCompatActivity() {
             val name = binding.etName.text.toString()
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
+            val username = binding.etUsername.text.toString()
+            val checkSpaces = "\\A\\w{1,20}\\z"
             when {
+                username.matches(checkSpaces.toRegex()) ->{
+                    binding.etUsername.error = "No Whitespaces are allowed"
+                }
+
+                username.isEmpty() -> {
+                    binding.etUsername.error = getString(R.string.enter_username)
+                }
+
                 name.isEmpty() -> {
                     binding.etName.error = getString(R.string.enter_name)
                 }
@@ -84,7 +102,19 @@ class RegisterActivity : AppCompatActivity() {
                     binding.etPassword.error = getString(R.string.enter_password)
                 }
                 else -> {
-                    showDialogs("",true)
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                        val intent = Intent(this,RegisterActivity2::class.java)
+                        val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                            this@RegisterActivity,
+                            Pair(binding.ivLogo, "logo"),
+                            Pair(binding.tvTitle, "title"),
+                            Pair(binding.tvLogin, "login"),
+                            Pair(binding.tvTxtLogin, "txtLogin"),
+                        )
+                        startActivity(intent, optionsCompat.toBundle())
+                    } else {
+                        startActivity(intent)
+                    }
                 }
             }
         }

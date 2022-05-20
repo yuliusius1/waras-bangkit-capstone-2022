@@ -10,15 +10,19 @@
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.20860927152317882" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_register.xml" value="0.209375" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_register2.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_setting.xml" value="0.22" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/dialog_logout.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_articles.xml" value="0.209375" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_diagnose.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_loading.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_row_article.xml" value="0.209375" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/popup_profile.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/menu/popup_profile_menu.xml" value="0.209375" />
       </map>
     </option>
   </component>

@@ -13,16 +13,23 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/main_nav_graph"
+            app:popUpToInclusive="true"/>
 
         <action
             android:id="@+id/action_FirstFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.yulius.warasapp.ui.diagnose.DiagnoseFragment"
-        android:label="Fragment 1"
+        android:label="Fragment 2"
         tools:layout="@layout/fragment_diagnose">
 
         <action
@@ -31,11 +38,15 @@
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="com.yulius.warasapp.ui.articles.ArticlesFragment"
-        android:label="Fragment 1"
+        android:label="Fragment 3"
         tools:layout="@layout/fragment_articles">
 
         <action
@@ -45,5 +56,27 @@
         <action
             android:id="@+id/action_ThirdFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_ThirdFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.yulius.warasapp.ui.profile.ProfileFragment"
+        android:label="Fragment 4"
+        tools:layout="@layout/fragment_articles">
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
     </fragment>
 </navigation>

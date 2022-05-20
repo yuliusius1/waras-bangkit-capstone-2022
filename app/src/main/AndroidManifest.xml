@@ -30,10 +30,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
         <activity
+            android:name=".ui.auth.register2.RegisterActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.history.HistoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.profile.change_password.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.contact_us.EmailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.profile.contact_us.ContactUsActivity"

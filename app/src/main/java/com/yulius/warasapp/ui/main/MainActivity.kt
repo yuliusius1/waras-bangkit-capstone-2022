@@ -34,8 +34,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupView()
         setupViewModel()
         setupFragment()
+    }
+
+    private fun setupView() {
+        supportActionBar?.hide()
     }
 
     private fun setupFragment() {

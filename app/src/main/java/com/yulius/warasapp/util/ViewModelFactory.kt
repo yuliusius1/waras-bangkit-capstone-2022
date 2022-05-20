@@ -6,6 +6,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.ui.articles.ArticlesViewModel
 import com.yulius.warasapp.ui.auth.login.LoginViewModel
 import com.yulius.warasapp.ui.auth.register.RegisterViewModel
+import com.yulius.warasapp.ui.auth.register2.RegisterViewModel2
 import com.yulius.warasapp.ui.diagnose.DiagnoseViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
 import com.yulius.warasapp.ui.main.MainViewModel
@@ -73,6 +74,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(ThemeViewModel::class.java) -> {
                 ThemeViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(RegisterViewModel2::class.java) -> {
+                RegisterViewModel2(pref) as T
             }
 
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)

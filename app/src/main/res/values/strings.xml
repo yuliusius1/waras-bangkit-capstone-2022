@@ -65,7 +65,10 @@
     <string name="title_feedback">Feedback Page</string>
     <string name="title_change_password">Change Password Page</string>
     <string name="title_history">History Page</string>
-    
+    <string name="title_diagnose">Diagnose Page</string>
+    <string name="title_article">Article Page</string>
+    <string name="title_profile">Profile Page</string>
+
     <!--  Contact Us  -->
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
