@@ -10,14 +10,8 @@ interface ApiServiceArticles {
     @GET("v2/everything")
     fun getNews(
         @Query("q") searchQuery: String,
-        @Query("page") pageNumber: Int,
+        @Query("sortBy") sortBy: String? = "",
         @Query("apiKey") apiKey: String,
-    ): Call<ArrayList<Article>>
-
-    @GET("v2/everything")
-    fun getAllNews(
-        @Query("q") searchQuery: String,
-        @Query("page") pageNumber: Int,
-        @Query("apiKey") apiKey: String,
-    ): ArticlesResponse
+        @Query("language") language: String? = "en",
+    ): Call<ArticlesResponse>
 }

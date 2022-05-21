@@ -1,4 +1,4 @@
-package com.yulius.warasapp.ui.profile.editprofile
+package com.yulius.warasapp.util
 
 import android.content.ContentResolver
 import android.content.Context
@@ -12,11 +12,17 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 private const val FILENAME_FORMAT = "dd-MMM-yyyy"
+const val SERVER_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss:SS'Z'"
 
 val timeStamp: String = SimpleDateFormat(
     FILENAME_FORMAT,
     Locale.US
 ).format(System.currentTimeMillis())
+
+fun dateFormat(dateString: String?): String {
+    return "${dateString?.substring(0,10)} ${dateString?.substring(12,19)}"
+
+}
 
 fun createTempFile(context: Context): File {
     val storageDir: File? = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)

@@ -217,7 +217,7 @@ class EditProfileActivity : AppCompatActivity() {
     private fun startTakePhoto() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         intent.resolveActivity(packageManager)
-        createTempFile(application).also {
+        com.yulius.warasapp.util.createTempFile(application).also {
             val photoURI: Uri = FileProvider.getUriForFile(
                 this@EditProfileActivity,
                 "com.yulius.warasapp",

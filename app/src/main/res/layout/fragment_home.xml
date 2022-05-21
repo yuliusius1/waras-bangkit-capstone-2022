@@ -66,9 +66,8 @@
         <ImageView
             android:id="@+id/iv_banner"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:scaleType="centerCrop"
-            tools:src="@tools:sample/backgrounds/scenic"
+            android:layout_height="200dp"
+            android:src="@drawable/banner"
             app:layout_constraintTop_toBottomOf="@id/cv_greeting"
             app:layout_constraintStart_toStartOf="parent"
             />
