@@ -18,10 +18,10 @@ class EmailActivity : AppCompatActivity() {
 
         val data = intent.getParcelableExtra<Contact>("DATA")
 
-        binding.tvItemEmail.text = getString(R.string.email_to) + data?.name
+        binding.tvItemEmail.text = getString(R.string.email_to) + " " + data?.name
         binding.emailBtn.setOnClickListener {
-            val intentToDetail = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "${data?.email}", null))
-            startActivity(Intent.createChooser(intentToDetail, "Send email"))
+            val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts(getString(R.string.mail_to), "${data?.email}", null))
+            startActivity(Intent.createChooser(intent, getString(R.string.send_email)))
         }
     }
 }

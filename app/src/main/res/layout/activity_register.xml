@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="@string/full_name"
+        android:hint="@string/username"
         android:layout_marginHorizontal="32dp"
         android:background="@drawable/bg_edittext"
         android:paddingHorizontal="16dp"
