@@ -27,6 +27,7 @@ class ChangePasswordViewModel(private val pref: UserPreference) : ViewModel()  {
     }
 
     fun changePassword(user: User, password: String, callback: ResponseCallback){
+        _isLoading.value = true
         ApiConfig.getApiService().changePassword(user.username, password).enqueue(object:
             Callback<ResponseData> {
             override fun onResponse(
@@ -55,19 +56,24 @@ class ChangePasswordViewModel(private val pref: UserPreference) : ViewModel()  {
                         } else {
                             callback.getCallback("Success Update Password", true)
                         }
+                        _isLoading.value = false
                     } else {
                         if (responseBody.message != null){
                             callback.getCallback(responseBody.message, false)
                         } else {
                             callback.getCallback("Failed Update Password", false)
                         }
+                        _isLoading.value = false
+
                     }
                 } else {
+                    _isLoading.value = false
                     callback.getCallback(response.message(), false)
                 }
             }
 
             override fun onFailure(call: Call<ResponseData>, t: Throwable) {
+                _isLoading.value = false
                 callback.getCallback(t.message.toString(), false)
             }
 
@@ -76,6 +82,8 @@ class ChangePasswordViewModel(private val pref: UserPreference) : ViewModel()  {
     }
 
     fun checkPassword(username: String, password: String, callback: ResponseCallback){
+        _isLoading.value = true
+
         ApiConfig.getApiService().checkPassword(username, password).enqueue(object:
             Callback<ResponseData> {
             override fun onResponse(
@@ -90,19 +98,26 @@ class ChangePasswordViewModel(private val pref: UserPreference) : ViewModel()  {
                         } else {
                             callback.getCallback("Success", true)
                         }
+                            _isLoading.value = false
                     } else {
                         if (responseBody.message != null){
                             callback.getCallback(responseBody.message, false)
                         } else {
                             callback.getCallback("Error Update Password", false)
                         }
+                        _isLoading.value = false
+
                     }
                 } else {
+                    _isLoading.value = false
+
                     callback.getCallback(response.message(), false)
                 }
             }
 
             override fun onFailure(call: Call<ResponseData>, t: Throwable) {
+                _isLoading.value = false
+
                 callback.getCallback(t.message.toString(), false)
             }
 

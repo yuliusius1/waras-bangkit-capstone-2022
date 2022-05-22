@@ -21,6 +21,7 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
     }
 
     fun saveUser(userRegister: UserRegister, callback: ResponseCallback) {
+        _isLoading.value = true
         ApiConfig.getApiService().register(
             userRegister.username,
             userRegister.full_name,
@@ -39,23 +40,29 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
                     if(responseBody.status == "Success") {
                         if(responseBody.message != null){
                             callback.getCallback(responseBody.message, true)
+                            _isLoading.value = false
                         } else {
                             callback.getCallback("Registration Success", true)
+                            _isLoading.value = false
                         }
                     } else {
                         if(responseBody.message != null){
                             callback.getCallback(responseBody.message, false)
+                            _isLoading.value = false
                         } else {
                             callback.getCallback("Registration Failed", false)
+                            _isLoading.value = false
                         }
                     }
                 } else {
-                    callback.getCallback("Data Error",false)
+                    callback.getCallback("${response.message()}",false)
+                    _isLoading.value = false
                 }
             }
 
             override fun onFailure(call: Call<ResponseData>, t: Throwable) {
                 callback.getCallback(t.message.toString(),false)
+                _isLoading.value = false
             }
         })
     }

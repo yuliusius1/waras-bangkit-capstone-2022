@@ -53,21 +53,22 @@ class RegisterActivity : AppCompatActivity() {
             repeatMode = ObjectAnimator.REVERSE
         }.start()
 
-        val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(500)
-        val nameEditTextLayout = ObjectAnimator.ofFloat(binding.etName, View.ALPHA,1f).setDuration(500)
-        val usernameEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(500)
-        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etEmail, View.ALPHA,1f).setDuration(500)
-        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(500)
-        val registBtn = ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA,1f).setDuration(500)
-        val tvTxtLogin = ObjectAnimator.ofFloat(binding.tvTxtLogin, View.ALPHA,1f).setDuration(500)
-        val tvLogin = ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA,1f).setDuration(500)
+        val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
+        val subTitleTextView = ObjectAnimator.ofFloat(binding.tvSubTitle, View.ALPHA,1f).setDuration(300)
+        val nameEditTextLayout = ObjectAnimator.ofFloat(binding.etName, View.ALPHA,1f).setDuration(300)
+        val usernameEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(300)
+        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etEmail, View.ALPHA,1f).setDuration(300)
+        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(300)
+        val registBtn = ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA,1f).setDuration(300)
+        val tvTxtLogin = ObjectAnimator.ofFloat(binding.tvTxtLogin, View.ALPHA,1f).setDuration(300)
+        val tvLogin = ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA,1f).setDuration(300)
 
         val together = AnimatorSet().apply {
             playTogether(tvTxtLogin,tvLogin)
         }
 
         AnimatorSet().apply {
-            playSequentially(titleTextView,nameEditTextLayout,usernameEditTextLayout,emailEditTextLayout,passwordEditTextLayout,registBtn,together)
+            playSequentially(titleTextView,subTitleTextView,nameEditTextLayout,usernameEditTextLayout,emailEditTextLayout,passwordEditTextLayout,registBtn,together)
             start()
         }
     }

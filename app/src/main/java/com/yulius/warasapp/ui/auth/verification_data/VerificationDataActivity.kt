@@ -53,6 +53,7 @@ class VerificationDataActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        showLoading()
         binding.apply {
             btnSubmit.setOnClickListener {
                 val dateOfBirth = binding.datePicker.year.toString() + "-" + (binding.datePicker.month + 1).toString() + "-" + binding.datePicker.dayOfMonth.toString()

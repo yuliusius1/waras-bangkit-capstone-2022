@@ -49,7 +49,7 @@ class ArticlesFragment : Fragment() {
                     )
                 )
             )[ArticlesViewModel::class.java]
-
+        showLoading()
         var adapter = ListArticleAdapter()
 
         with(binding) {
@@ -76,5 +76,16 @@ class ArticlesFragment : Fragment() {
 
 
         super.onViewCreated(view, savedInstanceState)
+    }
+
+    private fun showLoading() {
+        viewModel.isLoading.observe(this) {
+            binding.apply {
+                when {
+                    it -> progressBar.visibility = View.VISIBLE
+                    else -> progressBar.visibility = View.INVISIBLE
+                }
+            }
+        }
     }
 }

@@ -4,9 +4,6 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import androidx.paging.PagingData
-import com.yulius.warasapp.data.model.Article
 import com.yulius.warasapp.data.model.ArticlesResponse
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.data.remote.articles.ApiConfigArticles
@@ -20,7 +17,6 @@ class ArticlesViewModel(private val pref: UserPreference) : ViewModel()  {
 
     val listArticles = MutableLiveData<ArticlesResponse>()
 
-
     fun setNews(){
         _isLoading.value = true
         ApiConfigArticles.getApiService().getNews("covid","publishedAt","2a81a09b7fae49ba817399a2fc9cb666").enqueue(object:
@@ -30,27 +26,23 @@ class ArticlesViewModel(private val pref: UserPreference) : ViewModel()  {
                 response: Response<ArticlesResponse>
             ) {
                 if(response.isSuccessful){
-                    Log.d("Success ", "onResponse: ${response.message()}")
+                    Log.d("TAG", "onResponse: ${response.message()}")
                     listArticles.postValue(response.body())
+                    _isLoading.value = false
                 } else {
-                    Log.d("Followers View model", "onResponse: ${response.message()}")
+                    Log.d("TAG", "onResponse: ${response.message()}")
+                    _isLoading.value = false
                 }
             }
 
             override fun onFailure(call: Call<ArticlesResponse>, t: Throwable) {
                 Log.d("Failure", "onFailure: ${t.message}")
+                _isLoading.value = false
             }
 
         })
     }
-
     fun getNews() : LiveData<ArticlesResponse> {
         return listArticles
     }
-
-    private val apiService = ApiConfigArticles.getApiService()
-
-//    val stories :  LiveData<PagingData<Article>> = ArticlesRepository(pref,apiService).getStory().cachedIn(viewModelScope)
-
-
 }

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -63,6 +64,7 @@ class RegisterActivity2 : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        showLoading()
         binding.tvLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
@@ -117,6 +119,16 @@ class RegisterActivity2 : AppCompatActivity() {
                 }
                 create()
                 show()
+            }
+        }
+    }
+    private fun showLoading() {
+        viewModel.isLoading.observe(this) {
+            binding.apply {
+                when {
+                    it -> progressBar.visibility = View.VISIBLE
+                    else -> progressBar.visibility = View.INVISIBLE
+                }
             }
         }
     }

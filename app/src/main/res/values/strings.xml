@@ -90,6 +90,12 @@
     <string name="repeat_new_password">Repeat New Password</string>
     <string name="verification_error">Wrong Data! Verification Failed</string>
     <string name="verification_success">Verification Successfull! You will be redirect to Reset Password Page</string>
+    <string name="login_to_your_personal_account">Login to your personal account</string>
+    <string name="login_area">Login Area</string>
+    <string name="register_area">Register Area</string>
+    <string name="forgot_password_area">Forgot Password Area</string>
+    <string name="verification_data">Verification Data</string>
+    <string name="welcome_back">Welcome Back,</string>
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
         <item>Alfendio Alif Faudisyah</item>

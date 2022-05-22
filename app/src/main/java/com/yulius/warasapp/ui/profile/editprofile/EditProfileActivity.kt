@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.TextUtils
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -78,7 +79,7 @@ class EditProfileActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
-
+        showLoading()
         binding.apply {
             dateEditText.setOnClickListener {
                 DatePickerDialog(
@@ -261,6 +262,17 @@ class EditProfileActivity : AppCompatActivity() {
                 }
                 create()
                 show()
+            }
+        }
+    }
+
+    private fun showLoading() {
+        viewModel.isLoading.observe(this) {
+            binding.apply {
+                when {
+                    it -> progressBar.visibility = View.VISIBLE
+                    else -> progressBar.visibility = View.INVISIBLE
+                }
             }
         }
     }

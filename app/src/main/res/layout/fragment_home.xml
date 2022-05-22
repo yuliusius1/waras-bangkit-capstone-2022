@@ -32,8 +32,8 @@
                     android:id="@+id/tv_welcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Welcome Back,"
-                    android:textSize="14sp"
+                    android:text="@string/welcome_back"
+                    android:textSize="16sp"
                     app:layout_constraintTop_toTopOf="@id/iv_avatar"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -42,8 +42,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Narendra Wicaksono"
+                    android:textColor="@color/primaryBlue"
                     android:textStyle="bold"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:layout_marginTop="4dp"
                     app:layout_constraintTop_toBottomOf="@id/tv_welcome"
                     app:layout_constraintStart_toStartOf="parent"/>
@@ -77,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your Progress"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
@@ -89,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your Recommendations"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
@@ -122,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fist Recommendations"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
@@ -131,7 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Second Recommendations"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginTop="4dp"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendations1"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -141,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Third Recommendations"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginTop="4dp"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendations2"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -175,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kesehatan yang baik bukanlah sesuatu yang dapat kita beli. Namun, sesuatu yang dapat menjadi tabungan yang sangat berharga."
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textStyle="italic"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
@@ -185,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="- Anne Wilson Schaef"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="4dp"
                     app:layout_constraintTop_toBottomOf="@id/tv_quote"
                     app:layout_constraintStart_toStartOf="parent"/>
@@ -195,7 +196,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:text="Cek Kesehatan Sekarang"
                     app:layout_constraintTop_toBottomOf="@id/tv_quote_author"
                     app:layout_constraintStart_toStartOf="parent"/>

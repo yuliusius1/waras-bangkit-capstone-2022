@@ -73,6 +73,7 @@ class LoginActivity : AppCompatActivity() {
         }.start()
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
+        val subTitleTextView = ObjectAnimator.ofFloat(binding.tvSubTitle, View.ALPHA,1f).setDuration(300)
         val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(300)
         val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(300)
         val loginBtn = ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA,1f).setDuration(300)
@@ -85,7 +86,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         AnimatorSet().apply {
-            playSequentially(titleTextView,emailEditTextLayout,passwordEditTextLayout,forgotPass,loginBtn,together)
+            playSequentially(titleTextView,subTitleTextView,emailEditTextLayout,passwordEditTextLayout,forgotPass,loginBtn,together)
             start()
         }
     }
