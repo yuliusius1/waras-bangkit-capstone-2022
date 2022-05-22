@@ -68,6 +68,11 @@
     <string name="title_diagnose">Diagnose Page</string>
     <string name="title_article">Article Page</string>
     <string name="title_profile">Profile Page</string>
+    
+    <!-- landing -->
+    <string name="landing1">Welcome to WARAS</string>
+    <string name="landing2">Detecting Covid-19 Symptoms and Diagnosis</string>
+    <string name="landing3">Presenting Recommendations During Quarantine and Health Articles</string>
 
     <!--  Contact Us  -->
     <string name="email_to">Email to </string>
