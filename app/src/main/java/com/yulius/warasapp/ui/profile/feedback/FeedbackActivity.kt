@@ -33,6 +33,7 @@ class FeedbackActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        supportActionBar?.title = getString(R.string.title_feedback)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 

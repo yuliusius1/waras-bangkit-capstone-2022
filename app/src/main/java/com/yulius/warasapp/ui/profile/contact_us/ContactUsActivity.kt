@@ -49,6 +49,7 @@ class ContactUsActivity : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.title = getString(R.string.title_contact_us)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupViewModel() {
