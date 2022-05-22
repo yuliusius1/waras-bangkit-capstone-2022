@@ -30,6 +30,7 @@ class SettingActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        supportActionBar?.title = getString(R.string.title_setting)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
