@@ -75,7 +75,7 @@
     <string name="landing2">Detecting Covid-19 Symptoms and Diagnosis</string>
     <string name="landing3">Presenting Recommendations During Quarantine and Health Articles</string>
     <string name="start">Start Now</string>
-    
+
     <!--  Contact Us  -->
     <string name="email_to">Email to </string>
     <string name="mail_to">mailto</string>
