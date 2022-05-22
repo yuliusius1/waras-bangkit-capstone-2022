@@ -40,6 +40,7 @@ class ChangePasswordActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        supportActionBar?.title = getString(R.string.title_change_password)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
