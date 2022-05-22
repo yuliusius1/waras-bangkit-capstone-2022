@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.yulius.warasapp.R
+import com.yulius.warasapp.adapter.ListContactAdapter
+import com.yulius.warasapp.data.model.Contact
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityContactUsBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity

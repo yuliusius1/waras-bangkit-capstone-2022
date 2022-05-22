@@ -19,6 +19,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityLoginBinding
 import com.yulius.warasapp.ui.auth.register.RegisterActivity
 import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -71,7 +72,7 @@ class LoginActivity : AppCompatActivity() {
         }.start()
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(500)
-        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etEmail, View.ALPHA,1f).setDuration(500)
+        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(500)
         val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(500)
         val loginBtn = ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA,1f).setDuration(500)
         val tvTxtRegist = ObjectAnimator.ofFloat(binding.tvTxtRegister, View.ALPHA,1f).setDuration(500)
@@ -88,14 +89,20 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        val checkSpaces = "\\A\\w{1,20}\\z"
         binding.apply {
             showLoading()
             btnLogin.setOnClickListener {
                 var isError = false
 
-                if(TextUtils.isEmpty(etEmail.text)){
+                if(!etUsername.text.toString().matches(checkSpaces.toRegex())){
                     isError = true
-                    etEmail.error = getString(R.string.validate_email)
+                    etUsername.error = getString(R.string.no_whitespace)
+                }
+
+                if(TextUtils.isEmpty(etUsername.text)){
+                    isError = true
+                    etUsername.error = getString(R.string.enter_username)
                 }
                 if(TextUtils.isEmpty(etPassword.text)){
                     isError = true
@@ -105,20 +112,12 @@ class LoginActivity : AppCompatActivity() {
                     etPassword.error = getString(R.string.validate_password)
                 }
                 if(!isError){
-                    viewModel.saveUser(User(
-                        "Yulius",
-                        "yuliusius",
-                        "yiyus49@gmail.com",
-                        "1234",
-                        "089501784227",
-                        "06 June 2001",
-                        true,
-                        "2000-1-1",
-                        "2000-1-1",
-                        1
-                    ))
-
-                    showDialogs(true)
+                    viewModel.loginUser(etUsername.text.toString(), etPassword.text.toString(), object:
+                        ResponseCallback {
+                        override fun getCallback(msg: String, status: Boolean) {
+                            showDialogs(msg,status)
+                        }
+                    })
                 }
             }
             tvRegister.setOnClickListener {
@@ -132,7 +131,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun showDialogs(status: Boolean) {
+    private fun showDialogs(msg: String, status: Boolean) {
         if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")

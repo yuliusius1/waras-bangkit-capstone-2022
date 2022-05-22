@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yulius.warasapp.R
+import com.yulius.warasapp.data.model.Contact
 import com.yulius.warasapp.databinding.ActivityEmailBinding
 
 class EmailActivity : AppCompatActivity() {

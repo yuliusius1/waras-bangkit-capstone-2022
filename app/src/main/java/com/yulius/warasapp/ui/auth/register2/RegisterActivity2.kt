@@ -4,20 +4,19 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
-import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
+import com.yulius.warasapp.data.model.UserRegister
 import com.yulius.warasapp.databinding.ActivityRegister2Binding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.auth.register.RegisterActivity
 import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -27,14 +26,14 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 class RegisterActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityRegister2Binding
     private lateinit var viewModel: RegisterViewModel2
-    private lateinit var userLogin: UserLogin
+    private lateinit var userRegister: UserRegister
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegister2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        userLogin = intent.getParcelableExtra<UserLogin>("userLogin") as UserLogin
+        userRegister = intent.getParcelableExtra<UserRegister>("userRegister") as UserRegister
 
         setupView()
         setupViewModel()
@@ -82,10 +81,13 @@ class RegisterActivity2 : AppCompatActivity() {
                 if(tel.isEmpty()) {
                     etTel.error = getString(R.string.enter_tel)
                 } else {
-                    userLogin.telephone = tel
-                    userLogin.date_of_birth = dateOfBirth
-                    viewModel.saveUser(userLogin)
-                    showDialogs("",true)
+                    userRegister.telephone = tel
+                    userRegister.date_of_birth = dateOfBirth
+                    viewModel.saveUser(userRegister,object: ResponseCallback {
+                        override fun getCallback(msg: String, status: Boolean) {
+                            showDialogs(msg,status)
+                        }
+                    })
                 }
             }
         }
@@ -95,7 +97,7 @@ class RegisterActivity2 : AppCompatActivity() {
         if(status){
             AlertDialog.Builder(this).apply {
                 setTitle(getString(R.string.success))
-                setMessage(getString(R.string.your_account_created))
+                setMessage(msg)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
                     val intent = Intent(context, LoginActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK

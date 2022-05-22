@@ -73,6 +73,7 @@
     <string name="email_to">Email to </string>
     <string name="mail_to">mailto</string>
     <string name="send_email">Send email</string>
+    <string name="no_whitespace">No Whitespaces are allowed</string>
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
         <item>Alfendio Alif Faudisyah</item>

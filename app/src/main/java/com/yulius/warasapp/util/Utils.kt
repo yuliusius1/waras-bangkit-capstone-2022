@@ -19,9 +19,12 @@ val timeStamp: String = SimpleDateFormat(
     Locale.US
 ).format(System.currentTimeMillis())
 
+interface ResponseCallback {
+    fun getCallback(msg:String,status: Boolean)
+}
+
 fun dateFormat(dateString: String?): String {
     return "${dateString?.substring(0,10)} ${dateString?.substring(12,19)}"
-
 }
 
 fun createTempFile(context: Context): File {

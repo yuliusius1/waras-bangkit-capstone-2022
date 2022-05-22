@@ -32,12 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <com.yulius.warasapp.ui.custom_views.EditTextEmail
-        android:id="@+id/et_email"
+    <com.yulius.warasapp.ui.custom_views.EditTextName
+        android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="@string/email_address"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
         android:layout_marginHorizontal="32dp"
         android:background="@drawable/bg_edittext"
         android:paddingHorizontal="16dp"
@@ -63,7 +63,7 @@
         android:alpha="0"
         app:passwordToggleEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_email"/>
+        app:layout_constraintTop_toBottomOf="@id/et_username"/>
 
     <Button
         android:id="@+id/btn_login"

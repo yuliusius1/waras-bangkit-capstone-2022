@@ -20,8 +20,8 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
-import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserLogin
+import com.yulius.warasapp.data.model.UserRegister
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -31,14 +31,14 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var viewModel: RegisterViewModel
-    private lateinit var userLogin: UserLogin
+    private lateinit var userRegister: UserRegister
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        userLogin = UserLogin("","","","","","")
+        userRegister = UserRegister("","","","","","")
 
         setupView()
         setupViewModel()
@@ -86,7 +86,7 @@ class RegisterActivity : AppCompatActivity() {
             val checkSpaces = "\\A\\w{1,20}\\z"
             when {
                 !username.matches(checkSpaces.toRegex()) ->{
-                    binding.etUsername.error = "No Whitespaces are allowed"
+                    binding.etUsername.error = getString(R.string.no_whitespace)
                 }
 
                 username.isEmpty() -> {
@@ -105,8 +105,8 @@ class RegisterActivity : AppCompatActivity() {
                 else -> {
                     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                         val intent = Intent(this,RegisterActivity2::class.java)
-                        userLogin = UserLogin(name,username,email,password,"","")
-                        intent.putExtra("userLogin",userLogin)
+                        userRegister = UserRegister(name,username,email,password,"","")
+                        intent.putExtra("userRegister",userRegister)
                         val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
                             this@RegisterActivity,
                             Pair(binding.ivLogo, "logo"),

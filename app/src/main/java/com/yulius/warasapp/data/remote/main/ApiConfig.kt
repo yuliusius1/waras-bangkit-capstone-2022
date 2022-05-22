@@ -1,13 +1,12 @@
 package com.yulius.warasapp.data.remote.main
 
-import com.yulius.warasapp.data.remote.articles.ApiServiceArticles
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object{
-        fun getApiService(): ApiServiceArticles {
+        fun getApiService(): ApiService {
             val client = OkHttpClient.Builder()
                 .addInterceptor{
                     val original = it.request()
@@ -21,7 +20,7 @@ class ApiConfig {
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
-            return retrofit.create(ApiServiceArticles::class.java)
+            return retrofit.create(ApiService::class.java)
         }
     }
 }
