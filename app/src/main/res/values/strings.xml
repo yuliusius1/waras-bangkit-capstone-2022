@@ -68,6 +68,7 @@
     <string name="title_diagnose">Diagnose Page</string>
     <string name="title_article">Article Page</string>
     <string name="title_profile">Profile Page</string>
+    <string name="title_setting">Setting Page</string>
     
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
