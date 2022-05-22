@@ -33,6 +33,9 @@
             android:name=".ui.articles.DetailArticleActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.landing.LandingActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.auth.register2.RegisterActivity2"
             android:exported="false" />
         <activity
