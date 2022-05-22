@@ -58,6 +58,19 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
         }
     }
 
+    fun getBoardingPage(): Flow<Boolean>{
+        return dataStore.data.map { preferences ->
+            preferences[BOARDING_KEY] ?: true
+        }
+    }
+
+    suspend fun saveBoardingPage(setData : Boolean ){
+        dataStore.edit { preferences ->
+            preferences[BOARDING_KEY] = false
+
+        }
+    }
+
     suspend fun logout() {
         dataStore.edit { preferences ->
             preferences[NAME_KEY] = ""
@@ -90,6 +103,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
         private val EMAIL_KEY = stringPreferencesKey("email")
 
         private val THEME_KEY = booleanPreferencesKey("theme_setting")
+        private val BOARDING_KEY = booleanPreferencesKey("boarding_page")
 
 
         fun getInstance(dataStore: DataStore<Preferences>): UserPreference {

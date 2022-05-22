@@ -9,6 +9,7 @@ import com.yulius.warasapp.ui.auth.register.RegisterViewModel
 import com.yulius.warasapp.ui.auth.register2.RegisterViewModel2
 import com.yulius.warasapp.ui.diagnose.DiagnoseViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
+import com.yulius.warasapp.ui.landing.LandingViewModel
 import com.yulius.warasapp.ui.main.MainViewModel
 import com.yulius.warasapp.ui.profile.ProfileViewModel
 import com.yulius.warasapp.ui.profile.change_password.ChangePasswordViewModel
@@ -17,12 +18,21 @@ import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
 import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
 import com.yulius.warasapp.ui.profile.history.HistoryViewModel
 import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
+import com.yulius.warasapp.ui.splash_screen.SplashScreenViewModel
 
 class ViewModelFactory(private val pref: UserPreference) :
     ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
+            modelClass.isAssignableFrom(SplashScreenViewModel::class.java) -> {
+                SplashScreenViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(LandingViewModel::class.java) -> {
+                LandingViewModel(pref) as T
+            }
+
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(pref) as T
             }
