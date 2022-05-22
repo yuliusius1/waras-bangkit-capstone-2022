@@ -9,6 +9,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivitySettingBinding
 import com.yulius.warasapp.util.ViewModelFactory

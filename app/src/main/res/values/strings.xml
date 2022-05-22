@@ -69,11 +69,7 @@
     <string name="title_article">Article Page</string>
     <string name="title_profile">Profile Page</string>
     <string name="title_setting">Setting Page</string>
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 306c172cc2ddd91fc1de8d97d93f6246091c268c
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
     <string name="landing2">Detecting Covid-19 Symptoms and Diagnosis</string>
