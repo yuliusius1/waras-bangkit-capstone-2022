@@ -30,6 +30,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
         <activity
+            android:name=".ui.auth.verification_data.VerificationDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.reset_password.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.check_email.CheckEmailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.splash_screen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -76,8 +85,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

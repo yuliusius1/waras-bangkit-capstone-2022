@@ -17,6 +17,7 @@ import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityLoginBinding
+import com.yulius.warasapp.ui.auth.check_email.CheckEmailActivity
 import com.yulius.warasapp.ui.auth.register.RegisterActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ResponseCallback
@@ -71,27 +72,33 @@ class LoginActivity : AppCompatActivity() {
             repeatMode = ObjectAnimator.REVERSE
         }.start()
 
-        val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(500)
-        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(500)
-        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(500)
-        val loginBtn = ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA,1f).setDuration(500)
-        val tvTxtRegist = ObjectAnimator.ofFloat(binding.tvTxtRegister, View.ALPHA,1f).setDuration(500)
-        val tvRegist = ObjectAnimator.ofFloat(binding.tvRegister, View.ALPHA,1f).setDuration(500)
+        val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
+        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.etUsername, View.ALPHA,1f).setDuration(300)
+        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.etPassword, View.ALPHA,1f).setDuration(300)
+        val loginBtn = ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA,1f).setDuration(300)
+        val forgotPass = ObjectAnimator.ofFloat(binding.tvForgotPass, View.ALPHA,1f).setDuration(300)
+        val tvTxtRegist = ObjectAnimator.ofFloat(binding.tvTxtRegister, View.ALPHA,1f).setDuration(300)
+        val tvRegist = ObjectAnimator.ofFloat(binding.tvRegister, View.ALPHA,1f).setDuration(300)
 
         val together = AnimatorSet().apply {
             playTogether(tvTxtRegist,tvRegist)
         }
 
         AnimatorSet().apply {
-            playSequentially(titleTextView,emailEditTextLayout,passwordEditTextLayout,loginBtn,together)
+            playSequentially(titleTextView,emailEditTextLayout,passwordEditTextLayout,forgotPass,loginBtn,together)
             start()
         }
     }
 
     private fun setupAction() {
         val checkSpaces = "\\A\\w{1,20}\\z"
+        showLoading()
+
         binding.apply {
-            showLoading()
+            tvForgotPass.setOnClickListener {
+                startActivity(Intent(this@LoginActivity, CheckEmailActivity::class.java))
+            }
+
             btnLogin.setOnClickListener {
                 var isError = false
 
@@ -135,10 +142,8 @@ class LoginActivity : AppCompatActivity() {
         if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
-                val message = getString(R.string.login_success)
-                setMessage(message)
+                setMessage(msg)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
-//                    finish()
                     startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                 }
                 create()
@@ -147,8 +152,7 @@ class LoginActivity : AppCompatActivity() {
         } else {
             AlertDialog.Builder(this).apply {
                 setTitle("Oops")
-                val message = getString(R.string.login_error)
-                setMessage(message)
+                setMessage(msg)
                 setNegativeButton(getString(R.string.repeat)) { dialog, _ ->
                     dialog.dismiss()
                 }

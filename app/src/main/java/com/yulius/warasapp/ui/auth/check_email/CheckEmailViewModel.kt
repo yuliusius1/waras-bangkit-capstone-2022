@@ -1,34 +1,24 @@
-package com.yulius.warasapp.ui.auth.login
+package com.yulius.warasapp.ui.auth.check_email
 
-import android.util.Log
-import androidx.lifecycle.*
-import com.yulius.warasapp.data.model.ResponseData
-import com.yulius.warasapp.data.model.User
-import com.yulius.warasapp.data.model.UserPreference
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.data.remote.main.ApiConfig
 import com.yulius.warasapp.util.ResponseCallback
-import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
+class CheckEmailViewModel (private val pref: UserPreference): ViewModel(){
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
-    fun getUser(): LiveData<User> {
-        return pref.getUser().asLiveData()
-    }
+    val user = MutableLiveData<UserLogin>()
 
-    fun saveUser(user: User) {
-        viewModelScope.launch {
-            pref.saveUser(user)
-        }
-    }
-
-    fun loginUser(username : String, password: String, callback: ResponseCallback){
+    fun checkEmail(email: String, callback: ResponseCallback){
         _isLoading.value = true
-        ApiConfig.getApiService().login(username, password).enqueue(object:
+        ApiConfig.getApiService().checkEmail(email).enqueue(object:
             Callback<ResponseData> {
             override fun onResponse(
                 call: Call<ResponseData>,
@@ -37,22 +27,12 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                 val responseBody = response.body()
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success" && responseBody.data != null){
-                        saveUser(User(
-                            responseBody.data.full_name,
-                            responseBody.data.username,
-                            responseBody.data.email,
-                            responseBody.data.password,
-                            responseBody.data.telephone,
-                            responseBody.data.date_of_birth,
-                            true,
-                            responseBody.data.created_at,
-                            responseBody.data.updated_at,
-                            responseBody.data.id
-                        ))
+                        user.value = responseBody.data!!
+
                         if (responseBody.message != null){
                             callback.getCallback(responseBody.message, true)
                         } else {
-                            callback.getCallback("User Success Login", true)
+                            callback.getCallback("Email found! Redirect to verification page", true)
                         }
                         _isLoading.value = false
 
@@ -60,7 +40,7 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                         if (responseBody.message != null){
                             callback.getCallback(responseBody.message, false)
                         } else {
-                            callback.getCallback("User Failed Login", false)
+                            callback.getCallback("Email not found!", false)
                         }
                         _isLoading.value = false
 
@@ -78,5 +58,9 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
 
             }
         })
+    }
+
+    fun getUser() : LiveData<UserLogin> {
+        return user
     }
 }

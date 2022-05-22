@@ -66,7 +66,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
 
     suspend fun saveBoardingPage(setData : Boolean ){
         dataStore.edit { preferences ->
-            preferences[BOARDING_KEY] = false
+            preferences[BOARDING_KEY] = setData
 
         }
     }

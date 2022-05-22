@@ -18,6 +18,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityChangePasswordBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -78,11 +79,6 @@ class ChangePasswordActivity : AppCompatActivity() {
                     etCurrPass.error = getString(R.string.enter_repeat_pass)
                 }
 
-                if(etCurrPass.text.toString() != user.password){
-                    isError = true
-                    etCurrPass.error = getString(R.string.wrong_password)
-                }
-
                 if(etCurrPass.text.toString() == etNewPass.text.toString()){
                     isError = true
                     etNewPass.error = getString(R.string.check_new_password)
@@ -91,40 +87,35 @@ class ChangePasswordActivity : AppCompatActivity() {
                     etRepeatPass.error = getString(R.string.valid_equal_password)
                 }
 
-
                 if(!isError){
-                    viewModel.getUser().observe(this@ChangePasswordActivity){
-                        viewModel.saveUser(
-                            User(
-                                it.full_name,
-                                it.username,
-                                it.email,
-                                etCurrPass.text.toString(),
-                                it.telephone,
-                                it.date_of_birth,
-                                it.isLogin,
-                                it.created_at,
-                                it.updated_at,
-                                it.id
-                            )
-                        )
-                    }
-
-                    showDialogs(true)
+                    viewModel.checkPassword(user.username, etCurrPass.text.toString(),object : ResponseCallback{
+                        override fun getCallback(msg: String, status: Boolean) {
+                            if (status){
+                                viewModel.changePassword(user,etNewPass.text.toString(),object: ResponseCallback{
+                                    override fun getCallback(msg: String, status: Boolean) {
+                                        showDialogs(msg,status)
+                                    }
+                                })
+                            } else {
+                                showDialogs(msg, status)
+                            }
+                        }
+                    })
                 }
             }
         }
     }
 
-    private fun showDialogs(status: Boolean) {
+    private fun showDialogs(msg: String, status: Boolean) {
         if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
                 val message = getString(R.string.change_password_success)
                 setMessage(message)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
-//                    finish()
-                    startActivity(Intent(this@ChangePasswordActivity, MainActivity::class.java))
+                    val intent = Intent(this@ChangePasswordActivity, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
                 }
                 create()
                 show()
@@ -132,8 +123,7 @@ class ChangePasswordActivity : AppCompatActivity() {
         } else {
             AlertDialog.Builder(this).apply {
                 setTitle("Oops")
-                val message = getString(R.string.login_error)
-                setMessage(message)
+                setMessage(msg)
                 setNegativeButton(getString(R.string.repeat)) { dialog, _ ->
                     dialog.dismiss()
                 }

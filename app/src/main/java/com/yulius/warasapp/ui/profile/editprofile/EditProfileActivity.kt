@@ -27,6 +27,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityEditProfileBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 import java.io.File
 import java.text.SimpleDateFormat
@@ -111,11 +112,6 @@ class EditProfileActivity : AppCompatActivity() {
                     nameEditTextLayout.editText?.error = getString(R.string.enter_name)
                 }
 
-                if (TextUtils.isEmpty(usernameEditTextLayout.editText?.text)){
-                    isError = true
-                    usernameEditTextLayout.editText?.error = getString(R.string.enter_username)
-                }
-
                 if (TextUtils.isEmpty(emailEditTextLayout.editText?.text)){
                     isError = true
                     emailEditTextLayout.editText?.error = getString(R.string.enter_email)
@@ -132,26 +128,18 @@ class EditProfileActivity : AppCompatActivity() {
                 }
 
                 if (!isError){
-                    viewModel.checkUser(usernameEditTextLayout.editText?.text.toString())
-                    viewModel.isFound.observe(this@EditProfileActivity){
-                        if (!it){
-                            viewModel.saveUser(
-                                User(
-                                    nameEditTextLayout.editText?.text.toString(),
-                                    usernameEditTextLayout.editText?.text.toString(),
-                                    emailEditTextLayout.editText?.text.toString(),
-                                    user.password,
-                                    telpEditTextLayout.editText?.text.toString(),
-                                    dateEditTextLayout.editText?.text.toString(),
-                                    true,
-                                    "2000-1-1",
-                                    "2000-1-1",
-                                    1
-                                )
-                            )
+                    viewModel.updateUser(
+                        user,
+                        nameEditTextLayout.editText?.text.toString(),
+                        emailEditTextLayout.editText?.text.toString(),
+                        telpEditTextLayout.editText?.text.toString(),
+                        dateEditTextLayout.editText?.text.toString(),
+                        object :ResponseCallback {
+                            override fun getCallback(msg: String, status: Boolean) {
+                                showDialogs(msg,status)
+                            }
                         }
-                        showDialogs(it)
-                    }
+                    )
                 }
             }
 
@@ -173,9 +161,8 @@ class EditProfileActivity : AppCompatActivity() {
                 user = it
                 binding.apply {
                     nameEditTextLayout.editText?.setText(it.full_name)
-                    usernameEditTextLayout.editText?.setText(it.username)
                     emailEditTextLayout.editText?.setText(it.email)
-                    dateEditTextLayout.editText?.setText(it.date_of_birth)
+                    dateEditTextLayout.editText?.setText(it.date_of_birth.substring(0,10))
                     telpEditTextLayout.editText?.setText(it.telephone)
                 }
             }
@@ -254,12 +241,11 @@ class EditProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun showDialogs(status: Boolean) {
-        if (!status) {
+    private fun showDialogs(msg:String,status: Boolean) {
+        if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
-                val message = getString(R.string.edit_profile_success)
-                setMessage(message)
+                setMessage(msg)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
                     startActivity(Intent(this@EditProfileActivity, MainActivity::class.java))
                 }
@@ -269,8 +255,7 @@ class EditProfileActivity : AppCompatActivity() {
         } else {
             AlertDialog.Builder(this).apply {
                 setTitle("Oops")
-                val message = getString(R.string.login_error)
-                setMessage(message)
+                setMessage(msg)
                 setNegativeButton(getString(R.string.repeat)) { dialog, _ ->
                     dialog.dismiss()
                 }

@@ -4,9 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.ui.articles.ArticlesViewModel
+import com.yulius.warasapp.ui.auth.check_email.CheckEmailViewModel
 import com.yulius.warasapp.ui.auth.login.LoginViewModel
 import com.yulius.warasapp.ui.auth.register.RegisterViewModel
 import com.yulius.warasapp.ui.auth.register2.RegisterViewModel2
+import com.yulius.warasapp.ui.auth.reset_password.ResetPasswordViewModel
+import com.yulius.warasapp.ui.auth.verification_data.VerificationDataViewModel
 import com.yulius.warasapp.ui.diagnose.DiagnoseViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
 import com.yulius.warasapp.ui.landing.LandingViewModel
@@ -43,6 +46,18 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(RegisterViewModel::class.java) -> {
                 RegisterViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(CheckEmailViewModel::class.java) -> {
+                CheckEmailViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(VerificationDataViewModel::class.java) -> {
+                VerificationDataViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(ResetPasswordViewModel::class.java) -> {
+                ResetPasswordViewModel(pref) as T
             }
 
 

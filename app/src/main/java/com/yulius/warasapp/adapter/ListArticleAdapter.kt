@@ -33,7 +33,7 @@ class ListArticleAdapter : RecyclerView.Adapter<ListArticleAdapter.ListViewHolde
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (source, author,title,description,url,urlToImage, publishedAt,content) = listArticle[position]
+        val (source, _,title,description,_,urlToImage, publishedAt,_) = listArticle[position]
         holder.binding.newsTitle.text = title
         holder.binding.newsText.text = description
         holder.binding.newsDate.text = dateFormat(publishedAt)

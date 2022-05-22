@@ -72,7 +72,7 @@ class ProfileFragment : Fragment() {
         viewModel.getUser().observe(viewLifecycleOwner){
             if(it.isLogin){
                 binding.tvName.text = it.full_name
-                binding.tvBirth.text = it.date_of_birth
+                binding.tvBirth.text = it.date_of_birth.substring(0,10)
                 binding.tvTelephone.text = it.telephone
             } else {
                 val i = Intent(activity, LoginActivity::class.java)

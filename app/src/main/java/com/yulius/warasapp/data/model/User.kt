@@ -39,3 +39,12 @@ data class UserLogin(
     val updated_at: String,
     val id: Int,
 ) : Parcelable
+
+@Parcelize
+data class UserUpdate(
+    var full_name: String,
+    var username: String,
+    var email: String,
+    var telephone: String,
+    var date_of_birth: String,
+) : Parcelable

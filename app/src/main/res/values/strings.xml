@@ -33,14 +33,14 @@
     <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="date_of_birth">Date Of Birth</string>
-    <string name="save">Save</string>
+    <string name="save">Save Changes</string>
     <string name="Telp">Telp Number</string>
     <string name="rating">Rating Apps</string>
     <string name="saran">Saran</string>
     <string name="submit">Submit</string>
     <string name="no_permission">not getting permission</string>
     <string name="choose">Choose a Picture</string>
-    <string name="date_formate">MM-dd-yyyy</string>
+    <string name="date_formate">yyyy-MM-dd</string>
     <string name="theme">Theme</string>
 
     <!--  Form Validation  -->
@@ -81,6 +81,15 @@
     <string name="mail_to">mailto</string>
     <string name="send_email">Send email</string>
     <string name="no_whitespace">No Whitespaces are allowed</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="title_forgot_password">Forgot Password Page</string>
+    <string name="enter_your_telephone_number">Enter your Telephone Number</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="repeat_new_password">Repeat New Password</string>
+    <string name="verification_error">Wrong Data! Verification Failed</string>
+    <string name="verification_success">Verification Successfull! You will be redirect to Reset Password Page</string>
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
         <item>Alfendio Alif Faudisyah</item>
