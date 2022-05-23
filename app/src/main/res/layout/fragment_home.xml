@@ -18,8 +18,8 @@
             app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="@color/grey"
             app:strokeWidth="1dp"
+            style="@style/strokeColor"
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Narendra Wicaksono"
-                    android:textColor="@color/primaryBlue"
+                    android:textColor="@color/primaryBlueLight"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:layout_marginTop="4dp"
@@ -109,6 +109,7 @@
             app:cardBackgroundColor="@color/lightGrey"
             app:strokeColor="@color/grey"
             app:strokeWidth="1dp"
+            style="@style/backgroundCard"
             android:layout_marginTop="8dp"
             >
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -124,6 +125,7 @@
                 android:layout_height="wrap_content"
                 android:text="First Recommendations"
                 android:textSize="16sp"
+                style="@style/textColor"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
@@ -133,6 +135,7 @@
                 android:layout_height="wrap_content"
                 android:text="Second Recommendations"
                 android:textSize="16sp"
+                style="@style/textColor"
                 android:layout_marginTop="4dp"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendations1"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -143,6 +146,7 @@
                 android:layout_height="wrap_content"
                 android:text="Third Recommendations"
                 android:textSize="16sp"
+                style="@style/textColor"
                 android:layout_marginTop="4dp"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendations2"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -169,6 +173,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="12dp"
                 android:paddingVertical="8dp"
+                style="@style/backgroundCard"
                 >
 
                 <TextView
@@ -178,6 +183,7 @@
                     tools:text="Kesehatan yang baik bukanlah sesuatu yang dapat kita beli. Namun, sesuatu yang dapat menjadi tabungan yang sangat berharga."
                     android:textSize="16sp"
                     android:textStyle="italic"
+                    style="@style/textColor"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -188,6 +194,7 @@
                     tools:text="- Anne Wilson Schaef"
                     android:textSize="16sp"
                     android:layout_marginTop="4dp"
+                    style="@style/textColor"
                     app:layout_constraintTop_toBottomOf="@id/tv_quote"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -197,6 +204,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:textSize="14sp"
+                    android:textColor="@color/white"
                     android:text="@string/start_diagnose_now"
                     app:layout_constraintTop_toBottomOf="@id/tv_quote_author"
                     app:layout_constraintStart_toStartOf="parent"/>

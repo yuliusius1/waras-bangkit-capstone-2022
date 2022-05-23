@@ -1,19 +1,34 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <!-- Base application theme. -->
     <style name="Theme.WarasApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primaryBlue</item>
-        <item name="colorPrimaryVariant">@color/darkBlue</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/primaryBlueLight</item>
+        <item name="colorPrimaryVariant">@color/secondaryBlueDark</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/blue</item>
-        <item name="colorSecondaryVariant">@color/lightBlue</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/secondaryBlueLight</item>
+        <item name="colorSecondaryVariant">@color/thirdBlueLight</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
     </style>
+
+    <style name="backgroundCard">
+        <item name="android:backgroundTint">@color/lightGrey</item>
+        <item name="android:background">@color/lightGrey</item>
+    </style>
+
+    <style name="textColor">
+        <item name="android:textColor">@color/primaryBlueDark</item>
+        <item name="android:tint">@color/primaryBlueDark</item>
+    </style>
+
+    <style name="strokeColor">
+        <item name="strokeColor">@color/grey</item>
+    </style>
+
 
     <style name="WindowAnimationTransition">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>

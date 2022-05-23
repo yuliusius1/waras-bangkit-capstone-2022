@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/register_area"
         android:textSize="28sp"
-        android:textColor="@color/primaryBlue"
+        android:textColor="@color/primaryBlueLight"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginTop="8dp"
@@ -126,6 +126,7 @@
         android:paddingHorizontal="32dp"
         android:text="@string/next"
         android:alpha="0"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/et_password"
         app:layout_constraintEnd_toEndOf="parent"
         />

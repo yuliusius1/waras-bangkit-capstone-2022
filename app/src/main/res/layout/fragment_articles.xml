@@ -25,7 +25,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/grey"
+        style="@style/strokeColor"
         app:strokeWidth="1dp"
         >
 

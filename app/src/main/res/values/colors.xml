@@ -8,12 +8,25 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#9C9C9C</color>
-    <color name="lightGrey">#ECECEC</color>
+    <color name="darkGrey">#5C5C5C</color>
+    <color name="lightGrey">#C6C6C6</color>
     <color name="blue">#3d5a80</color>
     <color name="darkBlue">#293241</color>
     <color name="veryDarkBlue">#1D232E</color>
-    <color name="lightBlue">#98c1d9</color>
     <color name="ultraLightBlue">#e0fbfc</color>
-    <color name="primaryBlue">#3A52E6</color>
+    <color name="lightBlue">#98c1d9</color>
+
+
+    <color name="primaryBlueLight">#3A52E6</color>
+    <color name="secondaryBlueLight">#189de4</color>
+    <color name="thirdBlueLight">#73a5c6</color>
+    <color name="forthBlueLight">#91bad6</color>
+
+
+    <color name="primaryBlueDark">#242444</color>
+    <color name="secondaryBlueDark">#293241</color>
+    <color name="thirdBlueDark">#46648c</color>
+    <color name="forthBlueDark">#528aae</color>
+
 
 </resources>
