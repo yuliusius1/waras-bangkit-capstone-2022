@@ -48,6 +48,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.diagnose.Diagnose7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.diagnose.Diagnose1Activity"
+            android:exported="false" />
+        <activity
             android:name=".ui.articles.DetailArticleActivity"
             android:exported="false" />
         <activity
