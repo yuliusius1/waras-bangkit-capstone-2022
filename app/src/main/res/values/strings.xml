@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">WarasApp</string>
-    <string name="validate_email">Please enter a valid email address</string>
-    <string name="validate_password">Password must be 6 characters or more</string>
 
     <!--    Login   -->
     <string name="login_to_your_account">Login to your account</string>
@@ -49,7 +47,7 @@
     <string name="enter_email">Enter an email address</string>
     <string name="enter_username">Username must be filled out</string>
     <string name="enter_date">Date must be filled out</string>
-    <string name="enter_tel">Telp must be filled out</string>
+    <string name="enter_tel">Telephone must be filled out</string>
     <string name="edit_profile_success">Edit Profile Success</string>
     <string name="enter_current_pass">Current Password must be filled</string>
     <string name="enter_new_pass">New Password must be filled</string>
@@ -58,6 +56,21 @@
     <string name="check_new_password">New Password Cannot be same as current password</string>
     <string name="valid_equal_password">Repeat password must be equals to New Password</string>
     <string name="change_password_success">Change Password Success</string>
+    <string name="no_whitespace">No Whitespaces are allowed</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="title_forgot_password">Forgot Password Page</string>
+    <string name="enter_your_telephone_number">Enter your Telephone Number</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="repeat_new_password">Repeat New Password</string>
+    <string name="verification_error">Wrong Data! Verification Failed</string>
+    <string name="verification_success">Verification Successful! You will be redirect to Reset Password Page</string>
+    <string name="login_to_your_personal_account">Login to your personal account</string>
+    <string name="current_password">Current Password</string>
+    <string name="validate_email">Please enter a valid email address</string>
+    <string name="validate_password">Password must be 6 characters or more</string>
+
 
     <!--  Title Page  -->
     <string name="title_edit_profile">Edit Profile Page</string>
@@ -69,6 +82,15 @@
     <string name="title_article">Article Page</string>
     <string name="title_profile">Profile Page</string>
     <string name="title_setting">Setting Page</string>
+    <string name="language_page">Language Page</string>
+    <string name="title_theme_setting">Theme Setting Page</string>
+    <string name="login_area">Login Area</string>
+    <string name="register_area">Register Area</string>
+    <string name="forgot_password_area">Forgot Password Area</string>
+    <string name="verification_data">Verification Data</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
 
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
@@ -80,22 +102,22 @@
     <string name="email_to">Email to </string>
     <string name="mail_to">mailto</string>
     <string name="send_email">Send email</string>
-    <string name="no_whitespace">No Whitespaces are allowed</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="enter_your_email_address">Enter Your Email Address</string>
-    <string name="title_forgot_password">Forgot Password Page</string>
-    <string name="enter_your_telephone_number">Enter your Telephone Number</string>
-    <string name="title_reset_password">Reset Password</string>
-    <string name="new_password">New Password</string>
-    <string name="repeat_new_password">Repeat New Password</string>
-    <string name="verification_error">Wrong Data! Verification Failed</string>
-    <string name="verification_success">Verification Successfull! You will be redirect to Reset Password Page</string>
-    <string name="login_to_your_personal_account">Login to your personal account</string>
-    <string name="login_area">Login Area</string>
-    <string name="register_area">Register Area</string>
-    <string name="forgot_password_area">Forgot Password Area</string>
-    <string name="verification_data">Verification Data</string>
+
+    <!--  Other  -->
     <string name="welcome_back">Welcome Back,</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="previous">Previous</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="Confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="your_recommendations">Your Recommendations</string>
+    <string name="start_diagnose_now">Start Diagnose now</string>
+    <string name="news_images">News Images</string>
+
+    <!--  Home Fragment  -->
+
     <string-array name="data_name">
         <item>Aprillia Anggera Putri Lestari</item>
         <item>Alfendio Alif Faudisyah</item>
@@ -115,13 +137,12 @@
     </string-array>
 
     <integer-array name="data_photo">
-        <item>@drawable/ic_baseline_account_circle_24</item>
-        <item>@drawable/ic_baseline_account_circle_24</item>
-        <item>@drawable/ic_baseline_account_circle_24</item>
-        <item>@drawable/ic_baseline_account_circle_24</item>
-        <item>@drawable/ic_baseline_account_circle_24</item>
-        <item>@drawable/ic_baseline_account_circle_24</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar</item>
     </integer-array>
-
 
 </resources>

@@ -3,11 +3,11 @@ package com.yulius.warasapp.ui.articles
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -18,8 +18,8 @@ import com.yulius.warasapp.adapter.OnItemClickCallback
 import com.yulius.warasapp.data.model.Article
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.FragmentArticlesBinding
+import com.yulius.warasapp.util.DEFAULT_QUERY_ARTICLES
 import com.yulius.warasapp.util.ViewModelFactory
-import java.util.ArrayList
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -28,13 +28,13 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 class ArticlesFragment : Fragment() {
     private var _binding: FragmentArticlesBinding? = null
     private val binding get() = _binding!!
-    private val list = ArrayList<Article>()
     private lateinit var viewModel: ArticlesViewModel
+    private var adapter = ListArticleAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentArticlesBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -50,7 +50,7 @@ class ArticlesFragment : Fragment() {
                 )
             )[ArticlesViewModel::class.java]
         showLoading()
-        var adapter = ListArticleAdapter()
+
 
         with(binding) {
             rvArticles.layoutManager = LinearLayoutManager(context)
@@ -58,9 +58,9 @@ class ArticlesFragment : Fragment() {
             rvArticles.adapter = adapter
         }
 
-        viewModel.setNews()
+        viewModel.setNews(DEFAULT_QUERY_ARTICLES)
         viewModel.getNews().observe(viewLifecycleOwner){
-            adapter.setNFTs(it.articles)
+            adapter.setArticles(it.articles)
             adapter.notifyDataSetChanged()
         }
 
@@ -74,12 +74,32 @@ class ArticlesFragment : Fragment() {
             }
         })
 
+        searchView()
 
         super.onViewCreated(view, savedInstanceState)
     }
 
+    private fun searchView() {
+        binding.svArticle.isSubmitButtonEnabled = true
+        binding.svArticle.setOnQueryTextListener(object :
+            SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(p0: String): Boolean {
+                viewModel.setNews(p0)
+                viewModel.getNews().observe(viewLifecycleOwner){
+                    adapter.setArticles(it.articles)
+                    adapter.notifyDataSetChanged()
+                }
+                return false
+            }
+
+            override fun onQueryTextChange(p0: String?): Boolean {
+                return false
+            }
+        })
+    }
+
     private fun showLoading() {
-        viewModel.isLoading.observe(this) {
+        viewModel.isLoading.observe(viewLifecycleOwner) {
             binding.apply {
                 when {
                     it -> progressBar.visibility = View.VISIBLE

@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
@@ -41,8 +40,7 @@ class ChangePasswordActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_change_password)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
@@ -63,7 +61,12 @@ class ChangePasswordActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        showLoading()
         binding.apply {
+            ivAvatar.setOnClickListener{
+                onBackPressed()
+            }
+
             btnSubmit.setOnClickListener {
                 var isError = false
                 if(TextUtils.isEmpty(etCurrPass.text)){

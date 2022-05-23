@@ -139,7 +139,4 @@ class ProfileFragment : Fragment() {
         builder.show()
     }
 
-    companion object {
-
-    }
 }

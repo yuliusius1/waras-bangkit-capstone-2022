@@ -17,7 +17,6 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityVerificationDataBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.auth.reset_password.ResetPasswordActivity
-import com.yulius.warasapp.ui.landing.LandingActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -88,7 +87,7 @@ class VerificationDataActivity : AppCompatActivity() {
             AlertDialog.Builder(this).apply {
                 setTitle("Oops")
                 setMessage(msg)
-                setNegativeButton(getString(R.string.repeat)) { dialog, _ ->
+                setNegativeButton(getString(R.string.repeat)) { _, _ ->
                     val intent = Intent(this@VerificationDataActivity, LoginActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(intent)

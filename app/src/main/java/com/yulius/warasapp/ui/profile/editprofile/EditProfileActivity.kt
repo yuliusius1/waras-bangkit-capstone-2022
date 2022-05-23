@@ -81,6 +81,9 @@ class EditProfileActivity : AppCompatActivity() {
     private fun setupAction() {
         showLoading()
         binding.apply {
+            ivAvatar.setOnClickListener{
+                onBackPressed()
+            }
             dateEditText.setOnClickListener {
                 DatePickerDialog(
                     this@EditProfileActivity,
@@ -171,8 +174,7 @@ class EditProfileActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_edit_profile)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
 
         dateSetListener =
             DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->

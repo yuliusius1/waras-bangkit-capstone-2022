@@ -4,7 +4,6 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -20,7 +19,6 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
-import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserRegister
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
 
@@ -104,21 +102,17 @@ class RegisterActivity : AppCompatActivity() {
                     binding.etPassword.error = getString(R.string.enter_password)
                 }
                 else -> {
-                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                        val intent = Intent(this,RegisterActivity2::class.java)
-                        userRegister = UserRegister(name,username,email,password,"","")
-                        intent.putExtra("userRegister",userRegister)
-                        val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                            this@RegisterActivity,
-                            Pair(binding.ivLogo, "logo"),
-                            Pair(binding.tvTitle, "title"),
-                            Pair(binding.tvLogin, "login"),
-                            Pair(binding.tvTxtLogin, "txtLogin"),
-                        )
-                        startActivity(intent, optionsCompat.toBundle())
-                    } else {
-                        startActivity(intent)
-                    }
+                    val intent = Intent(this,RegisterActivity2::class.java)
+                    userRegister = UserRegister(name,username,email,password,"","")
+                    intent.putExtra("userRegister",userRegister)
+                    val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        this@RegisterActivity,
+                        Pair(binding.ivLogo, "logo"),
+                        Pair(binding.tvTitle, "title"),
+                        Pair(binding.tvLogin, "login"),
+                        Pair(binding.tvTxtLogin, "txtLogin"),
+                    )
+                    startActivity(intent, optionsCompat.toBundle())
                 }
             }
         }

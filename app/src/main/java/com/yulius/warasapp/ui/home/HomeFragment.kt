@@ -3,7 +3,6 @@ package com.yulius.warasapp.ui.home
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -15,22 +14,13 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.NavigationUI.findBottomSheetBehavior
-import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.FragmentHomeBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.diagnose.DiagnoseFragment
-import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import cz.msebera.android.httpclient.Header
@@ -57,7 +47,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -96,7 +86,7 @@ class HomeFragment : Fragment() {
                     404 -> "$statusCode : Not Found"
                     else -> "$statusCode : ${error.message}"
                 }
-                Toast.makeText(context, "$errorMessage", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show()
             }
         })
     }

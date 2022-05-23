@@ -48,8 +48,7 @@ class ContactUsActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_contact_us)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
@@ -100,7 +99,11 @@ class ContactUsActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
-
+        binding.apply {
+            ivAvatar.setOnClickListener{
+                onBackPressed()
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

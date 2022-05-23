@@ -49,15 +49,15 @@ class ViewModelFactory(private val pref: UserPreference) :
             }
 
             modelClass.isAssignableFrom(CheckEmailViewModel::class.java) -> {
-                CheckEmailViewModel(pref) as T
+                CheckEmailViewModel() as T
             }
 
             modelClass.isAssignableFrom(VerificationDataViewModel::class.java) -> {
-                VerificationDataViewModel(pref) as T
+                VerificationDataViewModel() as T
             }
 
             modelClass.isAssignableFrom(ResetPasswordViewModel::class.java) -> {
-                ResetPasswordViewModel(pref) as T
+                ResetPasswordViewModel() as T
             }
 
 
@@ -70,7 +70,7 @@ class ViewModelFactory(private val pref: UserPreference) :
             }
 
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {
-                ArticlesViewModel(pref) as T
+                ArticlesViewModel() as T
             }
 
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {

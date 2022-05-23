@@ -18,7 +18,7 @@ class ListArticleAdapter : RecyclerView.Adapter<ListArticleAdapter.ListViewHolde
         this.onItemClickCallback = onItemClickCallback
     }
 
-    fun setNFTs(data: List<Article>?) {
+    fun setArticles(data: List<Article>?) {
         if (data == null) return
         this.listArticle.clear()
         this.listArticle.addAll(data)

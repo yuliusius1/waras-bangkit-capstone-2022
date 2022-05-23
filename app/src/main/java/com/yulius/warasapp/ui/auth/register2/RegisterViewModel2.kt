@@ -1,6 +1,5 @@
 package com.yulius.warasapp.ui.auth.register2
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -55,7 +54,7 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
                         }
                     }
                 } else {
-                    callback.getCallback("${response.message()}",false)
+                    callback.getCallback(response.message(),false)
                     _isLoading.value = false
                 }
             }

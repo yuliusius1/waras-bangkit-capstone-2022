@@ -8,7 +8,6 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
@@ -33,8 +32,7 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_history)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
@@ -53,6 +51,11 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        binding.apply {
+            ivAvatar.setOnClickListener{
+                onBackPressed()
+            }
+        }
 
     }
 

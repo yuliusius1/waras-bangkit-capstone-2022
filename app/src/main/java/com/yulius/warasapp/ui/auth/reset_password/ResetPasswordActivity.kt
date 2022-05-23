@@ -16,7 +16,6 @@ import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityResetPasswordBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.auth.verification_data.VerificationDataActivity
 import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 

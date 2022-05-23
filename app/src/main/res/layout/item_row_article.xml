@@ -77,7 +77,7 @@
             android:id="@+id/news_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:contentDescription="News Images"
+            android:contentDescription="@string/news_images"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

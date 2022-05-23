@@ -8,7 +8,6 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityFeedbackBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
@@ -34,8 +33,7 @@ class FeedbackActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_feedback)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
@@ -54,6 +52,11 @@ class FeedbackActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        binding.apply {
+            ivAvatar.setOnClickListener {
+                onBackPressed()
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

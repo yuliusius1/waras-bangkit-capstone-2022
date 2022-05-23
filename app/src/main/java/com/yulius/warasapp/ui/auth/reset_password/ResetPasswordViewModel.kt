@@ -4,15 +4,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.yulius.warasapp.data.model.ResponseData
-import com.yulius.warasapp.data.model.UserLogin
-import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.data.remote.main.ApiConfig
 import com.yulius.warasapp.util.ResponseCallback
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ResetPasswordViewModel (private val pref: UserPreference): ViewModel(){
+class ResetPasswordViewModel : ViewModel(){
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 

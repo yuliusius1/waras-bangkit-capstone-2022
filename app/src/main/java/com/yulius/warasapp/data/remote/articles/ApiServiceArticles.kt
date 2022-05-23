@@ -1,6 +1,5 @@
 package com.yulius.warasapp.data.remote.articles
 
-import com.yulius.warasapp.data.model.Article
 import com.yulius.warasapp.data.model.ArticlesResponse
 import retrofit2.Call
 import retrofit2.http.GET

@@ -12,7 +12,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 private const val FILENAME_FORMAT = "dd-MMM-yyyy"
-const val SERVER_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss:SS'Z'"
+const val DEFAULT_QUERY_ARTICLES = "covid"
+const val DEFAULT_SORT_BY_ARTICLES = "publishedAt"
+const val ARTICLE_API_KEY = "2a81a09b7fae49ba817399a2fc9cb666"
 
 val timeStamp: String = SimpleDateFormat(
     FILENAME_FORMAT,

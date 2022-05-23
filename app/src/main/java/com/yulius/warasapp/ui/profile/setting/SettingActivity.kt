@@ -1,18 +1,18 @@
 package com.yulius.warasapp.ui.profile.setting
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CompoundButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivitySettingBinding
 import com.yulius.warasapp.util.ViewModelFactory
+
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class SettingActivity : AppCompatActivity() {
@@ -31,8 +31,7 @@ class SettingActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.title_setting)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -45,6 +44,7 @@ class SettingActivity : AppCompatActivity() {
             this,
             ViewModelFactory(UserPreference.getInstance(dataStore))
         )[ThemeViewModel::class.java]
+
         viewModel.getThemeSettings().observe(this
         ) { isDarkModeActive: Boolean ->
             if (isDarkModeActive) {
@@ -60,6 +60,10 @@ class SettingActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
             viewModel.saveThemeSetting(isChecked)
+        }
+
+        binding.ivAvatar.setOnClickListener {
+            onBackPressed()
         }
     }
 }

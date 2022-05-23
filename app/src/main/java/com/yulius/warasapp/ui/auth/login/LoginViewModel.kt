@@ -1,6 +1,5 @@
 package com.yulius.warasapp.ui.auth.login
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.yulius.warasapp.data.model.ResponseData
 import com.yulius.warasapp.data.model.User

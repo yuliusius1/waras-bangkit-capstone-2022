@@ -14,7 +14,6 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
-import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityLoginBinding
 import com.yulius.warasapp.ui.auth.check_email.CheckEmailActivity

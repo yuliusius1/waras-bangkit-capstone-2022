@@ -2,7 +2,8 @@ package com.yulius.warasapp.ui.articles
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.yulius.warasapp.data.model.Article
+import android.view.View
+import android.webkit.WebView
 import com.yulius.warasapp.databinding.ActivityDetailArticleBinding
 
 class DetailArticleActivity : AppCompatActivity() {
@@ -12,18 +13,29 @@ class DetailArticleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setupView()
-        setupAction()
     }
 
     private fun setupView() {
         supportActionBar?.hide()
         val data = intent.getStringExtra("urlArticle")
-        binding.webView.loadUrl(data.toString())
+        val webViewClient = WebViewClient()
 
+        binding.apply {
+            webView.webViewClient = webViewClient
+            webView.loadUrl(data.toString())
+        }
     }
 
-    private fun setupAction() {
+    inner class WebViewClient : android.webkit.WebViewClient() {
+        override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+            view.loadUrl(url)
+            return false
+        }
+
+        override fun onPageFinished(view: WebView, url: String) {
+            super.onPageFinished(view, url)
+            binding.progressBar.visibility = View.GONE
+        }
     }
 }
