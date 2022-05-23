@@ -115,6 +115,22 @@
     <string name="your_recommendations">Your Recommendations</string>
     <string name="start_diagnose_now">Start Diagnose now</string>
     <string name="news_images">News Images</string>
+    
+    <!-- Diagnose -->
+    <string name="diagnose1">Do you feel fever?</string>
+    <string name="diagnose2">Do you feel cough?</string>
+    <string name="diagnose3">Do you feel tired?</string>
+    <string name="diagnose4">Do you have a sore throat?</string>
+    <string name="diagnose5">Do you feel a cold?</string>
+    <string name="diagnose6">Do you feel short of breath?</string>
+    <string name="diagnose7">Do you feel vomiting?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="hai">Hai</string>
+    <string name="permisssion1">We will ask some questions regarding the complaints you feel,</string>
+    <string name="permission2">Are you willing?</string>
+    <string name="disagree">Disagree</string>
+    <string name="agree">Agree</string>
 
     <!--  Home Fragment  -->
 
