@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.diagnose.Diagnose2Activity">
+    tools:context=".ui.diagnose.diagnose2.Diagnose2Activity">
 
     <TextView
         android:id="@+id/hai"
