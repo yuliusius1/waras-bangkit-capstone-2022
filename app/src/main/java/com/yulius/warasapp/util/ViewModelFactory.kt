@@ -11,6 +11,13 @@ import com.yulius.warasapp.ui.auth.register2.RegisterViewModel2
 import com.yulius.warasapp.ui.auth.reset_password.ResetPasswordViewModel
 import com.yulius.warasapp.ui.auth.verification_data.VerificationDataViewModel
 import com.yulius.warasapp.ui.diagnose.DiagnoseViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose1.Diagnose1ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose2.Diagnose2ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose3.Diagnose3ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose4.Diagnose4ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose5.Diagnose5ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6ViewModel
+import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7ViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
 import com.yulius.warasapp.ui.landing.LandingViewModel
 import com.yulius.warasapp.ui.main.MainViewModel
@@ -67,6 +74,34 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(DiagnoseViewModel::class.java) -> {
                 DiagnoseViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose1ViewModel::class.java) -> {
+                Diagnose1ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose2ViewModel::class.java) -> {
+                Diagnose2ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose3ViewModel::class.java) -> {
+                Diagnose3ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose4ViewModel::class.java) -> {
+                Diagnose4ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose5ViewModel::class.java) -> {
+                Diagnose5ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose6ViewModel::class.java) -> {
+                Diagnose6ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(Diagnose7ViewModel::class.java) -> {
+                Diagnose7ViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {

@@ -18,6 +18,11 @@
         <item name="android:background">@color/darkGrey</item>
     </style>
 
+    <style name="backgroundArticleCard">
+        <item name="android:backgroundTint">@color/darkGrey</item>
+        <item name="android:background">@color/darkGrey</item>
+    </style>
+
     <style name="WindowAnimationTransition">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>

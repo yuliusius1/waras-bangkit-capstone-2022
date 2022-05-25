@@ -20,6 +20,11 @@
         <item name="android:background">@color/lightGrey</item>
     </style>
 
+    <style name="backgroundArticleCard">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
     <style name="textColor">
         <item name="android:textColor">@color/primaryBlueDark</item>
         <item name="android:tint">@color/primaryBlueDark</item>
