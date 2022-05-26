@@ -89,7 +89,7 @@
                 android:id="@+id/tv_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Days to Heal is 8 Days"
+                tools:text="@string/result_text"
                 android:textAlignment="center"
                 android:layout_marginTop="32dp"
                 android:textSize="18sp"
@@ -102,25 +102,14 @@
     </com.google.android.material.card.MaterialCardView>
 
     <Button
-        android:id="@+id/previousbtn"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/previous"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_question"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/submit_btn"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:text="@string/submit"
+        android:layout_marginHorizontal="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
-        app:layout_constraintStart_toEndOf="@+id/previousbtn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cv_question"
         tools:ignore="MissingConstraints" />
 

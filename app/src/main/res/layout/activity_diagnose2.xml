@@ -50,9 +50,9 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_question"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="32dp"
         app:cardBackgroundColor="@color/lightGrey"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

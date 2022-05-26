@@ -164,6 +164,7 @@
 
     <string name="select_gender">Select Gender</string>
     <string name="result_diagnose">Diagnose Result</string>
+    <string name="result_text">Your Days to Heal is %1$s Days</string>
 
     <string-array name="select_gender">
         <item>Male</item>

@@ -16,6 +16,7 @@ import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
+import com.yulius.warasapp.ml.Dnn2Model
 import com.yulius.warasapp.ml.DnnModel
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6Activity
@@ -28,6 +29,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.ByteOrder.nativeOrder
+import kotlin.math.roundToInt
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -100,11 +102,12 @@ class Diagnose7Activity : AppCompatActivity() {
 
             submitBtn.setOnClickListener {
 //                prediction()
-                viewModel.saveData(dataDiagnose,8, user.id, object: ResponseCallback{
+                viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
                     override fun getCallback(msg: String, status: Boolean) {
                        if(status){
                            val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
                            intent.putExtra("dataDiagnose", dataDiagnose)
+                           intent.putExtra("resultModel", prediction())
                            startActivity(intent)
                        }
                     }
@@ -115,19 +118,19 @@ class Diagnose7Activity : AppCompatActivity() {
     }
 
     private fun prediction(): Int {
-        val model = DnnModel.newInstance(applicationContext)
+        val model = Dnn2Model.newInstance(applicationContext)
 
         // Creates inputs for reference.
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        val byteBuffer = ByteBuffer.allocateDirect(4 * 1)
-//        byteBuffer.putFloat(2F) // iki angka asal
-//        byteBuffer.putFloat(dataDiagnose.fever.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.cough.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.tired.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.sore_throat.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.cold.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.short_breath.toFloat())
-//        byteBuffer.putFloat(dataDiagnose.vomit.toFloat())
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 9), DataType.FLOAT32)
+//        val byteBuffer = ByteBuffer.allocate(4 * 9)
+////        byteBuffer.putFloat(2F) // iki angka asal
+////        byteBuffer.putFloat(dataDiagnose.fever.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.cough.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.tired.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.sore_throat.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.cold.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.short_breath.toFloat())
+////        byteBuffer.putFloat(dataDiagnose.vomit.toFloat())
 //        for (value in intArrayOf(
 //            dataDiagnose.age,
 //            dataDiagnose.gender,
@@ -142,17 +145,26 @@ class Diagnose7Activity : AppCompatActivity() {
 //            byteBuffer.putFloat(value.toFloat())
 //        }
 
-        inputFeature0.loadBuffer(byteBuffer)
-//        inputFeature0.loadArray(intArrayOf(6, 1, 1, 1, 1, 0, 1, 1, 1))
-        // Runs model inference and gets result.
+//        inputFeature0.loadBuffer(byteBuffer)
+        Log.d("TAG", "DATA PREDIKSI: $dataDiagnose")
+        inputFeature0.loadArray(intArrayOf(
+            dataDiagnose.age,
+            dataDiagnose.gender,
+            dataDiagnose.fever,
+            dataDiagnose.cough,
+            dataDiagnose.tired,
+            dataDiagnose.sore_throat,
+            dataDiagnose.cold,
+            dataDiagnose.short_breath,
+            dataDiagnose.vomit,
+        ))
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-// Releases model resources if no longer used.
-        Log.d("TAG", "prediction: ${outputFeature0.floatArray[0].toString()}")
+        Log.d("TAG", "prediction: ${outputFeature0.floatArray[0]} ${outputFeature0.floatArray[0].roundToInt()}")
 
         model.close()
 
-        return 8
+        return outputFeature0.floatArray[0].toInt()
     }
 
 }

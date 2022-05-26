@@ -9,6 +9,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.Diagnose
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
@@ -25,6 +26,7 @@ class ResultDiagnoseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultDiagnoseBinding
     private lateinit var dataDiagnose: Diagnose
     private lateinit var viewModel: ResultDiagnoseViewModel
+    private var resultModel : Int? = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +41,8 @@ class ResultDiagnoseActivity : AppCompatActivity() {
 
     private fun getData() {
         dataDiagnose = intent.getParcelableExtra<Diagnose>("dataDiagnose") as Diagnose
-        Log.d("TAG", "getData: $dataDiagnose")
+        resultModel = intent.getIntExtra("resultModel",0)
+        binding.tvResult.text = getString(R.string.result_text, resultModel.toString())
     }
 
     private fun setupView() {
@@ -65,15 +68,9 @@ class ResultDiagnoseActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.apply {
-            previousbtn.setOnClickListener {
-                val intent = Intent(this@ResultDiagnoseActivity, Diagnose7Activity::class.java)
-                intent.putExtra("dataDiagnose", dataDiagnose)
-                startActivity(intent)
-            }
-
             submitBtn.setOnClickListener {
                 val intent = Intent(this@ResultDiagnoseActivity, MainActivity::class.java)
-                intent.putExtra("dataDiagnose", dataDiagnose)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
             }
         }
