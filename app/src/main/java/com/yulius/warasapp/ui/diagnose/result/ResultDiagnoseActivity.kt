@@ -1,47 +1,56 @@
-package com.yulius.warasapp.ui.diagnose.diagnose4
+package com.yulius.warasapp.ui.diagnose.result
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.Diagnose
 import com.yulius.warasapp.data.model.UserPreference
-import com.yulius.warasapp.databinding.ActivityDiagnose4Binding
+import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.diagnose.diagnose5.Diagnose5Activity
-import com.yulius.warasapp.ui.diagnose.diagnose3.Diagnose3Activity
+import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7Activity
+import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
 )
 
-class Diagnose4Activity : AppCompatActivity() {
-    private lateinit var binding: ActivityDiagnose4Binding
-    private lateinit var dataDiagnose : Diagnose
-    private lateinit var viewModel: Diagnose4ViewModel
+class ResultDiagnoseActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityResultDiagnoseBinding
+    private lateinit var dataDiagnose: Diagnose
+    private lateinit var viewModel: ResultDiagnoseViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDiagnose4Binding.inflate(layoutInflater)
+        binding = ActivityResultDiagnoseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         getData()
-        setupViewModel()
         setupView()
+        setupViewModel()
         setupAction()
+    }
+
+    private fun getData() {
+        dataDiagnose = intent.getParcelableExtra<Diagnose>("dataDiagnose") as Diagnose
+        Log.d("TAG", "getData: $dataDiagnose")
+    }
+
+    private fun setupView() {
+        supportActionBar?.hide()
     }
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(
             this,
             ViewModelFactory(UserPreference.getInstance(dataStore))
-        )[Diagnose4ViewModel::class.java]
+        )[ResultDiagnoseViewModel::class.java]
 
         viewModel.getUser().observe(this){
             if (!it.isLogin){
@@ -54,35 +63,16 @@ class Diagnose4Activity : AppCompatActivity() {
         }
     }
 
-    private fun getData() {
-        dataDiagnose = intent.getParcelableExtra<Diagnose>("dataDiagnose") as Diagnose
-    }
-
-    private fun setupView() {
-        supportActionBar?.hide()
-        when(dataDiagnose.sore_throat){
-            1 -> binding.rbYes.isChecked = true
-            else -> binding.rbNo.isChecked = true
-        }
-    }
-
     private fun setupAction() {
         binding.apply {
-            rvSwitch.setOnCheckedChangeListener{ _, checkedId ->
-                when(checkedId) {
-                    R.id.rb_yes -> dataDiagnose.sore_throat = 1
-                    else -> dataDiagnose.sore_throat = 0
-                }
-            }
-
             previousbtn.setOnClickListener {
-                val intent = Intent(this@Diagnose4Activity, Diagnose3Activity::class.java)
+                val intent = Intent(this@ResultDiagnoseActivity, Diagnose7Activity::class.java)
                 intent.putExtra("dataDiagnose", dataDiagnose)
                 startActivity(intent)
             }
 
-            nextbtn.setOnClickListener {
-                val intent = Intent(this@Diagnose4Activity, Diagnose5Activity::class.java)
+            submitBtn.setOnClickListener {
+                val intent = Intent(this@ResultDiagnoseActivity, MainActivity::class.java)
                 intent.putExtra("dataDiagnose", dataDiagnose)
                 startActivity(intent)
             }

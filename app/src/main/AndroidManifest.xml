@@ -33,6 +33,9 @@
             android:name=".ui.auth.verification_data.VerificationDataActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.diagnose.result.ResultDiagnoseActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.auth.reset_password.ResetPasswordActivity"
             android:exported="false" />
         <activity

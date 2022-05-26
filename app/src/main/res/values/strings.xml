@@ -115,7 +115,7 @@
     <string name="your_recommendations">Your Recommendations</string>
     <string name="start_diagnose_now">Start Diagnose now</string>
     <string name="news_images">News Images</string>
-    
+
     <!-- Diagnose -->
     <string name="diagnose1">Do you feel fever?</string>
     <string name="diagnose2">Do you feel cough?</string>
@@ -163,6 +163,7 @@
     </integer-array>
 
     <string name="select_gender">Select Gender</string>
+    <string name="result_diagnose">Diagnose Result</string>
 
     <string-array name="select_gender">
         <item>Male</item>

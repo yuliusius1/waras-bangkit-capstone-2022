@@ -59,7 +59,7 @@ class Diagnose6Activity : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.hide()
-        when(dataDiagnose.shortOfBreath){
+        when(dataDiagnose.short_breath){
             1 -> binding.rbYes.isChecked = true
             else -> binding.rbNo.isChecked = true
         }
@@ -69,8 +69,8 @@ class Diagnose6Activity : AppCompatActivity() {
         binding.apply {
             rvSwitch.setOnCheckedChangeListener{ _, checkedId ->
                 when(checkedId) {
-                    R.id.rb_yes -> dataDiagnose.shortOfBreath = 1
-                    else -> dataDiagnose.shortOfBreath = 0
+                    R.id.rb_yes -> dataDiagnose.short_breath = 1
+                    else -> dataDiagnose.short_breath = 0
                 }
             }
 

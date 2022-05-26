@@ -5,17 +5,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.Diagnose
+import com.yulius.warasapp.data.model.User
+import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
 import com.yulius.warasapp.ml.DnnModel
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6Activity
+import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseActivity
+import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -31,11 +37,15 @@ class Diagnose7Activity : AppCompatActivity() {
     private lateinit var binding: ActivityDiagnose7Binding
     private lateinit var dataDiagnose: Diagnose
     private lateinit var viewModel: Diagnose7ViewModel
+    private lateinit var user: User
+    private var data = ArrayList<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDiagnose7Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        user = User("","","","","","","",true,"","",0)
 
         getData()
         setupViewModel()
@@ -56,6 +66,7 @@ class Diagnose7Activity : AppCompatActivity() {
                 startActivity(i)
             } else {
                 binding.tvUsername.text = it.full_name
+                user = it
             }
         }
     }
@@ -66,7 +77,7 @@ class Diagnose7Activity : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.hide()
-        when(dataDiagnose.vomiting){
+        when(dataDiagnose.vomit){
             1 -> binding.rbYes.isChecked = true
             else -> binding.rbNo.isChecked = true
         }
@@ -76,8 +87,8 @@ class Diagnose7Activity : AppCompatActivity() {
         binding.apply {
             rvSwitch.setOnCheckedChangeListener{ _, checkedId ->
                 when(checkedId) {
-                    R.id.rb_yes -> dataDiagnose.vomiting = 1
-                    else -> dataDiagnose.vomiting = 0
+                    R.id.rb_yes -> dataDiagnose.vomit = 1
+                    else -> dataDiagnose.vomit = 0
                 }
             }
 
@@ -88,39 +99,60 @@ class Diagnose7Activity : AppCompatActivity() {
             }
 
             submitBtn.setOnClickListener {
-                prediction()
-                val intent = Intent(this@Diagnose7Activity, Diagnose7Activity::class.java)
-                startActivity(intent)
+//                prediction()
+                viewModel.saveData(dataDiagnose,8, user.id, object: ResponseCallback{
+                    override fun getCallback(msg: String, status: Boolean) {
+                       if(status){
+                           val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
+                           intent.putExtra("dataDiagnose", dataDiagnose)
+                           startActivity(intent)
+                       }
+                    }
+                })
+
             }
         }
     }
 
-    private fun prediction() {
-        Log.d("TAG", "prediction: ")
+    private fun prediction(): Int {
         val model = DnnModel.newInstance(applicationContext)
 
         // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        val byteBuffer = ByteBuffer.allocateDirect(4 * 40 * 40).apply { order(nativeOrder()) }
-        byteBuffer.putFloat(dataDiagnose.fever.toFloat())
-        byteBuffer.putFloat(dataDiagnose.cough.toFloat())
-        byteBuffer.putFloat(dataDiagnose.tired.toFloat())
-        byteBuffer.putFloat(dataDiagnose.soreThroat.toFloat())
-        byteBuffer.putFloat(dataDiagnose.cold.toFloat())
-        byteBuffer.putFloat(dataDiagnose.shortOfBreath.toFloat())
-        byteBuffer.putFloat(dataDiagnose.vomiting.toFloat())
+        val byteBuffer = ByteBuffer.allocateDirect(4 * 1)
+//        byteBuffer.putFloat(2F) // iki angka asal
+//        byteBuffer.putFloat(dataDiagnose.fever.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.cough.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.tired.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.sore_throat.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.cold.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.short_breath.toFloat())
+//        byteBuffer.putFloat(dataDiagnose.vomit.toFloat())
+//        for (value in intArrayOf(
+//            dataDiagnose.age,
+//            dataDiagnose.gender,
+//            dataDiagnose.fever,
+//            dataDiagnose.cough,
+//            dataDiagnose.tired,
+//            dataDiagnose.sore_throat,
+//            dataDiagnose.cold,
+//            dataDiagnose.short_breath,
+//            dataDiagnose.vomit,
+//        )) {
+//            byteBuffer.putFloat(value.toFloat())
+//        }
 
         inputFeature0.loadBuffer(byteBuffer)
-
+//        inputFeature0.loadArray(intArrayOf(6, 1, 1, 1, 1, 0, 1, 1, 1))
         // Runs model inference and gets result.
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
 // Releases model resources if no longer used.
-        Log.d("TAG", "prediction: $outputFeature0")
+        Log.d("TAG", "prediction: ${outputFeature0.floatArray[0].toString()}")
 
         model.close()
+
+        return 8
     }
-
-
 
 }

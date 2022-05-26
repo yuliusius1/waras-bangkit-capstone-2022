@@ -16,7 +16,7 @@ class ApiConfig {
                 }
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://data-waras-api-service-g3gfg5dw2q-et.a.run.app/")
+                .baseUrl("https://data-waras-api-service-hgz3km73yq-et.a.run.app/api/handler/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

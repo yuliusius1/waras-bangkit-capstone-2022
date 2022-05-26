@@ -61,6 +61,11 @@ class DiagnoseFragment : Fragment() {
             if(it.isLogin){
                 binding.tvUsername.text = it.full_name
                 dataDiagnose.age = getAges(it.date_of_birth)
+                dataDiagnose.gender = when(it.gender){
+                    "Male" -> 1
+                    "Female" -> 0
+                    else -> 0
+                }
             } else {
                 val i = Intent(activity, LoginActivity::class.java)
                 i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
