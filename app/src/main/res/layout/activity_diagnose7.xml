@@ -131,11 +131,11 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/nextbtn"
+        android:id="@+id/submit_btn"
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:text="@string/next"
+        android:text="@string/submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toEndOf="@+id/previousbtn"

@@ -5,6 +5,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Diagnose (
+    var age : Int,
+    var gender: Int,
     var fever : Int,
     var cough : Int,
     var tired : Int,

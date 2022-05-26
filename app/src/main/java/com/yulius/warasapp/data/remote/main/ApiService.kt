@@ -17,6 +17,7 @@ interface ApiService {
         @Query("full_name") full_name: String,
         @Query("email") email: String,
         @Query("password") password: String,
+        @Query("gender") gender: String,
         @Query("telephone") telephone: String,
         @Query("date_of_birth") date_of_birth: String,
     ): Call<ResponseData>
@@ -44,6 +45,7 @@ interface ApiService {
         @Query("username") username: String,
         @Query("full_name") full_name: String,
         @Query("email") email: String,
+        @Query("gender") gender: String,
         @Query("telephone") telephone: String,
         @Query("date_of_birth") date_of_birth: String,
     ): Call<ResponseUpdate>

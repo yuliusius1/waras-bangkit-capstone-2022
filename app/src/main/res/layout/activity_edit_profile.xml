@@ -251,6 +251,33 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_gender"
+            app:layout_constraintTop_toBottomOf="@id/telpEditTextLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="32dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+        <Spinner
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/gender"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/select_gender"
+            android:prompt="@string/select_gender"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_gender"/>
+
         <Button
             android:id="@+id/saveButton"
             android:layout_width="0dp"
@@ -265,7 +292,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/telpEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
 
         <ProgressBar
             android:id="@+id/progressBar"

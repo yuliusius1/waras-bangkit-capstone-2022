@@ -26,9 +26,9 @@ class EditProfileViewModel(private val pref: UserPreference) : ViewModel() {
         }
     }
 
-    fun updateUser(user: User, fullName: String, email: String, telephone: String, date:String , callback: ResponseCallback){
+    fun updateUser(user: User, fullName: String, email: String, gender: String, telephone: String, date:String , callback: ResponseCallback){
         _isLoading.value = true
-        ApiConfig.getApiService().updateUser(user.id,user.username,fullName,email,telephone,date).enqueue(object:
+        ApiConfig.getApiService().updateUser(user.id,user.username,fullName,email,gender,telephone,date).enqueue(object:
             Callback<ResponseUpdate> {
             override fun onResponse(
                 call: Call<ResponseUpdate>,
@@ -44,6 +44,7 @@ class EditProfileViewModel(private val pref: UserPreference) : ViewModel() {
                                responseBody.data.username,
                                responseBody.data.email,
                                 user.password,
+                               responseBody.data.gender,
                                responseBody.data.telephone,
                                responseBody.data.date_of_birth,
                                 user.isLogin,

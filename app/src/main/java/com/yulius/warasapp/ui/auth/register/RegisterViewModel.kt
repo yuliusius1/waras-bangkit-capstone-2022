@@ -14,6 +14,4 @@ class RegisterViewModel(private val pref: UserPreference) : ViewModel() {
     fun getUser(): LiveData<User> {
         return pref.getUser().asLiveData()
     }
-
-
 }

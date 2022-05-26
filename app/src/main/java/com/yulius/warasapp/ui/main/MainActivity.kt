@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
                 it.username,
                 it.email,
                 it.password,
+                it.gender,
                 it.telephone,
                 it.date_of_birth,
                 it.isLogin,

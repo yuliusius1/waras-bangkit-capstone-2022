@@ -26,6 +26,7 @@ import com.yulius.warasapp.ui.profile.feedback.FeedbackActivity
 import com.yulius.warasapp.ui.profile.history.HistoryActivity
 import com.yulius.warasapp.ui.profile.setting.SettingActivity
 import com.yulius.warasapp.util.ViewModelFactory
+import com.yulius.warasapp.util.getAges
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -72,7 +73,7 @@ class ProfileFragment : Fragment() {
         viewModel.getUser().observe(viewLifecycleOwner){
             if(it.isLogin){
                 binding.tvName.text = it.full_name
-                binding.tvBirth.text = it.date_of_birth.substring(0,10)
+                binding.tvBirth.text = getAges(it.date_of_birth.substring(0,10)).toString() + " " + getString(R.string.years_old)
                 binding.tvTelephone.text = it.telephone
             } else {
                 val i = Intent(activity, LoginActivity::class.java)

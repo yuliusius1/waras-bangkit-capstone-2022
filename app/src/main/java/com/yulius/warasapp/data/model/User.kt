@@ -9,6 +9,7 @@ data class User(
     val username: String,
     val email: String,
     val password: String,
+    val gender: String,
     val telephone: String,
     val date_of_birth: String,
     val isLogin: Boolean,
@@ -23,6 +24,7 @@ data class UserRegister(
     var username: String,
     var email: String,
     var password: String,
+    var gender: String,
     var telephone: String,
     var date_of_birth: String,
 ) : Parcelable
@@ -33,6 +35,7 @@ data class UserLogin(
     var username: String,
     var email: String,
     var password: String,
+    var gender: String,
     var telephone: String,
     var date_of_birth: String,
     val created_at: String,
@@ -45,6 +48,7 @@ data class UserUpdate(
     var full_name: String,
     var username: String,
     var email: String,
+    var gender: String,
     var telephone: String,
     var date_of_birth: String,
 ) : Parcelable

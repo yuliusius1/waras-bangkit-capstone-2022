@@ -43,6 +43,7 @@ class ChangePasswordViewModel(private val pref: UserPreference) : ViewModel()  {
                                 user.username,
                                 user.email,
                                 responseBody.data.password,
+                                user.gender,
                                 user.telephone,
                                 user.date_of_birth,
                                 user.isLogin,

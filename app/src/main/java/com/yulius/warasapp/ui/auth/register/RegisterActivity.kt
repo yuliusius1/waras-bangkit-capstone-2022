@@ -36,7 +36,7 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        userRegister = UserRegister("","","","","","")
+        userRegister = UserRegister("","","","","","","")
 
         setupView()
         setupViewModel()
@@ -103,7 +103,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
                 else -> {
                     val intent = Intent(this,RegisterActivity2::class.java)
-                    userRegister = UserRegister(name,username,email,password,"","")
+                    userRegister = UserRegister(name,username,email,password,"","","")
                     intent.putExtra("userRegister",userRegister)
                     val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         this@RegisterActivity,

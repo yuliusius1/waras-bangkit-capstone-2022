@@ -18,6 +18,7 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose1.Diagnose1Activity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
+import com.yulius.warasapp.util.getAges
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -34,7 +35,7 @@ class DiagnoseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentDiagnoseBinding.inflate(inflater, container, false)
-        dataDiagnose = Diagnose(0,0,0,0,0,0,0)
+        dataDiagnose = Diagnose(0,0,0,0,0,0,0,0,0)
         return binding.root
     }
 
@@ -59,6 +60,7 @@ class DiagnoseFragment : Fragment() {
         viewModel.getUser().observe(viewLifecycleOwner){
             if(it.isLogin){
                 binding.tvUsername.text = it.full_name
+                dataDiagnose.age = getAges(it.date_of_birth)
             } else {
                 val i = Intent(activity, LoginActivity::class.java)
                 i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

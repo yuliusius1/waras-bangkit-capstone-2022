@@ -26,6 +26,7 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
             userRegister.full_name,
             userRegister.email,
             userRegister.password,
+            userRegister.gender,
             userRegister.telephone,
             userRegister.date_of_birth,
         ).enqueue(object:

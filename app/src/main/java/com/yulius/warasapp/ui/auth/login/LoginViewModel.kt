@@ -41,6 +41,7 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                             responseBody.data.username,
                             responseBody.data.email,
                             responseBody.data.password,
+                            responseBody.data.gender,
                             responseBody.data.telephone,
                             responseBody.data.date_of_birth,
                             true,

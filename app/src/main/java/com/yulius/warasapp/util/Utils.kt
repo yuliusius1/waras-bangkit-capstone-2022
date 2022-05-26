@@ -21,6 +21,20 @@ val timeStamp: String = SimpleDateFormat(
     Locale.US
 ).format(System.currentTimeMillis())
 
+fun getAges(dateOfBirth : String): Int{
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+
+    val dateOfBirthParse = dateFormat.parse(dateOfBirth)
+    val today = dateFormat.format(Date())
+    val todayParse = dateFormat.parse(today)
+    var numberOfDays = 0L
+    if(todayParse != null && dateOfBirthParse != null){
+        numberOfDays = (todayParse.time - dateOfBirthParse.time)/(1000*60*60*24)
+    }
+
+    return numberOfDays.div(365).toInt()
+}
+
 interface ResponseCallback {
     fun getCallback(msg:String,status: Boolean)
 }

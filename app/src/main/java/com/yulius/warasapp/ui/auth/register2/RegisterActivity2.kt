@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -43,6 +44,7 @@ class RegisterActivity2 : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.hide()
+
     }
 
     private fun setupViewModel() {
@@ -77,6 +79,8 @@ class RegisterActivity2 : AppCompatActivity() {
 
         binding.btnRegister.setOnClickListener {
             val tel = binding.etTel.text.toString()
+            val gender = binding.gender.selectedItem.toString()
+
             val dateOfBirth = binding.datePicker.year.toString() + "-" + (binding.datePicker.month + 1).toString() + "-" + binding.datePicker.dayOfMonth.toString()
 
             binding.apply {
@@ -84,6 +88,7 @@ class RegisterActivity2 : AppCompatActivity() {
                     etTel.error = getString(R.string.enter_tel)
                 } else {
                     userRegister.telephone = tel
+                    userRegister.gender = gender
                     userRegister.date_of_birth = dateOfBirth
                     viewModel.saveUser(userRegister,object: ResponseCallback {
                         override fun getCallback(msg: String, status: Boolean) {

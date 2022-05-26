@@ -131,6 +131,7 @@
     <string name="permission2">Are you willing?</string>
     <string name="disagree">Disagree</string>
     <string name="agree">Agree</string>
+    <string name="years_old">years old</string>
 
     <!--  Home Fragment  -->
 
@@ -160,5 +161,12 @@
         <item>@drawable/avatar</item>
         <item>@drawable/avatar</item>
     </integer-array>
+
+    <string name="select_gender">Select Gender</string>
+
+    <string-array name="select_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 
 </resources>

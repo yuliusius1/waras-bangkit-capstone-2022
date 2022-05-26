@@ -136,6 +136,7 @@ class EditProfileActivity : AppCompatActivity() {
                         user,
                         nameEditTextLayout.editText?.text.toString(),
                         emailEditTextLayout.editText?.text.toString(),
+                        gender.selectedItem.toString(),
                         telpEditTextLayout.editText?.text.toString(),
                         dateEditTextLayout.editText?.text.toString(),
                         object :ResponseCallback {
@@ -168,6 +169,9 @@ class EditProfileActivity : AppCompatActivity() {
                     emailEditTextLayout.editText?.setText(it.email)
                     dateEditTextLayout.editText?.setText(it.date_of_birth.substring(0,10))
                     telpEditTextLayout.editText?.setText(it.telephone)
+                    if(it.gender == "Female"){
+                        gender.setSelection(1)
+                    }
                 }
             }
         }

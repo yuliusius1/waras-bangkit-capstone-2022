@@ -33,7 +33,7 @@ class CheckEmailActivity : AppCompatActivity() {
         binding = ActivityCheckEmailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        userLogin = UserLogin("","","","","","","","",0)
+        userLogin = UserLogin("","","","","","","","","",0)
 
         setupView()
         setupViewModel()
