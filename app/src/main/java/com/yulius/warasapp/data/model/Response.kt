@@ -27,3 +27,10 @@ data class ResponseRecommendation (
     val reason : String? = null,
     val data : Recommendation? = null
 )
+
+data class ResponseHistory (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : ArrayList<History>? = null
+)

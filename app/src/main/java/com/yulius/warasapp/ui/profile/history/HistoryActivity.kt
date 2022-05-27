@@ -8,10 +8,18 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.yulius.warasapp.adapter.HistoryAdapter
+import com.yulius.warasapp.adapter.ListArticleAdapter
+import com.yulius.warasapp.data.model.Contact
+import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
+import com.yulius.warasapp.util.DEFAULT_QUERY_ARTICLES
 import com.yulius.warasapp.util.ViewModelFactory
+import java.util.ArrayList
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -20,6 +28,8 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
 class HistoryActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHistoryBinding
     private lateinit var viewModel: HistoryViewModel
+    private val list = ArrayList<History>()
+    private var adapter = HistoryAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +39,7 @@ class HistoryActivity : AppCompatActivity() {
         setupView()
         setupViewModel()
         setupAction()
+
     }
 
     private fun setupView() {
@@ -46,7 +57,20 @@ class HistoryActivity : AppCompatActivity() {
                 val i = Intent(this, LoginActivity::class.java)
                 i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(i)
+            } else {
+                viewModel.setHistory(it.id)
             }
+        }
+
+        with(binding) {
+            rvHistory.layoutManager = LinearLayoutManager(this@HistoryActivity)
+            rvHistory.setHasFixedSize(true)
+            rvHistory.adapter = adapter
+        }
+
+        viewModel.getHistory().observe(this){
+            adapter.setHistory(it)
+            adapter.notifyDataSetChanged()
         }
     }
 

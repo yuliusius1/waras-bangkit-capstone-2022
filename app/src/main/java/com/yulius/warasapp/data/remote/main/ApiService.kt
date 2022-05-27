@@ -78,4 +78,8 @@ interface ApiService {
         @Path("id") id: String,
     ): Call<ResponseDiagnoses>
 
+    @Headers("x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNTQ4MjMzfQ.MlpzIBB5Ko30qPtxxl422bUVHL1BtcA2Z3SJuFdULEw")
+    @GET("history")
+    fun getAllHistory(
+    ): Call<ResponseHistory>
 }
