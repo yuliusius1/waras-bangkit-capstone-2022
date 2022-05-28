@@ -65,12 +65,17 @@ interface ApiService {
         @Query("cough") cough: Int,
         @Query("tired") tired: Int,
         @Query("sore_throat") sore_throat: Int,
-        @Query("cold") cold: Int,
+        @Query("runny_nose") runny_nose: Int,
         @Query("short_breath") short_breath: Int,
         @Query("vomit") vomit: Int,
         @Query("day_to_heal") day_to_heal: Int,
         @Query("id_user") id_user: Int,
     ): Call<ResponseDiagnoses>
+
+    @Headers("x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNTQ4MjMzfQ.MlpzIBB5Ko30qPtxxl422bUVHL1BtcA2Z3SJuFdULEw")
+    @GET("diagnoses")
+    fun getAllDiagnose(
+    ): Call<ResponseAllDiagnoses>
 
     @Headers("x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNTQ4MjMzfQ.MlpzIBB5Ko30qPtxxl422bUVHL1BtcA2Z3SJuFdULEw")
     @GET("diagnoses")
@@ -81,5 +86,16 @@ interface ApiService {
     @Headers("x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNTQ4MjMzfQ.MlpzIBB5Ko30qPtxxl422bUVHL1BtcA2Z3SJuFdULEw")
     @GET("history")
     fun getAllHistory(
+    ): Call<ResponseHistory>
+
+    @Headers("x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNTQ4MjMzfQ.MlpzIBB5Ko30qPtxxl422bUVHL1BtcA2Z3SJuFdULEw")
+    @GET("history")
+    fun sendHistory(
+        @Query("day_to_heal") day_to_heal: Int,
+        @Query("date_to_heal") date_to_heal: String,
+        @Query("status") status: String,
+        @Query("recommendation") recommendation: String,
+        @Query("id_user") id_user: Int,
+        @Query("id_diagnose") id_diagnose: Int,
     ): Call<ResponseHistory>
 }

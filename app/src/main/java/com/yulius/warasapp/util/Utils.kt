@@ -35,6 +35,16 @@ fun getAges(dateOfBirth : String): Int{
     return numberOfDays.div(365).toInt()
 }
 
+fun addTime(time: Int): String{
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+
+    val cal = Calendar.getInstance()
+    cal.time = dateFormat.parse(dateFormat.format(Date()))
+    cal.add(Calendar.DAY_OF_MONTH , time)
+
+    return dateFormat.format(cal.time)
+}
+
 interface ResponseCallback {
     fun getCallback(msg:String,status: Boolean)
 }

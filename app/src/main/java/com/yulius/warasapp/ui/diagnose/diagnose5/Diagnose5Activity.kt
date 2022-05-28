@@ -60,7 +60,7 @@ class Diagnose5Activity : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.hide()
-        when(dataDiagnose.cold){
+        when(dataDiagnose.runny_nose){
             1 -> binding.rbYes.isChecked = true
             else -> binding.rbNo.isChecked = true
         }
@@ -70,8 +70,8 @@ class Diagnose5Activity : AppCompatActivity() {
         binding.apply {
             rvSwitch.setOnCheckedChangeListener{ _, checkedId ->
                 when(checkedId) {
-                    R.id.rb_yes -> dataDiagnose.cold = 1
-                    else -> dataDiagnose.cold = 0
+                    R.id.rb_yes -> dataDiagnose.runny_nose = 1
+                    else -> dataDiagnose.runny_nose = 0
                 }
             }
 

@@ -3,7 +3,6 @@ package com.yulius.warasapp.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.yulius.warasapp.data.model.AddDiagnose
 import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.databinding.ItemRowHistoryBinding
 import java.util.ArrayList

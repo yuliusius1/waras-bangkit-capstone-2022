@@ -11,10 +11,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
-import com.yulius.warasapp.data.model.Diagnose
-import com.yulius.warasapp.data.model.User
-import com.yulius.warasapp.data.model.UserLogin
-import com.yulius.warasapp.data.model.UserPreference
+import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
 import com.yulius.warasapp.ml.Dnn2Model
 import com.yulius.warasapp.ml.Dnn3Model
@@ -25,6 +22,7 @@ import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
+import com.yulius.warasapp.util.addTime
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
@@ -102,17 +100,29 @@ class Diagnose7Activity : AppCompatActivity() {
             }
 
             submitBtn.setOnClickListener {
-                viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
-                    override fun getCallback(msg: String, status: Boolean) {
-                       if(status){
-                           val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
-                           intent.putExtra("dataDiagnose", dataDiagnose)
-                           intent.putExtra("resultModel", prediction())
-                           startActivity(intent)
-                       }
-                    }
-                })
-
+                prediction()
+//                viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
+//                    override fun getCallback(msg: String, status: Boolean) {
+//                       if(status){
+//                           var dataDiagnose = AddDiagnose(0,0,0,0,0,0,0,0,0,0,0,"",0)
+//                           viewModel.dataDiagnose.observe(this@Diagnose7Activity){
+//                               if(it != null){
+//                                   dataDiagnose = it
+//                               }
+//                           }
+//                           viewModel.saveHistory(dataDiagnose, object: ResponseCallback{
+//                               override fun getCallback(msg: String, status: Boolean) {
+//                                   if(status){
+//                                       val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
+//                                       intent.putExtra("dataDiagnose", dataDiagnose)
+//                                       intent.putExtra("resultModel", prediction())
+//                                       startActivity(intent)
+//                                   }
+//                               }
+//                           })
+//                       }
+//                    }
+//                })
             }
         }
     }
@@ -132,13 +142,15 @@ class Diagnose7Activity : AppCompatActivity() {
             dataDiagnose.cough,
             dataDiagnose.tired,
             dataDiagnose.sore_throat,
-            dataDiagnose.cold,
+            dataDiagnose.runny_nose,
             dataDiagnose.short_breath,
             dataDiagnose.vomit,
         ))
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+        val dateHealed = addTime(outputFeature0.floatArray[0].roundToInt())
         Log.d("TAG", "prediction: ${outputFeature0.floatArray[0]} ${outputFeature0.floatArray[0].roundToInt()}")
+        Log.d("TAG", "date_toHeal: $dateHealed")
 
         model.close()
 

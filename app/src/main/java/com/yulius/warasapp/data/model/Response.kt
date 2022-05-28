@@ -21,6 +21,13 @@ data class ResponseDiagnoses (
     val data : AddDiagnose? = null
 )
 
+data class ResponseAllDiagnoses (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : ArrayList<AddDiagnose>? = null
+)
+
 data class ResponseRecommendation (
     val status : String,
     val message : String? = null,
