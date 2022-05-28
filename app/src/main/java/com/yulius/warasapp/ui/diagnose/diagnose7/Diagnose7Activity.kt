@@ -100,29 +100,28 @@ class Diagnose7Activity : AppCompatActivity() {
             }
 
             submitBtn.setOnClickListener {
-                prediction()
-//                viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
-//                    override fun getCallback(msg: String, status: Boolean) {
-//                       if(status){
-//                           var dataDiagnose = AddDiagnose(0,0,0,0,0,0,0,0,0,0,0,"",0)
-//                           viewModel.dataDiagnose.observe(this@Diagnose7Activity){
-//                               if(it != null){
-//                                   dataDiagnose = it
-//                               }
-//                           }
-//                           viewModel.saveHistory(dataDiagnose, object: ResponseCallback{
-//                               override fun getCallback(msg: String, status: Boolean) {
-//                                   if(status){
-//                                       val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
-//                                       intent.putExtra("dataDiagnose", dataDiagnose)
-//                                       intent.putExtra("resultModel", prediction())
-//                                       startActivity(intent)
-//                                   }
-//                               }
-//                           })
-//                       }
-//                    }
-//                })
+//                prediction()
+                viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
+                    override fun getCallback(msg: String, status: Boolean) {
+                       if(status){
+                           viewModel.dataDiagnose.observe(this@Diagnose7Activity){
+                               if(it != null){
+                                   viewModel.saveHistory(it, addTime(prediction()), user.id, object: ResponseCallback{
+                                       override fun getCallback(msg: String, status: Boolean) {
+                                           if(status){
+                                               val intent = Intent(this@Diagnose7Activity, ResultDiagnoseActivity::class.java)
+                                               intent.putExtra("dataDiagnose", dataDiagnose)
+                                               intent.putExtra("resultModel", prediction())
+                                               startActivity(intent)
+                                           }
+                                       }
+                                   })
+                               }
+                           }
+
+                       }
+                    }
+                })
             }
         }
     }

@@ -1,5 +1,6 @@
 package com.yulius.warasapp.ui.diagnose.diagnose7
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -90,14 +91,18 @@ class Diagnose7ViewModel(private val pref: UserPreference) : ViewModel()  {
                 val responseBody = response.body()
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success") {
+                        Log.d("TAG", "onResponse: $response")
                         if(responseBody.message != null){
                             if(responseBody.data != null){
                                 for (i in responseBody.data.indices){
                                     if (responseBody.data[i].id_user == userId) {
                                         listData.add(responseBody.data[i])
                                     }
+                                        Log.d("TAG", "onResponseList: $listData ")
                                 }
-                                _dataDiagnose.postValue(listData.last())
+                                _dataDiagnose.postValue(listData.lastOrNull())
+                                Log.d("TAG", "onResponseListLast: ${listData.lastOrNull()} ")
+
                             }
                             _isLoading.value = false
                         } else {
@@ -137,7 +142,10 @@ class Diagnose7ViewModel(private val pref: UserPreference) : ViewModel()  {
                 response: Response<ResponseHistory>
             ) {
                 val responseBody = response.body()
+                    Log.d("TAG", "onResponseHistory: $response")
+                    Log.d("TAG", "onResponseBodyHistory: $responseBody")
                 if(response.isSuccessful && responseBody != null){
+
                     if(responseBody.status == "Success") {
                         if(responseBody.message != null){
                             callback.getCallback(responseBody.message, true)

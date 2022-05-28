@@ -36,7 +36,7 @@ fun getAges(dateOfBirth : String): Int{
 }
 
 fun addTime(time: Int): String{
-    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+    val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
 
     val cal = Calendar.getInstance()
     cal.time = dateFormat.parse(dateFormat.format(Date()))

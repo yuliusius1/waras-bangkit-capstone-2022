@@ -30,10 +30,10 @@ class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
         _isLoading.value = true
         ApiConfig.getApiService().getAllHistory(
         ).enqueue(object:
-            Callback<ResponseHistory> {
+            Callback<ResponseAllHistory> {
             override fun onResponse(
-                call: Call<ResponseHistory>,
-                response: Response<ResponseHistory>
+                call: Call<ResponseAllHistory>,
+                response: Response<ResponseAllHistory>
             ) {
                 val responseBody= response.body()
                 if(response.isSuccessful && responseBody != null){
@@ -53,7 +53,7 @@ class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
                 }
             }
 
-            override fun onFailure(call: Call<ResponseHistory>, t: Throwable) {
+            override fun onFailure(call: Call<ResponseAllHistory>, t: Throwable) {
                 _isLoading.value = false
             }
 

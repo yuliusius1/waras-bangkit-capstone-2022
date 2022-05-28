@@ -35,9 +35,16 @@ data class ResponseRecommendation (
     val data : Recommendation? = null
 )
 
-data class ResponseHistory (
+data class ResponseAllHistory (
     val status : String,
     val message : String? = null,
     val reason : String? = null,
     val data : ArrayList<History>? = null
+)
+
+data class ResponseHistory (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : History? = null
 )
