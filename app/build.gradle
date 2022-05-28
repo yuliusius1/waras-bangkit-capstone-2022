@@ -84,5 +84,8 @@ dependencies {
 
     //Async
     implementation 'com.loopj.android:android-async-http:1.4.9'
+    
+    //preference
+    implementation 'androidx.preference:preference-ktx:1.2.0'
 
 }
