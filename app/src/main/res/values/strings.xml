@@ -132,6 +132,13 @@
     <string name="disagree">Disagree</string>
     <string name="agree">Agree</string>
     <string name="years_old">years old</string>
+    
+    <!--    Notification-->
+    <string name="notification">Notification</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="ayoo">Ayoo Olahraga</string>
+    <string name="alarm_setup">Repeating alarm set up</string>
+    <string name="alarm_canceled">Repeating alarm canceled</string>
 
     <!--  Home Fragment  -->
 
