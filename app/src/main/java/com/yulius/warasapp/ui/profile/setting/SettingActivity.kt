@@ -11,6 +11,8 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivitySettingBinding
+import com.yulius.warasapp.ui.profile.setting.preference.ReminderPreference
+import com.yulius.warasapp.ui.profile.setting.receiver.AlarmReceiver
 import com.yulius.warasapp.util.ViewModelFactory
 
 
@@ -19,6 +21,9 @@ class SettingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySettingBinding
     private lateinit var viewModel: ThemeViewModel
+    
+    private lateinit var reminder: Reminder
+    private lateinit var alarmReceiver: AlarmReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,8 @@ class SettingActivity : AppCompatActivity() {
         setupView()
         setupViewModel()
         setupAction()
+        
+        notification()
     }
 
     private fun setupView() {
@@ -65,5 +72,33 @@ class SettingActivity : AppCompatActivity() {
         binding.ivAvatar.setOnClickListener {
             onBackPressed()
         }
+    }
+    
+    fun notification(){
+        val reminderPreference = ReminderPreference(this)
+        if (reminderPreference.getReminder().isReminded){
+            binding.switchNotif.isChecked = true
+        }else {
+            binding.switchNotif.isChecked = false
+        }
+
+        alarmReceiver = AlarmReceiver()
+        binding.switchNotif.setOnCheckedChangeListener{ buttonView, ischecked ->
+            if (ischecked){
+                saveReminder(true)
+                alarmReceiver.setRepeatingAlarm(this, "RepetingAlarm", "17:15", "Waras reminder")
+            } else{
+                saveReminder(false)
+                alarmReceiver.cancelAlarm(this)
+            }
+        }
+    }
+
+    private fun saveReminder(b: Boolean) {
+        val reminderPreference = ReminderPreference(this)
+        reminder = Reminder()
+
+        reminder.isReminded = b
+        reminderPreference.setReminder(reminder)
     }
 }
