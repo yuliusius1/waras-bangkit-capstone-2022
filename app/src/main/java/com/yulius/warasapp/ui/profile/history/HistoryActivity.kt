@@ -12,11 +12,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.yulius.warasapp.adapter.HistoryAdapter
 import com.yulius.warasapp.adapter.ListArticleAdapter
+import com.yulius.warasapp.adapter.OnItemClickCallback
+import com.yulius.warasapp.data.model.Article
 import com.yulius.warasapp.data.model.Contact
 import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityHistoryBinding
+import com.yulius.warasapp.ui.articles.DetailArticleActivity
 import com.yulius.warasapp.ui.auth.login.LoginActivity
+import com.yulius.warasapp.ui.profile.history.detail_history.DetailHistoryActivity
 import com.yulius.warasapp.util.DEFAULT_QUERY_ARTICLES
 import com.yulius.warasapp.util.ViewModelFactory
 import java.util.ArrayList
@@ -72,6 +76,16 @@ class HistoryActivity : AppCompatActivity() {
             adapter.setHistory(it)
             adapter.notifyDataSetChanged()
         }
+
+        adapter.setOnItemClickCallback(object :
+            HistoryAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: History) {
+                val intent =
+                    Intent(this@HistoryActivity, DetailHistoryActivity::class.java)
+                intent.putExtra("historyData", data)
+                startActivity(intent)
+            }
+        })
     }
 
     private fun setupAction() {

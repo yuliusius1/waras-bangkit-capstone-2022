@@ -121,7 +121,7 @@
     <string name="diagnose2">Do you feel cough?</string>
     <string name="diagnose3">Do you feel tired?</string>
     <string name="diagnose4">Do you have a sore throat?</string>
-    <string name="diagnose5">Do you feel a cold?</string>
+    <string name="diagnose5">Do you feel a runny nose?</string>
     <string name="diagnose6">Do you feel short of breath?</string>
     <string name="diagnose7">Do you feel vomiting?</string>
     <string name="no">No</string>
@@ -165,6 +165,8 @@
     <string name="select_gender">Select Gender</string>
     <string name="result_diagnose">Diagnose Result</string>
     <string name="result_text">Your Days to Heal is %1$s Days</string>
+    <string name="title_detail_history">Detail History Page</string>
+    <string name="detail_history_text1">Below is the list of your symptoms</string>
 
     <string-array name="select_gender">
         <item>Male</item>

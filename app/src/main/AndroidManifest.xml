@@ -30,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
         <activity
+            android:name=".ui.profile.history.detail_history.DetailHistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.auth.verification_data.VerificationDataActivity"
             android:exported="false" />
         <activity

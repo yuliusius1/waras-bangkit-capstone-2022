@@ -41,9 +41,9 @@ class HistoryAdapter: RecyclerView.Adapter<HistoryAdapter.ListViewHolder>() {
          created_at ,
          id_user ) = listHistory[position]
         holder.binding.historyTitle.text = "Diagnose - $id_history"
-        holder.binding.historyText.text = created_at.substring(0,10)
-        holder.binding.newsDate.text = date_to_heal
-        holder.binding.newsSource.text = status
+        holder.binding.historyText.text = status
+        holder.binding.dateStart.text =  created_at.substring(0,10)
+        holder.binding.dateEnd.text = date_to_heal
 
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listHistory[position])

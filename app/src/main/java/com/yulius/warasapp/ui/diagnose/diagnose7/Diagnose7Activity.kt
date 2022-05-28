@@ -17,6 +17,7 @@ import com.yulius.warasapp.data.model.UserLogin
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
 import com.yulius.warasapp.ml.Dnn2Model
+import com.yulius.warasapp.ml.Dnn3Model
 import com.yulius.warasapp.ml.DnnModel
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6Activity
@@ -101,7 +102,6 @@ class Diagnose7Activity : AppCompatActivity() {
             }
 
             submitBtn.setOnClickListener {
-//                prediction()
                 viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
                     override fun getCallback(msg: String, status: Boolean) {
                        if(status){
@@ -118,32 +118,10 @@ class Diagnose7Activity : AppCompatActivity() {
     }
 
     private fun prediction(): Int {
-        val model = Dnn2Model.newInstance(applicationContext)
+        val model = Dnn3Model.newInstance(applicationContext)
 
         // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 9), DataType.FLOAT32)
-//        val byteBuffer = ByteBuffer.allocate(4 * 9)
-////        byteBuffer.putFloat(2F) // iki angka asal
-////        byteBuffer.putFloat(dataDiagnose.fever.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.cough.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.tired.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.sore_throat.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.cold.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.short_breath.toFloat())
-////        byteBuffer.putFloat(dataDiagnose.vomit.toFloat())
-//        for (value in intArrayOf(
-//            dataDiagnose.age,
-//            dataDiagnose.gender,
-//            dataDiagnose.fever,
-//            dataDiagnose.cough,
-//            dataDiagnose.tired,
-//            dataDiagnose.sore_throat,
-//            dataDiagnose.cold,
-//            dataDiagnose.short_breath,
-//            dataDiagnose.vomit,
-//        )) {
-//            byteBuffer.putFloat(value.toFloat())
-//        }
 
 //        inputFeature0.loadBuffer(byteBuffer)
         Log.d("TAG", "DATA PREDIKSI: $dataDiagnose")

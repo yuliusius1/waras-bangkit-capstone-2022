@@ -43,7 +43,7 @@
             tools:text="@tools:sample/lorem" />
 
         <TextView
-            android:id="@+id/news_source"
+            android:id="@+id/date_start"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -52,14 +52,14 @@
             android:lines="1"
             android:textSize="14sp"
             style="@style/textColor"
-            app:drawableStartCompat="@drawable/ic_baseline_language_24"
+            app:drawableStartCompat="@drawable/ic_baseline_date_range_24"
             app:layout_constraintEnd_toEndOf="@id/history_title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/history_text"
-            tools:text="News Source" />
+            tools:text="Start Date" />
 
         <TextView
-            android:id="@+id/news_date"
+            android:id="@+id/date_end"
             android:layout_width="0dp"
             style="@style/textColor"
             android:layout_height="wrap_content"
@@ -71,8 +71,8 @@
             app:drawableStartCompat="@drawable/ic_baseline_date_range_24"
             app:layout_constraintEnd_toEndOf="@id/history_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/news_source"
-            tools:text="News Date" />
+            app:layout_constraintTop_toBottomOf="@id/date_start"
+            tools:text="End Date" />
 
         <ImageView
             android:id="@+id/news_image"
