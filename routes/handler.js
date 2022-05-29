@@ -232,23 +232,23 @@ router.post("/users/changePassword", [auth, admin], async (req, res) => {
 router.post("/email", [auth, admin], async (req, res) => {
 	const email = req.query.email
 	if (email == null || email == ''){
-        res.status(400);
+        	res.status(400);
 		return res.json({ status: "Error", message: "Please input email!"});
 	} 
 	const query1 = `SELECT * FROM tbuserwaras WHERE email = '${email}'`;
 	try {
-			pool.query(query1, async(error, result)=>{
-				if (!result[0]) {  
-                    res.status(404);
-					return res.json({status: "Error", message: "Email Not found!"});
-				} else {
-					res.json({ status: "Success", data : result[0]});
-				}
-			});
-		} catch {
-            res.status(500);
-			res.json({status: "Error"});
-		}
+		pool.query(query1, async(error, result)=>{
+			if (!result[0]) {  
+				res.status(404);
+				return res.json({status: "Error", message: "Email Not found!"});
+			} else {
+				res.json({ status: "Success", data : result[0]});
+			}
+		});
+	} catch {
+		res.status(500);
+		res.json({status: "Error"});
+	}
 });
 
 //POST DIAGNOSE DATA TO DB
@@ -272,16 +272,16 @@ router.post("/diagnoses", [auth, admin], async (req, res)=>{
 		const query1 = "INSERT INTO tbdiagnose (age, gender, fever, cough, tired, sore_throat, runny_nose, short_breath, vomit, day_to_heal, created_at, id_user) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		pool.query(query1, Object.values(data), (error)=>{
 				if (error){
-                    res.status(400);
+                   		 	res.status(400);
 					res.json({status: "Error", message : "Please fill correctly!"});
 				} else {
-                    res.status(201);
+                    			res.status(201);
 					res.json({status: "Success", message : "Diagnose Created!", data:data});
 				}
 		});
   } catch {
-		res.status(500);
-		res.json({ status: "Error"});  
+	res.status(500);
+	res.json({ status: "Error"});  
     }
 });
 
