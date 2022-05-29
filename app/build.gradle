@@ -14,7 +14,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
+        buildConfigField "String", "API_KEY", '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNzkyOTIwLCJleHAiOjE2NTUwMDI1MjB9.3EzQP2V2Ws90exqCWoDxIFcUFxfUy_7wkxrATdEK1mI"'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -85,4 +85,6 @@ dependencies {
     //Async
     implementation 'com.loopj.android:android-async-http:1.4.9'
 
+    //preference
+    implementation 'androidx.preference:preference-ktx:1.2.0'
 }

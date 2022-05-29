@@ -1,5 +1,6 @@
 package com.yulius.warasapp.data.remote.main
 
+import com.yulius.warasapp.BuildConfig
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -11,6 +12,7 @@ class ApiConfig {
                 .addInterceptor{
                     val original = it.request()
                     val requestBuilder = original.newBuilder()
+                        .addHeader("x-auth-token", BuildConfig.API_KEY)
                     val request = requestBuilder.build()
                     it.proceed(request)
                 }
