@@ -1,105 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.profile.history.detail_history.DetailHistoryActivity">
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_greeting"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        style="@style/strokeColor"
-        app:strokeWidth="1dp">
+        android:paddingBottom="16dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_greeting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/strokeColor"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="18dp"
+                android:paddingHorizontal="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_baseline_chevron_left_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_detail_history"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/iv_detail_history"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/history_image"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_greeting"/>
+
+        <TextView
+            android:id="@+id/hai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_detail_history"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="@string/hai" />
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/hai"
+            app:layout_constraintTop_toBottomOf="@id/iv_detail_history"
+            android:layout_marginHorizontal="4dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            tools:text="Alfendio " />
+
+        <TextView
+            android:id="@+id/tv_firstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hai"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="8dp"
+            android:text="This is the result of your diagnose" />
+
+
+
+        <TextView
+            android:id="@+id/detail_history_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_firstText"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_history_text1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_symptoms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="18dp"
-            android:paddingHorizontal="16dp">
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="@id/iv_detail_history"
+            app:layout_constraintStart_toStartOf="@id/detail_history_text1"
+            app:layout_constraintTop_toBottomOf="@id/detail_history_text1" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/iv_avatar"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_baseline_chevron_left_24"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/tv_secondText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_symptoms"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="8dp"
+            tools:text="Based on your symptoms, our system has predict that you will recover in 6 days" />
 
-            <TextView
-                android:id="@+id/tv_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_detail_history"
-                android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/tv_txtStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_secondText"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:text="Diagnose Date: " />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/tv_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_txtStartDate"
+            app:layout_constraintTop_toBottomOf="@id/tv_secondText"
+            android:layout_marginHorizontal="4dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            tools:text="2022/05/22 " />
 
-    <ImageView
-        android:id="@+id/iv_detail_history"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/history_image"
-        android:layout_marginHorizontal="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_greeting"/>
+        <TextView
+            android:id="@+id/tv_txtEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_startDate"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:text="Estimated Recover Date: " />
 
-    <TextView
-        android:id="@+id/hai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_detail_history"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/hai" />
+        <TextView
+            android:id="@+id/tv_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_txtEndDate"
+            app:layout_constraintTop_toBottomOf="@id/tv_startDate"
+            android:layout_marginHorizontal="4dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            tools:text="2022/05/22 " />
 
-    <TextView
-        android:id="@+id/tv_uname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/hai"
-        app:layout_constraintTop_toBottomOf="@id/iv_detail_history"
-        android:layout_marginHorizontal="4dp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        tools:text="Alfendio " />
+        <Button
+            android:id="@+id/btn_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_endDate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="32dp"
+            android:text="@string/send_report"
+            android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/detail_history_text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hai"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/detail_history_text1" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_symptoms"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/iv_detail_history"
-        app:layout_constraintStart_toStartOf="@id/detail_history_text1"
-        app:layout_constraintTop_toBottomOf="@id/detail_history_text1" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

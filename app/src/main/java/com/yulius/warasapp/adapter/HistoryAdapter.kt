@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.databinding.ItemRowHistoryBinding
+import com.yulius.warasapp.util.changeTimeFormat
+import com.yulius.warasapp.util.changeTimeFormatCreatedAt
 import java.util.ArrayList
 
 class HistoryAdapter: RecyclerView.Adapter<HistoryAdapter.ListViewHolder>() {
@@ -33,16 +35,16 @@ class HistoryAdapter: RecyclerView.Adapter<HistoryAdapter.ListViewHolder>() {
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (
          id_history,
-         day_to_heal ,
+         _ ,
          date_to_heal ,
          status ,
-         recommendations ,
+         _ ,
          created_at ,
-         id_user ) = listHistory[position]
+         _ ) = listHistory[position]
         holder.binding.historyTitle.text = "Diagnose - $id_history"
         holder.binding.historyText.text = status
-        holder.binding.dateStart.text =  created_at.substring(0,10)
-        holder.binding.dateEnd.text = date_to_heal
+        holder.binding.dateStart.text =  changeTimeFormatCreatedAt(created_at.substring(0,10))
+        holder.binding.dateEnd.text = changeTimeFormat(date_to_heal)
 
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listHistory[position])

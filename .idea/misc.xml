@@ -10,7 +10,7 @@
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_check_email.xml" value="0.18" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_contact_us.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_detail_article.xml" value="0.25" />
-        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_detail_history.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_detail_history.xml" value="0.29213483146067415" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_diagnose1.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_diagnose2.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/activity_diagnose3.xml" value="0.20520833333333333" />
@@ -40,6 +40,7 @@
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_loading.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_row_article.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_row_history.xml" value="0.209375" />
+        <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/item_symptoms.xml" value="0.209375" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/list_contact.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/layout/popup_profile.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Dicoding/WarasApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />

@@ -23,10 +23,12 @@ class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
         return pref.getUser().asLiveData()
     }
 
-    val listHistory = MutableLiveData<ArrayList<History>>()
+    private val _listHistory = MutableLiveData<ArrayList<History>>()
+
     val listData = ArrayList<History>()
 
     fun setHistory(id_user: Int){
+        listData.clear()
         _isLoading.value = true
         ApiConfig.getApiService().getAllHistory(
         ).enqueue(object:
@@ -44,7 +46,7 @@ class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
                                     listData.add(responseBody.data[i])
                                 }
                             }
-                            listHistory.postValue(listData)
+                            _listHistory.postValue(listData)
                         }
                     }
                     _isLoading.value = false
@@ -60,6 +62,6 @@ class HistoryViewModel(private val pref: UserPreference) : ViewModel() {
         })
     }
     fun getHistory() : LiveData<ArrayList<History>> {
-        return listHistory
+        return _listHistory
     }
 }

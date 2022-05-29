@@ -35,6 +35,20 @@ fun getAges(dateOfBirth : String): Int{
     return numberOfDays.div(365).toInt()
 }
 
+fun changeTimeFormatCreatedAt(date: String) : String{
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+    val dateParse = dateFormat.parse(date)
+    val dateFormat2 = SimpleDateFormat("dd LLLL yyyy", Locale.getDefault())
+    return dateFormat2.format(dateParse)
+}
+
+fun changeTimeFormat(date: String? = "2022/01/01") : String{
+    val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
+    val dateParse = dateFormat.parse(date)
+    val dateFormat2 = SimpleDateFormat("dd LLLL yyyy", Locale.getDefault())
+    return dateFormat2.format(dateParse)
+}
+
 fun addTime(time: Int): String{
     val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
 

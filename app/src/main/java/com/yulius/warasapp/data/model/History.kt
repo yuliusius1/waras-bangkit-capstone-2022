@@ -12,4 +12,5 @@ data class History (
     var recommendations : String? = null,
     var created_at : String,
     var id_user : Int,
+    var id_diagnose : Int,
 ): Parcelable

@@ -8,12 +8,16 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.yulius.warasapp.R
+import com.yulius.warasapp.adapter.DetailHistoryAdapter
 import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDetailHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.profile.history.HistoryViewModel
 import com.yulius.warasapp.util.ViewModelFactory
+import com.yulius.warasapp.util.changeTimeFormat
+import com.yulius.warasapp.util.changeTimeFormatCreatedAt
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -23,6 +27,7 @@ class DetailHistoryActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailHistoryBinding
     private lateinit var viewModel: DetailHistoryViewModel
     private lateinit var historyData : History
+    private var adapter = DetailHistoryAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +35,18 @@ class DetailHistoryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getData()
-        setupView()
+        setupRecycleView()
         setupViewModel()
+        setupView()
         setupAction()
+    }
+
+    private fun setupRecycleView() {
+        with(binding) {
+            rvSymptoms.layoutManager = LinearLayoutManager(this@DetailHistoryActivity)
+            rvSymptoms.setHasFixedSize(true)
+            rvSymptoms.adapter = adapter
+        }
     }
 
     private fun getData() {
@@ -41,6 +55,11 @@ class DetailHistoryActivity : AppCompatActivity() {
 
     private fun setupView() {
         supportActionBar?.hide()
+        binding.apply {
+            tvEndDate.text = changeTimeFormat(historyData.date_to_heal)
+            tvStartDate.text = changeTimeFormatCreatedAt(historyData.created_at.substring(0,10))
+            tvSecondText.text = getString(R.string.text_predict, historyData.day_to_heal)
+        }
     }
 
     private fun setupViewModel() {
@@ -55,8 +74,13 @@ class DetailHistoryActivity : AppCompatActivity() {
                 i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(i)
             } else {
-//                viewModel.setHistory(it.id)
+                binding.tvUname.text = it.full_name
             }
+        }
+        viewModel.setSymptoms(historyData.id_diagnose)
+        viewModel.listData.observe(this){
+            adapter.setData(it)
+            adapter.notifyDataSetChanged()
         }
     }
 

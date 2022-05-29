@@ -70,9 +70,9 @@ interface ApiService {
     fun getAllDiagnose(
     ): Call<ResponseAllDiagnoses>
 
-    @GET("diagnoses")
+    @GET("diagnoses/{id}")
     fun getDiagnoseByID(
-        @Path("id") id: String,
+        @Path("id") id: Int,
     ): Call<ResponseDiagnoses>
 
     @GET("history")

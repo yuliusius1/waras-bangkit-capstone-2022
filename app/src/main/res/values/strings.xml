@@ -174,6 +174,8 @@
     <string name="result_text">Your Days to Heal is %1$s Days</string>
     <string name="title_detail_history">Detail History Page</string>
     <string name="detail_history_text1">Below is the list of your symptoms</string>
+    <string name="send_report">Send Report</string>
+    <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
 
     <string-array name="select_gender">
         <item>Male</item>

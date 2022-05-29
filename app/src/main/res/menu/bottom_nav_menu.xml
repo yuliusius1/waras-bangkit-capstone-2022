@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/navigation_diagnose"
-        android:icon="@drawable/ic_baseline_add_24"
+        android:icon="@drawable/ic_baseline_health_and_safety_24"
         android:title="" />
 
     <item

@@ -1,7 +1,7 @@
 package com.yulius.warasapp.ui.profile.setting.preference
 
 import android.content.Context
-import com.yulius.warasapp.ui.profile.setting.Reminder
+import com.yulius.warasapp.data.model.Reminder
 
 class ReminderPreference(context: Context) {
     companion object {
@@ -17,7 +17,7 @@ class ReminderPreference(context: Context) {
         editor.apply()
     }
 
-    fun getReminder() : Reminder{
+    fun getReminder() : Reminder {
         val model = Reminder()
         model.isReminded = preference.getBoolean(REMINDER, false)
         return model

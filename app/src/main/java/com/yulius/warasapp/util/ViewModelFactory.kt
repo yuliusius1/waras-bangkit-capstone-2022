@@ -28,6 +28,7 @@ import com.yulius.warasapp.ui.profile.contact_us.ContactUsViewModel
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
 import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
 import com.yulius.warasapp.ui.profile.history.HistoryViewModel
+import com.yulius.warasapp.ui.profile.history.detail_history.DetailHistoryViewModel
 import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
 import com.yulius.warasapp.ui.splash_screen.SplashScreenViewModel
 
@@ -71,7 +72,6 @@ class ViewModelFactory(private val pref: UserPreference) :
             modelClass.isAssignableFrom(ResetPasswordViewModel::class.java) -> {
                 ResetPasswordViewModel() as T
             }
-
 
             modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
                 HomeViewModel(pref) as T
@@ -123,6 +123,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(HistoryViewModel::class.java) -> {
                 HistoryViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(DetailHistoryViewModel::class.java) -> {
+                DetailHistoryViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ContactUsViewModel::class.java) -> {
