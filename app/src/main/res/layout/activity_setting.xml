@@ -98,6 +98,34 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cv_greeting" />
+    
+    <TextView
+        android:id="@+id/textNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/notification"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_greeting"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <Switch
+        android:id="@+id/switch_notif"
+        android:layout_width="165dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/set_reminder"
+        android:textOff="ON"
+        android:textOn="OFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNotification" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
