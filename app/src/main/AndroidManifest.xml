@@ -29,6 +29,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
+        <receiver
+            android:name=".ui.profile.setting.receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
         <activity
             android:name=".ui.profile.history.detail_history.DetailHistoryActivity"
             android:exported="false" />
