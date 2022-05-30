@@ -102,4 +102,12 @@ class HistoryActivity : AppCompatActivity() {
         finish()
         return true
     }
+
+    override fun onResume() {
+        viewModel.getHistory().observe(this){
+            adapter.setHistory(it)
+            adapter.notifyDataSetChanged()
+        }
+        super.onResume()
+    }
 }

@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -13,21 +12,15 @@ import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
-import com.yulius.warasapp.ml.Dnn2Model
 import com.yulius.warasapp.ml.Dnn3Model
-import com.yulius.warasapp.ml.DnnModel
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6Activity
 import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseActivity
-import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
 import com.yulius.warasapp.util.addTime
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
-import java.nio.ByteBuffer
-import java.nio.ByteOrder
-import java.nio.ByteOrder.nativeOrder
 import kotlin.math.roundToInt
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -39,7 +32,6 @@ class Diagnose7Activity : AppCompatActivity() {
     private lateinit var dataDiagnose: Diagnose
     private lateinit var viewModel: Diagnose7ViewModel
     private lateinit var user: User
-    private var data = ArrayList<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -100,7 +92,6 @@ class Diagnose7Activity : AppCompatActivity() {
             }
 
             submitBtn.setOnClickListener {
-//                prediction()
                 viewModel.saveData(dataDiagnose,prediction(), user.id, object: ResponseCallback{
                     override fun getCallback(msg: String, status: Boolean) {
                        if(status){

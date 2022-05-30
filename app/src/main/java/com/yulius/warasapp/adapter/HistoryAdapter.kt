@@ -41,7 +41,7 @@ class HistoryAdapter: RecyclerView.Adapter<HistoryAdapter.ListViewHolder>() {
          _ ,
          created_at ,
          _ ) = listHistory[position]
-        holder.binding.historyTitle.text = "Diagnose - $id_history"
+        holder.binding.historyTitle.text = "Diagnose - ${position+1}"
         holder.binding.historyText.text = status
         holder.binding.dateStart.text =  changeTimeFormatCreatedAt(created_at.substring(0,10))
         holder.binding.dateEnd.text = changeTimeFormat(date_to_heal)

@@ -15,6 +15,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7Activity
+import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.ui.profile.history.HistoryActivity
 import com.yulius.warasapp.util.ViewModelFactory
@@ -70,7 +71,7 @@ class ResultDiagnoseActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.apply {
             submitBtn.setOnClickListener {
-                val intent = Intent(this@ResultDiagnoseActivity, MainActivity::class.java)
+                val intent = Intent(this@ResultDiagnoseActivity, RecommendationActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
             }

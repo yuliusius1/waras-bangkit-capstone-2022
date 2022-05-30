@@ -48,3 +48,10 @@ data class ResponseHistory (
     val reason : String? = null,
     val data : History? = null
 )
+
+data class ResponseReport (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : Reports? = null
+)

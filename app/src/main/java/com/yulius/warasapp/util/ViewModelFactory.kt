@@ -18,6 +18,7 @@ import com.yulius.warasapp.ui.diagnose.diagnose4.Diagnose4ViewModel
 import com.yulius.warasapp.ui.diagnose.diagnose5.Diagnose5ViewModel
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6ViewModel
 import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7ViewModel
+import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationViewModel
 import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
 import com.yulius.warasapp.ui.landing.LandingViewModel
@@ -107,6 +108,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(Diagnose7ViewModel::class.java) -> {
                 Diagnose7ViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(RecommendationViewModel::class.java) -> {
+                RecommendationViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {

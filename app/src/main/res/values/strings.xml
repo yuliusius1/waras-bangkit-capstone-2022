@@ -160,6 +160,20 @@
         <item>C2007F0650@bangkit.academy</item>
     </string-array>
 
+    <string-array name="data_recommendation">
+        <item>Selalu memakai masker dan membuang masker bekas di tempat yang ditentukan</item>
+        <item>Jika sakit (ada gejala demam, flu dan batuk), maka tetap di rumah. Jangan pergi bekerja, sekolah, ke pasar atau ke ruang publik untuk mencegah penularan masyarakat</item>
+        <item>Manfaatkan fasilitas telemedicine atau sosial media kesehatan dan hindari transportasi publik.</item>
+        <item>Beritahu dokter dan perawat tentang keluhan dan gejala, serta riwayat bekerja ke daerah terjangkit atau kontak dengan pasien COVID-19</item>
+        <item>Selama di rumah, bisa bekerja di rumah. Gunakan kamar terpisah dari anggota keluarga lainnya, dan jaga jarak 1 meter dari anggota keluarga</item>
+        <item>Tentukan pengecekan suhu harian, amati batuk dan sesak nafas.</item>
+        <item>Hindari pemakaian bersama peralatan makan dan mandi dan tempat tidur.</item>
+        <item>Terapkan perilaku hidup sehat dan bersih, serta konsumsi makanan bergizi, mencuci tangan dengan sabun dan air mengalir dan lakukan etika batuk dan bersin.</item>
+        <item>Jaga kebersihan dan kesehatan rumah dengan cairan desinfektan.</item>
+        <item>Selalu berada di ruang terbuka dan berjemur di bawah sinar matahari setiap pagi (15 sampai 30 menit)</item>
+        <item>Hubungi segera fasilitas pelayanan kesehatan jika sakit berlanjut seperti sesak nafas dan demam tinggi, untuk mendapatkan perawatan lebih lanjut.</item>
+    </string-array>
+
     <integer-array name="data_photo">
         <item>@drawable/avatar</item>
         <item>@drawable/avatar</item>
@@ -177,6 +191,7 @@
     <string name="send_report">Send Report</string>
     <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
     <string name="title_recommendation">Recommendation List</string>
+    <string name="back_to_homepage">Back to homepage</string>
 
     <string-array name="select_gender">
         <item>Male</item>
