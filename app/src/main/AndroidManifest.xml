@@ -31,10 +31,6 @@
         android:roundIcon="@drawable/avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
-        <receiver
-            android:name=".ui.profile.setting.receiver.AlarmReceiver"
-            android:enabled="true"
-            android:exported="true"></receiver>
         <activity
             android:name=".ui.diagnose.recommendation.RecommendationActivity"
             android:exported="false" />
