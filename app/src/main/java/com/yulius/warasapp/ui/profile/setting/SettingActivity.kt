@@ -87,7 +87,8 @@ class SettingActivity : AppCompatActivity() {
         binding.switchNotif.setOnCheckedChangeListener{ buttonView, ischecked ->
             if (ischecked){
                 saveReminder(true)
-                alarmReceiver.setRepeatingAlarm(this, "RepetingAlarm", "17:15", "Waras reminder")
+//                alarmReceiver.setRepeatingAlarm(this, "RepeatingAlarm", "08:00", "Waras reminder")
+//                alarmReceiver.setOneTimeAlarm(this, "OneTimeAlarm","2022/05/29" ,"19:07", "Waras reminder One")
             } else{
                 saveReminder(false)
                 alarmReceiver.cancelAlarm(this)

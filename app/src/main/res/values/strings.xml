@@ -132,7 +132,7 @@
     <string name="disagree">Disagree</string>
     <string name="agree">Agree</string>
     <string name="years_old">years old</string>
-    
+
     <!--    Notification-->
     <string name="notification">Notification</string>
     <string name="set_reminder">Set Reminder</string>
@@ -176,6 +176,7 @@
     <string name="detail_history_text1">Below is the list of your symptoms</string>
     <string name="send_report">Send Report</string>
     <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
+    <string name="title_recommendation">Recommendation List</string>
 
     <string-array name="select_gender">
         <item>Male</item>

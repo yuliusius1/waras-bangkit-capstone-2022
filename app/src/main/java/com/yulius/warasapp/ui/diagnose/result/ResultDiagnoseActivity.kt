@@ -16,6 +16,7 @@ import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7Activity
 import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.ui.profile.history.HistoryActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
