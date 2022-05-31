@@ -192,6 +192,10 @@
     <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
     <string name="title_recommendation">Recommendation List</string>
     <string name="back_to_homepage">Back to homepage</string>
+    <string name="title_report">Reports page</string>
+    <string name="how_are_you_currently">How are you currently?</string>
+    <string name="already_recovered">Already Recovered</string>
+    <string name="still_sick">Still sick</string>
 
     <string-array name="select_gender">
         <item>Male</item>

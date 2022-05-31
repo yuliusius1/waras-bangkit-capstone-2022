@@ -88,4 +88,12 @@ interface ApiService {
         @Query("id_user") id_user: Int,
         @Query("id_diagnose") id_diagnose: Int,
     ): Call<ResponseHistory>
+
+    @POST("reports")
+    fun sendReport(
+        @Query("report") report: String,
+        @Query("status") status: String,
+        @Query("id_user") id_user: Int,
+        @Query("id_history") id_history: Int,
+    ): Call<ResponseReport>
 }

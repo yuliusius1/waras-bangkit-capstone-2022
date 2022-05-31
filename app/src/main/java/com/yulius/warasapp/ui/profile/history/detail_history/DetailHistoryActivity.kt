@@ -15,6 +15,7 @@ import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDetailHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
+import com.yulius.warasapp.ui.profile.history.report.ReportActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import com.yulius.warasapp.util.changeTimeFormat
 import com.yulius.warasapp.util.changeTimeFormatCreatedAt
@@ -88,6 +89,11 @@ class DetailHistoryActivity : AppCompatActivity() {
         binding.apply {
             ivAvatar.setOnClickListener{
                 onBackPressed()
+            }
+            btnReport.setOnClickListener {
+                val intent = Intent(this@DetailHistoryActivity, ReportActivity::class.java)
+                intent.putExtra("historyData",historyData)
+                startActivity(intent)
             }
         }
     }
