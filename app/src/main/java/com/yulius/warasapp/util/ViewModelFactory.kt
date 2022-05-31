@@ -30,6 +30,7 @@ import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
 import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
 import com.yulius.warasapp.ui.profile.history.HistoryViewModel
 import com.yulius.warasapp.ui.profile.history.detail_history.DetailHistoryViewModel
+import com.yulius.warasapp.ui.profile.history.report.ReportViewModel
 import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
 import com.yulius.warasapp.ui.splash_screen.SplashScreenViewModel
 
@@ -112,6 +113,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(RecommendationViewModel::class.java) -> {
                 RecommendationViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(ReportViewModel::class.java) -> {
+                ReportViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {
