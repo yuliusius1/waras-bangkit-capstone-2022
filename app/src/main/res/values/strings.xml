@@ -59,9 +59,7 @@
     <string name="no_whitespace">No Whitespaces are allowed</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="enter_your_email_address">Enter Your Email Address</string>
-    <string name="title_forgot_password">Forgot Password Page</string>
     <string name="enter_your_telephone_number">Enter your Telephone Number</string>
-    <string name="title_reset_password">Reset Password</string>
     <string name="new_password">New Password</string>
     <string name="repeat_new_password">Repeat New Password</string>
     <string name="verification_error">Wrong Data! Verification Failed</string>
@@ -91,6 +89,10 @@
     <string name="logout">Logout</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="change_password">Change Password</string>
+    <string name="title_forgot_password">Forgot Password Page</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="title_recommendation">Recommendation List</string>
+    <string name="title_detail_history">Detail History Page</string>
 
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
@@ -112,7 +114,7 @@
     <string name="Confirm">Confirm</string>
     <string name="cancel">Cancel</string>
     <string name="your_progress">Your Progress</string>
-    <string name="your_recommendations">Your Recommendations</string>
+    <string name="your_recommendations">Recommendations</string>
     <string name="start_diagnose_now">Start Diagnose now</string>
     <string name="news_images">News Images</string>
 
@@ -186,16 +188,16 @@
     <string name="select_gender">Select Gender</string>
     <string name="result_diagnose">Diagnose Result</string>
     <string name="result_text">Your Days to Heal is %1$s Days</string>
-    <string name="title_detail_history">Detail History Page</string>
     <string name="detail_history_text1">Below is the list of your symptoms</string>
     <string name="send_report">Send Report</string>
     <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
-    <string name="title_recommendation">Recommendation List</string>
     <string name="back_to_homepage">Back to homepage</string>
     <string name="title_report">Reports page</string>
     <string name="how_are_you_currently">How are you currently?</string>
     <string name="already_recovered">Already Recovered</string>
     <string name="still_sick">Still sick</string>
+    <string name="more">More ▶</string>
+
 
     <string-array name="select_gender">
         <item>Male</item>
