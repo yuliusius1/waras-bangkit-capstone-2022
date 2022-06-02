@@ -38,17 +38,14 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_permission"
-        android:layout_width="350dp"
-        android:layout_height="110dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="16dp"
-        app:cardBackgroundColor="@color/lightGrey"
-        app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_username"
-        app:strokeColor="@color/grey"
-        app:strokeWidth="1dp"
+        style="@style/backgroundCard"
         tools:ignore="MissingConstraints">
 
 
@@ -66,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/permisssion1"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 tools:layout_editor_absoluteX="-3dp"
                 tools:layout_editor_absoluteY="1dp" />
 
@@ -75,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/permission2"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@+id/permission1_tv"
                 tools:layout_editor_absoluteX="-3dp" />
 
@@ -100,10 +97,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/agree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toEndOf="@+id/disagree_btn"
         app:layout_constraintTop_toBottomOf="@+id/cv_permission"
         tools:ignore="MissingConstraints" />
 

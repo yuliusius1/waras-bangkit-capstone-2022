@@ -10,6 +10,7 @@
     <color name="grey">#9C9C9C</color>
     <color name="darkGrey">#5C5C5C</color>
     <color name="lightGrey">#C6C6C6</color>
+    <color name="ultraLightGrey">#DADADA</color>
     <color name="blue">#3d5a80</color>
     <color name="darkBlue">#293241</color>
     <color name="veryDarkBlue">#1D232E</color>
