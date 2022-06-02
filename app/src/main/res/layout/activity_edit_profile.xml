@@ -67,7 +67,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:contentDescription="@string/input_image"
-            android:src="@drawable/ic_baseline_account_circle_24"
+            android:src="@drawable/avatar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +91,8 @@
                 android:layout_marginStart="50dp"
                 android:layout_marginEnd="10dp"
                 android:textColor="@color/white"
-                android:text="@string/camera" />
+                android:text="@string/camera"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_gallery"
@@ -101,7 +102,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="50dp"
                 android:textColor="@color/white"
-                android:text="@string/gallery" />
+                android:text="@string/gallery"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -125,6 +127,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="32dp"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameTextView"

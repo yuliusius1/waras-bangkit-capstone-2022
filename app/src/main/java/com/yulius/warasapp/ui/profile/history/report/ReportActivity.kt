@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -66,19 +67,33 @@ class ReportActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.apply {
             val reports = etReport.editText?.text
-
-            if(TextUtils.isEmpty(reports)){
-                etReport.editText?.error = "Report must be filled out"
+            var status = "Sembuh"
+            chipStatus.setOnCheckedStateChangeListener() { group, checkedIds ->
+                for (i in 0 until checkedIds.size) {
+                    when(checkedIds[i]){
+                        R.id.chip_1 -> status = "Sembuh"
+                        else -> status = "Belum Sembuh"
+                    }
+                }
             }
+
+
+
             ivAvatar.setOnClickListener{
                 onBackPressed()
             }
             btnSubmit.setOnClickListener {
-                viewModel.sendReport(historyData, reports.toString(),"Sembuh",object : ResponseCallback{
-                    override fun getCallback(msg: String, status: Boolean) {
-                        showDialogs(msg, status)
-                    }
-                })
+                if(TextUtils.isEmpty(reports)){
+                    etReport.editText?.error = "Report must be filled out"
+                } else {
+                    viewModel.sendReport(historyData, reports.toString(),status,object : ResponseCallback{
+                        override fun getCallback(msg: String, status: Boolean) {
+                            showDialogs(msg, status)
+                        }
+                    })
+
+
+                }
             }
         }
     }

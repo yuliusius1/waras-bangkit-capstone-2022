@@ -55,3 +55,11 @@ data class ResponseReport (
     val reason : String? = null,
     val data : Reports? = null
 )
+
+data class ResponseQuotes (
+    val results : ArrayList<Quotes>? = null,
+    val page :Int? = null,
+    val limit :Int? = null,
+    val totalPages :Int? = null,
+    val totalResult :Int? = null,
+)

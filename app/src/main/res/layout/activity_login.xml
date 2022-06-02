@@ -61,6 +61,7 @@
         android:drawablePadding="12dp"
         android:layout_marginTop="16dp"
         android:alpha="0"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_subTitle"/>
 

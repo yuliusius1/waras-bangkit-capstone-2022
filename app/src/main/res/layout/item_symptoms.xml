@@ -6,12 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/tv_symptoms"
+        android:id="@+id/bullet"
+        app:drawableStartCompat="@drawable/bullet_item"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_symptoms"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="italic"
         android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:justificationMode="inter_word"
         tools:text="First Symptoms"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toEndOf="@id/bullet"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
