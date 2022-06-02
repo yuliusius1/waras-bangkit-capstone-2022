@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WarasApp</string>
+
+    <!--    Login   -->
+    <string name="login_to_your_account">Masuk ke akun Anda</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="password">Kata sandi</string>
+    <string name="login">Login</string>
+    <string name="new_user">Pengguna baru?</string>
+    <string name="register_now">Register Sekarang</string>
+    <string name="register">Register</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="login_now">Login Sekarang</string>
+    <string name="logo">Logo</string>
+    <string name="do_you_have_an_account">Apakah kamu punya akun?</string>
+    <string name="login_success">Login Sukses</string>
+    <string name="next">Berikutnya</string>
+    <string name="login_error">Login Error</string>
+    <string name="repeat">Ulang</string>
+
+    <string name="hello_blank_fragment">Hallo Fragment Kosong</string>
+    <string name="register_new_account">Register Akun Baru</string>
+    <string name="success">Sukses</string>
+    <string name="your_account_created">Akun Anda berhasil dibuat</string>
+    <string name="sorry">Oops</string>
+    <string name="create_account_failed">Kami mengalami kesalahan saat membuat akun Anda %1$s</string>
+
+    <string name="input_image">Masukkan Gambar</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Galeri</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="date_of_birth">Tanggal lahir</string>
+    <string name="save">Simpan perubahan</string>
+    <string name="Telp">Nomor Telp</string>
+    <string name="rating">Rating Aplikasi</string>
+    <string name="saran">Saran</string>
+    <string name="submit">Submit</string>
+    <string name="no_permission">tidak mendapatkan izin</string>
+    <string name="choose">Pilih Gambar</string>
+    <string name="date_formate">yyyy-MM-dd</string>
+    <string name="theme">Tema</string>
+
+    <!--  Form Validation  -->
+    <string name="enter_name">Nama wajib diisi</string>
+    <string name="enter_password">Password wajib terisi </string>
+    <string name="enter_email">masukan alamat email</string>
+    <string name="enter_username">Username wajib terisi</string>
+    <string name="enter_date">Tanggal wajib diisi</string>
+    <string name="enter_tel">Telephone wajib diisi</string>
+    <string name="edit_profile_success">Edit Profile Sukses</string>
+    <string name="enter_current_pass">Password saat ini wajib diisi</string>
+    <string name="enter_new_pass">New Password wajib diisi</string>
+    <string name="enter_repeat_pass">Repeat New Password wajib diisi</string>
+    <string name="wrong_password">password Salah</string>
+    <string name="check_new_password">New Password Tidak Boleh Sama dengan password saat ini</string>
+    <string name="valid_equal_password">Repeat password Harus Sama dengan New Password</string>
+    <string name="change_password_success">Ubah Password Sukses</string>
+    <string name="no_whitespace">Tidak ada spasi yang diizinkan</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="enter_your_email_address">Masukkan Alamat Email Anda</string>
+    <string name="enter_your_telephone_number">Masukkan Nomor Telepon Anda</string>
+    <string name="new_password">New Password</string>
+    <string name="repeat_new_password">Repeat New Password</string>
+    <string name="verification_error">Data Salah! Verifikasi Gagal</string>
+    <string name="verification_success">Verifikasi Berhasil! Anda akan diarahkan ke Halaman Reset Password</string>
+    <string name="login_to_your_personal_account">Masuk ke akun pribadi Anda</string>
+    <string name="current_password">Password Saat ini</string>
+    <string name="validate_email">Silakan masukkan alamat email yang valid</string>
+    <string name="validate_password">Kata sandi harus terdiri dari 6 karakter atau lebih</string>
+
+    <!--  Title Page  -->
+    <string name="title_edit_profile">Edit Profile Page</string>
+    <string name="title_contact_us">Contact Us Page</string>
+    <string name="title_feedback">Feedback Page</string>
+    <string name="title_change_password">Change Password Page</string>
+    <string name="title_history">History Page</string>
+    <string name="title_diagnose">Diagnose Page</string>
+    <string name="title_article">Article Page</string>
+    <string name="title_profile">Profile Page</string>
+    <string name="title_setting">Setting Page</string>
+    <string name="language_page">Language Page</string>
+    <string name="title_theme_setting">Theme Setting Page</string>
+    <string name="login_area">Login Area</string>
+    <string name="register_area">Register Area</string>
+    <string name="forgot_password_area">Forgot Password Area</string>
+    <string name="verification_data">Verification Data</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="title_forgot_password">Forgot Password Page</string>
+    <string name="title_detail_history">Detail History Page</string>
+    <string name="title_report">Reports page</string>
+    <string name="title_recommendation">Recommendation List</string>
+
+    <!-- landing -->
+    <string name="landing1">Selamat datang di WARAS</string>
+    <string name="landing2">Mendeteksi Gejala dan Diagnosis Covid-19</string>
+    <string name="landing3">Menyajikan Rekomendasi Selama Karantina dan Artikel Kesehatan</string>
+    <string name="start">Mulai Sekarang</string>
+
+    <!--  Contact Us  -->
+    <string name="email_to">Email ke</string>
+    <string name="mail_to">mailto</string>
+    <string name="send_email">Kirim email</string>
+
+    <!--  Other  -->
+    <string name="welcome_back">Selamat Datang Kembali,</string>
+    <string name="light_mode">Mode Cahaya</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="do_you_want_to_logout">Apakah Anda ingin keluar?</string>
+    <string name="Confirm">Konfirmasi</string>
+    <string name="cancel">Batal</string>
+    <string name="your_progress">Progress Anda</string>
+    <string name="your_recommendations">Rekomendasi</string>
+    <string name="start_diagnose_now">Mulai Diagnosis sekarang</string>
+    <string name="news_images">Gambar Berita</string>
+
+    <!-- Diagnose -->
+    <string name="diagnose1">Apakah Anda merasa demam?</string>
+    <string name="diagnose2">Apakah Anda merasa batuk?</string>
+    <string name="diagnose3">Apakah Anda merasa kelelahan?</string>
+    <string name="diagnose4">Apakah Anda merasa sakit tenggorokan?</string>
+    <string name="diagnose5">Apakah Anda merasa pilek?</string>
+    <string name="diagnose6">Apakah Anda merasa sesak napas?</string>
+    <string name="diagnose7">Apakah Anda merasa muntah?</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="hai">Hai</string>
+    <string name="permisssion1">Kami akan mengajukan beberapa pertanyaan terkait keluhan yang Anda rasakan,</string>
+    <string name="permission2">Apakah Anda bersedia?</string>
+    <string name="disagree">Tidak setuju</string>
+    <string name="agree">Setuju</string>
+    <string name="years_old">tahun</string>
+
+    <!--    Notification-->
+
+    <string name="notification">Pemberitahuan</string>
+    <string name="set_reminder">Setel Pengingat</string>
+    <string name="ayoo">Ayoo Olahraga</string>
+    <string name="alarm_setup">Pengaturan alarm berulang</string>
+    <string name="alarm_canceled">Alarm berulang dibatalkan</string>
+
+    <string name="select_gender">Pilih Jenis Kelamin</string>
+    <string name="result_diagnose">Hasil Diagnosis</string>
+    <string name="result_text">Hari Anda untuk Sembuh adalah %1$s Hari</string>
+    <string name="detail_history_text1">Berikut adalah daftar gejala Anda</string>
+    <string name="send_report">Kirim Laporan</string>
+    <string name="text_predict">Berdasarkan gejala Anda, sistem kami memperkirakan bahwa Anda akan pulih dalam %1$s hari</string>
+    <string name="back_to_homepage">Kembali ke beranda</string>
+    <string name="how_are_you_currently">Bagaimana kabarmu saat ini?</string>
+    <string name="already_recovered">Sudah Pulih</string>
+    <string name="still_sick">Masih sakit</string>
+    <string name="more">Lainnya ▶</string>
+</resources>
