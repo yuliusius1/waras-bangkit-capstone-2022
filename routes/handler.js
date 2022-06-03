@@ -26,7 +26,7 @@ router.get("/diagnoses", [auth, admin], async (req, res)=>{
 router.get("/recommendations", [auth, admin], async (req, res)=>{
 	const query = "SELECT * FROM tbrecom";
  	pool.query(query, (error, result)=>{
-		res.json({status: "Success", message : "recommendations get!", data: result });
+		res.json({status: "Success", message : "Recommendations get!", data: result });
 	});
 });
 
@@ -46,13 +46,21 @@ router.get("/history", [auth, admin], async (req, res)=>{
 	});
 });
 
+//GET ALL DAILY REPORTS DATA 
+router.get("/dailyreports", [auth, admin], async (req, res)=>{
+	const query = "SELECT * FROM tbdailyreports";
+ 	pool.query(query, (error, result)=>{
+		res.json({status: "Success", message : "Daily Reports Get", data: result }); 
+	});
+});
+
 //GET USER DATA BY USERNAME
 router.get("/users/username", [auth, admin], async (req, res)=>{
 	const username = req.query.username
 	const query = `SELECT * FROM tbuserwaras WHERE username = '${username}'`;
 	pool.query(query, [req.params.username], (error, result)=>{
 		if (!result[0]) {
-            res.status(404);
+            		res.status(404);
 			res.json({status: "Error", message: "User Not found!"});
 		} else {
 			res.json({status: "Success", message : "User Get!", data: result[0]});
@@ -65,7 +73,7 @@ router.get("/diagnoses/:id", [auth, admin], async (req, res)=>{
 	const query = "SELECT * FROM tbdiagnose WHERE id_diagnose= ?";
 	pool.query(query, [req.params.id], (error, result)=>{
 		if (!result[0]) {
-            res.status(404);
+            		res.status(404);
 			res.json({status: "Error", message: "ID Not found!"});
 		} else {
 			res.json({status: "Success", message : "Diagnose Get!", data: result[0]});
@@ -78,10 +86,10 @@ router.get("/recommendations/:id", [auth, admin], async (req, res)=>{
 	const query = "SELECT * FROM tbrecom WHERE id_recommendations = ?";
 	pool.query(query, [req.params.id], (error, result)=>{
 		if (!result[0]) {
-            res.status(404);
+            		res.status(404);
 			res.json({status: "Error", message: "ID Not found!"});
 		} else {
-			res.json({status: "Success", message : "recommendations Get!", data: result[0]});
+			res.json({status: "Success", message : "Recommendations Get!", data: result[0]});
 		} 
 	});
 });
@@ -91,7 +99,7 @@ router.get("/datarecommendations/:id", [auth, admin], async (req, res)=>{
 	const query = "SELECT * FROM tbdatarecom WHERE id_dataRecom = ?";
 	pool.query(query, [req.params.id], (error, result)=>{
 		if (!result[0]) {
-            res.status(404);
+            		res.status(404);
 			res.json({status: "Error", message: "ID Not found!"});
 		} else {
 			res.json({status: "Success", message : "datarecommendations Get!", data: result[0]});
@@ -104,10 +112,23 @@ router.get("/history/:id", [auth, admin], async (req, res)=>{
 	const query = "SELECT * FROM tbhistory WHERE id_history = ?";
 	pool.query(query, [req.params.id], (error, result)=>{
 		if (!result[0]) {
-            res.status(404);
+            		res.status(404);
 			res.json({status: "Error", message: "ID Not found!"});
 		} else {
 			res.json({status: "Success", message : "History Get!", data: result[0]});
+		} 
+	});
+});
+
+//GET DAILY REPORT DATA BY ID
+router.get("/dailyreports/:id", [auth, admin], async (req, res)=>{
+	const query = "SELECT * FROM tbdailyreports WHERE id_dailyreport= ?";
+	pool.query(query, [req.params.id], (error, result)=>{
+		if (!result[0]) {
+      			res.status(404);
+			res.json({status: "Error", message: "ID Not found!"});
+		} else {
+			res.json({status: "Success", message : "Daily Report Get!", data: result[0]});
 		} 
 	});
 });
@@ -126,16 +147,16 @@ router.post("/token", [auth, admin], async (req, res)=>{
 		const query1 = "INSERT INTO tbauth (username, password, roles, created_at) VALUES (?, ?, ?, ?)";
 		pool.query(query1, Object.values(data), (error)=>{
 				if (error){
-                    res.status(409);
+                    			res.status(409);
 					res.json({status: "Error", message : "Username and/or Email already exists!" });
 				} else {
-                    res.status(201);
+                    			res.status(201);
 					res.json({status: "Success", message : "User Created!" });
 				}
 		});
   } catch(error) {
         res.status(500);
-	 	res.json({ status: "Error"});  
+	res.json({ status: "Error"});  
     }
 });
 
@@ -144,7 +165,7 @@ router.post("/register", [auth, admin], async (req, res)=>{
 	try {
 		const hashedPassword = await bcrypt.hash(req.query.password, 10)
 		const created_at = new Date().toISOString();
-  	const updatedAt = created_at;
+  		const updatedAt = created_at;
 		const data = {
 			username: req.query.username,
 			gender: req.query.gender,
@@ -159,16 +180,16 @@ router.post("/register", [auth, admin], async (req, res)=>{
 		const query1 = "INSERT INTO tbuserwaras ( username, gender, full_name,  email, password, telephone, date_of_birth, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		pool.query(query1, Object.values(data), (error)=>{
 				if (error){
-                    res.status(409);
+                    			res.status(409);
 					res.json({status: "Error", message : "Username and/or Email already exists!" });
 				} else {
-                    res.status(201);
+                    			res.status(201);
 					res.json({status: "Success", message : "User Created!" });
 				}
 		});
   } catch {
         res.status(500);
-		res.json({ status: "Error"});  
+	res.json({ status: "Error"});  
     }
 });
 
@@ -212,39 +233,39 @@ router.post("/users/changePassword", [auth, admin], async (req, res) => {
 	try {
 			pool.query(query1, async(error, result)=>{
 				if (!result[0]) {  
-                    res.status(404);
+                    			res.status(404);
 					return res.json({status: "Error", message: "User Not found!"});
 				}
 				if(await bcrypt.compare(password , result[0].password)) {
 					res.json({ status: "Success"});
 				} else {
-                    res.status(401);
+                    			res.status(401);
 					res.json({ status: "Error", message : "Incorrect Password!"});
 				}
 			});
-		} catch {
-            res.status(500);
-			res.json({status: "Error"});
-		}
+	} catch {
+		res.status(500);
+		res.json({status: "Error"});
+	}
 });
 
 //VALIDATE EMAIL
 router.post("/email", [auth, admin], async (req, res) => {
 	const email = req.query.email
 	if (email == null || email == ''){
-        	res.status(400);
+        res.status(400);
 		return res.json({ status: "Error", message: "Please input email!"});
 	} 
 	const query1 = `SELECT * FROM tbuserwaras WHERE email = '${email}'`;
 	try {
-		pool.query(query1, async(error, result)=>{
-			if (!result[0]) {  
-				res.status(404);
-				return res.json({status: "Error", message: "Email Not found!"});
-			} else {
-				res.json({ status: "Success", data : result[0]});
-			}
-		});
+			pool.query(query1, async(error, result)=>{
+				if (!result[0]) {  
+                    			res.status(404);
+					return res.json({status: "Error", message: "Email Not found!"});
+				} else {
+					res.json({ status: "Success", data : result[0]});
+				}
+			});
 	} catch {
 		res.status(500);
 		res.json({status: "Error"});
@@ -272,7 +293,7 @@ router.post("/diagnoses", [auth, admin], async (req, res)=>{
 		const query1 = "INSERT INTO tbdiagnose (age, gender, fever, cough, tired, sore_throat, runny_nose, short_breath, vomit, day_to_heal, created_at, id_user) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		pool.query(query1, Object.values(data), (error)=>{
 				if (error){
-                   		 	res.status(400);
+                    			res.status(400);
 					res.json({status: "Error", message : "Please fill correctly!"});
 				} else {
                     			res.status(201);
@@ -280,7 +301,7 @@ router.post("/diagnoses", [auth, admin], async (req, res)=>{
 				}
 		});
   } catch {
-	res.status(500);
+        res.status(500);
 	res.json({ status: "Error"});  
     }
 });
@@ -301,7 +322,7 @@ router.post("/recommendations", [auth, admin], async (req, res)=>{
 					res.json({status: "Error", message : "Please fill correctly!"});
 				} else {
                     			res.status(201);
-					res.json({status: "Success", message : "recommendations Created!" });
+					res.json({status: "Success", message : "Recommendations Created!" });
 				}
 		});
   } catch {
@@ -314,7 +335,7 @@ router.post("/recommendations", [auth, admin], async (req, res)=>{
 router.post("/datarecommendations",[auth, admin],  async (req, res)=>{
 	try {
 		const data = {
-		data_recommendations: req.query.data_recommendations,
+			data_recommendations: req.query.data_recommendations,
 		}
 		const query1 = "INSERT INTO tbdatarecom (data_recommendations) VALUES (?)";
 		pool.query(query1, Object.values(data), (error)=>{
@@ -327,8 +348,8 @@ router.post("/datarecommendations",[auth, admin],  async (req, res)=>{
 				}
 		});
   } catch {
-        	res.status(500);
-		res.json({ status: "Error"});  
+        res.status(500);
+	res.json({ status: "Error"});  
     }
 });
 
@@ -347,16 +368,69 @@ router.post("/history", [auth, admin], async (req, res)=>{
 		}
 		const query1 = "INSERT INTO tbhistory (day_to_heal, date_to_heal, status, recommendations, created_at, id_user, id_diagnose) VALUES (?,?, ?, ?, ?, ?, ?)";
 		pool.query(query1, Object.values(data), (error)=>{
-			if (error){
-				 res.status(400);
-				res.json({status: "Error", message : "Please fill correctly!"});
-			} else {
-				res.status(201);
-				res.json({status: "Success", message : "History Created!" });
-			}
+				if (error){
+                    			res.status(400);
+					res.json({status: "Error", message : "Please fill correctly!"});
+				} else {
+                    			res.status(201);
+					res.json({status: "Success", message : "History Created!" });
+				}
 		});
   } catch {
         res.status(500);
+	res.json({ status: "Error"});  
+    }
+});
+
+//POST REPORT DATA TO DB
+router.post("/reports", [auth, admin], async (req, res)=>{
+	try {
+		const created_at = new Date().toISOString();
+		const data = {
+			report: req.query.report,
+			status: req.query.status,
+			created_at: created_at,
+			id_user: req.query.id_user,
+			id_history: req.query.id_history,
+		}
+		const query1 = "INSERT INTO tbreport (report, status, created_at, id_user, id_history) VALUES (?, ?, ?, ?, ?)";
+		pool.query(query1, Object.values(data), (error)=>{
+				if (error){
+                    			res.status(400);
+					res.json({status: "Error", message : "Please fill correctly!"});
+				} else {
+                    			res.status(201);
+					res.json({status: "Success", message : "Report Created!", data:data});
+				}
+		});
+  } catch {
+        res.status(500);
+	res.json({ status: "Error"});  
+    }
+});
+
+//POST DAILY REPORT TO DB
+router.post("/dailyreports",[auth, admin],  async (req, res)=>{
+	try {
+		const created_at = new Date().toISOString();
+		const data = {
+			daily_report: req.query.daily_report,
+			created_at: created_at,
+			id_user: req.query.id_user,
+			id_history: req.query.id_history,
+		}
+		const query1 = "INSERT INTO tbdailyreports (daily_report, created_at, id_user, id_history) VALUES (?, ?, ?, ?)";
+		pool.query(query1, Object.values(data), (error)=>{
+				if (error){
+          				res.status(400);
+					res.json({status: "Error", message : "Please fill correctly!"});
+				} else {
+          				res.status(201);
+					res.json({status: "Success", message : "Daily Report Created!" });
+				}
+		});
+  } catch {
+    	res.status(500);
 	res.json({ status: "Error"});  
     }
 });
@@ -370,7 +444,7 @@ router.put("/users/changePassword", [auth, admin], async (req, res)=>{
 	}
 	const hashedPassword = await bcrypt.hash(req.query.password, 10)
 	let password = hashedPassword;
-  	let updated_at = new Date().toISOString();
+	let updated_at = new Date().toISOString();
 	const data = {
 		password: password,
 		updated_at: updated_at,
@@ -379,10 +453,10 @@ router.put("/users/changePassword", [auth, admin], async (req, res)=>{
 	const query2 = `SELECT * FROM tbuserwaras WHERE username = '${username}'`;
 	try {
 		pool.query(query2, (error, result)=>{
-		if (!result[0]) {  
-			res.status(404);
-			return res.json({status: "Error", message: "User Not found!"});
-		}	
+			if (!result[0]) {  
+	 			res.status(404);
+				return res.json({status: "Error", message: "User Not found!"});
+			}	
 		pool.query(query1, (error, result)=>{
 		res.json({status: "Succes", message: "Update Succes!", data : data});		
 		})	
@@ -418,7 +492,7 @@ router.put("/users/:id", [auth, admin], async (req, res)=>{
         			res.status(404);
 				return res.json({status: "Error", message: "ID Not found!"});
 			}
-			pool.query(query1, (error, result)=>{
+		pool.query(query1, (error, result)=>{
 			if(error){
         			res.status(409);
 				return res.json({status: "Error", message: "Username, Full name or Email already exists!"});
@@ -434,6 +508,29 @@ router.put("/users/:id", [auth, admin], async (req, res)=>{
 	}
 });
 
+//UPDATE HISTORY TO DB
+router.put("/users/changeHistory/:id", [auth, admin], async (req, res)=>{
+	const id = req.params.id
+    	let status = req.query.status
+	const data = {
+		status: status,
+	}
+	const query1 = `UPDATE tbhistory SET status ='${status}' WHERE id_history = '${id}'`;
+	const query2 = `SELECT * FROM tbhistory WHERE id_history = '${id}'`;
+	try {
+		pool.query(query2, (error, result)=>{
+			if (!result[0]) {  
+            		res.status(404);
+			return res.json({status: "Error", message: "User Not found!"});
+			}	
+		pool.query(query1, (error, result)=>{
+		res.json({status: "Succes", message: "Update Succes!", data : data});		
+		})	
+		});
+	} catch {
+		res.json({status: "Error", reason: 500});
+	}
+});
 
 //DELETE USER DATA FROM DB
 router.delete("/users/:id", [auth, admin], async (req, res)=>{
@@ -443,7 +540,7 @@ router.delete("/users/:id", [auth, admin], async (req, res)=>{
 		try {
 			pool.query(query1, (error, result)=>{
 				if (!result.length) {  
-                    res.status(404);
+                    			res.status(404);
 					return res.json({status: "Error", message: "User Not found!"});
 				} else {
 					pool.query(query, (error, result)=>{
@@ -452,7 +549,7 @@ router.delete("/users/:id", [auth, admin], async (req, res)=>{
 				}
 			});
 		} catch {
-            		res.status(500);
+		 	res.status(500);
 			res.json({status: "Error"});
 		}
 });
