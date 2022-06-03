@@ -61,7 +61,8 @@
             android:src="@drawable/history_image"
             android:layout_marginHorizontal="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cv_greeting"/>
+            app:layout_constraintTop_toBottomOf="@id/cv_greeting"
+            android:contentDescription="@string/title_history" />
 
         <TextView
             android:id="@+id/hai"
@@ -95,7 +96,7 @@
             android:textSize="16sp"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
-            android:text="This is the result of your diagnose" />
+            android:text="@string/this_is_the_result_of_your_diagnose" />
 
 
 
@@ -142,7 +143,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="4dp"
             android:textSize="16sp"
-            android:text="Diagnose Date: " />
+            android:text="@string/diagnose_date" />
 
         <TextView
             android:id="@+id/tv_startDate"
@@ -165,7 +166,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="4dp"
             android:textSize="16sp"
-            android:text="Estimated Recover Date: " />
+            android:text="@string/estimated_recover_date" />
 
         <TextView
             android:id="@+id/tv_endDate"
@@ -187,7 +188,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_endDate"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginHorizontal="32dp"
-            android:text="Send Daily Report"
+            android:text="@string/send_daily_report"
             android:layout_marginTop="16dp"/>
 
         <Button

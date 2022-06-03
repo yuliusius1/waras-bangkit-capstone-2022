@@ -38,7 +38,7 @@
                 android:id="@+id/tv_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/title_history"
+                android:text="@string/title_daily_report"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:textSize="18sp"
