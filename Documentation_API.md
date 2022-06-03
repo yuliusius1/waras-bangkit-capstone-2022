@@ -1,10 +1,12 @@
-#WARAS DOCUMENTATION API
+# WARAS DOCUMENTATION API
 
-##Waras Application API
+## Waras Application API
 LINK
 
-##Article API
+## Article API
+
 [LINK](https://newsapi.org/docs/endpoints/everything)
 
-##Quotes API
+## Quotes API
+
 [LINK](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
