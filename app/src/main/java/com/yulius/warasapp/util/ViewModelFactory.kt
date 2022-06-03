@@ -29,6 +29,7 @@ import com.yulius.warasapp.ui.profile.contact_us.ContactUsViewModel
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileViewModel
 import com.yulius.warasapp.ui.profile.feedback.FeedbackViewModel
 import com.yulius.warasapp.ui.profile.history.HistoryViewModel
+import com.yulius.warasapp.ui.profile.history.daily_report.DailyReportViewModel
 import com.yulius.warasapp.ui.profile.history.detail_history.DetailHistoryViewModel
 import com.yulius.warasapp.ui.profile.history.report.ReportViewModel
 import com.yulius.warasapp.ui.profile.setting.ThemeViewModel
@@ -57,6 +58,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(ResultDiagnoseViewModel::class.java) -> {
                 ResultDiagnoseViewModel(pref) as T
+            }
+
+            modelClass.isAssignableFrom(DailyReportViewModel::class.java) -> {
+                DailyReportViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(RegisterViewModel::class.java) -> {

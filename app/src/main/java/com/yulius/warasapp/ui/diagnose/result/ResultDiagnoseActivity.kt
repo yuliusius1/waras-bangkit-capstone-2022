@@ -44,7 +44,7 @@ class ResultDiagnoseActivity : AppCompatActivity() {
     private fun getData() {
         dataDiagnose = intent.getParcelableExtra<Diagnose>("dataDiagnose") as Diagnose
         resultModel = intent.getIntExtra("resultModel",0)
-        binding.tvResult.text = getString(R.string.result_text, resultModel.toString())
+        binding.tvResult.text = getString(R.string.text_predict, resultModel.toString())
     }
 
     private fun setupView() {

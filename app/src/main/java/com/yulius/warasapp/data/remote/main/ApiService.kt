@@ -2,6 +2,7 @@ package com.yulius.warasapp.data.remote.main
 
 import com.yulius.warasapp.BuildConfig
 import com.yulius.warasapp.data.model.*
+import org.checkerframework.common.reflection.qual.GetClass
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -89,6 +90,12 @@ interface ApiService {
         @Query("id_diagnose") id_diagnose: Int,
     ): Call<ResponseHistory>
 
+    @PUT("changeHistory/{id}")
+    fun changeHistory(
+        @Path("id") id: Int,
+        @Query("status") status: String,
+    ): Call<ResponseHistory>
+
     @POST("reports")
     fun sendReport(
         @Query("report") report: String,
@@ -96,4 +103,20 @@ interface ApiService {
         @Query("id_user") id_user: Int,
         @Query("id_history") id_history: Int,
     ): Call<ResponseReport>
+
+    @POST("dailyreports")
+    fun sendDailyReport(
+        @Query("daily_report") report: String,
+            @Query("id_user") id_user: Int,
+        @Query("id_history") id_history: Int,
+    ): Call<ResponseDailyReport>
+
+    @GET("dailyreports")
+    fun getAllDailyReport(
+    ): Call<ResponseDailyReport>
+
+    @GET("dailyreports/{id}")
+    fun getDailyReportByID(
+        @Path("id") id: Int,
+    ): Call<ResponseDailyReport>
 }

@@ -4,16 +4,13 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.yulius.warasapp.R
-import com.yulius.warasapp.adapter.DetailHistoryAdapter
 import com.yulius.warasapp.adapter.RecommendationAdapter
-import com.yulius.warasapp.data.model.Contact
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityRecommendationBinding
 import com.yulius.warasapp.ui.main.MainActivity
@@ -61,6 +58,10 @@ class RecommendationActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.ivAvatar.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+
+        binding.btnMain.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
         }
     }

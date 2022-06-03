@@ -63,3 +63,10 @@ data class ResponseQuotes (
     val totalPages :Int? = null,
     val totalResult :Int? = null,
 )
+
+data class ResponseDailyReport (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : ArrayList<DailyReport>? = null
+)

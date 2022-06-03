@@ -32,6 +32,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WarasApp">
         <activity
+            android:name=".ui.profile.history.daily_report.DailyReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.history.report.ReportActivity"
             android:exported="false" />
         <activity

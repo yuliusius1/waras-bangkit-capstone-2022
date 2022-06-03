@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -15,6 +16,7 @@ import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDetailHistoryBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
+import com.yulius.warasapp.ui.profile.history.daily_report.DailyReportActivity
 import com.yulius.warasapp.ui.profile.history.report.ReportActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import com.yulius.warasapp.util.changeTimeFormat
@@ -55,6 +57,7 @@ class DetailHistoryActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        showLoading()
         supportActionBar?.hide()
         binding.apply {
             tvEndDate.text = changeTimeFormat(historyData.date_to_heal)
@@ -90,6 +93,13 @@ class DetailHistoryActivity : AppCompatActivity() {
             ivAvatar.setOnClickListener{
                 onBackPressed()
             }
+
+            btnDailyReport.setOnClickListener {
+                val intent = Intent(this@DetailHistoryActivity, DailyReportActivity::class.java)
+                intent.putExtra("historyData",historyData)
+                startActivity(intent)
+            }
+
             btnReport.setOnClickListener {
                 val intent = Intent(this@DetailHistoryActivity, ReportActivity::class.java)
                 intent.putExtra("historyData",historyData)
@@ -101,5 +111,16 @@ class DetailHistoryActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         finish()
         return true
+    }
+
+    private fun showLoading() {
+        viewModel.isLoading.observe(this) {
+            binding.apply {
+                when {
+                    it -> progressBar.visibility = View.VISIBLE
+                    else -> progressBar.visibility = View.INVISIBLE
+                }
+            }
+        }
     }
 }

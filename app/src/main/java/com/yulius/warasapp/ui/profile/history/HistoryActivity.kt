@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -40,14 +41,15 @@ class HistoryActivity : AppCompatActivity() {
         binding = ActivityHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupView()
         setupViewModel()
+        setupView()
         setupAction()
 
     }
 
     private fun setupView() {
         supportActionBar?.hide()
+        showLoading()
     }
 
     private fun setupViewModel() {
@@ -109,5 +111,16 @@ class HistoryActivity : AppCompatActivity() {
             adapter.notifyDataSetChanged()
         }
         super.onResume()
+    }
+
+    private fun showLoading() {
+        viewModel.isLoading.observe(this) {
+            binding.apply {
+                when {
+                    it -> progressBar.visibility = View.VISIBLE
+                    else -> progressBar.visibility = View.INVISIBLE
+                }
+            }
+        }
     }
 }

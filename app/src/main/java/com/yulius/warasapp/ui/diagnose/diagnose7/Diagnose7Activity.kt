@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.databinding.ActivityDiagnose7Binding
-import com.yulius.warasapp.ml.Dnn3Model
+import com.yulius.warasapp.ml.Dnn4Model
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.diagnose6.Diagnose6Activity
 import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseActivity
@@ -118,7 +118,7 @@ class Diagnose7Activity : AppCompatActivity() {
     }
 
     private fun prediction(): Int {
-        val model = Dnn3Model.newInstance(applicationContext)
+        val model = Dnn4Model.newInstance(applicationContext)
 
         // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 9), DataType.FLOAT32)
