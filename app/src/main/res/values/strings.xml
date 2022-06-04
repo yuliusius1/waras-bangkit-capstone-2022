@@ -93,6 +93,7 @@
     <string name="title_reset_password">Reset Password</string>
     <string name="title_recommendation">Recommendation List</string>
     <string name="title_detail_history">Detail History Page</string>
+    <string name="title_hospital">Hospital Page</string>
 
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
