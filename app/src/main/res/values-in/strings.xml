@@ -95,6 +95,7 @@
     <string name="title_report">Reports page</string>
     <string name="title_daily_report">Daily Reports page</string>
     <string name="title_recommendation">Recommendation List</string>
+    <string name="title_hospital">Hospital Page</string>
 
     <!-- landing -->
     <string name="landing1">Selamat datang di WARAS</string>
