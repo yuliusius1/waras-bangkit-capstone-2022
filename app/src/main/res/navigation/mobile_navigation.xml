@@ -10,7 +10,12 @@
         android:name="com.yulius.warasapp.ui.home.HomeFragment"
         android:label="Home Fragment"
         tools:layout="@layout/fragment_home" >
-
+        
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_hospital"
+            app:destination="@id/navigation_hospital"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_navigation_home_to_navigation_diagnose"
             app:destination="@id/navigation_diagnose"
@@ -27,6 +32,33 @@
             app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="false"/>
     </fragment>
+    
+    <fragment
+        android:id="@+id/navigation_hospital"
+        android:name="com.yulius.warasapp.ui.hospital.HospitalFragment"
+        android:label="Hospital Fragment"
+        tools:layout="@layout/fragment_hospital" >
+        <action
+            android:id="@+id/action_navigation_hospital_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_hospital_to_navigation_diagnose"
+            app:destination="@id/navigation_diagnose"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_hospital_to_navigation_article"
+            app:destination="@id/navigation_article"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_hospital_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_diagnose"
@@ -36,6 +68,11 @@
         <action
             android:id="@+id/action_navigation_diagnose_to_navigation_home"
             app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_diagnose_to_navigation_hospital"
+            app:destination="@id/navigation_hospital"
             app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="false" />
         <action
@@ -61,6 +98,11 @@
             app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="false"/>
         <action
+            android:id="@+id/action_navigation_article_to_navigation_hospital"
+            app:destination="@id/navigation_hospital"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
+        <action
             android:id="@+id/action_navigation_article_to_navigation_diagnose"
             app:destination="@id/navigation_diagnose"
             app:popUpTo="@id/mobile_navigation"
@@ -82,6 +124,11 @@
             app:destination="@id/navigation_home"
             app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_navigation_article_to_navigation_hospital"
+            app:destination="@id/navigation_hospital"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_navigation_profile_to_navigation_diagnose"
             app:destination="@id/navigation_diagnose"

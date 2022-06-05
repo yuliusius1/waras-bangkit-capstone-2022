@@ -5,6 +5,11 @@
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title=""/>
+    
+    <item
+        android:id="@+id/navigation_hospital"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        android:title="" />
 
     <item
         android:id="@+id/navigation_diagnose"
