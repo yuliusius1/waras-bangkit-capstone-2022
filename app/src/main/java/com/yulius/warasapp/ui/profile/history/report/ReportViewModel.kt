@@ -39,7 +39,7 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
                             callback.getCallback(responseBody.message, true)
                             _isLoading.value = false
                         } else {
-                            callback.getCallback("Add Diagnose Success", true)
+                            callback.getCallback("Add Report Success", true)
                             _isLoading.value = false
                         }
                     } else {
@@ -47,7 +47,7 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
                             callback.getCallback(responseBody.message, false)
                             _isLoading.value = false
                         } else {
-                            callback.getCallback("Add Diagnose Failed", false)
+                            callback.getCallback("Add Report Failed", false)
                             _isLoading.value = false
                         }
                     }
@@ -58,6 +58,49 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
             }
 
             override fun onFailure(call: Call<ResponseReport>, t: Throwable) {
+                callback.getCallback(t.message.toString(),false)
+                _isLoading.value = false
+            }
+        })
+    }
+
+    fun sendStatus(history: History, status: String, callback: ResponseCallback){
+        _isLoading.value = true
+        ApiConfig.getApiService().changeHistory(
+            history.id_history,
+            status,
+        ).enqueue(object:
+            Callback<ResponseHistory> {
+            override fun onResponse(
+                call: Call<ResponseHistory>,
+                response: Response<ResponseHistory>
+            ) {
+                val responseBody = response.body()
+                if(response.isSuccessful && responseBody != null){
+                    if(responseBody.status == "Success") {
+                        if(responseBody.message != null){
+                            callback.getCallback(responseBody.message, true)
+                            _isLoading.value = false
+                        } else {
+                            callback.getCallback("Add Report Success", true)
+                            _isLoading.value = false
+                        }
+                    } else {
+                        if(responseBody.message != null){
+                            callback.getCallback(responseBody.message, false)
+                            _isLoading.value = false
+                        } else {
+                            callback.getCallback("Add Report Failed", false)
+                            _isLoading.value = false
+                        }
+                    }
+                } else {
+                    callback.getCallback(response.message(),false)
+                    _isLoading.value = false
+                }
+            }
+
+            override fun onFailure(call: Call<ResponseHistory>, t: Throwable) {
                 callback.getCallback(t.message.toString(),false)
                 _isLoading.value = false
             }

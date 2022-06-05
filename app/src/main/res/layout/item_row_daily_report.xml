@@ -73,6 +73,7 @@
             tools:text="This day i feeling better than tomorrow because i doing the recommendations on this application" />
 
         <Button
+            android:id="@+id/btn_add_report"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/make_a_daily_report"

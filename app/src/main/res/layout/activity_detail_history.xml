@@ -200,7 +200,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginHorizontal="32dp"
             android:text="@string/send_report"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="8dp"/>
 
         <ProgressBar
             android:id="@+id/progressBar"

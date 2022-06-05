@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -67,17 +66,15 @@ class ReportActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.apply {
             val reports = etReport.editText?.text
-            var status = "Sembuh"
-            chipStatus.setOnCheckedStateChangeListener() { group, checkedIds ->
+            var statusHistory = "Sembuh"
+            chipStatus.setOnCheckedStateChangeListener() { _, checkedIds ->
                 for (i in 0 until checkedIds.size) {
-                    when(checkedIds[i]){
-                        R.id.chip_1 -> status = "Sembuh"
-                        else -> status = "Belum Sembuh"
+                    statusHistory = when(checkedIds[i]){
+                        R.id.chip_1 -> "Sembuh"
+                        else -> "Belum Sembuh"
                     }
                 }
             }
-
-
 
             ivAvatar.setOnClickListener{
                 onBackPressed()
@@ -86,13 +83,19 @@ class ReportActivity : AppCompatActivity() {
                 if(TextUtils.isEmpty(reports)){
                     etReport.editText?.error = "Report must be filled out"
                 } else {
-                    viewModel.sendReport(historyData, reports.toString(),status,object : ResponseCallback{
+                    viewModel.sendReport(historyData, reports.toString(),statusHistory,object : ResponseCallback{
                         override fun getCallback(msg: String, status: Boolean) {
-                            showDialogs(msg, status)
+                            if(status){
+                                viewModel.sendStatus(historyData,statusHistory,object : ResponseCallback{
+                                    override fun getCallback(msg: String, status: Boolean) {
+                                        showDialogs(msg, status)
+                                    }
+                                })
+                            } else {
+                                showDialogs(msg, status)
+                            }
                         }
                     })
-
-
                 }
             }
         }

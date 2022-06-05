@@ -107,7 +107,7 @@ interface ApiService {
     @POST("dailyreports")
     fun sendDailyReport(
         @Query("daily_report") report: String,
-            @Query("id_user") id_user: Int,
+        @Query("id_user") id_user: Int,
         @Query("id_history") id_history: Int,
     ): Call<ResponseDailyReport>
 

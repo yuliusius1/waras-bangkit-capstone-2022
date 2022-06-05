@@ -11,3 +11,12 @@ data class DailyReport(
     var id_user: Int,
     var id_history: Int
 ) : Parcelable
+
+@Parcelize
+data class DailyReportList(
+    var daily_report: String? = null,
+    var id_user: Int? = null,
+    var id_history: Int? = null,
+    var created_date: String? = null,
+    var created_at: String? = null
+) : Parcelable

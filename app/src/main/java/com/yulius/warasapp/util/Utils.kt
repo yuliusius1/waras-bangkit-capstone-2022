@@ -49,11 +49,33 @@ fun changeTimeFormat(date: String? = "2022/01/01") : String{
     return dateFormat2.format(dateParse)
 }
 
+fun changeFormatTime(date:String? = "2022-01-01"): String {
+    val dateFormat2 = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+    val dateParse = dateFormat2.parse(date)
+    val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
+    return dateFormat.format(dateParse)
+}
+
 fun addTime(time: Int): String{
     val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
 
     val cal = Calendar.getInstance()
     cal.time = dateFormat.parse(dateFormat.format(Date()))
+    cal.add(Calendar.DAY_OF_MONTH , time)
+
+    return dateFormat.format(cal.time)
+}
+
+fun todayDate(): String{
+    val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
+    return dateFormat.format(Date())
+}
+
+fun addTimes(time: Int, date: String? = "2022-01-01"): String{
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+
+    val cal = Calendar.getInstance()
+    cal.time = dateFormat.parse(date)
     cal.add(Calendar.DAY_OF_MONTH , time)
 
     return dateFormat.format(cal.time)
