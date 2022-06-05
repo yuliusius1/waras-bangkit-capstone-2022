@@ -206,6 +206,8 @@
     <string name="daily_report">Daily Report</string>
     <string name="what_do_you_feel_today">What do you feel today?</string>
     <string name="make_a_daily_report">Make a daily report</string>
+    <string name="daily_report_title">Daily Report %1$s</string>
+    <string name="today_i_feel">Today, I feel ..</string>
 
 
     <string-array name="select_gender">
