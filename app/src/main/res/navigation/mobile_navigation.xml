@@ -35,9 +35,9 @@
     
     <fragment
         android:id="@+id/navigation_hospital"
-        android:name="com.yulius.warasapp.ui.hospital.HospitalFragment"
+        android:name="com.yulius.warasapp.ui.hospital.MapsFragment"
         android:label="Hospital Fragment"
-        tools:layout="@layout/fragment_hospital" >
+        tools:layout="@layout/fragment_maps" >
         <action
             android:id="@+id/action_navigation_hospital_to_navigation_home"
             app:destination="@id/navigation_home"

@@ -140,7 +140,7 @@ class DailyReportActivity : AppCompatActivity() {
                 setTitle("Yay !")
                 setMessage(msg)
                 setPositiveButton(getString(R.string.next)) { _, _ ->
-                    val intent = Intent(this@DailyReportActivity, DetailHistoryActivity::class.java)
+                    val intent = Intent(this@DailyReportActivity, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     intent.putExtra("historyData", historyData)
                     startActivity(intent)

@@ -21,6 +21,7 @@ import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7ViewModel
 import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationViewModel
 import com.yulius.warasapp.ui.diagnose.result.ResultDiagnoseViewModel
 import com.yulius.warasapp.ui.home.HomeViewModel
+import com.yulius.warasapp.ui.hospital.MapsViewModel
 import com.yulius.warasapp.ui.landing.LandingViewModel
 import com.yulius.warasapp.ui.main.MainViewModel
 import com.yulius.warasapp.ui.profile.ProfileViewModel
@@ -70,6 +71,10 @@ class ViewModelFactory(private val pref: UserPreference) :
 
             modelClass.isAssignableFrom(CheckEmailViewModel::class.java) -> {
                 CheckEmailViewModel() as T
+            }
+
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(pref) as T
             }
 
             modelClass.isAssignableFrom(VerificationDataViewModel::class.java) -> {

@@ -1,16 +1,11 @@
 package com.yulius.warasapp.ui.profile.history
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.yulius.warasapp.data.model.*
-import com.yulius.warasapp.data.remote.articles.ApiConfigArticles
 import com.yulius.warasapp.data.remote.main.ApiConfig
-import com.yulius.warasapp.util.ARTICLE_API_KEY
-import com.yulius.warasapp.util.DEFAULT_SORT_BY_ARTICLES
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

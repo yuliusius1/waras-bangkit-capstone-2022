@@ -1,5 +1,8 @@
 package com.yulius.warasapp.data.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
 data class ResponseData (
     val status : String,
     val message : String? = null,
@@ -69,4 +72,10 @@ data class ResponseDailyReport (
     val message : String? = null,
     val reason : String? = null,
     val data : ArrayList<DailyReport>? = null
+)
+
+data class ResponseMaps(
+    var status: String,
+    var html_attributions: ArrayList<String>?= null,
+    var results: ArrayList<ResultMaps>? = null,
 )

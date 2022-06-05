@@ -8,7 +8,9 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.PopupMenu
+import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -21,6 +23,8 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.FragmentHomeBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationActivity
+import com.yulius.warasapp.ui.main.MainActivity
+import com.yulius.warasapp.ui.profile.change_password.ChangePasswordActivity
 import com.yulius.warasapp.ui.profile.editprofile.EditProfileActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import java.util.ArrayList
@@ -131,10 +135,13 @@ class HomeFragment : Fragment() {
             popupMenu.setOnMenuItemClickListener { item: MenuItem? ->
                 when (item!!.itemId) {
                     R.id.logout -> {
-                        viewModel.logout()
+                        showLogoutDialog()
                     }
                     R.id.edit_profile -> {
                         startActivity(Intent(activity, EditProfileActivity::class.java))
+                    }
+                    R.id.change_password -> {
+                        startActivity(Intent(activity, ChangePasswordActivity::class.java))
                     }
                 }
                 true
@@ -144,6 +151,27 @@ class HomeFragment : Fragment() {
 
         }
     }
+    private fun showLogoutDialog() {
+        val builder =
+            AlertDialog.Builder(requireContext(), 0).create()
+        val view =
+            layoutInflater.inflate(R.layout.dialog_logout, null)
+        val btnConfirm = view.findViewById<Button>(R.id.btn_confirm)
+        val btnCancel = view.findViewById<Button>(R.id.btn_cancel)
 
+        builder.setView(view)
+
+        btnConfirm.setOnClickListener {
+            viewModel.logout()
+            val i = Intent(activity, MainActivity::class.java)
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(i)
+        }
+        btnCancel.setOnClickListener {
+            builder.dismiss()
+        }
+
+        builder.show()
+    }
 
 }
