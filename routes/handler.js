@@ -133,6 +133,23 @@ router.get("/dailyreports/:id", [auth, admin], async (req, res)=>{
 	});
 });
 
+//GET LATEST USER HISTORY DATA BY ID
+router.get("/lastHistory/:id", [auth, admin], async (req, res)=>{
+	let id = req.params.id
+	const query = "SELECT * FROM tbhistory WHERE id_user = ?";
+	const query2 = `select * from tbhistory where id_history= (select max(id_history)from tbhistory where id_user='${id}')`;
+	pool.query(query, [req.params.id], (error, result)=>{
+		if (!result[0]) {
+      			res.status(404);
+			res.json({status: "Error", message: "ID Not found!"});
+		} else {
+			pool.query(query2, [req.params.id], (error, result)=>{
+			res.json({status: "Success", message : "latest History Get!", data: result[0]});
+			});
+		} 
+	});
+});
+
 //POST CREATE ADMIN DATA TO DB
 router.post("/token", [auth, admin], async (req, res)=>{
 	try {
@@ -431,6 +448,32 @@ router.post("/dailyreports",[auth, admin],  async (req, res)=>{
 		});
   } catch {
     	res.status(500);
+	res.json({ status: "Error"});  
+    }
+});
+
+//POST FEEDBACK DATA TO DB
+router.post("/feedback", [auth, admin], async (req, res)=>{
+	try {
+		const created_at = new Date().toISOString();
+		const data = {
+			feedback: req.query.feedback,
+			rating: req.query.rating,
+			created_at: created_at,
+			id_user: req.query.id_user,
+		}
+		const query1 = "INSERT INTO tbfeedback (feedback, rating, created_at, id_user) VALUES (?, ?, ?, ?)";
+		pool.query(query1, Object.values(data), (error)=>{
+				if (error){
+                    			res.status(400);
+					res.json({status: "Error", message : "Please fill correctly!"});
+				} else {
+                    			res.status(201);
+					res.json({status: "Success", message : "Feedback Created!", data:data});
+				}
+		});
+  } catch {
+      	res.status(500);
 	res.json({ status: "Error"});  
     }
 });
