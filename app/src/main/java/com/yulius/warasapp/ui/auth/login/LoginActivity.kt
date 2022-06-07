@@ -65,11 +65,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun playAnimation() {
-        ObjectAnimator.ofFloat(binding.ivLogo, View.ROTATION, 360f).apply {
-            duration = 5000
-            repeatCount = ObjectAnimator.INFINITE
-            repeatMode = ObjectAnimator.REVERSE
-        }.start()
+//        ObjectAnimator.ofFloat(binding.ivLogo, View.ROTATION, 360f).apply {
+//            duration = 5000
+//            repeatCount = ObjectAnimator.INFINITE
+//            repeatMode = ObjectAnimator.REVERSE
+//        }.start()
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
         val subTitleTextView = ObjectAnimator.ofFloat(binding.tvSubTitle, View.ALPHA,1f).setDuration(300)

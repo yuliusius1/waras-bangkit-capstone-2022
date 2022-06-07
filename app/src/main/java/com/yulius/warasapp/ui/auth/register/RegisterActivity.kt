@@ -21,6 +21,7 @@ import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
 import com.yulius.warasapp.data.model.UserRegister
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
+import com.yulius.warasapp.util.getAges
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -45,11 +46,11 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun playAnimation() {
-        ObjectAnimator.ofFloat(binding.ivLogo, View.ROTATION, 360f).apply {
-            duration = 5000 // In Miles 1000ms = 1s
-            repeatCount = ObjectAnimator.INFINITE
-            repeatMode = ObjectAnimator.REVERSE
-        }.start()
+//        ObjectAnimator.ofFloat(binding.ivLogo, View.ROTATION, 360f).apply {
+//            duration = 5000 // In Miles 1000ms = 1s
+//            repeatCount = ObjectAnimator.INFINITE
+//            repeatMode = ObjectAnimator.REVERSE
+//        }.start()
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
         val subTitleTextView = ObjectAnimator.ofFloat(binding.tvSubTitle, View.ALPHA,1f).setDuration(300)
@@ -101,6 +102,7 @@ class RegisterActivity : AppCompatActivity() {
                 password.isEmpty() -> {
                     binding.etPassword.error = getString(R.string.enter_password)
                 }
+
                 else -> {
                     val intent = Intent(this,RegisterActivity2::class.java)
                     userRegister = UserRegister(name,username,email,password,"","","")

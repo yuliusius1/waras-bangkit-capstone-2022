@@ -115,8 +115,8 @@ interface ApiService {
     fun getAllDailyReport(
     ): Call<ResponseDailyReport>
 
-    @GET("dailyreports/{id}")
-    fun getDailyReportByID(
+    @GET("lastHistory/{id}")
+    fun getLastHistory(
         @Path("id") id: Int,
-    ): Call<ResponseDailyReport>
+    ): Call<ResponseHistory>
 }

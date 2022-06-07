@@ -47,7 +47,6 @@
             android:lines="5"
             android:hint="@string/today_i_feel"
             android:gravity="top|start"
-            android:background="@drawable/input_text"
             android:ems="10"
             android:inputType="textMultiLine" />
 

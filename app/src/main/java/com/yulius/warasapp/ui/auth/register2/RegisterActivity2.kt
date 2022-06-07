@@ -20,6 +20,7 @@ import com.yulius.warasapp.ui.auth.register.RegisterActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.ViewModelFactory
+import com.yulius.warasapp.util.getAges
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -80,13 +81,22 @@ class RegisterActivity2 : AppCompatActivity() {
         binding.btnRegister.setOnClickListener {
             val tel = binding.etTel.text.toString()
             val gender = binding.gender.selectedItem.toString()
-
             val dateOfBirth = binding.datePicker.year.toString() + "-" + (binding.datePicker.month + 1).toString() + "-" + binding.datePicker.dayOfMonth.toString()
+            var isError = false
 
             binding.apply {
+                if(getAges(dateOfBirth) < 0){
+                    isError = true
+                    datePicker.setBackgroundResource(R.drawable.bg_edit_text_error)
+                    tvError.visibility = View.VISIBLE
+                    tvError.text = getString(R.string.wrong_date_of_birth)
+                }
+
                 if(tel.isEmpty()) {
+                    isError = true
                     etTel.error = getString(R.string.enter_tel)
-                } else {
+                }
+                if(!isError){
                     userRegister.telephone = tel
                     userRegister.gender = gender
                     userRegister.date_of_birth = dateOfBirth

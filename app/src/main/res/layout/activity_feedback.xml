@@ -109,7 +109,6 @@
             android:id="@+id/addDescription"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/input_text"
             android:ems="10"
             android:inputType="textMultiLine"
             app:passwordToggleEnabled="true" />

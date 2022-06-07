@@ -19,7 +19,6 @@ class DetailHistoryViewModel (private val pref: UserPreference) : ViewModel() {
     private val _listData = MutableLiveData<ArrayList<String>>()
     val listData : LiveData<ArrayList<String>> = _listData
 
-
     fun getUser(): LiveData<User> {
         return pref.getUser().asLiveData()
     }

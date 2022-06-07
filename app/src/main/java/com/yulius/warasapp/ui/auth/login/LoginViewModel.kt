@@ -34,6 +34,7 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                 response: Response<ResponseData>
             ) {
                 val responseBody = response.body()
+
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success" && responseBody.data != null){
                         saveUser(User(
@@ -55,7 +56,6 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                             callback.getCallback("User Success Login", true)
                         }
                         _isLoading.value = false
-
                     } else {
                         if (responseBody.message != null){
                             callback.getCallback(responseBody.message, false)
@@ -63,19 +63,16 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel()  {
                             callback.getCallback("User Failed Login", false)
                         }
                         _isLoading.value = false
-
                     }
                 } else {
-                    callback.getCallback(response.message(), false)
+                    callback.getCallback("User Failed Login", false)
                     _isLoading.value = false
-
                 }
             }
 
             override fun onFailure(call: Call<ResponseData>, t: Throwable) {
                 callback.getCallback(t.message.toString(), false)
                 _isLoading.value = false
-
             }
         })
     }

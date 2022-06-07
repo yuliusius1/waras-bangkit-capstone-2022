@@ -166,4 +166,6 @@
     <string name="make_a_daily_report">Make a daily report</string>
     <string name="daily_report_title">Daily Report %1$s</string>
     <string name="today_i_feel">Today, I feel ..</string>
+    <string name="see_all">See All</string>
+    <string name="wrong_date_of_birth">The date of birth cannot exceed the current date</string>
 </resources>

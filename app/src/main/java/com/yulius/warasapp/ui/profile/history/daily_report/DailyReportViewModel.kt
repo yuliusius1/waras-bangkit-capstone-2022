@@ -48,7 +48,6 @@ class DailyReportViewModel(private val pref: UserPreference): ViewModel() {
                                     null,
                                 )
                                 for (j in responseBody.data.indices){
-                                    Log.d("TAG", "onResponses: ${changeFormatTime(responseBody.data[j].created_at.substring(0,10))}")
                                     if (responseBody.data[j].id_user == history.id_user && responseBody.data[j].id_history == history.id_history &&
                                         responseBody.data[j].created_at.substring(0,10) == addTimes(i,history.created_at.substring(0,10))) {
                                         dailyReportList = DailyReportList(
@@ -62,7 +61,6 @@ class DailyReportViewModel(private val pref: UserPreference): ViewModel() {
                                 }
                                 listReport.add(dailyReportList)
                             }
-                            Log.d("TAG", "onResponseBody: $listReport and size ${listReport.size}")
                             _listReports.postValue(listReport)
                         }
                     }
@@ -74,7 +72,6 @@ class DailyReportViewModel(private val pref: UserPreference): ViewModel() {
             override fun onFailure(call: Call<ResponseDailyReport>, t: Throwable) {
                 _isLoading.value = false
             }
-
         })
     }
 
@@ -117,9 +114,6 @@ class DailyReportViewModel(private val pref: UserPreference): ViewModel() {
             override fun onFailure(call: Call<ResponseDailyReport>, t: Throwable) {
                 _isLoading.value = false
             }
-
         })
     }
-
-
 }
