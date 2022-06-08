@@ -122,7 +122,9 @@ class LoginActivity : AppCompatActivity() {
                     viewModel.loginUser(etUsername.text.toString(), etPassword.text.toString(), object:
                         ResponseCallback {
                         override fun getCallback(msg: String, status: Boolean) {
-                            showDialogs(msg,status)
+                            if(!status){
+                                showDialogs(msg,status)
+                            }
                         }
                     })
                 }

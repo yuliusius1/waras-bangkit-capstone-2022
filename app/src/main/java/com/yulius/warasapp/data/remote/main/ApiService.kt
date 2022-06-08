@@ -106,10 +106,17 @@ interface ApiService {
 
     @POST("dailyreports")
     fun sendDailyReport(
-        @Query("daily_report") report: String,
+        @Query("daily_report") daily_report: String,
         @Query("id_user") id_user: Int,
         @Query("id_history") id_history: Int,
     ): Call<ResponseDailyReport>
+
+    @POST("feedback")
+    fun sendFeedback(
+        @Query("feedback") feedback: String,
+        @Query("rating") rating: Double,
+        @Query("id_user") id_user: Int,
+    ): Call<ResponseFeedback>
 
     @GET("dailyreports")
     fun getAllDailyReport(

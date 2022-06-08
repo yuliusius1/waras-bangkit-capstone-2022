@@ -157,15 +157,17 @@
     <string name="already_recovered">Sudah Pulih</string>
     <string name="still_sick">Masih sakit</string>
     <string name="more">Lainnya ▶</string>
-    <string name="send_daily_report">Send Daily Report</string>
-    <string name="estimated_recover_date">Estimated Recover Date:</string>
-    <string name="diagnose_date">Diagnose Date:</string>
-    <string name="this_is_the_result_of_your_diagnose">This is the result of your diagnose</string>
-    <string name="daily_report">Daily Report</string>
-    <string name="what_do_you_feel_today">What do you feel today?</string>
-    <string name="make_a_daily_report">Make a daily report</string>
-    <string name="daily_report_title">Daily Report %1$s</string>
-    <string name="today_i_feel">Today, I feel ..</string>
-    <string name="see_all">See All</string>
-    <string name="wrong_date_of_birth">The date of birth cannot exceed the current date</string>
+    <string name="send_daily_report">Kirim Laporan harian</string>
+    <string name="estimated_recover_date">Perkiraan tanggal sembuh:</string>
+    <string name="diagnose_date">Tangal Diagnosa:</string>
+    <string name="this_is_the_result_of_your_diagnose">Berikut ini merupakan hasil dari diagnosamu</string>
+    <string name="daily_report">Laporan Harian</string>
+    <string name="what_do_you_feel_today">Bagaimana keadaanmu hari ini?</string>
+    <string name="make_a_daily_report">Buat Laporn Harian</string>
+    <string name="daily_report_title">Laporan Harian %1$s</string>
+    <string name="today_i_feel">Hari ini saya merasakan..</string>
+    <string name="see_all">Lihat semua</string>
+    <string name="wrong_date_of_birth">Tanggal lahir tidak dapat melebihi tanggal saat ini</string>
+    <string name="your_feedback">Saranmu</string>
+
 </resources>

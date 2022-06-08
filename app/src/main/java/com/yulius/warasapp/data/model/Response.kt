@@ -79,3 +79,10 @@ data class ResponseMaps(
     var html_attributions: ArrayList<String>?= null,
     var results: ArrayList<ResultMaps>? = null,
 )
+
+data class ResponseFeedback (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+    val data : Feedback? = null
+)
