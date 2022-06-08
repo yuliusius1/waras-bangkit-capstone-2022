@@ -7,6 +7,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityOptionsCompat
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -19,9 +20,15 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
+import com.yulius.warasapp.data.model.ResponseData
 import com.yulius.warasapp.data.model.UserRegister
+import com.yulius.warasapp.data.remote.main.ApiConfig
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
+import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.getAges
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -104,8 +111,39 @@ class RegisterActivity : AppCompatActivity() {
                 }
 
                 else -> {
-                    val intent = Intent(this,RegisterActivity2::class.java)
                     userRegister = UserRegister(name,username,email,password,"","","")
+
+                    viewModel.checkUsername(username, object : ResponseCallback {
+                        override fun getCallback(msg: String, status: Boolean) {
+                            if(status){
+                                binding.etUsername.error = getString(R.string.user_found_error)
+                                showDialogError(getString(R.string.user_found_error),status)
+                            } else {
+                                viewModel.checkEmail(email, object : ResponseCallback {
+                                    override fun getCallback(msg: String, status: Boolean) {
+                                        if(status){
+                                            binding.etEmail.error = getString(R.string.email_found_error)
+                                            showDialogError(getString(R.string.email_found_error),status)
+                                        } else {
+                                            showDialogError("",status)
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+        }
+    }
+
+    fun showDialogError(msg :String, status:Boolean){
+        if(!status){
+            AlertDialog.Builder(this).apply {
+                setTitle(getString(R.string.success))
+                setMessage(getString(R.string.registration_success))
+                setPositiveButton(getString(R.string.next)) { _, _ ->
+                    val intent = Intent(this@RegisterActivity,RegisterActivity2::class.java)
                     intent.putExtra("userRegister",userRegister)
                     val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         this@RegisterActivity,
@@ -116,10 +154,21 @@ class RegisterActivity : AppCompatActivity() {
                     )
                     startActivity(intent, optionsCompat.toBundle())
                 }
+                create()
+                show()
+            }
+        } else {
+            AlertDialog.Builder(this).apply {
+                setTitle(getString(R.string.sorry))
+                setMessage(msg)
+                setPositiveButton(getString(R.string.repeat)) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                create()
+                show()
             }
         }
     }
-
 
 
     private fun setupViewModel() {

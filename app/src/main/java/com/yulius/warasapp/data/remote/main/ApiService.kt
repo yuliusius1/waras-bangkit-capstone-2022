@@ -67,6 +67,11 @@ interface ApiService {
         @Query("id_user") id_user: Int,
     ): Call<ResponseDiagnoses>
 
+    @GET("users/username")
+    fun checkUser(
+        @Query("username") username: String,
+    ): Call<ResponseData>
+
     @GET("diagnoses")
     fun getAllDiagnose(
     ): Call<ResponseAllDiagnoses>
@@ -90,11 +95,11 @@ interface ApiService {
         @Query("id_diagnose") id_diagnose: Int,
     ): Call<ResponseHistory>
 
-    @PUT("changeHistory/{id}")
+    @PUT("users/changeHistory/{id}")
     fun changeHistory(
         @Path("id") id: Int,
         @Query("status") status: String,
-    ): Call<ResponseHistory>
+    ): Call<Responses>
 
     @POST("reports")
     fun sendReport(

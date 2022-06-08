@@ -114,7 +114,7 @@ class RegisterActivity2 : AppCompatActivity() {
         if(status){
             AlertDialog.Builder(this).apply {
                 setTitle(getString(R.string.success))
-                setMessage(msg)
+                setMessage(getString(R.string.registration_success))
                 setPositiveButton(getString(R.string.next)) { _, _ ->
                     val intent = Intent(context, LoginActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK

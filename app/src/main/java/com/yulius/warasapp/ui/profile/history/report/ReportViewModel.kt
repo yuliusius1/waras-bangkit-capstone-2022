@@ -1,5 +1,6 @@
 package com.yulius.warasapp.ui.profile.history.report
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -33,23 +34,14 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
                 response: Response<ResponseReport>
             ) {
                 val responseBody = response.body()
+                Log.d("TAG", "onResponseReport: ${response.body()}")
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success") {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, true)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Add Report Success", true)
-                            _isLoading.value = false
-                        }
+                        callback.getCallback("Add Report Success", true)
+                        _isLoading.value = false
                     } else {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, false)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Add Report Failed", false)
-                            _isLoading.value = false
-                        }
+                        callback.getCallback("Add Report Failed", false)
+                        _isLoading.value = false
                     }
                 } else {
                     callback.getCallback(response.message(),false)
@@ -70,29 +62,21 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
             history.id_history,
             status,
         ).enqueue(object:
-            Callback<ResponseHistory> {
+            Callback<Responses> {
             override fun onResponse(
-                call: Call<ResponseHistory>,
-                response: Response<ResponseHistory>
+                call: Call<Responses>,
+                response: Response<Responses>
             ) {
                 val responseBody = response.body()
+                Log.d("TAG", "onResponseStatus: $response")
+                Log.d("TAG", "onResponseStatus: ${response.body()}")
                 if(response.isSuccessful && responseBody != null){
-                    if(responseBody.status == "Success") {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, true)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Add Report Success", true)
-                            _isLoading.value = false
-                        }
+                    if(responseBody.status == "Succes") {
+                        callback.getCallback("Add Report Success", true)
+                        _isLoading.value = false
                     } else {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, false)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Add Report Failed", false)
-                            _isLoading.value = false
-                        }
+                        callback.getCallback("Add Report Failed", false)
+                        _isLoading.value = false
                     }
                 } else {
                     callback.getCallback(response.message(),false)
@@ -100,7 +84,7 @@ class ReportViewModel (private val pref: UserPreference) : ViewModel() {
                 }
             }
 
-            override fun onFailure(call: Call<ResponseHistory>, t: Throwable) {
+            override fun onFailure(call: Call<Responses>, t: Throwable) {
                 callback.getCallback(t.message.toString(),false)
                 _isLoading.value = false
             }

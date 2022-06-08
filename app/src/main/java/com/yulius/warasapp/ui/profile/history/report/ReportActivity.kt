@@ -105,7 +105,7 @@ class ReportActivity : AppCompatActivity() {
         if (status) {
             AlertDialog.Builder(this).apply {
                 setTitle("Yay !")
-                setMessage(msg)
+                setMessage(getString(R.string.add_report_success))
                 setPositiveButton(getString(R.string.next)) { _, _ ->
                     val intent = Intent(this@ReportActivity, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -117,7 +117,7 @@ class ReportActivity : AppCompatActivity() {
         } else {
             AlertDialog.Builder(this).apply {
                 setTitle("Oops")
-                setMessage(msg)
+                setMessage(getString(R.string.add_report_failed))
                 setNegativeButton(getString(R.string.repeat)) { dialog, _ ->
                     dialog.dismiss()
                 }

@@ -38,21 +38,11 @@ class RegisterViewModel2(private val pref: UserPreference) : ViewModel() {
                 val responseBody = response.body()
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success") {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, true)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Registration Success", true)
-                            _isLoading.value = false
-                        }
+                        callback.getCallback("Registration Success", true)
+                        _isLoading.value = false
                     } else {
-                        if(responseBody.message != null){
-                            callback.getCallback(responseBody.message, false)
-                            _isLoading.value = false
-                        } else {
-                            callback.getCallback("Registration Failed", false)
-                            _isLoading.value = false
-                        }
+                        callback.getCallback("Registration Failed", false)
+                        _isLoading.value = false
                     }
                 } else {
                     callback.getCallback(response.message(),false)

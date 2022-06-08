@@ -211,6 +211,11 @@
     <string name="see_all">See All</string>
     <string name="wrong_date_of_birth">The date of birth cannot exceed the current date</string>
     <string name="your_feedback">Your Feedback</string>
+    <string name="registration_success">Registration Success</string>
+    <string name="user_found_error">Username doesn\'t available, Please change your username</string>
+    <string name="email_found_error">Email not available, Please change to another email</string>
+    <string name="add_report_success">Add Report Success</string>
+    <string name="add_report_failed">Add Report Failed</string>
 
 
     <string-array name="select_gender">

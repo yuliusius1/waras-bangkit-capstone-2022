@@ -9,4 +9,5 @@ data class Reports (
     var status: String,
     var id_user: String,
     var id_history: String,
+    var created_at: String,
 ) : Parcelable

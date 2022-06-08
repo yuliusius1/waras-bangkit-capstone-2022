@@ -1,7 +1,11 @@
 package com.yulius.warasapp.data.model
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
+
+data class Responses (
+    val status : String,
+    val message : String? = null,
+    val reason : String? = null,
+)
 
 data class ResponseData (
     val status : String,

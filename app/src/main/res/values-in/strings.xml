@@ -163,11 +163,16 @@
     <string name="this_is_the_result_of_your_diagnose">Berikut ini merupakan hasil dari diagnosamu</string>
     <string name="daily_report">Laporan Harian</string>
     <string name="what_do_you_feel_today">Bagaimana keadaanmu hari ini?</string>
-    <string name="make_a_daily_report">Buat Laporn Harian</string>
+    <string name="make_a_daily_report">Buat Laporan Harian</string>
     <string name="daily_report_title">Laporan Harian %1$s</string>
     <string name="today_i_feel">Hari ini saya merasakan..</string>
     <string name="see_all">Lihat semua</string>
     <string name="wrong_date_of_birth">Tanggal lahir tidak dapat melebihi tanggal saat ini</string>
     <string name="your_feedback">Saranmu</string>
+    <string name="registration_success">Registrasi Berhasil</string>
+    <string name="user_found_error">Username tidak tersedia, Mohon ganti username anda</string>
+    <string name="email_found_error">Email tidak tersedia, mohon ganti email anda</string>
+    <string name="add_report_success">Berhasil menambahkan laporan akhir</string>
+    <string name="add_report_failed">Gagal menambahkan laporan akhir</string>
 
 </resources>
