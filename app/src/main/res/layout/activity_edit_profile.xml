@@ -61,8 +61,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgPhoto"
-            android:layout_width="221dp"
-            android:layout_height="203dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
@@ -74,39 +74,6 @@
             app:layout_constraintTop_toBottomOf="@id/cv_greeting"
             tools:ignore="MissingConstraints" />
 
-        <LinearLayout
-            android:id="@+id/buttonImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/imgPhoto"
-            tools:ignore="MissingConstraints">
-
-            <Button
-                android:id="@+id/btn_camera"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="32dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
-                android:text="@string/camera"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btn_gallery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="32dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="50dp"
-                android:textColor="@color/white"
-                android:text="@string/gallery"
-                style="?android:attr/buttonBarButtonStyle" />
-
-        </LinearLayout>
-
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="wrap_content"
@@ -117,7 +84,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonImage" />
+            app:layout_constraintTop_toBottomOf="@+id/imgPhoto" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameEditTextLayout"
