@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import androidx.fragment.app.Fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.gms.common.api.Status
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 
@@ -25,6 +27,12 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.libraries.places.api.Places
+import com.google.android.libraries.places.api.model.Place
+import com.google.android.libraries.places.api.model.RectangularBounds
+import com.google.android.libraries.places.api.net.PlacesClient
+import com.google.android.libraries.places.widget.AutocompleteSupportFragment
+import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
 import com.yulius.warasapp.R
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.FragmentMapsBinding
@@ -40,6 +48,7 @@ class MapsFragment : Fragment() {
     private lateinit var viewModel: MapsViewModel
     private var _binding: FragmentMapsBinding? = null
     private val binding get() = _binding!!
+    private lateinit var placesClient : PlacesClient
 
     private val requestPermissionLauncher =
         registerForActivityResult(
@@ -78,6 +87,39 @@ class MapsFragment : Fragment() {
         currentLocation = LatLng(-6.748673,111.037923)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
+        if(!Places.isInitialized()){
+            Places.initialize(requireContext(),getString(R.string.google_maps_key))
+        }
+
+        placesClient = Places.createClient(requireContext())
+
+        val autocompleteFragment =
+            childFragmentManager.findFragmentById(R.id.autocomplete_fragment)
+                    as AutocompleteSupportFragment
+
+        autocompleteFragment.setLocationBias(RectangularBounds.newInstance(
+            LatLng(-6.748673,111.037923),
+            LatLng(-6.748673,111.037923)
+        ))
+
+        autocompleteFragment.setCountries("ID")
+
+        autocompleteFragment.setPlaceFields(listOf(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG))
+
+        autocompleteFragment.setOnPlaceSelectedListener(object : PlaceSelectionListener {
+            override fun onPlaceSelected(place: Place) {
+                if(place.latLng != null){
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(place.latLng!!, 20f))
+                    mMap.addMarker(MarkerOptions().position(place.latLng!!).title(place.name))
+
+                }
+            }
+
+            override fun onError(status: Status) {
+                Toast.makeText(requireContext(), "An error occurred: $status", Toast.LENGTH_SHORT).show()
+            }
+        })
+
         setupViewModel()
 
     }
@@ -92,8 +134,6 @@ class MapsFragment : Fragment() {
                     )
                 )
             )[MapsViewModel::class.java]
-
-
     }
 
     private fun getMyLocation() {

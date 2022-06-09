@@ -1,26 +1,11 @@
 package com.yulius.warasapp.util
 
-import android.content.ContentResolver
-import android.content.Context
-import android.net.Uri
-import android.os.Environment
-import android.util.Log
-import java.io.File
-import java.io.FileOutputStream
-import java.io.InputStream
-import java.io.OutputStream
 import java.text.SimpleDateFormat
 import java.util.*
 
-private const val FILENAME_FORMAT = "dd-MMM-yyyy"
 const val DEFAULT_QUERY_ARTICLES = "covid"
 const val DEFAULT_SORT_BY_ARTICLES = "publishedAt"
 const val ARTICLE_API_KEY = "2a81a09b7fae49ba817399a2fc9cb666"
-
-val timeStamp: String = SimpleDateFormat(
-    FILENAME_FORMAT,
-    Locale.US
-).format(System.currentTimeMillis())
 
 fun getPercentage(dayToHeal: Int? = 1, thisDay: Int): Int {
     return ((thisDay.toDouble() / dayToHeal!!.toDouble()) * 100).toInt()
@@ -44,21 +29,21 @@ fun changeTimeFormatCreatedAt(date: String) : String{
     val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
     val dateParse = dateFormat.parse(date)
     val dateFormat2 = SimpleDateFormat("dd LLLL yyyy", Locale.getDefault())
-    return dateFormat2.format(dateParse)
+    return dateFormat2.format(dateParse!!)
 }
 
 fun changeTimeFormat(date: String? = "2022/01/01") : String{
     val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
-    val dateParse = dateFormat.parse(date)
+    val dateParse = dateFormat.parse(date!!)
     val dateFormat2 = SimpleDateFormat("dd LLLL yyyy", Locale.getDefault())
-    return dateFormat2.format(dateParse)
+    return dateFormat2.format(dateParse!!)
 }
 
 fun changeFormatTime(date:String? = "2022-01-01"): String {
     val dateFormat2 = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-    val dateParse = dateFormat2.parse(date)
+    val dateParse = dateFormat2.parse(date!!)
     val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
-    return dateFormat.format(dateParse)
+    return dateFormat.format(dateParse!!)
 }
 
 fun addTime(time: Int): String{
@@ -94,22 +79,3 @@ fun dateFormat(dateString: String?): String {
     return "${dateString?.substring(0,10)} ${dateString?.substring(12,19)}"
 }
 
-fun createTempFile(context: Context): File {
-    val storageDir: File? = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-    return File.createTempFile(timeStamp, ".jpg", storageDir)
-}
-
-fun uriToFile(selectedImg: Uri, context: Context): File {
-    val contentResolver: ContentResolver = context.contentResolver
-    val myFile = createTempFile(context)
-
-    val inputStream = contentResolver.openInputStream(selectedImg) as InputStream
-    val outputStream: OutputStream = FileOutputStream(myFile)
-    val buf = ByteArray(1024)
-    var len: Int
-    while (inputStream.read(buf).also { len = it } > 0) outputStream.write(buf, 0, len)
-    outputStream.close()
-    inputStream.close()
-
-    return myFile
-}
