@@ -75,17 +75,13 @@ class SettingActivity : AppCompatActivity() {
         }
     }
     
-    fun notification(){
+    private fun notification(){
         val reminderPreference = ReminderPreference(this)
-        if (reminderPreference.getReminder().isReminded){
-            binding.switchNotif.isChecked = true
-        }else {
-            binding.switchNotif.isChecked = false
-        }
+        binding.switchNotif.isChecked = reminderPreference.getReminder().isReminded
 
         alarmReceiver = AlarmReceiver()
-        binding.switchNotif.setOnCheckedChangeListener{ buttonView, ischecked ->
-            if (ischecked){
+        binding.switchNotif.setOnCheckedChangeListener{ _, isChecked ->
+            if (isChecked){
                 saveReminder(true)
 //                alarmReceiver.setRepeatingAlarm(this, "RepeatingAlarm", "08:00", "Waras reminder")
 //                alarmReceiver.setOneTimeAlarm(this, "OneTimeAlarm","2022/05/29" ,"19:07", "Waras reminder One")

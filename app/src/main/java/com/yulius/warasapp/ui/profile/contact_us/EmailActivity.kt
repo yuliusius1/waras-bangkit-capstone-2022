@@ -1,5 +1,6 @@
 package com.yulius.warasapp.ui.profile.contact_us
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -24,6 +25,7 @@ class EmailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEmailBinding
     private lateinit var viewModel: ContactUsViewModel
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEmailBinding.inflate(layoutInflater)

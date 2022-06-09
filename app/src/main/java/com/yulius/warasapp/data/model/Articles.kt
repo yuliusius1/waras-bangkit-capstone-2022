@@ -6,7 +6,6 @@ data class ArticlesResponse (
     val totalResult : Int? = null
 )
 
-
 data class Article(
     val source: Source?= null,
     val author: String? = null,

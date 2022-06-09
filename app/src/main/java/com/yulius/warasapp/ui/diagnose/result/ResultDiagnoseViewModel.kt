@@ -4,13 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.yulius.warasapp.data.model.ResponseData
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference
-import com.yulius.warasapp.data.remote.main.ApiConfig
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class ResultDiagnoseViewModel(private val pref: UserPreference) : ViewModel()  {
 

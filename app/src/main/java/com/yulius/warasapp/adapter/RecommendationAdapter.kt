@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.yulius.warasapp.databinding.ItemRowRecommendationBinding
-import com.yulius.warasapp.databinding.ItemSymptomsBinding
 import java.util.ArrayList
 
 class RecommendationAdapter : RecyclerView.Adapter<RecommendationAdapter.ListViewHolder>() {

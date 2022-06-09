@@ -35,13 +35,6 @@ data class ResponseAllDiagnoses (
     val data : ArrayList<AddDiagnose>? = null
 )
 
-data class ResponseRecommendation (
-    val status : String,
-    val message : String? = null,
-    val reason : String? = null,
-    val data : Recommendation? = null
-)
-
 data class ResponseAllHistory (
     val status : String,
     val message : String? = null,

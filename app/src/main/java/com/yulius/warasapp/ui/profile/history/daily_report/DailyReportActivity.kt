@@ -16,14 +16,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.textfield.TextInputLayout
 import com.yulius.warasapp.R
 import com.yulius.warasapp.adapter.DailyReportAdapter
-import com.yulius.warasapp.adapter.DetailHistoryAdapter
 import com.yulius.warasapp.data.model.DailyReportList
 import com.yulius.warasapp.data.model.History
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityDailyReportBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
-import com.yulius.warasapp.ui.profile.history.detail_history.DetailHistoryActivity
 import com.yulius.warasapp.util.*
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(

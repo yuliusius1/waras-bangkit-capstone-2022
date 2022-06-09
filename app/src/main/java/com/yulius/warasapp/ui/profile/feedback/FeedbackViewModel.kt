@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.yulius.warasapp.data.model.ResponseDailyReport
 import com.yulius.warasapp.data.model.ResponseFeedback
 import com.yulius.warasapp.data.model.User
 import com.yulius.warasapp.data.model.UserPreference

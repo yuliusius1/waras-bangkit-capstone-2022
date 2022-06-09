@@ -4,6 +4,7 @@ import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
 import android.os.Environment
+import android.util.Log
 import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
@@ -20,6 +21,10 @@ val timeStamp: String = SimpleDateFormat(
     FILENAME_FORMAT,
     Locale.US
 ).format(System.currentTimeMillis())
+
+fun getPercentage(dayToHeal: Int? = 1, thisDay: Int): Int {
+    return ((thisDay.toDouble() / dayToHeal!!.toDouble()) * 100).toInt()
+}
 
 fun getAges(dateOfBirth : String): Int{
     val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())

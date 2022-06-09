@@ -63,6 +63,11 @@ class DetailHistoryActivity : AppCompatActivity() {
             tvEndDate.text = changeTimeFormat(historyData.date_to_heal)
             tvStartDate.text = changeTimeFormatCreatedAt(historyData.created_at.substring(0,10))
             tvSecondText.text = getString(R.string.text_predict, historyData.day_to_heal)
+
+            if(historyData.status == "Sembuh"){
+                btnReport.isEnabled = false
+                btnReport.text = getString(R.string.you_already_recover)
+            }
         }
     }
 

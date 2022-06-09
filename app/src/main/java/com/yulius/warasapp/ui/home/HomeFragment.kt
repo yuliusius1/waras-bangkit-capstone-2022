@@ -1,9 +1,9 @@
 package com.yulius.warasapp.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -94,6 +94,7 @@ class HomeFragment : Fragment() {
             return listData
         }
 
+    @SuppressLint("SetTextI18n")
     private fun setupViewModel() {
         viewModel =
             ViewModelProvider(
@@ -117,9 +118,7 @@ class HomeFragment : Fragment() {
         }
 
         viewModel.getLastHistory().observe(viewLifecycleOwner){
-            Log.d("TAG", "setupViewModel: $it")
             if(it.data != null){
-                binding.cvDailyReport.visibility = View.VISIBLE
                 viewModel.setData(it.data)
                 history = it.data
             }
@@ -129,7 +128,13 @@ class HomeFragment : Fragment() {
         viewModel.listReports.observe(viewLifecycleOwner){ listData ->
             for(i in listData.indices){
                 if(changeFormatTime(listData[i].created_date) == todayDate()){
+                        binding.cvDailyReport.visibility = View.VISIBLE
+                        binding.progressBar1.visibility = View.VISIBLE
+                        binding.tvProgress.visibility = View.VISIBLE
+                        binding.tvProgressStatus.visibility = View.VISIBLE
 
+                        binding.progressBar1.progress = getPercentage(history.day_to_heal?.toInt(), i)
+                        binding.tvProgressStatus.text = getPercentage(history.day_to_heal?.toInt(), i).toString() + " %"
                     if(listData[i].daily_report != null){
                         binding.dailyReportText.text = listData[i].daily_report
                         binding.btnAddReport.visibility = View.GONE
@@ -137,7 +142,7 @@ class HomeFragment : Fragment() {
 
                     } else {
                         binding.dailyText1.visibility = View.GONE
-                        binding.dailyReportText.visibility = View.GONE
+                        binding.dailyReportText.text = getString(R.string.have_not_submitted_daily_report)
                         binding.btnAddReport.setOnClickListener {
                             showReportDialog(history)
                         }
@@ -146,8 +151,6 @@ class HomeFragment : Fragment() {
                 }
             }
         }
-
-
 
         val random = Random.nextInt(800)
         viewModel.setQuote(random)
@@ -158,6 +161,8 @@ class HomeFragment : Fragment() {
             }
         }
     }
+
+
 
     private fun setupAction() {
         binding.btnCheck.setOnClickListener {
@@ -266,5 +271,4 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
 }

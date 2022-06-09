@@ -74,7 +74,7 @@ class HomeViewModel(private val pref: UserPreference) : ViewModel()  {
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Success"){
                         if(responseBody.data != null) {
-
+                            listReport.clear()
                             for(i in 0..(history.day_to_heal?.toInt() ?: 1)){
                                 var dailyReportList = DailyReportList(
                                     null,

@@ -136,7 +136,7 @@
     <string name="permission2">Apakah Anda bersedia?</string>
     <string name="disagree">Tidak setuju</string>
     <string name="agree">Setuju</string>
-    <string name="years_old">tahun</string>
+    <string name="years_old">%1$s Tahun</string>
 
     <!--    Notification-->
 
@@ -174,5 +174,7 @@
     <string name="email_found_error">Email tidak tersedia, mohon ganti email anda</string>
     <string name="add_report_success">Berhasil menambahkan laporan akhir</string>
     <string name="add_report_failed">Gagal menambahkan laporan akhir</string>
-
+    <string name="you_already_recover">Selamat, kamu sudah sembuh</string>
+    <string name="have_not_submitted_daily_report">Hi, kamu belum mengirimkan laporan harian. Beritahu kami bagaimana kabarmu hari ini</string>
+    <string name="diagnose_id">Diagnosa - %1$s</string>
 </resources>

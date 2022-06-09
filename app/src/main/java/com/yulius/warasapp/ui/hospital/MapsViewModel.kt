@@ -1,13 +1,11 @@
 package com.yulius.warasapp.ui.hospital
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.maps.model.LatLng
 import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.data.remote.maps.ApiConfigMaps
-import com.yulius.warasapp.data.remote.quotes.ApiConfigQuotes
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +27,6 @@ class MapsViewModel (private val pref: UserPreference) : ViewModel()  {
                 response: Response<ResponseMaps>
             ) {
                 val responseBody = response.body()
-                Log.d("TAG", "onResponse: $responseBody")
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "OK"){
                         if(responseBody.results != null){

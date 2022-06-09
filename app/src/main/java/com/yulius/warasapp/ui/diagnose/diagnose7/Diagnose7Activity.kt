@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -21,7 +20,6 @@ import com.yulius.warasapp.util.ViewModelFactory
 import com.yulius.warasapp.util.addTime
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
-import kotlin.math.roundToInt
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -120,11 +118,8 @@ class Diagnose7Activity : AppCompatActivity() {
     private fun prediction(): Int {
         val model = Dnn4Model.newInstance(applicationContext)
 
-        // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 9), DataType.FLOAT32)
 
-//        inputFeature0.loadBuffer(byteBuffer)
-        Log.d("TAG", "DATA PREDIKSI: $dataDiagnose")
         inputFeature0.loadArray(intArrayOf(
             dataDiagnose.age,
             dataDiagnose.gender,
@@ -138,9 +133,6 @@ class Diagnose7Activity : AppCompatActivity() {
         ))
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-        val dateHealed = addTime(outputFeature0.floatArray[0].roundToInt())
-        Log.d("TAG", "prediction: ${outputFeature0.floatArray[0]} ${outputFeature0.floatArray[0].roundToInt()}")
-        Log.d("TAG", "date_toHeal: $dateHealed")
 
         model.close()
 

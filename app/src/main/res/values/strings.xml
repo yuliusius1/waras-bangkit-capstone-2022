@@ -134,7 +134,7 @@
     <string name="permission2">Are you willing?</string>
     <string name="disagree">Disagree</string>
     <string name="agree">Agree</string>
-    <string name="years_old">years old</string>
+    <string name="years_old">%1$s years old</string>
 
     <!--    Notification-->
     <string name="notification">Notification</string>
@@ -216,6 +216,9 @@
     <string name="email_found_error">Email not available, Please change to another email</string>
     <string name="add_report_success">Add Report Success</string>
     <string name="add_report_failed">Add Report Failed</string>
+    <string name="you_already_recover">You are already recover</string>
+    <string name="have_not_submitted_daily_report">Hi, you haven\'t submitted the daily report yet. tell me how you feel today</string>
+    <string name="diagnose_id">Diagnose - %1$s</string>
 
 
     <string-array name="select_gender">

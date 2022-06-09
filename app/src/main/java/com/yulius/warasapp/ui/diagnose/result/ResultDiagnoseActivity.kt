@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -14,10 +13,7 @@ import com.yulius.warasapp.data.model.Diagnose
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
-import com.yulius.warasapp.ui.diagnose.diagnose7.Diagnose7Activity
 import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationActivity
-import com.yulius.warasapp.ui.main.MainActivity
-import com.yulius.warasapp.ui.profile.history.HistoryActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
