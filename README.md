@@ -22,7 +22,7 @@ Waras App is Application of Prediction COVID-19 Patient Recovery and Quarantine 
 
 ## Documentation
 
-![WarasApp] (https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/documentations.jpg?raw=True)
+![WarasApp](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/documentations.jpg)
 
 ## System Architecture
 
