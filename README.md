@@ -17,7 +17,7 @@ Here is our repository for Bangkit 2022 Capstone project - Mobile Development.
 ![WarasArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/android_architecture.jpg)
 
 ## Our Features 
-- Boarding Page
+- OnBoarding Page
 - Splash Screen
 - Authentication -> Login, Signup, Forgot Password
 - Nearby Hospital Location
@@ -39,16 +39,16 @@ Here is our repository for Bangkit 2022 Capstone project - Mobile Development.
 TBA
 
 ## Installation
- - ### Prerequisites
-  - Android Studio
- - ### Installations
-  - Get your Maps API Token [Here](https://console.cloud.google.com/)
-  - Clone This Project 
-  ```bash
-  $ git clone https://github.com/yuliusius1/waras-bangkit-capstone-2022.git
-  ``` 
-  - Paste your API Token to values/google_maps_api.xml
-  ```bash
-  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">[YOUR API KEY]</string>
-  ``` 
+ * ### Prerequisites
+    - Android Studio
+ * ### Installations
+    - Get your Maps API Token [Here](https://console.cloud.google.com/)
+    - Clone This Project 
+    ```bash
+    $ git clone https://github.com/yuliusius1/waras-bangkit-capstone-2022.git
+    ``` 
+    - Paste your API Token to values/google_maps_api.xml
+    ```bash
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">[YOUR API KEY]</string>
+    ``` 
 
