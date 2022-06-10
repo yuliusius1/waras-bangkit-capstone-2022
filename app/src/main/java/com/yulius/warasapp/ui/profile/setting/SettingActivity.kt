@@ -9,11 +9,8 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.yulius.warasapp.data.model.Reminder
 import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivitySettingBinding
-import com.yulius.warasapp.ui.profile.setting.preference.ReminderPreference
-import com.yulius.warasapp.ui.profile.setting.receiver.AlarmReceiver
 import com.yulius.warasapp.util.ViewModelFactory
 
 
@@ -22,9 +19,6 @@ class SettingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySettingBinding
     private lateinit var viewModel: ThemeViewModel
-    
-    private lateinit var reminder: Reminder
-    private lateinit var alarmReceiver: AlarmReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +28,6 @@ class SettingActivity : AppCompatActivity() {
         setupView()
         setupViewModel()
         setupAction()
-        
-        notification()
     }
 
     private fun setupView() {
@@ -73,30 +65,5 @@ class SettingActivity : AppCompatActivity() {
         binding.ivAvatar.setOnClickListener {
             onBackPressed()
         }
-    }
-    
-    private fun notification(){
-        val reminderPreference = ReminderPreference(this)
-        binding.switchNotif.isChecked = reminderPreference.getReminder().isReminded
-
-        alarmReceiver = AlarmReceiver()
-        binding.switchNotif.setOnCheckedChangeListener{ _, isChecked ->
-            if (isChecked){
-                saveReminder(true)
-//                alarmReceiver.setRepeatingAlarm(this, "RepeatingAlarm", "08:00", "Waras reminder")
-//                alarmReceiver.setOneTimeAlarm(this, "OneTimeAlarm","2022/05/29" ,"19:07", "Waras reminder One")
-            } else{
-                saveReminder(false)
-                alarmReceiver.cancelAlarm(this)
-            }
-        }
-    }
-
-    private fun saveReminder(b: Boolean) {
-        val reminderPreference = ReminderPreference(this)
-        reminder = Reminder()
-
-        reminder.isReminded = b
-        reminderPreference.setReminder(reminder)
     }
 }

@@ -1,6 +1,5 @@
 package com.yulius.warasapp.ui.profile.editprofile
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.yulius.warasapp.data.model.ResponseData
 import com.yulius.warasapp.data.model.ResponseUpdate
@@ -80,7 +79,6 @@ class EditProfileViewModel(private val pref: UserPreference) : ViewModel() {
                 val responseBody = response.body()
                 if(response.isSuccessful && responseBody != null){
                     if(responseBody.status == "Succes" && responseBody.data != null){
-                        Log.d("TAG", "onResponse: ${responseBody.data}")
                         saveUser(
                             User(
                                responseBody.data.full_name,

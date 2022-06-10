@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -84,7 +83,6 @@ class Diagnose1Activity : AppCompatActivity() {
             }
 
             nextbtn.setOnClickListener {
-                Log.d("TAG", "setupAction: $dataDiagnose")
                 val intent = Intent(this@Diagnose1Activity, Diagnose2Activity::class.java)
                 intent.putExtra("dataDiagnose", dataDiagnose)
                 startActivity(intent)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">WarasApp</string>
+    <string name="app_name">Waras</string>
 
     <!--    Login   -->
     <string name="login_to_your_account">Masuk ke akun Anda</string>
@@ -182,4 +182,5 @@
     <string name="terrain_map">Terrain Map</string>
     <string name="satellite_map">Satellite Map</string>
     <string name="hybrid_map">Hybrid Map</string>
+    <string name="result_all">We urge you to contact your doctor immediately for your symptoms</string>
 </resources>

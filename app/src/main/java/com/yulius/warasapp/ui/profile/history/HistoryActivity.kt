@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -74,7 +73,6 @@ class HistoryActivity : AppCompatActivity() {
         adapter.setOnItemClickCallback(object :
             HistoryAdapter.OnItemClickCallback {
             override fun onItemClicked(data: History) {
-                Log.d("TAG", "onItemClicked: $data")
                 val intent =
                     Intent(this@HistoryActivity, DetailHistoryActivity::class.java)
                 intent.putExtra("historyData", data)

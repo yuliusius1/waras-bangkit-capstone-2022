@@ -1,13 +1,11 @@
 package com.yulius.warasapp.ui.home
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.data.remote.main.ApiConfig
 import com.yulius.warasapp.data.remote.quotes.ApiConfigQuotes
 import com.yulius.warasapp.util.ResponseCallback
 import com.yulius.warasapp.util.addTimes
-import com.yulius.warasapp.util.changeFormatTime
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback

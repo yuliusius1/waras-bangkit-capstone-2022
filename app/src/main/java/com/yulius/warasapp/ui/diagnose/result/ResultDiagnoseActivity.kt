@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -42,6 +43,16 @@ class ResultDiagnoseActivity : AppCompatActivity() {
         dataDiagnose = intent.getParcelableExtra<Diagnose>("dataDiagnose") as Diagnose
         resultModel = intent.getIntExtra("resultModel",0)
         binding.tvResult.text = getString(R.string.text_predict, resultModel.toString())
+        if(dataDiagnose.cough == 1
+            && dataDiagnose.fever == 1
+            && dataDiagnose.tired == 1
+            && dataDiagnose.sore_throat == 1
+            && dataDiagnose.vomit == 1
+            && dataDiagnose.short_breath == 1
+            && dataDiagnose.runny_nose == 1
+        ){
+            binding.tvAll.visibility = View.VISIBLE
+        }
     }
 
     private fun setupView() {

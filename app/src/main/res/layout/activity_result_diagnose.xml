@@ -84,15 +84,31 @@
 
             <TextView
                 android:id="@+id/tv_result"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="@string/result_text"
                 android:textAlignment="center"
+                android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="32dp"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/question_tv" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/result_all"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

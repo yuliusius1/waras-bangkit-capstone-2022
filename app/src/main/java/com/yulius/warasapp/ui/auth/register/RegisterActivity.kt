@@ -20,15 +20,9 @@ import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 import androidx.core.util.Pair
-import com.yulius.warasapp.data.model.ResponseData
 import com.yulius.warasapp.data.model.UserRegister
-import com.yulius.warasapp.data.remote.main.ApiConfig
 import com.yulius.warasapp.ui.auth.register2.RegisterActivity2
 import com.yulius.warasapp.util.ResponseCallback
-import com.yulius.warasapp.util.getAges
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings"
@@ -53,11 +47,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun playAnimation() {
-//        ObjectAnimator.ofFloat(binding.ivLogo, View.ROTATION, 360f).apply {
-//            duration = 5000 // In Miles 1000ms = 1s
-//            repeatCount = ObjectAnimator.INFINITE
-//            repeatMode = ObjectAnimator.REVERSE
-//        }.start()
 
         val titleTextView = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA,1f).setDuration(300)
         val subTitleTextView = ObjectAnimator.ofFloat(binding.tvSubTitle, View.ALPHA,1f).setDuration(300)

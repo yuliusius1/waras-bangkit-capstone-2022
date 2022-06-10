@@ -68,7 +68,7 @@
             android:id="@+id/iv_banner"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/banner"
+            android:src="@drawable/poster"
             app:layout_constraintTop_toBottomOf="@id/cv_greeting"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="ContentDescription" />
