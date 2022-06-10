@@ -2,7 +2,7 @@
 
 ## Bangkit Capstone Project 2022
 
-Bangkit Capstone Team ID : C22 - PS046
+Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
 
 ## Our Wariors
