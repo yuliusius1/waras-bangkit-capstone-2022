@@ -12,7 +12,7 @@ Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 
 | Aprillia Anggera Putri Lestari | M2007F0763 |  Machine Learning  |            [LinkedIn](https://www.linkedin.com/in/aprillia-anggera/) or [Github](https://github.com/anggera)             |
 |    Alfendio Alif Faudisyah     | M2245F2171 |  Machine Learning  |                [LinkedIn](https://www.linkedin.com/in/alfendio/) or [Github](https://github.com/alfendio)                |
 |             Yulius             | A7245F2166 | Mohile Development |              [LinkedIn](https://www.linkedin.com/in/natyulius/) or [Github](https://github.com/yuliusius1)               |
-|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |                 [LinkedIn](https://www.linkedin.com/in/tikaa-undefined-3b1090237/) or [Github](https://github.com/kartikaokta123)                  |
+|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/tikaa-undefined-3b1090237/) or [Github](https://github.com/kartikaokta123)     |
 |       Alextonio Winatian       | C7011F1157 |  Cloud Computing   | [LinkedIn](https://www.linkedin.com/in/alextonio-winatian-168b67236/) or [Github](https://github.com/Alextonio-Winatian) |
 |         Melina Azzahra         | C2007F0650 |  Cloud Computing   |        [LinkedIn](https://www.linkedin.com/in/melina-azzahra-212399201/) or [Github](https://github.com/nmelinaa)        |
 
@@ -22,7 +22,7 @@ Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Proc
 
 ## Documentation
 
-![WarasApp](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/documentations.jpg)
+![WarasApp](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/documentation.jpg)
 
 ## System Architecture
 
