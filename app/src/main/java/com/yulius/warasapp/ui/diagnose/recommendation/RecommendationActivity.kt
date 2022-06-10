@@ -77,7 +77,16 @@ class RecommendationActivity : AppCompatActivity() {
         }
 
     override fun onSupportNavigateUp(): Boolean {
-        finish()
+        val intent = Intent(this@RecommendationActivity, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
         return true
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this@RecommendationActivity, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        super.onBackPressed()
     }
 }

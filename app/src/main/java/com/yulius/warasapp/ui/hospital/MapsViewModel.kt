@@ -3,6 +3,7 @@ package com.yulius.warasapp.ui.hospital
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.google.android.gms.maps.model.LatLng
 import com.yulius.warasapp.data.model.*
 import com.yulius.warasapp.data.remote.maps.ApiConfigMaps
@@ -16,6 +17,10 @@ class MapsViewModel (private val pref: UserPreference) : ViewModel()  {
 
     private val _listMaps = MutableLiveData<ArrayList<ResultMaps>>()
     private val listData = ArrayList<ResultMaps>()
+
+    fun getThemeSettings(): LiveData<Boolean> {
+        return pref.getThemeSetting().asLiveData()
+    }
 
     fun setMaps(location: LatLng){
         _isLoading.value = true

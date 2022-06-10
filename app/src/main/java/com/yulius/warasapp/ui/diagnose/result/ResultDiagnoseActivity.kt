@@ -14,6 +14,7 @@ import com.yulius.warasapp.data.model.UserPreference
 import com.yulius.warasapp.databinding.ActivityResultDiagnoseBinding
 import com.yulius.warasapp.ui.auth.login.LoginActivity
 import com.yulius.warasapp.ui.diagnose.recommendation.RecommendationActivity
+import com.yulius.warasapp.ui.main.MainActivity
 import com.yulius.warasapp.util.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
@@ -71,6 +72,19 @@ class ResultDiagnoseActivity : AppCompatActivity() {
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
             }
+
+            mainBtn.setOnClickListener {
+                val intent = Intent(this@ResultDiagnoseActivity, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(intent)
+            }
         }
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this@ResultDiagnoseActivity, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        super.onBackPressed()
     }
 }

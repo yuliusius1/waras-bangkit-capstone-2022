@@ -3,13 +3,16 @@ package com.yulius.warasapp.ui.hospital
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
+import android.content.res.Resources
 import androidx.fragment.app.Fragment
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
@@ -26,6 +29,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.model.Place
@@ -49,6 +53,8 @@ class MapsFragment : Fragment() {
     private var _binding: FragmentMapsBinding? = null
     private val binding get() = _binding!!
     private lateinit var placesClient : PlacesClient
+    private var defaultMaps = GoogleMap.MAP_TYPE_NORMAL
+
 
     private val requestPermissionLauncher =
         registerForActivityResult(
@@ -60,12 +66,28 @@ class MapsFragment : Fragment() {
         }
 
     private val callback = OnMapReadyCallback { googleMap ->
+        Log.d("TAG", "MapReady: Test")
         mMap = googleMap
         mMap.uiSettings.apply   {
             isZoomControlsEnabled = true
             isCompassEnabled = true
             isMapToolbarEnabled = true
             isIndoorLevelPickerEnabled = true
+        }
+        mMap.mapType = defaultMaps
+
+        viewModel.getThemeSettings().observe(viewLifecycleOwner){ isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                try {
+                    val success =
+                        mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(requireContext(), R.raw.map_style))
+                    if (!success) {
+                        Log.e("TAG", "Style parsing failed.")
+                    }
+                } catch (exception: Resources.NotFoundException) {
+                    Log.e("TAG", "Can't find style. Error: ", exception)
+                }
+            }
         }
 
         getMyLocation()
@@ -82,8 +104,10 @@ class MapsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
+        Log.d("TAG", "onViewCreated: Test")
         currentLocation = LatLng(-6.748673,111.037923)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
@@ -121,7 +145,50 @@ class MapsFragment : Fragment() {
         })
 
         setupViewModel()
+        setupAction()
+    }
 
+    private fun setupAction() {
+        binding.ivAvatar.setOnClickListener{
+            val popupMenu = PopupMenu(context,binding.ivAvatar)
+            popupMenu.inflate(R.menu.maps_menu)
+            popupMenu.setOnMenuItemClickListener { item: MenuItem? ->
+                when(item?.itemId){
+                    R.id.ms_default -> {
+                        defaultMaps = GoogleMap.MAP_TYPE_NORMAL
+
+                        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+                        mapFragment?.getMapAsync(callback)
+                    }
+
+                    R.id.ms_terrain -> {
+                        defaultMaps = GoogleMap.MAP_TYPE_TERRAIN
+
+                        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+                        mapFragment?.getMapAsync(callback)
+                    }
+
+                    R.id.ms_satellite -> {
+                        defaultMaps = GoogleMap.MAP_TYPE_SATELLITE
+
+                        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+                        mapFragment?.getMapAsync(callback)
+                    }
+
+                    R.id.ms_hybrid -> {
+                        defaultMaps = GoogleMap.MAP_TYPE_HYBRID
+
+                        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+                        mapFragment?.getMapAsync(callback)
+                    }
+
+
+
+                }
+                true
+            }
+            popupMenu.show()
+        }
     }
 
     private fun setupViewModel() {
@@ -134,6 +201,8 @@ class MapsFragment : Fragment() {
                     )
                 )
             )[MapsViewModel::class.java]
+
+
     }
 
     private fun getMyLocation() {
@@ -154,8 +223,11 @@ class MapsFragment : Fragment() {
                             mMap.addMarker(MarkerOptions().position(position).title(it[i].name))
                         }
                     }
+
                 } else {
                     Toast.makeText(context, "Need Permission", Toast.LENGTH_SHORT).show()
+                    val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+                    mapFragment?.getMapAsync(callback)
                 }
             }
         } else {

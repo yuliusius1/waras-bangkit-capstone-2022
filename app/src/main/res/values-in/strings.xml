@@ -159,7 +159,7 @@
     <string name="more">Lainnya ▶</string>
     <string name="send_daily_report">Kirim Laporan harian</string>
     <string name="estimated_recover_date">Perkiraan tanggal sembuh:</string>
-    <string name="diagnose_date">Tangal Diagnosa:</string>
+    <string name="diagnose_date">Tanggal Diagnosa:</string>
     <string name="this_is_the_result_of_your_diagnose">Berikut ini merupakan hasil dari diagnosamu</string>
     <string name="daily_report">Laporan Harian</string>
     <string name="what_do_you_feel_today">Bagaimana keadaanmu hari ini?</string>
@@ -177,4 +177,9 @@
     <string name="you_already_recover">Selamat, kamu sudah sembuh</string>
     <string name="have_not_submitted_daily_report">Hi, kamu belum mengirimkan laporan harian. Beritahu kami bagaimana kabarmu hari ini</string>
     <string name="diagnose_id">Diagnosa - %1$s</string>
+
+    <string name="default_map">Default Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
 </resources>

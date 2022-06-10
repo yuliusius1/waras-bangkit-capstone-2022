@@ -71,17 +71,17 @@
 
 
     <!--  Title Page  -->
-    <string name="title_edit_profile">Edit Profile Page</string>
-    <string name="title_contact_us">Contact Us Page</string>
-    <string name="title_feedback">Feedback Page</string>
-    <string name="title_change_password">Change Password Page</string>
-    <string name="title_history">History Page</string>
-    <string name="title_diagnose">Diagnose Page</string>
-    <string name="title_article">Article Page</string>
-    <string name="title_profile">Profile Page</string>
-    <string name="title_setting">Setting Page</string>
-    <string name="language_page">Language Page</string>
-    <string name="title_theme_setting">Theme Setting Page</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_feedback">Feedback </string>
+    <string name="title_change_password">Change Password </string>
+    <string name="title_history">History </string>
+    <string name="title_diagnose">Diagnose </string>
+    <string name="title_article">Article </string>
+    <string name="title_profile">Profile </string>
+    <string name="title_setting">Setting </string>
+    <string name="language_page">Language</string>
+    <string name="title_theme_setting">Theme Setting</string>
     <string name="login_area">Login Area</string>
     <string name="register_area">Register Area</string>
     <string name="forgot_password_area">Forgot Password Area</string>
@@ -89,11 +89,11 @@
     <string name="logout">Logout</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="change_password">Change Password</string>
-    <string name="title_forgot_password">Forgot Password Page</string>
+    <string name="title_forgot_password">Forgot Password</string>
     <string name="title_reset_password">Reset Password</string>
     <string name="title_recommendation">Recommendation List</string>
-    <string name="title_detail_history">Detail History Page</string>
-    <string name="title_hospital">Hospital Page</string>
+    <string name="title_detail_history">Detail History</string>
+    <string name="title_hospital">Nearby Hospital</string>
 
     <!-- landing -->
     <string name="landing1">Welcome to WARAS</string>
@@ -193,8 +193,8 @@
     <string name="send_report">Send Report</string>
     <string name="text_predict">Based on your symptoms, our system has predict that you will recover in %1$s days</string>
     <string name="back_to_homepage">Back to homepage</string>
-    <string name="title_report">Reports page</string>
-    <string name="title_daily_report">Daily Reports page</string>
+    <string name="title_report">Reports</string>
+    <string name="title_daily_report">Daily Reports</string>
     <string name="how_are_you_currently">How are you currently?</string>
     <string name="already_recovered">Already Recovered</string>
     <string name="still_sick">Still sick</string>
@@ -220,6 +220,10 @@
     <string name="have_not_submitted_daily_report">Hi, you haven\'t submitted the daily report yet. tell me how you feel today</string>
     <string name="diagnose_id">Diagnose - %1$s</string>
 
+    <string name="default_map">Default Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
 
     <string-array name="select_gender">
         <item>Male</item>

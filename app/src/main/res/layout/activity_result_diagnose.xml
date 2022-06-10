@@ -63,7 +63,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="32dp"
             android:paddingVertical="18dp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="4dp"
@@ -107,6 +108,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cv_question"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/back_to_homepage"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
