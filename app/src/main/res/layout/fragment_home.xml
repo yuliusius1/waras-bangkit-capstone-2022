@@ -64,14 +64,79 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <ImageView
+        <androidx.constraintlayout.motion.widget.MotionLayout
             android:id="@+id/iv_banner"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/banner"
-            app:layout_constraintTop_toBottomOf="@id/cv_greeting"
+            android:layout_height="230dp"
+            app:layoutDescription="@xml/fragment_home_xml_iv_banner_scene"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintTop_toBottomOf="@id/cv_greeting"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/poster1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:src="@drawable/banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/poster2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:src="@drawable/banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/poster3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:src="@drawable/banner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="17dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/menu2"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/lightBlue" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="@+id/menu1"
+                app:layout_constraintEnd_toStartOf="@+id/menu3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/menu1"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/lightBlue" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/menu3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:altSrc="@drawable/ic_circle_full_24"
+                app:layout_constraintBottom_toBottomOf="@+id/menu2"
+                app:layout_constraintStart_toEndOf="@+id/menu2"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/lightBlue" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
 
         <TextView
             android:id="@+id/tv_progress"
