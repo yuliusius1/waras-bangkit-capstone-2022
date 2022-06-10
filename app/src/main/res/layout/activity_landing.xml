@@ -11,11 +11,11 @@
         android:id="@+id/logoMenu1"
         android:layout_width="0dp"
         android:layout_height="400dp"
+        android:contentDescription="@string/landing1"
         android:src="@drawable/landing1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/landing1"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/titleMenu1"
@@ -26,7 +26,7 @@
         android:gravity="center_horizontal"
         android:text="@string/landing1"
         android:textColor="@color/darkBlue"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/logoMenu1"
         app:layout_constraintStart_toStartOf="@+id/logoMenu1"
@@ -36,12 +36,12 @@
         android:id="@+id/logoMenu2"
         android:layout_width="0dp"
         android:layout_height="500dp"
+        android:contentDescription="@string/landing2"
         android:src="@drawable/landing2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        android:contentDescription="@string/landing2"/>
+        app:layout_constraintVertical_bias="0.3" />
 
     <TextView
         android:id="@+id/titleMenu2"
@@ -62,12 +62,12 @@
         android:id="@+id/logoMenu3"
         android:layout_width="0dp"
         android:layout_height="400dp"
+        android:contentDescription="@string/landing1"
         android:src="@drawable/landing3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        android:contentDescription="@string/landing1"/>
+        app:layout_constraintVertical_bias="0.3" />
 
     <TextView
         android:id="@+id/titleMenu3"
@@ -77,13 +77,13 @@
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="center_horizontal"
         android:text="@string/landing3"
-        android:textColor="@color/black"
+        android:textColor="@color/darkBlue"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/logoMenu3"
         app:layout_constraintStart_toStartOf="@+id/logoMenu3"
         app:layout_constraintTop_toBottomOf="@+id/logoMenu3" />
-    
+
     <Button
         android:id="@+id/start_btn"
         android:layout_width="wrap_content"
@@ -93,26 +93,24 @@
         android:text="@string/start"
         app:layout_constraintBottom_toTopOf="@+id/menu2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleMenu3" />
 
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu1"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:layout_constraintEnd_toStartOf="@+id/menu2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@drawable/ic_circle_24"
         app:tint="@color/lightBlue" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:layout_constraintBottom_toBottomOf="@+id/menu1"
         app:layout_constraintEnd_toStartOf="@+id/menu3"
@@ -125,8 +123,8 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu3"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:layout_constraintBottom_toBottomOf="@+id/menu2"
         app:layout_constraintStart_toEndOf="@+id/menu2"
@@ -134,6 +132,5 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle_24"
         app:tint="@color/lightBlue" />
-
-
+    
 </androidx.constraintlayout.motion.widget.MotionLayout>
