@@ -1,4 +1,4 @@
-# Waras App - Your Personal Medical App
+# Waras - Your Personal Medical App
 
 ## Bangkit Capstone Project 2022
 
@@ -18,7 +18,7 @@ Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 
 
 ## About this project
 
-Waras App is Application of Prediction COVID-19 Patient Recovery and Quarantine Process Recommendations
+Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Process Recommendations
 
 ## Documentation
 
