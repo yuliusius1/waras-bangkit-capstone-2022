@@ -11,7 +11,9 @@ Here is our repository for Bangkit 2022 Capstone project - Cloud Computing
 This is source code API of Waras team to make CRUD(Create, Read, Update and Delete) menthod that use by our Waras Application. This API Build using Node JS, Express framework, MySQL, Bcrypt and JsonWebtoken. We use Bcrypt for the password encryption, JsonWebtoken for authorize in using the API, We deploy this API in Cloud RUN and use Cloud SQL as database.
 <br>
 ## API URL
-[API URL](https://data-waras-api-service-hgz3km73yq-et.a.run.app/)
+[WARAS API URL](https://data-waras-api-service-hgz3km73yq-et.a.run.app/)
+[ARTICLE API](https://newsapi.org/v2/everything?q=covid&sortBy=publishedAt&apiKey=2a81a09b7fae49ba817399a2fc9cb666)
+[QUOTES API](https://world-of-quotes.p.rapidapi.com/v1/quotes?category=health&limit=20&page=1)
 <br>
 ## <a name="docum"></a>WARAS DOCUMENTATION API
 ### WARAS ENDPOINT DOCUMENTATION
@@ -20,9 +22,9 @@ This is source code API of Waras team to make CRUD(Create, Read, Update and Dele
 ### ARTICLE API
 [ARTICLE DOCUMENTATION](https://newsapi.org/docs/endpoints/everything)
 <br>
-|  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
+|  Endpoint |  Method	     |      Query Params |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
+| / | GET   | q, sortBy and apiKey      | HTTP GET REQUEST Show all of the Article about Health  |
 
 We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
@@ -31,7 +33,7 @@ We use this API because it's easy to implement and free, so it doesn't increase 
 <br>
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
+| / | GET   | category, limit and page      | HTTP GET REQUEST Show all of the Quotes about Health  |
 
 We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
