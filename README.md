@@ -9,7 +9,7 @@ Here is our repository for Bangkit 2022 Capstone project - Cloud Computing
 | :----: | :------------: | :-----------------: | :------------------------: |
 | Task 1 | Design System, Handling local database   | Create API      | Testing and Evaluation API  |
 | Task 2 | - | Make Cloud SQL database | -             |
-| Task 3 |       -         | Connect and deploy API in Cloud Run  |     -     |
+| Task 3 |       -         | Deploy API in Cloud Run and connect with Cloud SQL  |     -     |
 
 ## Cloud Architecture
 ![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
