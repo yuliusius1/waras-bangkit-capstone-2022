@@ -26,7 +26,7 @@ Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Proc
 
 ## System Architecture
 
-Soon
+![SystemArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/system_architecture.jpg)
 
 ## Repositories
 
@@ -42,7 +42,8 @@ API Documentation Endpoint : [Endpoint](https://documenter.getpostman.com/view/2
 
 ## Datasets
 
-Link Datasets of this project : 
+Link Datasets of this project :
+
 - [Dataset 1](https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv)
 - [Dataset 2](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/ml-dev/Dataset/dataset_kuesioner_1.csv)
 
