@@ -3,7 +3,7 @@
 ## Bangkit Capstone Project 2022
 
 Bangkit Capstone Team ID : C22 - PS046 <br>
-Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
+Here is our repository for Bangkit 2022 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
 
 ## Our Warriors
 
@@ -42,9 +42,11 @@ API Documentation Endpoint : [Endpoint](https://documenter.getpostman.com/view/2
 
 ## Datasets
 
-Link Datasets of this project : [Datasets](https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv)
+Link Datasets of this project : 
+- [Dataset 1](https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv)
+- [Dataset 2](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/ml-dev/Dataset/dataset_kuesioner_1.csv)
 
-## UI / UX Design
+## UI/UX Design
 
 - Link Lo-Fi Design : [Lo-Fi](https://www.figma.com/file/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?node-id=0%3A1)
 - Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/file/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?node-id=109%3A93)
