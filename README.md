@@ -1,5 +1,6 @@
 # BACKEND APIs ARCHITECTURE 
-![WarasArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
+- MVVM Architecture
+![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
 # API DESCRIPTION
 
 # API URL
