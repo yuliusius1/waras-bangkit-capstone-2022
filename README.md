@@ -57,4 +57,4 @@ This is source code API of Waras team to make CRUD menthod that use by our Waras
 
 ![UseEndpoint](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/run_endpoint.jpeg)
 <br>
-### FOR COMPLETE DOCUMENTATION PLEASE VISIT [DOCUMENTATION](https://github.com/yuliusius1/waras-bangkit-capstone-2022/edit/cc-dev1/README.md#waras-documentation-api) ABOVE
+### FOR COMPLETE DOCUMENTATION PLEASE VISIT [DOCUMENTATION](https://github.com/yuliusius1/waras-bangkit-capstone-2022/tree/cc-dev1#waras-documentation-api) ABOVE
