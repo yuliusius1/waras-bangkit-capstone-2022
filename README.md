@@ -1,9 +1,7 @@
 # Waras App - Your Personal Medical App - Cloud Computing
 
-## BACKEND APIs ARCHITECTURE 
-- MVVM Architecture
-
-![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
+## BACKEND APIs ARCHITECTURE
+                            ![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
 
 ## API DESCRIPTION
 
