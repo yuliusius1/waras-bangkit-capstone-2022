@@ -24,7 +24,7 @@ This is source code API of Waras team to make CRUD(Create, Read, Update and Dele
 <br>
 |  Endpoint |  Method	     |      Query Params |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| / | GET   | q, sortBy and apiKey      | HTTP GET REQUEST Show all of the Article about Health  |
+| /v2/everything | GET   | q, sortBy and apiKey      | HTTP GET REQUEST Show all of the Article about Health  |
 
 We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
@@ -33,7 +33,7 @@ We use this API because it's easy to implement and free, so it doesn't increase 
 <br>
 |  Endpoint |  Method	     |   Query Params|           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| / | GET   | category, limit and page      | HTTP GET REQUEST Show all of the Quotes about Health  |
+| /v1/quotes | GET   | category, limit and page      | HTTP GET REQUEST Show all of the Quotes about Health  |
 
 We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
