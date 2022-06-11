@@ -15,7 +15,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-        buildConfigField "String", "API_KEY", '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjUzNzkyOTIwLCJleHAiOjE2NTUwMDI1MjB9.3EzQP2V2Ws90exqCWoDxIFcUFxfUy_7wkxrATdEK1mI"'
+        buildConfigField "String", "API_KEY", '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNjU0OTUwMjc1LCJleHAiOjE2NTYxNTk4NzV9.L_o83VRmugTbiRh0yO7XpnKQtdy9er0mW67EBaCWnhs"'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
