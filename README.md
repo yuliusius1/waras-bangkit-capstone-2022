@@ -20,6 +20,7 @@ This is source code API of Waras team to make CRUD menthod that use by our Waras
 <br>
 ### Article API
 [LINK](https://newsapi.org/docs/endpoints/everything)
+<br>
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
@@ -28,7 +29,7 @@ WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak mena
 <br>
 ### Quotes API
 [LINK](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
-TABLE ENDPOINT
+<br>
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
@@ -39,21 +40,21 @@ WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak mena
 kita ada proteksi api pakai jwt token agar tidak semua orang bisa memakai api ini
 <br>
 ## HOW TO RUN THIS CODE
-*To use this code, need to make a local database using XAMPP or other MySQL database
-*After making the database then download this repository
-*Open the folder in VSCode and then open VSCode terminal
-*Type ```npm i express mysql bcrypt jwtoken``` and hit enter
-*Then type ```npm start``` to start the server
-*It will run on http://localhost:8080/
+* To use this code, need to make a local database using XAMPP or other MySQL database
+* After making the database then download this repository
+* Open the folder in VSCode and then open VSCode terminal
+* Type ```npm i express mysql bcrypt jwtoken``` and hit enter
+* Then type ```npm start``` to start the server
+* It will run on http://localhost:8080/
 
 ![RunCode](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/run_code.jpeg)
 <br>
 ## HOW TO USE THE ENDPOINT
-*To use this endpoint, need to use a special token that our team provided
-*After getting the token then Open a Postman Application and fill the token in headers key is x-auth-token
-*Enter URL request bar with https://data-waras-api-service-hgz3km73yq-et.a.run.app/api/handler/users
-*Select method GET then Send the request
-*If success then postman will return user data
+* To use this endpoint, need to use a special token that our team provided
+* After getting the token then Open a Postman Application and fill the token in headers key is x-auth-token
+* Enter URL request bar with https://data-waras-api-service-hgz3km73yq-et.a.run.app/api/handler/users
+* Select method GET then Send the request
+* If success then postman will return user data
 
 ![UseEndpoint](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/run_endpoint.jpeg)
 <br>
