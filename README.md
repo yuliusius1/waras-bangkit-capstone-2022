@@ -24,7 +24,7 @@ This is source code API of Waras team to make CRUD(Create, Read, Update and Dele
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
 
-#### We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
+We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
 ### QUOTES API
 [QUOTES DOCUMENTATION](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
@@ -33,7 +33,7 @@ This is source code API of Waras team to make CRUD(Create, Read, Update and Dele
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
 
-#### We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
+We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
 ### SECURITY
 #### we have API protection using jwt tokens so that not everyone can use this API and the token will also expired in 14 days
@@ -57,4 +57,4 @@ This is source code API of Waras team to make CRUD(Create, Read, Update and Dele
 
 ![UseEndpoint](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/run_endpoint.jpeg)
 <br>
-### FOR COMPLETE DOCUMENTATION PLEASE VISIT [DOCUMENTATION](#docum) ABOVE
+### FOR COMPLETE DOCUMENTATION PLEASE VISIT [WARAS DOCUMENTATION](#docum) ABOVE
