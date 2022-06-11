@@ -1,5 +1,5 @@
 # BACKEND APIs ARCHITECTURE 
-![WarasArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/android_architecture.jpg)
+![WarasArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
 # API DESCRIPTION
 
 # API URL
@@ -17,9 +17,6 @@ TABLE ENDPOINT
 | Task 1 | GET   | Create Main UI      | Add Machine Learning Model |
 | Task 2 | Create Concept | Authentication Page | Diagnose Page              |
 | Task 3 |                | Integrate with API  | Add Some Features          |
-endpoint	menthod	description
-/	GET	lolita
-![image](https://user-images.githubusercontent.com/101455767/173170448-95e11369-319d-4f04-b611-144571221d5f.png)
 
 
 WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
