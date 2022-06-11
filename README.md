@@ -1,44 +1,43 @@
 # Waras App - Your Personal Medical App - Cloud Computing
-<br>
-## Bangkit Capstone Project 2022
 
+## Bangkit Capstone Project 2022
 Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2022 Capstone project - Cloud Computing
 <br>
-## BACKEND APIs ARCHITECTURE
+## CLOUD ARCHITECTURE
 ![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
 <br>
 ## API DESCRIPTION
 This is source code API of Waras team to make CRUD menthod that use by our Waras Application. This API Build using Node JS, Express framework, MySQL, Bcrypt and JsonWebtoken. We deploy this API in Cloud RUN and use Cloud SQL as database.
 <br>
 ## API URL
-[LINK](https://data-waras-api-service-hgz3km73yq-et.a.run.app/)
+[API URL](https://data-waras-api-service-hgz3km73yq-et.a.run.app/)
 <br>
 ## WARAS DOCUMENTATION API
-### <a name="Documentation"></a>Waras Application API
-[LINK](https://documenter.getpostman.com/view/21187908/Uz5CLHqp)
-<br>
-### Article API
-[LINK](https://newsapi.org/docs/endpoints/everything)
+### WARAS ENDPOINT DOCUMENTATION
+[WARAS ENDPOINT DOCUMENTATION](https://documenter.getpostman.com/view/21187908/Uz5CLHqp)
+
+### ARTICLE API
+[ARTICLE DOCUMENTATION](https://newsapi.org/docs/endpoints/everything)
 <br>
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
-<br>
-WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
-<br>
-### Quotes API
-[LINK](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
+
+#### We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
+
+### QUOTES API
+[QUOTES DOCUMENTATION](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
 <br>
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
-<br>
-WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
-<br>
+
+#### We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
+
 ### SECURITY
-kita ada proteksi api pakai jwt token agar tidak semua orang bisa memakai api ini
-<br>
+#### we have API protection using jwt tokens so that not everyone can use this API and the token will also expired in 14 days
+
 ## HOW TO RUN THIS CODE
 * To use this code, need to make a local database using XAMPP or other MySQL database
 * After making the database then download this repository
@@ -58,4 +57,4 @@ kita ada proteksi api pakai jwt token agar tidak semua orang bisa memakai api in
 
 ![UseEndpoint](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/run_endpoint.jpeg)
 <br>
-## FOR COMPLETE DOCUMENTATION PLEASE VISIT [Documentation](#Documentation)
+### FOR COMPLETE DOCUMENTATION PLEASE VISIT [DOCUMENTATION](https://github.com/yuliusius1/waras-bangkit-capstone-2022/edit/cc-dev1/README.md#waras-documentation-api) ABOVE
