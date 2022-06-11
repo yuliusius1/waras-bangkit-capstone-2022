@@ -24,9 +24,7 @@ TABLE ENDPOINT
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
-
-
-
+<br>
 WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
 
 ### Quotes API
@@ -35,6 +33,7 @@ TABLE ENDPOINT
 |  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
+<br>
 WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
 
 ### SECURITY
