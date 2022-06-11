@@ -21,11 +21,10 @@ This is source code API of Waras team to make CRUD menthod that use by our Waras
 ### Article API
 [LINK](https://newsapi.org/docs/endpoints/everything)
 TABLE ENDPOINT
-|  Endpoint  |     Method	     |       Week 2        |           Description          |
+|  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| Task 1 | GET   | Create Main UI      | Add Machine Learning Model |
-| Task 2 | Create Concept | Authentication Page | Diagnose Page              |
-| Task 3 |                | Integrate with API  | Add Some Features          |
+| / | GET   | Body      | HTTP GET REQUEST Show all of the Article about Health  |
+
 
 
 WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
@@ -33,11 +32,9 @@ WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak mena
 ### Quotes API
 [LINK](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
 TABLE ENDPOINT
-|  Task  |     Week 1     |       Week 2        |            Week 3          |
+|  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
-| Task 1 | UI/UX Design   | Create Main UI      | Add Machine Learning Model |
-| Task 2 | Create Concept | Authentication Page | Diagnose Page              |
-| Task 3 |                | Integrate with API  | Add Some Features          |
+| / | GET   | Body      | HTTP GET REQUEST Show all of the Quotes about Health  |
 WE USE THIS API BECAUSE Mudah di implementasikan dan gratis, sehingga tidak menambah beban sistem maupun biaya pada Google Cloud Platform
 
 ### SECURITY
