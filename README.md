@@ -1,4 +1,17 @@
-# MACHINE LEARNING 🤖	
+# Waras App - Your Personal Medical App - Machine Learning 🤖	
+## Bangkit Capstone Project 2022
+
+Bangkit Capstone Team ID : C22 - PS046 <br>
+Here is our repository for Bangkit 2022 Capstone project - Machine Learning.
+
+## MACHINE LEARNING SCHEDULE
+|  Task  |         Week 1         |       Week 2        |         Week 3          |
+| :----: | :--------------------: | :-----------------: | :---------------------: |
+| Task 1 | Explore the literature |   Divide dataset    |    ML model testing     |
+| Task 2 |     Data collection    |   Build ML model    |   ML model evaluation   |
+| Task 3 |     Data preparation   |                     |   ML model deployment   |
+
+## DESCRIPTION
 The Machine Learning model can be used to provide information about predictions in determining how long it will take for users to recover from COVID-19.
 
 ## METHOD
