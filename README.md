@@ -31,7 +31,7 @@ We use this API because it's easy to implement and free, so it doesn't increase 
 ### QUOTES API
 [QUOTES DOCUMENTATION](https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-of-quotes/)
 <br>
-|  Endpoint |  Method	     |       Body Sent (JSON) |           Description          |
+|  Endpoint |  Method	     |   Query Params|           Description          |
 | :----: | :------------: | :-----------------: | :------------------------: |
 | / | GET   | category, limit and page      | HTTP GET REQUEST Show all of the Quotes about Health  |
 
