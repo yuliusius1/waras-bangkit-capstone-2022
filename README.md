@@ -8,7 +8,7 @@ Here is our repository for Bangkit 2022 Capstone project - Cloud Computing
 ![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
 <br>
 ## API DESCRIPTION
-This is source code API of Waras team to make CRUD menthod that use by our Waras Application. This API Build using Node JS, Express framework, MySQL, Bcrypt and JsonWebtoken. We deploy this API in Cloud RUN and use Cloud SQL as database.
+This is source code API of Waras team to make CRUD(Create, Read, Update and Delete) menthod that use by our Waras Application. This API Build using Node JS, Express framework, MySQL, Bcrypt and JsonWebtoken. We use Bcrypt for the password encryption, JsonWebtoken for authorize in using the API, We deploy this API in Cloud RUN and use Cloud SQL as database.
 <br>
 ## API URL
 [API URL](https://data-waras-api-service-hgz3km73yq-et.a.run.app/)
