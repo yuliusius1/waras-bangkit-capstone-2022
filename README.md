@@ -1,32 +1,57 @@
-# Waras App - Your Personal Medical App
-
+# Waras App - Your Personal Medical App - Machine Learning 🤖	
 ## Bangkit Capstone Project 2022
 
-Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
+Bangkit Capstone Team ID : C22 - PS046 <br>
+Here is our repository for Bangkit 2022 Capstone project - Machine Learning.
 
-## Our Warriors
+## MACHINE LEARNING SCHEDULE
+|  Task  |         Week 1         |       Week 2        |         Week 3          |
+| :----: | :--------------------: | :-----------------: | :---------------------: |
+| Task 1 | Explore the literature |   Divide dataset    |    ML model testing     |
+| Task 2 |     Data collection    |   Build ML model    |   ML model evaluation   |
+| Task 3 |     Data preparation   |                     |   ML model deployment   |
 
-|              Nama              | Bangkit-ID |        Path        | Link |
-| :----------------------------: | :--------: | :----------------: | :--: |
-| Aprillia Anggera Putri Lestari | M2007F0763 |  Machine Learning  | [GitHub](https://github.com/anggera) |
-|    Alfendio Alif Faudisyah     | M2245F2171 |  Machine Learning  | [GitHub](https://github.com/alfendio) |
-|             Yulius             | A7245F2166 | Mobile Development | Soon |
-|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development | Soon |
-|       Alextonio Winatian       | C7011F1157 |  Cloud Computing   | Soon |
-|         Melina Azzahra         | C2007F0650 |  Cloud Computing   | Soon |
+## DESCRIPTION
+The Machine Learning model can be used to provide information about predictions in determining how long it will take for users to recover from COVID-19.
 
-## About this project
+## METHOD
+Regression with a Deep Neural Network (DNN)
 
-Soon
+## TOOLS
+- Python
+- TensorFlow
+- NumPy
+- Pandas
+- Seaborn
+- Matplotlib
+- Google Forms
+- Google Collab
+- Jupyter Notebook
+- Visual Studio Code
 
-## Datasets
+## DATASETS 
 
-Dataset_1 : https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv
+We get the dataset from someone's GitHub repository and we also do the collection of the dataset via a questionnaire.
 
-## UI / UX Design
+- [Dataset 1](https://github.com/saadidrees/dataset_covid_19_symptoms/blob/master/dataset_symps_covid19.csv)
+- [Dataset 2](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/ml-dev/Dataset/dataset_kuesioner_1.csv)
 
-Soon
+## HOW TO PREDICT
+The Machine Learning model can predict how many days a patient will recover from COVID-19 by entering several inputs:
+- Age	
+- Sex	
+- Fever	
+- Cough	
+- Fatigue	
+- Sore 
+- Throat	
+- Runny nose	
+- Shortness of breath	
+- Vomiting	
 
-## Deployment Steps
+## DEPLOYMENT 
+We use TensorFlow Lite to deploy a trained Machine Learning model on Android.
 
-Soon
+## REFERENCES
+- Basic regression. Regression with a deep neural network (DNN). [tensorflow.org](https://www.tensorflow.org/tutorials/keras/regression#linear_regression)
+- Supoyo, A., & Prasetyaningrum, P. T. (2022). Analisis Data Mining Untuk Memprediksi Lama Perawatan Pasien Covid-19 Di DIY. Bianglala Informatika, 10(1), 21-29. [scholar.google.com](https://ejournal.bsi.ac.id/ejurnal/index.php/Bianglala/article/view/11890) 
