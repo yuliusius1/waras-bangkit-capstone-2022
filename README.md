@@ -6,11 +6,11 @@ Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2022 Capstone project - Mobile Development.
 
 ## Android Development Schedule
-|  Task  |     Week 1     |       Week 2        |            Week 3          |            Week 4          |           Week 5          |
-| :----: | :------------: | :-----------------: | :------------------------: | :------------------------: | :------------------------: |
-| Task 1 | UI/UX Design   | Create Main UI      | Add Machine Learning Model | Add Nearby Hospital Location |  Evaluate              |
-| Task 2 | Create Concept | Authentication Page | Diagnose Page              | Feedback Page              | Fix Bugs |
-| Task 3 |                | Integrate with API  | Add Some Features          | Daily Report Page          |
+|  Task  |     Week 1     |       Week 2        |            Week 3          |            Week 4          |
+| :----: | :------------: | :-----------------: | :------------------------: | :------------------------: |
+| Task 1 | UI/UX Design   | Create Main UI      | Add Machine Learning Model | Add Nearby Hospital Location |  
+| Task 2 | Create Concept | Authentication Page | Diagnose Page              | User Testing          | 
+| Task 3 |                | Integrate with API  | Add Some Features          | Fix Bugs          |
 
 ## Android Architecture
 - MVVM Architecture
@@ -36,7 +36,9 @@ Here is our repository for Bangkit 2022 Capstone project - Mobile Development.
 - Google Play Services Maps
 
 ## Link Download Application
-TBA
+Link Download APK Waras:<br>
+[WarasAPK](https://drive.google.com/file/d/1TT83i5cgIjywD-TkX9S5FAONHVOdjDpY/view?usp=sharing)
+
 
 ## Installation
  * ### Prerequisites
@@ -51,4 +53,5 @@ TBA
     ```bash
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">[YOUR API KEY]</string>
     ``` 
+    - Run the application
 
