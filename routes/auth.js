@@ -26,7 +26,7 @@ router.post("/", async (req, res) => {
 				const token = jwt.sign({
 					id: result[0]._id,
 					roles: result[0].roles,
-				}, "jwtPrivateKey", { expiresIn: "14d" });
+				}, "jwtPrivateKey", { expiresIn: "21d" });
 
 				res.json({status: "Success", token : token});
 			} else {
