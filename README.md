@@ -55,6 +55,6 @@ Link Datasets of this project :
 - Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/file/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?node-id=109%3A93)
 - Link Prototype Design : [Prototype](https://www.figma.com/proto/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?page-id=344%3A211&node-id=344%3A246&viewport=465%2C233%2C0.32&scaling=scale-down&starting-point-node-id=344%3A239)
 
-## Deployment Steps
-
-Soon
+## Deployment Link APK WAras
+Link Download APK Waras:<br>
+[WarasAPK (Google Drive)](https://drive.google.com/file/d/1TT83i5cgIjywD-TkX9S5FAONHVOdjDpY/view?usp=sharing)
