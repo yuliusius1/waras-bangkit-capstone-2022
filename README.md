@@ -5,11 +5,14 @@ Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2022 Capstone project - Machine Learning.
 
 ## MACHINE LEARNING SCHEDULE
-|  Task  |         Week 1         |       Week 2        |         Week 3          |
-| :----: | :--------------------: | :-----------------: | :---------------------: |
-| Task 1 | Explore the literature |   Divide dataset    |    ML model testing     |
-| Task 2 |     Data collection    |   Build ML model    |   ML model evaluation   |
-| Task 3 |     Data preparation   |                     |   ML model deployment   |
+|  Task  |         Week 1         |       Week 2        |         Week 3          |         Week 4                      |
+| :----: | :--------------------: | :-----------------: | :---------------------: | :---------------------------------: |   
+| Task 1 | Explore the literature |   Divide dataset    |   ML model testing #1   |          Data collection #2         |
+| Task 2 |   Data collection #1   |   Build ML model    |  ML model evaluation #1 |          Data preparation #2        |
+| Task 3 |   Data preparation #1  |                     |  ML model deployment #1 |  Compare new dataset into ML Model  |
+| Task 4 |                        |                     |                         |          ML model testing #2        |
+| Task 5 |                        |                     |                         |        ML model evaluation #2       |
+| Task 6 |                        |                     |                         |        ML model deployment #2       |
 
 ## DESCRIPTION
 The Machine Learning model can be used to provide information about predictions in determining how long it will take for users to recover from COVID-19.
