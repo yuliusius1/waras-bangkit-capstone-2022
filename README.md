@@ -5,11 +5,11 @@ Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2022 Capstone project - Cloud Computing
 
 ## Cloud Development Schedule
-|  Task  |     Week 1     |       Week 2        |            Week 3          |
-| :----: | :------------: | :-----------------: | :------------------------: |
-| Task 1 | Design System, Handling local database   | Create API      | Testing and Evaluation API  |
-| Task 2 | - | Make Cloud SQL database | -             |
-| Task 3 |       -         | Deploy API in Cloud Run and connect with Cloud SQL  |     -     |
+|  Task  |     Week 1     |       Week 2        |            Week 3          |           Week 4          |
+| :----: | :------------: | :-----------------: | :------------------------: |:------------------------: |
+| Task 1 | Design System, Handling local database   | Build API      | Testing and Evaluation API  | Testing and Evaluation API  |
+| Task 2 | - | Make Cloud SQL database | -             | -             |
+| Task 3 |       -         | Deploy API in Cloud Run and connect with Cloud SQL  |     -     | -             |
 
 ## Cloud Architecture
 ![CloudArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/cloud_architecture.png)
