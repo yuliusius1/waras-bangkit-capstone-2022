@@ -6,11 +6,11 @@ Bangkit Capstone Team ID : C22 - PS046 <br>
 Here is our repository for Bangkit 2022 Capstone project - Mobile Development.
 
 ## Android Development Schedule
-|  Task  |     Week 1     |       Week 2        |            Week 3          |
-| :----: | :------------: | :-----------------: | :------------------------: |
-| Task 1 | UI/UX Design   | Create Main UI      | Add Machine Learning Model |
-| Task 2 | Create Concept | Authentication Page | Diagnose Page              |
-| Task 3 |                | Integrate with API  | Add Some Features          |
+|  Task  |     Week 1     |       Week 2        |            Week 3          |            Week 4          |           Week 5          |
+| :----: | :------------: | :-----------------: | :------------------------: | :------------------------: | :------------------------: |
+| Task 1 | UI/UX Design   | Create Main UI      | Add Machine Learning Model | Add Nearby Hospital Location |  Evaluate              |
+| Task 2 | Create Concept | Authentication Page | Diagnose Page              | Feedback Page              | Fix Bugs |
+| Task 3 |                | Integrate with API  | Add Some Features          | Daily Report Page          |
 
 ## Android Architecture
 - MVVM Architecture
