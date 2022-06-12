@@ -12,7 +12,7 @@ Here is our repository for Bangkit 2022 Capstone project. Our team consist of 2 
 | Aprillia Anggera Putri Lestari | M2007F0763 |  Machine Learning  |            [LinkedIn](https://www.linkedin.com/in/aprillia-anggera/) or [GitHub](https://github.com/anggera)             |
 |    Alfendio Alif Faudisyah     | M2245F2171 |  Machine Learning  |                [LinkedIn](https://www.linkedin.com/in/alfendio/) or [GitHub](https://github.com/alfendio)                |
 |             Yulius             | A7245F2166 | Mobile Development |              [LinkedIn](https://www.linkedin.com/in/natyulius/) or [GitHub](https://github.com/yuliusius1)               |
-|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/kartika-okta-rachmawati/) or [GitHub](https://github.com/kartikaokta123)     |
+|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/tikaa-undefined-3b1090237/) or [GitHub](https://github.com/kartikaokta123)     |
 |       Alextonio Winatian       | C7011F1157 |  Cloud Computing   | [LinkedIn](https://www.linkedin.com/in/alextonio-winatian-168b67236/) or [GitHub](https://github.com/Alextonio-Winatian) |
 |         Melina Azzahra         | C2007F0650 |  Cloud Computing   |        [LinkedIn](https://www.linkedin.com/in/melina-azzahra-212399201/) or [GitHub](https://github.com/nmelinaa)        |
 
@@ -26,7 +26,7 @@ Waras is Application of Prediction COVID-19 Patient Recovery and Quarantine Proc
 
 ## System Architecture
 
-![SystemArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/system_architecture.jpg)
+![SystemArchitecture](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/waras_architecture.jpg)
 
 ## Repositories
 
@@ -53,6 +53,6 @@ Link Datasets of this project :
 - Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/file/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?node-id=109%3A93)
 - Link Prototype Design : [Prototype](https://www.figma.com/proto/E3FdMv9JI6ztkQxKpM5VH7/Capstone-Project?page-id=344%3A211&node-id=344%3A246&viewport=465%2C233%2C0.32&scaling=scale-down&starting-point-node-id=344%3A239)
 
-## Deployment Link APK WAras
-Link Download APK Waras:<br>
-[WarasAPK](https://drive.google.com/file/d/1TT83i5cgIjywD-TkX9S5FAONHVOdjDpY/view?usp=sharing)
+## Deployment Steps
+
+Soon
