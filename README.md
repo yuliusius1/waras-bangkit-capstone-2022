@@ -45,7 +45,7 @@ We use this API because it's easy to implement and free, so it doesn't increase 
 We use this API because it's easy to implement and free, so it doesn't increase the system load and no extra cost on google cloud platform
 
 ### Security
-We have API protection using jwt tokens so that not everyone can use this API and the token will also expired in 14 days
+We have API protection using jwt tokens so that not everyone can use this API and the token will also expired in 21 days
 
 ## How to run this code
 * To use this code, need to make a local database using XAMPP or other MySQL database
