@@ -1,3 +1,5 @@
+![WarasApp](https://github.com/yuliusius1/waras-bangkit-capstone-2022/blob/main/assets/logo.jpg)
+
 # Waras - Your Personal Medical App
 
 ## Bangkit Capstone Project 2022
