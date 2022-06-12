@@ -55,4 +55,4 @@ Link Datasets of this project :
 
 ## Deployment Link APK WAras
 Link Download APK Waras:<br>
-[WarasAPK](https://drive.google.com/file/d/1TT83i5cgIjywD-TkX9S5FAONHVOdjDpY/view?usp=sharing)
+[WarasAPK (Google Drive)](https://drive.google.com/file/d/1TT83i5cgIjywD-TkX9S5FAONHVOdjDpY/view?usp=sharing)
