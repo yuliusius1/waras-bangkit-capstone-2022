@@ -12,7 +12,7 @@ Here is our repository for Bangkit 2022 Capstone project. Our team consist of 2 
 | Aprillia Anggera Putri Lestari | M2007F0763 |  Machine Learning  |            [LinkedIn](https://www.linkedin.com/in/aprillia-anggera/) or [GitHub](https://github.com/anggera)             |
 |    Alfendio Alif Faudisyah     | M2245F2171 |  Machine Learning  |                [LinkedIn](https://www.linkedin.com/in/alfendio/) or [GitHub](https://github.com/alfendio)                |
 |             Yulius             | A7245F2166 | Mobile Development |              [LinkedIn](https://www.linkedin.com/in/natyulius/) or [GitHub](https://github.com/yuliusius1)               |
-|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/tikaa-undefined-3b1090237/) or [GitHub](https://github.com/kartikaokta123)     |
+|    Kartika Okta Rachmawati     | A7007F0761 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/kartika-okta-rachmawati/) or [GitHub](https://github.com/kartikaokta123)     |
 |       Alextonio Winatian       | C7011F1157 |  Cloud Computing   | [LinkedIn](https://www.linkedin.com/in/alextonio-winatian-168b67236/) or [GitHub](https://github.com/Alextonio-Winatian) |
 |         Melina Azzahra         | C2007F0650 |  Cloud Computing   |        [LinkedIn](https://www.linkedin.com/in/melina-azzahra-212399201/) or [GitHub](https://github.com/nmelinaa)        |
 
